@@ -30,9 +30,20 @@ const About = () => {
                                 <header>
                                     { /* social icons*/}
                                     <ul className="flex flex-wrap justify-end gap-2">
+                                        <li>
+                                            { /* medium */}
+                                            <a href="https://medium.com/@cmracar" title="Medium" className="bg-black p-2 font-medium text-white inline-flex items-center space-x-2 rounded" target="\u201D_blank\u201D">
+                                                <svg className="w-5 h-5" viewBox="0 -55 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                                                    <g>
+                                                        <path className="fill-white" d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z" fill="#000000" />
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+
                                         { /* linkedin */}
                                         <li>
-                                            <a href="https://www.linkedin.com/in/cmracar/" className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" target="\u201D_blank\u201D">
+                                            <a href="https://www.linkedin.com/in/cmracar/" title="LinkedIn" className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" target="\u201D_blank\u201D">
                                                 <svg className="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                     <g>
                                                         <path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055">
@@ -43,7 +54,7 @@ const About = () => {
                                         </li>
                                         <li>
                                             { /* github */}
-                                            <a href="https://github.com/cmracar" className="bg-gray-700 p-2 font-medium text-white inline-flex items-center space-x-2 rounded" target="\u201D_blank\u201D">
+                                            <a href="https://github.com/cmracar" title="GitHub" className="bg-gray-700 p-2 font-medium text-white inline-flex items-center space-x-2 rounded" target="\u201D_blank\u201D">
                                                 <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                                                     <g fill="none">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" fill="currentColor" />
@@ -53,8 +64,8 @@ const About = () => {
                                         </li>
                                     </ul>
                                     <div className="flex justify-between items-center">
-                                        <div>
-                                            <div className="bg-cover bg-no-repeat border rounded-full md:h-40 md:w-40 sm:h-24 sm:w-24" style={{ backgroundImage: "url(https://avatars.githubusercontent.com/u/35954709?v=4)" }}>
+                                        <div className="mx-2">
+                                            <div className="bg-cover bg-no-repeat border rounded-full h-32 w-32" style={{ backgroundImage: "url(https://avatars.githubusercontent.com/u/35954709?v=4)" }}>
                                             </div>
                                         </div>
                                         <div className="grid justify-items-end">
@@ -144,7 +155,7 @@ const About = () => {
                                             <h2 className="text-2xl mt-6 pb-1 border-b font-semibold">Projects</h2>
                                             <div className="text-center">
                                                 <Link href="/portfolio">
-                                                    <button className="bg-gradient-to-br from-red-600 to-indigo-800 px-8 text-gray-100 text-center text-base font-semibold py-2 rounded-3xl mt-6">
+                                                    <button className="bg-gradient-to-br from-red-600 to-indigo-800 px-6 text-gray-100 text-center text-base font-semibold py-2 rounded-3xl mt-6">
                                                         Show Portfolio for All Projects
                                                     </button>
                                                 </Link>
@@ -163,7 +174,7 @@ const About = () => {
                                                     <div className="flex justify-between font-light items-center text-sm mb-1">Front-End Developer<small>Remote</small></div>
                                                     <p className="text-justify text-xs font-light">
                                                         Creation of manifold AI products within the company, software solutions/software developments for Turkcell (I work as a consultant) and various companies.
-                                                        Also I work on GLOSA which is the key subsidiary of Carbon Consulting concentrated on AI solutions.
+                                                        Also I work on Glosa NLP which is the key subsidiary of Carbon Consulting concentrated on AI solutions.
                                                     </p>
                                                 </li>
                                                 <li className="pt-2">
