@@ -13,7 +13,7 @@ const About = () => {
             </Head>
             <div className="flex items-center justify-center h-screen bg-gradient-to-br from-indigo-500 to-indigo-800">
                 <div className="bg-white h-5/6 md:w-3/3 lg:w-9/12 p-3 border rounded-3xl shadow-lg">
-                    <div className="font-semibold h-full overflow-auto w-full p-20">
+                    <div className="font-semibold h-full overflow-auto w-full sm:p-3 md:p-20">
 
                         <div className="text-center mb-5">
                             <h1 className="text-3xl text-gray-500 tracking-wide">About</h1>
