@@ -77,6 +77,7 @@ const Portfolio = () => {
                                     <div className="px-6 pt-4 pb-2">
                                         <span className="inline-block bg-red-500 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2">HTML</span>
                                         <span className="inline-block bg-blue-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2">CSS</span>
+                                        <span className="inline-block bg-green-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2">Django</span>
                                     </div>
                                 </div>
                                 { /*Card*/}
