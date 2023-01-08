@@ -127,7 +127,7 @@ const About = () => {
                                             <li className="px-3 mt-2">Code Review & Edit in Python</li>
                                             <li className="px-3 mt-2">UI/UX Design with Figma</li>
                                             <li className="px-3 mt-2">Experience VCS Github, GitLab etc.</li>
-                                            <li className="px-3 mt-2">CI/CD - Github Actions, ArgoCD</li>
+                                            <li className="px-3 mt-2">CI/CD Knowlodge - Github Actions</li>
                                             <li className="px-3 mt-2">Docker</li>
                                             <li className="px-3 mt-2">Jira, ClickUp, Trello</li>
                                             <li className="px-3 mt-2">Linux/UNIX Shell Script</li>
