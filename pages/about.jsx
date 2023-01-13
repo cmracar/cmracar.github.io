@@ -127,7 +127,6 @@ const About = () => {
                                         <strong className="text-xl font-medium">Side Skills</strong>
                                         <ul className="mt-2 mb-10 text-sm font-light">
                                             <li className="px-3 mt-2">Data Visualization with Highcharts</li>
-                                            <li className="px-3 mt-2">Code Review & Edit in Python</li>
                                             <li className="px-3 mt-2">UI/UX Design with Figma</li>
                                             <li className="px-3 mt-2">Experience VCS Github, GitLab etc.</li>
                                             <li className="px-3 mt-2">CI/CD Knowlodge - Github Actions</li>
