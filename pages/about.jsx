@@ -107,6 +107,9 @@ const About = () => {
                                                 <span className="text-red-700 text-base">⬤</span> Typescript
                                             </li>
                                             <li className="px-3 mt-2 text-sm">
+                                                <span className="text-blue-600 text-base">⬤</span> Python
+                                            </li>
+                                            <li className="px-3 mt-2 text-sm">
                                                 <span className="text-blue-400 text-base">⬤</span> React
                                             </li>
                                             <li className="px-3 mt-2 text-sm">
