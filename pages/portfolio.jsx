@@ -46,7 +46,7 @@ const Portfolio = () => {
 
                                 { /*Card*/}
                                 <div className="rounded-b overflow-hidden shadow-lg border-t-2 border-t-black-500 mb-3">
-                                    <img className="object-contain h-48 w-full" src="https://glosa.ai/assets/G.png" alt="Glosa NLP" />
+                                    <img className="object-contain h-48 w-full" src="https://glosa.ai/_next/static/media/glosaLogo.19bcf2ea.svg" alt="Glosa NLP" />
                                     <div className="px-6 py-4">
                                         <div className="font-bold text-xl mb-2">Glosa NLP UI</div>
                                         <div className="font-semibold text-gray-500 text-sm mb-2">Carbon Consulting</div>
