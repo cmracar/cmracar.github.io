@@ -1,0 +1,136 @@
+[
+     {
+        "projectName": "Vakıf Katılım Artifin Backoffice UI",
+        "description": "Vakıf Katılım Bankası'nın Artifin uygulaması için geliştirilmiş backoffice arayüzü.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Redux Toolkit"
+        ],
+        "isCompleted": false
+    },
+    {
+        "projectName": "Epiuse Chat UX/UI",
+        "description": "Sunucusuyla WebSocket üzerinden iletişim kuran, dinamik ve etkileşimli bir kullanıcı deneyimi sunan sohbet botu projesi.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Next.js",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "Next Auth"
+        ],
+        "isCompleted": true
+    },
+    {
+        "projectName": "BeyondGuard UX/UI",
+        "description": "Siber güvenlik odaklı, kullanıcı arayüzü ve deneyimi ön planda tutularak geliştirilen bir web uygulaması.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Next.js",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "Next Auth",
+            "Figma"
+        ],
+        "isCompleted": false
+    },
+    {
+        "projectName": "Carbonetz UX/UI",
+        "description": "Verimli proxy yönetimi için UI/UX odaklı geliştirilmiş bir proxy yönetim web uygulaması.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Next.js",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "Next Auth",
+            "Figma"
+        ],
+        "isCompleted": false
+    },
+    {
+        "projectName": "Akbank Hazine İzleme Sistemi UX/UI",
+        "description": "Akbank için geliştirilen, hazine risklerini izlemeye yarayan kullanıcı dostu bir arayüze sahip uygulama.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "Highcharts",
+            "Redux Toolkit"
+        ],
+        "isCompleted": true
+    },
+    {
+        "projectName": "Turklerden UX/UI",
+        "description": "Türk topluluğunun en güncel haber ve etkinlikleri keşfetmesini sağlayan platformun UX/UI tasarım ve geliştirmesi.",
+        "preview": "https://www.turklerden.com/tr/home",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "Redux Toolkit"
+        ],
+        "isCompleted": true
+    },
+    {
+        "projectName": "Tbot Analytic Screens UI",
+        "description": "Turkcell'in Tbot uygulamasının analitik ekranlarının kullanıcı arayüzünün tasarım ve geliştirilmesi.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Highcharts"
+        ],
+        "isCompleted": true
+    },
+    {
+        "projectName": "Glosa UX/UI",
+        "description": "Carbon Consulting iştiraki Glosa için kullanıcı arayüzünün geliştirilmesi.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Context API"
+        ],
+        "isCompleted": true
+    },
+    {
+        "projectName": "DiasNDT Website",
+        "description": "DiasNDT firmasının tahribatsız muayene (NDT) hizmetlerini ve uzmanlığını sergilemek için hazırlanan web sitesi.",
+        "preview": "https://diasndt.com/tr",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Django"
+        ],
+        "isCompleted": true
+    },
+    {
+        "projectName": "AAT Hukuk Website",
+        "description": "AAT Hukuk bürosunun hizmetlerini ve uzmanlık alanlarını tanıtmak için hazırlanan web sitesi.",
+        "preview": "https://www.aathukuk.com/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Django"
+        ],
+        "isCompleted": true
+    }
+]
