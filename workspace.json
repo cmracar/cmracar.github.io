@@ -1,0 +1,10 @@
+[
+  {
+    "title": "CopilotKit Chatbot",
+    "description": "CopilotKit Chatbot, OpenAI API'si ile geliştirilmiş bir chatbot uygulamasıdır. Kullanıcıdan gelen mesajlara yanıt veren basit bir chatbot uygulaması. React ve OpenAI API ile hazırlandı.",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "tags": [ "React", "Next.js", "TypeScript", "CopilotKit", "TailwindCSS" ],
+    "isCompleted": false
+  }
+] 
