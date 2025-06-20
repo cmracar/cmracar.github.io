@@ -26,7 +26,8 @@ jobs:
       - name: Copy output to root
         run: |
           shopt -s dotglob
-          cp -r out/* out/.* .
+          cp -r out/* .
+          cp -r out/.* . 2>/dev/null || true
           rm -rf out
           
       - name: Commit and push changes
