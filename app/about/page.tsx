@@ -11,7 +11,7 @@ const experiences = [
         company: 'Carbon Consulting',
         position: 'Senior Frontend Developer',
         date: 'Kasım 2021 - Devam',
-        desc: 'React ve Next.js ile web uygulamaları geliştiriyorum. Turkcell, Akbank ve Vakıf Katılım gibi firmaların projelerinde yer alıp UI/UX tasarımlarını geliştirdim. In-house projelerde de yer alarak sıfırdan uygulamalar geliştiriyorum.',
+        desc: 'React ve Next.js ile web uygulamaları geliştiriyorum. Turkcell, Akbank ve Vakıf Katılım gibi firmaların projelerinde yer alıp UI/UX tasarımlarını geliştirdim. In-house projelerde de yer alarak sıfırdan uygulamalar geliştiriyorum. Ayrıca yapay zeka araçlarıyla verimliliği en üst düzeye çıkarmak için çalışıyorum.',
         icon: <Briefcase size={28} className="text-blue-400" />,
     },
     {
