@@ -40,7 +40,7 @@ export default function Home() {
             Merhaba, Ben <br />
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Cemre ACAR</span>
           </h1>
-          <h2 className="text-2xl font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Senior Frontend Developer & UI/UX Designer</h2>
+          <h2 className="text-[22px] font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Front-End Developer | React & Next.js | AI-Powered UI Solutions</h2>
           <p className="text-gray-300 max-w-xl">
             Modern web teknolojileri ile kullanıcı deneyimini ön planda tutan, yaratıcı ve yenilikçi çözümler üreten bir frontend geliştiricisiyim.
           </p>

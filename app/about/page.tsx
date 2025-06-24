@@ -65,7 +65,7 @@ export default function AboutPage() {
                     />
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center">Cemre Acar</h1>
-                <p className="text-blue-300 text-lg mb-4 text-center">Senior Frontend Developer & UI/UX Designer</p>
+                <p className="text-blue-300 text-lg mb-4 text-center">Front-End Developer | React & Next.js | AI-Powered UI Solutions</p>
                 <div className="flex flex-wrap gap-3 justify-center mb-6">
                     <span className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-3 py-1 rounded-full text-xs"><MapPin size={16} /> İzmir</span>
                     <span className="flex items-center gap-2 bg-purple-500/10 text-purple-300 px-3 py-1 rounded-full text-xs"><Star size={16} /> 4+ Yıl</span>
