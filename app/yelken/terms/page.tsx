@@ -1,12 +1,12 @@
 import LegalDoc from '../LegalDoc'
 
 export const metadata = {
-  title: 'Terms of Use | WordVoyage',
-  description: 'WordVoyage terms of use.',
+  title: 'Terms of Use | Yelken',
+  description: 'Yelken terms of use.',
   openGraph: {
-    title: 'Terms of Use | WordVoyage',
-    description: 'WordVoyage terms of use.',
-    url: 'https://cmracar.github.io/wordvoyage/terms',
+    title: 'Terms of Use | Yelken',
+    description: 'Yelken terms of use.',
+    url: 'https://cmracar.github.io/yelken/terms',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

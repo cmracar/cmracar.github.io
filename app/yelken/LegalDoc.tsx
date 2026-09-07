@@ -14,12 +14,12 @@ type Lang = 'tr' | 'en'
 type Kind = 'privacy' | 'terms'
 
 const BACK: Record<Lang, string> = {
-  tr: 'WordVoyage',
-  en: 'WordVoyage',
+  tr: 'Yelken',
+  en: 'Yelken',
 }
 
 /**
- * WordVoyage yasal metinlerinin ortak görünümü.
+ * Yelken yasal metinlerinin ortak görünümü.
  *
  * İçerik `legal.json` içinden gelir ve o dosya uygulamanın kaynağından
  * üretilir (`npm run legal:site`). Buraya metin yazma: mağaza incelemesi,
@@ -35,7 +35,7 @@ export default function LegalDoc({ lang, kind }: { lang: Lang; kind: Kind }) {
 
       <article className="container mx-auto px-4 md:px-8 pt-10 pb-24 max-w-3xl">
         <Link
-          href="/wordvoyage"
+          href="/yelken"
           className="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition no-underline mb-8"
         >
           <ArrowLeft size={16} /> {BACK[lang]}

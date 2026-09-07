@@ -4,19 +4,19 @@ import Header from '@/app/components/Header'
 import legal from './legal.json'
 
 export const metadata = {
-  title: 'WordVoyage | Kelime Bulmacası',
+  title: 'Yelken | Kelime Bulmacası',
   description:
-    'WordVoyage bir kelime bulmacası — kendi dilinde oyna ya da yeni bir dil öğren. Cemre Acar tarafından geliştirildi.',
+    'Yelken bir kelime bulmacası — kendi dilinde oyna ya da yeni bir dil öğren. Cemre Acar tarafından geliştirildi.',
   openGraph: {
-    title: 'WordVoyage | Kelime Bulmacası',
+    title: 'Yelken | Kelime Bulmacası',
     description: 'Kelime bulmacası: kendi dilinde oyna ya da yeni bir dil öğren.',
-    url: 'https://cmracar.github.io/wordvoyage',
+    url: 'https://cmracar.github.io/yelken',
     siteName: 'Cemre Acar Portfolio',
     type: 'website',
   },
 }
 
-/** Uygulama işaretiyle birebir aynı geometri (wordvoyage/src/components/Logo.tsx). */
+/** Uygulama işaretiyle birebir aynı geometri (yelken/src/components/Logo.tsx). */
 function Mark({ size = 88 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
@@ -62,13 +62,13 @@ const features = [
 ]
 
 const documents = [
-  { href: '/wordvoyage/gizlilik', label: 'Gizlilik Politikası', lang: 'TR', icon: <Shield size={18} /> },
-  { href: '/wordvoyage/kosullar', label: 'Kullanım Koşulları', lang: 'TR', icon: <FileText size={18} /> },
-  { href: '/wordvoyage/privacy', label: 'Privacy Policy', lang: 'EN', icon: <Shield size={18} /> },
-  { href: '/wordvoyage/terms', label: 'Terms of Use', lang: 'EN', icon: <FileText size={18} /> },
+  { href: '/yelken/gizlilik', label: 'Gizlilik Politikası', lang: 'TR', icon: <Shield size={18} /> },
+  { href: '/yelken/kosullar', label: 'Kullanım Koşulları', lang: 'TR', icon: <FileText size={18} /> },
+  { href: '/yelken/privacy', label: 'Privacy Policy', lang: 'EN', icon: <Shield size={18} /> },
+  { href: '/yelken/terms', label: 'Terms of Use', lang: 'EN', icon: <FileText size={18} /> },
 ]
 
-export default function WordVoyagePage() {
+export default function YelkenPage() {
   const { brand } = legal
 
   return (
@@ -80,8 +80,19 @@ export default function WordVoyagePage() {
           <Mark />
           <div>
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
-              Word<span className="text-cyan-400">Voyage</span>
+              {legal.brand.app}
             </h1>
+            {/* Uygulamadaki kelime markasıyla aynı: ad tek renk, vurgu dalgada. */}
+            <svg viewBox="0 0 120 10" className="w-32 h-2.5 mt-1" aria-hidden="true">
+              <path
+                d="M0 5 Q10 1 20 5 Q30 9 40 5 Q50 1 60 5 Q70 9 80 5 Q90 1 100 5 Q110 9 120 5"
+                stroke="#22D3EE"
+                strokeWidth={2.6}
+                strokeLinecap="round"
+                fill="none"
+                opacity={0.85}
+              />
+            </svg>
             <p className="text-gray-400 text-sm mt-1">{brand.publisher}</p>
           </div>
         </div>

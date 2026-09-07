@@ -1,7 +1,7 @@
 {
-  "$generated": "wordvoyage · npm run legal:site — elle düzenleme, kaynak src/i18n/legal.ts",
+  "$generated": "yelken · npm run legal:site — elle düzenleme, kaynak src/i18n/legal.ts",
   "brand": {
-    "app": "WordVoyage",
+    "app": "Yelken",
     "publisher": "Cemre Acar",
     "supportEmail": "cemreacar94@gmail.com",
     "copyright": "© 2026 Cemre Acar"
@@ -11,7 +11,7 @@
       "privacy": {
         "title": "Gizlilik Politikası",
         "updated": "Son güncelleme: 5 Eylül 2026",
-        "intro": "WordVoyage hesap açmanızı istemez, adınızı veya e-postanızı toplamaz. Oyun ilerlemeniz yalnızca cihazınızda saklanır. Üçüncü taraflara giden tek veri, reklam gösterimi ve çökme raporları için gereken teknik bilgilerdir; ikisi de aşağıda tek tek sayılmıştır.",
+        "intro": "Yelken hesap açmanızı istemez, adınızı veya e-postanızı toplamaz. Oyun ilerlemeniz yalnızca cihazınızda saklanır. Üçüncü taraflara giden tek veri, reklam gösterimi ve çökme raporları için gereken teknik bilgilerdir; ikisi de aşağıda tek tek sayılmıştır.",
         "sections": [
           {
             "heading": "Cihazınızda kalan veriler",
@@ -54,7 +54,7 @@
           {
             "heading": "Çocuklar",
             "body": [
-              "WordVoyage her yaşa uygun bir kelime oyunudur ve çocuklardan bilerek kişisel veri toplamaz. 13 yaşından küçük bir çocuğun verisinin işlendiğini düşünüyorsanız bize yazın; ilgili veriyi sileriz."
+              "Yelken her yaşa uygun bir kelime oyunudur ve çocuklardan bilerek kişisel veri toplamaz. 13 yaşından küçük bir çocuğun verisinin işlendiğini düşünüyorsanız bize yazın; ilgili veriyi sileriz."
             ]
           },
           {
@@ -74,18 +74,18 @@
       "terms": {
         "title": "Kullanım Koşulları",
         "updated": "Son güncelleme: 5 Eylül 2026",
-        "intro": "WordVoyage’ı indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
+        "intro": "Yelken’i indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
             "heading": "Kullanım hakkı",
             "body": [
-              "WordVoyage’ı kişisel ve ticari olmayan amaçla kullanmanız için devredilemez, münhasır olmayan bir lisans verilir. Uygulamayı kopyalayamaz, kaynak koduna dönüştüremez, kiralayamaz veya yeniden dağıtamazsınız."
+              "Yelken’i kişisel ve ticari olmayan amaçla kullanmanız için devredilemez, münhasır olmayan bir lisans verilir. Uygulamayı kopyalayamaz, kaynak koduna dönüştüremez, kiralayamaz veya yeniden dağıtamazsınız."
             ]
           },
           {
             "heading": "İçerik",
             "body": [
-              "Uygulamadaki kelime ipuçları, tanımlar, örnek cümleler ve Türkçe karşılıklar WordVoyage için özgün olarak yazılmıştır. Oyun içeriği, arayüz metinleri, logo ve görseller telif hakkıyla korunur."
+              "Uygulamadaki kelime ipuçları, tanımlar, örnek cümleler ve Türkçe karşılıklar Yelken için özgün olarak yazılmıştır. Oyun içeriği, arayüz metinleri, logo ve görseller telif hakkıyla korunur."
             ]
           },
           {
@@ -128,7 +128,7 @@
       "privacy": {
         "title": "Privacy Policy",
         "updated": "Last updated: 5 September 2026",
-        "intro": "WordVoyage does not ask you to create an account and does not collect your name or email address. Your game progress stays on your device. The only data that leaves it is the technical information needed to serve ads and report crashes — both listed in full below.",
+        "intro": "Yelken does not ask you to create an account and does not collect your name or email address. Your game progress stays on your device. The only data that leaves it is the technical information needed to serve ads and report crashes — both listed in full below.",
         "sections": [
           {
             "heading": "Data that stays on your device",
@@ -171,7 +171,7 @@
           {
             "heading": "Children",
             "body": [
-              "WordVoyage is a word game suitable for all ages and does not knowingly collect personal data from children. If you believe data belonging to a child under 13 has been processed, write to us and we will delete it."
+              "Yelken is a word game suitable for all ages and does not knowingly collect personal data from children. If you believe data belonging to a child under 13 has been processed, write to us and we will delete it."
             ]
           },
           {
@@ -191,18 +191,18 @@
       "terms": {
         "title": "Terms of Use",
         "updated": "Last updated: 5 September 2026",
-        "intro": "By downloading or using WordVoyage you accept these terms.",
+        "intro": "By downloading or using Yelken you accept these terms.",
         "sections": [
           {
             "heading": "Licence",
             "body": [
-              "You are granted a non-transferable, non-exclusive licence to use WordVoyage for personal, non-commercial purposes. You may not copy, decompile, rent out or redistribute the app."
+              "You are granted a non-transferable, non-exclusive licence to use Yelken for personal, non-commercial purposes. You may not copy, decompile, rent out or redistribute the app."
             ]
           },
           {
             "heading": "Content",
             "body": [
-              "The clues, definitions, example sentences and meanings in the app were written originally for WordVoyage. Game content, interface text, logo and artwork are protected by copyright."
+              "The clues, definitions, example sentences and meanings in the app were written originally for Yelken. Game content, interface text, logo and artwork are protected by copyright."
             ]
           },
           {
