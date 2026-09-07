@@ -1,5 +1,6 @@
 'use client'
 import Header from '../components/Header'
+import Link from 'next/link'
 import { useState } from 'react'
 import worksData from '../../workspace.json'
 
@@ -7,6 +8,10 @@ const allWorks = worksData.map((w) => ({
   ...w,
   status: w.isCompleted ? 'Tamamlandı' : 'Devam Ediyor',
 }))
+
+/** Boş dize ve "#" de adres değil: ikisi de tıklanıp hiçbir yere gitmeyen
+ *  bir düğme üretiyordu. */
+const isLink = (url?: string) => Boolean(url) && url !== '#'
 
 const PAGE_SIZE = 8
 
@@ -19,7 +24,14 @@ export default function WorkspacePage() {
     <main className="min-h-screen bg-[#181f2a] text-white">
       <Header />
       <section className="container mx-auto px-4 md:px-8 pt-16 pb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Çalışmalarım</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-3 text-center">Çalışmalarım</h1>
+        <p className="text-gray-400 text-center mb-10 max-w-xl mx-auto">
+          Kendi ürünlerim ve denemelerim. Müşteri işleri{' '}
+          <Link href="/projects" className="text-blue-400 hover:text-blue-300">
+            Projelerim
+          </Link>{' '}
+          sayfasında.
+        </p>
         <ul className="divide-y divide-blue-400/10 rounded-xl bg-[#232b3a] shadow-lg overflow-hidden">
           {works.map((work, i) => (
             <li key={i} className="flex flex-col md:flex-row md:items-center gap-4 px-6 py-6 hover:bg-blue-400/5 transition">
@@ -35,25 +47,33 @@ export default function WorkspacePage() {
                   ))}
                 </div>
               </div>
-              <div className="flex-shrink-0 mt-2 md:mt-0 flex gap-2">
-                {work.demoUrl && (
+              <div className="flex-shrink-0 mt-2 md:mt-0 flex flex-wrap gap-2">
+                {work.detailUrl && (
+                  <Link
+                    href={work.detailUrl}
+                    className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-purple-500/20 hover:scale-105 transition-transform text-center no-underline"
+                  >
+                    Detay
+                  </Link>
+                )}
+                {isLink(work.demoUrl) && (
                   <a
                     href={work.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 transition-transform text-center hover:scale-105`}
+                    className="px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
                   >
                     Demo
                   </a>
                 )}
-                {work.codeUrl && (
+                {isLink(work.codeUrl) && (
                   <a
                     href={work.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-purple-500/20 transition-transform text-center hover:scale-105`}
+                    className="px-4 py-2 rounded-full border border-blue-400/30 text-blue-300 text-sm font-semibold hover:bg-blue-400/10 transition-colors text-center"
                   >
-                    Github Repo
+                    Github
                   </a>
                 )}
               </div>

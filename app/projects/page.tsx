@@ -1,5 +1,6 @@
 'use client'
 import Header from '../components/Header'
+import Link from 'next/link'
 import { useState } from 'react'
 import projectsData from '../../projects.json'
 
@@ -22,7 +23,14 @@ export default function ProjectsPage() {
     <main className="min-h-screen bg-[#181f2a] text-white">
       <Header />
       <section className="container mx-auto px-4 md:px-8 pt-16 pb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Projelerim</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-3 text-center">Projelerim</h1>
+        <p className="text-gray-400 text-center mb-10 max-w-xl mx-auto">
+          Ajans ve müşteri işleri. Kendi ürünlerim{' '}
+          <Link href="/workspace" className="text-blue-400 hover:text-blue-300">
+            Çalışmalarım
+          </Link>{' '}
+          sayfasında.
+        </p>
         <ul className="divide-y divide-blue-400/10 rounded-xl bg-[#232b3a] shadow-lg overflow-hidden">
           {projects.map((project, i) => (
             <li key={i} className="flex flex-col md:flex-row md:items-center gap-4 px-6 py-6 hover:bg-blue-400/5 transition">
@@ -40,18 +48,18 @@ export default function ProjectsPage() {
                   ))}
                 </div>
               </div>
-              <div className="flex-shrink-0 mt-2 md:mt-0">
-                <a
-                  href={project.live || '#'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 transition-transform text-center ${!project.live ? 'opacity-50 cursor-not-allowed pointer-events-none' : 'hover:scale-105'}`}
-                  tabIndex={!project.live ? -1 : 0}
-                  aria-disabled={!project.live}
-                >
-                  Live preview
-                </a>
-              </div>
+              {project.live && (
+                <div className="flex-shrink-0 mt-2 md:mt-0">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
+                  >
+                    Siteyi aç
+                  </a>
+                </div>
+              )}
             </li>
           ))}
         </ul>

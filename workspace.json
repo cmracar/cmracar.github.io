@@ -1,10 +1,20 @@
 [
   {
+    "title": "Yelken",
+    "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, Türkçe ve İngilizce dağarcık. Tamamen çevrimdışı çalışıyor, hesap gerektirmiyor. Play Store yayınına hazırlanıyor.",
+    "detailUrl": "/yelken",
+    "demoUrl": "",
+    "codeUrl": "",
+    "tags": ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"],
+    "isCompleted": false
+  },
+  {
     "title": "CopilotKit Chatbot",
     "description": "CopilotKit Chatbot, OpenAI API'si ile geliştirilmiş bir chatbot uygulamasıdır. Kullanıcıdan gelen mesajlara yanıt veren basit bir chatbot uygulaması. React ve OpenAI API ile hazırlandı.",
-    "demoUrl": "#",
-    "codeUrl": "#",
-    "tags": [ "React", "Next.js", "TypeScript", "CopilotKit", "TailwindCSS" ],
+    "detailUrl": "",
+    "demoUrl": "",
+    "codeUrl": "",
+    "tags": ["React", "Next.js", "TypeScript", "CopilotKit", "TailwindCSS"],
     "isCompleted": false
   }
-] 
+]
