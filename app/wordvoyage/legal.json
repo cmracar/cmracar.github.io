@@ -1,0 +1,245 @@
+{
+  "$generated": "wordvoyage · npm run legal:site — elle düzenleme, kaynak src/i18n/legal.ts",
+  "brand": {
+    "app": "WordVoyage",
+    "publisher": "Cemre Acar",
+    "supportEmail": "cemreacar94@gmail.com",
+    "copyright": "© 2026 Cemre Acar"
+  },
+  "documents": {
+    "tr": {
+      "privacy": {
+        "title": "Gizlilik Politikası",
+        "updated": "Son güncelleme: 5 Eylül 2026",
+        "intro": "WordVoyage hesap açmanızı istemez, adınızı veya e-postanızı toplamaz. Oyun ilerlemeniz yalnızca cihazınızda saklanır. Üçüncü taraflara giden tek veri, reklam gösterimi ve çökme raporları için gereken teknik bilgilerdir; ikisi de aşağıda tek tek sayılmıştır.",
+        "sections": [
+          {
+            "heading": "Cihazınızda kalan veriler",
+            "body": [
+              "Şunlar uygulamanın kendi veritabanında, yalnızca sizde durur; sunucumuza gönderilmez, yedeklenmez, okunmaz:",
+              "• Oyun ilerlemesi: seviye, seri, altın, çözülen kelimeler, tekrar programı",
+              "• Tercihler: tema, dil, ses, titreşim, bildirim ve zorluk ayarları",
+              "• Satın alma durumu ve mağazadan alınan biletler",
+              "Uygulamayı silerseniz bu veriler cihazınızdan da silinir. Ayarlardaki \"Tüm oyun verilerini sıfırla\" ile istediğiniz zaman kendiniz de silebilirsiniz."
+            ]
+          },
+          {
+            "heading": "Bildirimler",
+            "body": [
+              "Günlük hatırlatmalar cihazınızda planlanır. İzin vermezseniz özellik kapalı kalır, oyunun geri kalanı normal çalışır. Bildirim içeriği cihazınızdan çıkmaz."
+            ]
+          },
+          {
+            "heading": "Reklamlar",
+            "body": [
+              "Ücretsiz sürümde Google AdMob reklamları gösterilir. AdMob, reklam gösterebilmek için reklam kimliğinize (iOS: IDFA, Android: Advertising ID), IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişir.",
+              "iOS’ta uygulama, izleme izni vermedikçe IDFA’ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir. Android’de reklam kimliğini cihaz ayarlarından sıfırlayabilir veya kişiselleştirmeyi kapatabilirsiniz.",
+              "Reklamları tamamen kaldırmak için uygulama içinden Premium satın alabilirsiniz.",
+              "Google’ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Satın almalar",
+            "body": [
+              "Premium ve diğer satın almalar Apple App Store ve Google Play üzerinden yapılır. Kart bilgileriniz, adınız ve fatura bilgileriniz bize hiç ulaşmaz; ödemeyi ilgili mağaza yürütür. Uygulama yalnızca \"bu satın alma yapıldı\" bilgisini mağazadan okur ve cihazınıza yazar."
+            ]
+          },
+          {
+            "heading": "Çökme raporları",
+            "body": [
+              "Uygulama beklenmedik şekilde kapanırsa, hatayı düzeltebilmek için teknik bir rapor gönderilir: hata mesajı ve yığın izi, uygulama sürümü, cihaz modeli ve işletim sistemi sürümü.",
+              "Rapor oyun içeriğinizi, kelimelerinizi veya kişisel bilgilerinizi içermez; IP adresi saklanmaz. Raporlar Sentry altyapısında tutulur ve 90 gün sonra silinir."
+            ]
+          },
+          {
+            "heading": "Çocuklar",
+            "body": [
+              "WordVoyage her yaşa uygun bir kelime oyunudur ve çocuklardan bilerek kişisel veri toplamaz. 13 yaşından küçük bir çocuğun verisinin işlendiğini düşünüyorsanız bize yazın; ilgili veriyi sileriz."
+            ]
+          },
+          {
+            "heading": "Haklarınız",
+            "body": [
+              "Kişisel veri toplamadığımız için silinecek bir hesap kaydı yoktur. Yine de KVKK ve GDPR kapsamındaki haklarınızı kullanmak, reklam kimliğinizle ilişkili veriler hakkında bilgi almak veya çökme raporlarınızın silinmesini istemek için bize yazabilirsiniz."
+            ]
+          },
+          {
+            "heading": "Değişiklikler",
+            "body": [
+              "Bu politika değişirse güncel sürümü uygulamada ve yayımlandığı adreste görürsünüz; yukarıdaki tarih yenilenir."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Kullanım Koşulları",
+        "updated": "Son güncelleme: 5 Eylül 2026",
+        "intro": "WordVoyage’ı indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
+        "sections": [
+          {
+            "heading": "Kullanım hakkı",
+            "body": [
+              "WordVoyage’ı kişisel ve ticari olmayan amaçla kullanmanız için devredilemez, münhasır olmayan bir lisans verilir. Uygulamayı kopyalayamaz, kaynak koduna dönüştüremez, kiralayamaz veya yeniden dağıtamazsınız."
+            ]
+          },
+          {
+            "heading": "İçerik",
+            "body": [
+              "Uygulamadaki kelime ipuçları, tanımlar, örnek cümleler ve Türkçe karşılıklar WordVoyage için özgün olarak yazılmıştır. Oyun içeriği, arayüz metinleri, logo ve görseller telif hakkıyla korunur."
+            ]
+          },
+          {
+            "heading": "Satın almalar",
+            "body": [
+              "• Premium tek seferlik bir satın almadır; abonelik değildir.",
+              "• Oyun içi altın ve biletler yalnızca uygulama içinde geçerlidir, gerçek para karşılığı değildir, geri ödenmez ve devredilemez.",
+              "• Ödeme ve iade işlemleri Apple App Store veya Google Play üzerinden yürür; iade talepleri ilgili mağazanın kurallarına tabidir.",
+              "• Satın almanızı yeni bir cihazda geri yüklemek için Ayarlar’daki \"Satın alımları geri yükle\" seçeneğini kullanabilirsiniz."
+            ]
+          },
+          {
+            "heading": "Reklamlar",
+            "body": [
+              "Ücretsiz sürüm reklam içerir. Reklam içeriği Google AdMob tarafından belirlenir; gösterilen reklamların içeriğinden yayıncı sorumlu değildir."
+            ]
+          },
+          {
+            "heading": "Hizmetin sürekliliği",
+            "body": [
+              "Uygulama \"olduğu gibi\" sunulur. Kesintisiz veya hatasız çalışacağı garanti edilmez. Uygulamanın bir bölümünü veya tamamını değiştirme ya da sonlandırma hakkı saklıdır; premium satın almış kullanıcılar böyle bir durumda önceden bilgilendirilir."
+            ]
+          },
+          {
+            "heading": "Sorumluluk sınırı",
+            "body": [
+              "Yürürlükteki hukukun izin verdiği ölçüde, uygulamanın kullanımından doğan dolaylı zararlardan sorumluluk kabul edilmez. Tüketici olarak sahip olduğunuz yasal haklar bu maddeden etkilenmez."
+            ]
+          },
+          {
+            "heading": "Uygulanacak hukuk",
+            "body": [
+              "Bu koşullara Türkiye Cumhuriyeti hukuku uygulanır. Tüketici olarak bulunduğunuz ülkenin zorunlu koruyucu hükümleri saklıdır."
+            ]
+          }
+        ]
+      }
+    },
+    "en": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "updated": "Last updated: 5 September 2026",
+        "intro": "WordVoyage does not ask you to create an account and does not collect your name or email address. Your game progress stays on your device. The only data that leaves it is the technical information needed to serve ads and report crashes — both listed in full below.",
+        "sections": [
+          {
+            "heading": "Data that stays on your device",
+            "body": [
+              "The following is stored in the app’s own database and never sent to us, backed up by us, or read by us:",
+              "• Game progress: level, streak, gold, solved words, review schedule",
+              "• Preferences: theme, language, sound, haptics, notification and difficulty settings",
+              "• Purchase state and tickets bought in the in-game store",
+              "Deleting the app removes this data from your device. You can also erase it yourself at any time with \"Reset all game data\" in Settings."
+            ]
+          },
+          {
+            "heading": "Notifications",
+            "body": [
+              "Daily reminders are scheduled on your device. If you decline the permission the feature stays off and the rest of the app works normally. Notification content never leaves your device."
+            ]
+          },
+          {
+            "heading": "Advertising",
+            "body": [
+              "The free version shows Google AdMob ads. To serve them, AdMob accesses your advertising identifier (iOS: IDFA, Android: Advertising ID), IP address, approximate location at country/city level, device and OS information, and ad interactions.",
+              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation. On Android you can reset your advertising ID or turn off personalisation in system settings.",
+              "To remove ads entirely you can buy Premium from inside the app.",
+              "How Google handles this data: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Purchases",
+            "body": [
+              "Premium and other purchases go through the Apple App Store and Google Play. Your card details, name and billing information never reach us; the store handles payment. The app only reads \"this purchase was made\" from the store and records it on your device."
+            ]
+          },
+          {
+            "heading": "Crash reports",
+            "body": [
+              "If the app closes unexpectedly, a technical report is sent so the fault can be fixed: the error message and stack trace, app version, device model and OS version.",
+              "The report contains no game content, no words you have solved and no personal information; IP addresses are not stored. Reports are held on Sentry infrastructure and deleted after 90 days."
+            ]
+          },
+          {
+            "heading": "Children",
+            "body": [
+              "WordVoyage is a word game suitable for all ages and does not knowingly collect personal data from children. If you believe data belonging to a child under 13 has been processed, write to us and we will delete it."
+            ]
+          },
+          {
+            "heading": "Your rights",
+            "body": [
+              "Because we hold no personal data, there is no account record to delete. You may still exercise your rights under GDPR and Turkish data protection law, ask about data associated with your advertising identifier, or request deletion of your crash reports by writing to us."
+            ]
+          },
+          {
+            "heading": "Changes",
+            "body": [
+              "If this policy changes you will see the current version in the app and at its published address; the date above is renewed."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Terms of Use",
+        "updated": "Last updated: 5 September 2026",
+        "intro": "By downloading or using WordVoyage you accept these terms.",
+        "sections": [
+          {
+            "heading": "Licence",
+            "body": [
+              "You are granted a non-transferable, non-exclusive licence to use WordVoyage for personal, non-commercial purposes. You may not copy, decompile, rent out or redistribute the app."
+            ]
+          },
+          {
+            "heading": "Content",
+            "body": [
+              "The clues, definitions, example sentences and meanings in the app were written originally for WordVoyage. Game content, interface text, logo and artwork are protected by copyright."
+            ]
+          },
+          {
+            "heading": "Purchases",
+            "body": [
+              "• Premium is a one-time purchase, not a subscription.",
+              "• In-game gold and tickets are valid only inside the app, have no cash value, are non-refundable and non-transferable.",
+              "• Payment and refunds go through the Apple App Store or Google Play and follow that store’s rules.",
+              "• To restore your purchase on a new device, use \"Restore purchases\" in Settings."
+            ]
+          },
+          {
+            "heading": "Advertising",
+            "body": [
+              "The free version contains ads. Ad content is determined by Google AdMob; the publisher is not responsible for the content of the ads shown."
+            ]
+          },
+          {
+            "heading": "Availability",
+            "body": [
+              "The app is provided \"as is\". It is not guaranteed to run without interruption or fault. The right to change or discontinue part or all of the app is reserved; users who bought premium are told in advance in such a case."
+            ]
+          },
+          {
+            "heading": "Limitation of liability",
+            "body": [
+              "To the extent permitted by applicable law, no liability is accepted for indirect damages arising from use of the app. Your statutory rights as a consumer are not affected."
+            ]
+          },
+          {
+            "heading": "Governing law",
+            "body": [
+              "These terms are governed by the law of the Republic of Türkiye. Mandatory consumer protections of your country of residence are reserved."
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
