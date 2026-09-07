@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import ProfileImage from '@/public/new-pp.png'
-import { Code, Smartphone, PenTool } from 'lucide-react'
+import { Code, Smartphone, PenTool, ArrowRight } from 'lucide-react'
 import Header from './components/Header'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -76,6 +76,61 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
+      </section>
+
+      {/* Öne çıkan iş: ziyaretçi ana sayfada somut bir şey görmeli, üç genel
+          kart değil. Tek iş gösteriliyor — vitrin bir liste değil. */}
+      <section className="container mx-auto px-4 md:px-8 pb-24">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10">Öne Çıkan</h2>
+        <Link
+          href="/yelken"
+          className="group block rounded-2xl border border-blue-400/10 bg-[#232b3a] overflow-hidden shadow-lg shadow-blue-500/5 hover:border-blue-400/30 transition-all no-underline"
+        >
+          <div className="flex flex-col md:flex-row items-stretch">
+            <div className="flex-1 p-8 md:p-10">
+              <div className="flex items-center gap-3 flex-wrap mb-4">
+                <h3 className="text-2xl font-bold text-white">Yelken</h3>
+                <span className="px-2.5 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-semibold">
+                  Yayına hazırlanıyor
+                </span>
+              </div>
+              <p className="text-gray-300 leading-relaxed max-w-xl">
+                Kendi ürünüm: bir kelime bulmacası ve istersen bir dil öğretmeni. Dört oyun modu,
+                aralıklı tekrar programı, 3.500 kelimelik Türkçe ve İngilizce dağarcık. Tamamen
+                çevrimdışı çalışıyor.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-5">
+                {['React Native', 'Expo', 'TypeScript', 'SQLite'].map(tech => (
+                  <span
+                    key={tech}
+                    className="bg-blue-500/10 text-blue-300 px-2 py-1 rounded text-xs font-mono"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <span className="inline-flex items-center gap-2 mt-7 text-blue-400 font-medium group-hover:gap-3 transition-all">
+                Projeyi incele <ArrowRight size={18} />
+              </span>
+            </div>
+            <div className="md:w-[42%] bg-gradient-to-br from-[#1C1238] to-[#0A0714] flex items-end justify-center gap-3 px-6 pt-8 overflow-hidden">
+              <Image
+                src="/yelken/crossword.png"
+                alt="Yelken — kare bulmaca ekranı"
+                width={560}
+                height={1132}
+                className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-4 group-hover:translate-y-2 transition-transform"
+              />
+              <Image
+                src="/yelken/wordhunt.png"
+                alt="Yelken — kelime avı ekranı"
+                width={560}
+                height={1132}
+                className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-10 group-hover:translate-y-7 transition-transform"
+              />
+            </div>
+          </div>
+        </Link>
       </section>
 
       {/* Skills Section */}
