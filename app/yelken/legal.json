@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 5 Eylül 2026",
+        "updated": "Son güncelleme: 11 Eylül 2026",
         "intro": "Yelken hesap açmanızı istemez, adınızı veya e-postanızı toplamaz. Oyun ilerlemeniz yalnızca cihazınızda saklanır. Üçüncü taraflara giden tek veri, reklam gösterimi ve çökme raporları için gereken teknik bilgilerdir; ikisi de aşağıda tek tek sayılmıştır.",
         "sections": [
           {
@@ -33,7 +33,8 @@
             "heading": "Reklamlar",
             "body": [
               "Ücretsiz sürümde Google AdMob reklamları gösterilir. AdMob, reklam gösterebilmek için reklam kimliğinize (iOS: IDFA, Android: Advertising ID), IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişir.",
-              "iOS’ta uygulama, izleme izni vermedikçe IDFA’ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir. Android’de reklam kimliğini cihaz ayarlarından sıfırlayabilir veya kişiselleştirmeyi kapatabilirsiniz.",
+              "iOS’ta uygulama, izleme izni vermedikçe IDFA’ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir.",
+              "Bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık ve ABD’nin ilgili eyaletleri) uygulama açılışta Google’ın onay ekranını gösterir ve onayınız alınmadan hiçbir reklam isteği yapılmaz. Kararınızı sonradan “Ayarlar → Reklam gizliliği seçenekleri” üzerinden değiştirebilir, verdiğiniz onayı geri çekebilirsiniz. Her yerde ayrıca reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya kişiselleştirmeyi oradan kapatabilirsiniz.",
               "Reklamları tamamen kaldırmak için uygulama içinden Premium satın alabilirsiniz.",
               "Google’ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
             ]
@@ -60,7 +61,8 @@
           {
             "heading": "Haklarınız",
             "body": [
-              "Kişisel veri toplamadığımız için silinecek bir hesap kaydı yoktur. Yine de KVKK ve GDPR kapsamındaki haklarınızı kullanmak, reklam kimliğinizle ilişkili veriler hakkında bilgi almak veya çökme raporlarınızın silinmesini istemek için bize yazabilirsiniz."
+              "Kişisel veri toplamadığımız için silinecek bir hesap kaydı yoktur. Yine de KVKK ve GDPR kapsamındaki haklarınızı kullanmak, reklam kimliğinizle ilişkili veriler hakkında bilgi almak veya çökme raporlarınızın silinmesini istemek için bize yazabilirsiniz.",
+              "ABD’de ikamet ediyorsanız: kişisel bilgilerinizi satmıyor ve para karşılığı paylaşmıyoruz. Kaliforniya (CCPA/CPRA) ile benzer eyalet yasaları kapsamında, kişiselleştirilmiş reklam için verinizin paylaşılmasından çıkma (opt-out), bilgi talep etme ve silinmesini isteme haklarınız var. Çıkmanın en hızlı yolu “Ayarlar → Reklam gizliliği seçenekleri”; ayrıca bize de yazabilirsiniz. Bu hakları kullandığınız için size farklı davranmayız — oyunun tamamı aynı biçimde açık kalır."
             ]
           },
           {
@@ -127,7 +129,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 5 September 2026",
+        "updated": "Last updated: 11 September 2026",
         "intro": "Yelken does not ask you to create an account and does not collect your name or email address. Your game progress stays on your device. The only data that leaves it is the technical information needed to serve ads and report crashes — both listed in full below.",
         "sections": [
           {
@@ -150,7 +152,8 @@
             "heading": "Advertising",
             "body": [
               "The free version shows Google AdMob ads. To serve them, AdMob accesses your advertising identifier (iOS: IDFA, Android: Advertising ID), IP address, approximate location at country/city level, device and OS information, and ad interactions.",
-              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation. On Android you can reset your advertising ID or turn off personalisation in system settings.",
+              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation.",
+              "Where the law of your location requires it (the European Economic Area, the United Kingdom and the applicable US states) the app shows Google’s consent screen at startup, and no ad is requested until you have answered it. You can change your decision, or withdraw consent, at any time from “Settings → Ad privacy options”. Everywhere else you can still reset your advertising identifier or turn off personalisation in your device settings.",
               "To remove ads entirely you can buy Premium from inside the app.",
               "How Google handles this data: policies.google.com/technologies/partner-sites"
             ]
@@ -177,7 +180,8 @@
           {
             "heading": "Your rights",
             "body": [
-              "Because we hold no personal data, there is no account record to delete. You may still exercise your rights under GDPR and Turkish data protection law, ask about data associated with your advertising identifier, or request deletion of your crash reports by writing to us."
+              "Because we hold no personal data, there is no account record to delete. You may still exercise your rights under GDPR and Turkish data protection law, ask about data associated with your advertising identifier, or request deletion of your crash reports by writing to us.",
+              "If you live in the United States: we do not sell your personal information and we do not share it for money. Under the California Consumer Privacy Act (CCPA/CPRA) and comparable state laws you have the right to opt out of your data being shared for personalised advertising, to ask what is held, and to request deletion. The fastest way to opt out is “Settings → Ad privacy options”; you may also write to us. We will not treat you differently for exercising these rights — the whole game stays equally available."
             ]
           },
           {
