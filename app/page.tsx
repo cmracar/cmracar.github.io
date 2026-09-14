@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import ProfileImage from '@/public/new-pp.png'
+import ProfileImage from '@/public/avatar.png'
 import { Code, Smartphone, PenTool, ArrowRight } from 'lucide-react'
 import Header from './components/Header'
 import { motion } from 'framer-motion'
@@ -40,9 +40,10 @@ export default function Home() {
             Merhaba, Ben <br />
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Cemre ACAR</span>
           </h1>
-          <h2 className="text-[22px] font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Front-End Developer | React & Next.js | AI-Powered UI Solutions</h2>
+          <h2 className="text-[22px] font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Front-End Developer @ Carbon Consulting & Beyond Guard</h2>
           <p className="text-gray-300 max-w-xl">
-            Modern web teknolojileri ile kullanıcı deneyimini ön planda tutan, yaratıcı ve yenilikçi çözümler üreten bir frontend geliştiricisiyim.
+            Carbon Consulting ve Beyond Guard&apos;da front-end geliştirici olarak çalışıyorum. Bunun yanında
+            kendi mobil uygulamamı (Yelken) geliştiriyor ve bağımsız web projeleri yürütüyorum.
           </p>
           <div className="flex gap-4 mt-6">
             <a
@@ -72,7 +73,7 @@ export default function Home() {
               transition={{ duration: 1, ease: 'easeOut' }}
               className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-400/40 shadow-xl"
             >
-              <Image src={ProfileImage} alt="Cemre ACAR" fill className="object-cover" priority />
+              <Image src={ProfileImage} alt="Cemre Acar" fill className="object-cover" priority />
             </motion.div>
           </div>
         </div>

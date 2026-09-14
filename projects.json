@@ -9,7 +9,8 @@
             "React",
             "Redux Toolkit"
         ],
-        "isCompleted": false
+        "isCompleted": false,
+        "category": "carbon"
     },
     {
         "projectName": "Epiuse Chat UX/UI",
@@ -24,7 +25,8 @@
             "Tailwind CSS",
             "Next Auth"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "carbon"
     },
     {
         "projectName": "BeyondGuard UX/UI",
@@ -40,7 +42,25 @@
             "Next Auth",
             "Figma"
         ],
-        "isCompleted": false
+        "isCompleted": false,
+        "category": "beyondguard"
+    },
+    {
+        "projectName": "BeyondChat UX/UI",
+        "description": "BeyondGuard ürünü için geliştirilen, gerçek zamanlı mesajlaşma ve destek deneyimi sunan sohbet arayüzü.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Next.js",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "Next Auth",
+            "Figma"
+        ],
+        "isCompleted": false,
+        "category": "beyondguard"
     },
     {
         "projectName": "Carbonetz UX/UI",
@@ -56,7 +76,8 @@
             "Next Auth",
             "Figma"
         ],
-        "isCompleted": false
+        "isCompleted": false,
+        "category": "carbon"
     },
     {
         "projectName": "Akbank Hazine İzleme Sistemi UX/UI",
@@ -71,7 +92,22 @@
             "Highcharts",
             "Redux Toolkit"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "carbon"
+    },
+    {
+        "projectName": "Yelken",
+        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, Türkçe ve İngilizce dağarcık. Tamamen çevrimdışı çalışıyor, hesap gerektirmiyor. Play Store yayınına hazırlanıyor.",
+        "preview": "/yelken",
+        "technologies": [
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "SQLite",
+            "Zustand"
+        ],
+        "isCompleted": false,
+        "category": "freelance"
     },
     {
         "projectName": "Turklerden UX/UI",
@@ -85,7 +121,8 @@
             "Tailwind CSS",
             "Redux Toolkit"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "freelance"
     },
     {
         "projectName": "Tbot Analytic Screens UI",
@@ -97,7 +134,8 @@
             "React",
             "Highcharts"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "carbon"
     },
     {
         "projectName": "Glosa UX/UI",
@@ -109,7 +147,8 @@
             "React",
             "Context API"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "carbon"
     },
     {
         "projectName": "DiasNDT Website",
@@ -120,7 +159,8 @@
             "CSS",
             "Django"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "freelance"
     },
     {
         "projectName": "AAT Hukuk Website",
@@ -131,6 +171,19 @@
             "CSS",
             "Django"
         ],
-        "isCompleted": true
+        "isCompleted": true,
+        "category": "freelance"
+    },
+    {
+        "projectName": "Evde Gelişim",
+        "description": "Online eğitim ve kişisel gelişim platformu. Kurs paketleri, canlı danışmanlık randevuları ve kesintisiz izleme deneyimiyle uçtan uca bir öğrenme deneyimi sunuyor.",
+        "preview": "https://evdegelisim.com",
+        "technologies": [
+            "React",
+            "Next.js",
+            "Tailwind CSS"
+        ],
+        "isCompleted": true,
+        "category": "freelance"
     }
 ]

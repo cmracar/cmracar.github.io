@@ -4,9 +4,16 @@ import React from 'react'
 import Header from '@/app/components/Header'
 import { Briefcase, GraduationCap, Mail, Linkedin, Github, Twitter, MapPin, BookText, Star, Languages } from 'lucide-react'
 import Image from 'next/image'
-import ProfileImage from '@/public/new-pp.png'
+import ProfileImage from '@/public/avatar.png'
 
 const experiences = [
+    {
+        company: 'Beyond Guard',
+        position: 'Frontend Developer',
+        date: '2024 - Devam',
+        desc: 'Siber güvenlik odaklı ürünün arayüzünü React ve Next.js ile geliştiriyorum, UI/UX tasarımlarını uyguluyorum.',
+        icon: <Briefcase size={28} className="text-cyan-400" />,
+    },
     {
         company: 'Carbon Consulting',
         position: 'Senior Frontend Developer',
@@ -65,7 +72,7 @@ export default function AboutPage() {
                     />
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center">Cemre Acar</h1>
-                <p className="text-blue-300 text-lg mb-4 text-center">Front-End Developer | React & Next.js | AI-Powered UI Solutions</p>
+                <p className="text-blue-300 text-lg mb-4 text-center">Front-End Developer @ Carbon Consulting & Beyond Guard</p>
                 <div className="flex flex-wrap gap-3 justify-center mb-6">
                     <span className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-3 py-1 rounded-full text-xs"><MapPin size={16} /> İzmir</span>
                     <span className="flex items-center gap-2 bg-purple-500/10 text-purple-300 px-3 py-1 rounded-full text-xs"><Star size={16} /> 4+ Yıl</span>
