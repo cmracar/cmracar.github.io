@@ -42,8 +42,8 @@ export default function Home() {
           </h1>
           <h2 className="text-[22px] font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Front-End Developer @ Carbon Consulting & Beyond Guard</h2>
           <p className="text-gray-300 max-w-xl">
-            Carbon Consulting ve Beyond Guard&apos;da front-end geliştirici olarak çalışıyorum. Bunun yanında
-            kendi mobil uygulamamı (Yelken) geliştiriyor ve bağımsız web projeleri yürütüyorum.
+            Carbon Consulting & Beyond Guard&apos;da front-end geliştirici olarak çalışıyorum. Bunun
+            yanında kendi mobil uygulamalarımı geliştiriyor ve bağımsız web projeleri yürütüyorum.
           </p>
           <div className="flex gap-4 mt-6">
             <a

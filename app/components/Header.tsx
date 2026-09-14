@@ -8,7 +8,6 @@ const menuItems = [
   { label: 'Anasayfa', href: '/' },
   { label: 'Hakkımda', href: '/about' },
   { label: 'Projelerim', href: '/projects' },
-  { label: 'Çalışmalarım', href: '/workspace' },
 ]
 
 export default function Header() {

@@ -39,11 +39,7 @@ export default function ProjectsPage() {
       <section className="container mx-auto px-4 md:px-8 pt-16 pb-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-3 text-center">Projelerim</h1>
         <p className="text-gray-400 text-center mb-14 max-w-xl mx-auto">
-          Çalıştığım şirketler ve bağımsız yürüttüğüm işler. Diğer denemelerim{' '}
-          <Link href="/workspace" className="text-blue-400 hover:text-blue-300">
-            Çalışmalarım
-          </Link>{' '}
-          sayfasında.
+          Çalıştığım şirketler ve bağımsız yürüttüğüm işler.
         </p>
         <div className="space-y-14">
           {groups.map((group) => (
