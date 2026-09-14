@@ -40,7 +40,7 @@ export default function Home() {
             Merhaba, Ben <br />
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Cemre ACAR</span>
           </h1>
-          <h2 className="text-[22px] font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Front-End Developer @ Carbon Consulting & Beyond Guard</h2>
+          <h2 className="text-[22px] font-light bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Senior Front-End Developer @ Carbon Consulting & Beyond Guard</h2>
           <p className="text-gray-300 max-w-xl">
             Carbon Consulting & Beyond Guard&apos;da front-end geliştirici olarak çalışıyorum. Bunun
             yanında kendi mobil uygulamalarımı geliştiriyor ve bağımsız web projeleri yürütüyorum.
