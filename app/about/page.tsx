@@ -9,9 +9,9 @@ import ProfileImage from '@/public/avatar.png'
 const experiences = [
     {
         company: 'Beyond Guard',
-        position: 'Frontend Developer',
+        position: 'Senior Frontend Developer',
         date: '2024 - Devam',
-        desc: 'Kurumsal yapay zeka güvenliği platformunun (beyondguard.ai) arayüzünü geliştiriyorum: LLM\'e giden prompt/RAG/ajan çağrıları ve LLM\'den dönen model çıktıları için dashboard, canlı izleme ve log ekranlarını React ve Next.js ile kodluyorum.',
+        desc: 'Beyond Guard Kurumsal yapay zeka güvenliği platformunun arayüzünü geliştiriyorum.',
         icon: <Briefcase size={28} className="text-cyan-400" />,
     },
     {
