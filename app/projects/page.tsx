@@ -1,6 +1,7 @@
 'use client'
 import Header from '../components/Header'
 import Link from 'next/link'
+import { useState } from 'react'
 import projectsData from '../../projects.json'
 
 type Category = 'carbon' | 'beyondguard' | 'freelance'
@@ -33,62 +34,78 @@ const groups = CATEGORY_ORDER.map((category) => ({
 })).filter((g) => g.projects.length > 0)
 
 export default function ProjectsPage() {
+  const [activeTab, setActiveTab] = useState<Category>(groups[0].category)
+  const activeGroup = groups.find((g) => g.category === activeTab) ?? groups[0]
+
   return (
     <main className="min-h-screen bg-[#181f2a] text-white">
       <Header />
       <section className="container mx-auto px-4 md:px-8 pt-16 pb-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-3 text-center">Projelerim</h1>
-        <p className="text-gray-400 text-center mb-14 max-w-xl mx-auto">
+        <p className="text-gray-400 text-center mb-10 max-w-xl mx-auto">
           Çalıştığım şirketler ve bağımsız yürüttüğüm işler.
         </p>
-        <div className="space-y-14">
+
+        {/* Sekmeler */}
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
           {groups.map((group) => (
-            <div key={group.category}>
-              <h2 className="text-xl md:text-2xl font-bold mb-5 text-blue-300">{group.label}</h2>
-              <ul className="divide-y divide-blue-400/10 rounded-xl bg-[#232b3a] shadow-lg overflow-hidden">
-                {group.projects.map((project, i) => (
-                  <li key={i} className="flex flex-col md:flex-row md:items-center gap-4 px-6 py-6 hover:bg-blue-400/5 transition">
-                    <div className="flex-1">
-                      <div className="flex flex-col md:flex-row md:items-center gap-2">
-                        <h3 className="text-lg font-bold">{project.title}</h3>
-                        <span className={`ml-0 md:ml-4 px-2 py-1 rounded text-xs font-semibold ${project.status === 'Tamamlandı' ? 'bg-green-600/20 text-green-400' : 'bg-yellow-600/20 text-yellow-400'}`}>
-                          {project.status}
-                        </span>
-                      </div>
-                      <p className="text-gray-300 text-sm mt-2">{project.desc}</p>
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        {project.technologies.map((tech, idx) => (
-                          <span key={idx} className="bg-blue-500/10 text-blue-300 px-2 py-1 rounded text-xs font-mono">{tech}</span>
-                        ))}
-                      </div>
-                    </div>
-                    {project.live && (
-                      <div className="flex-shrink-0 mt-2 md:mt-0">
-                        {isInternalLink(project.live) ? (
-                          <Link
-                            href={project.live}
-                            className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
-                          >
-                            İncele
-                          </Link>
-                        ) : (
-                          <a
-                            href={project.live}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
-                          >
-                            Siteyi aç
-                          </a>
-                        )}
-                      </div>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <button
+              key={group.category}
+              onClick={() => setActiveTab(group.category)}
+              aria-pressed={activeTab === group.category}
+              className={`px-5 py-2.5 rounded-full text-sm font-semibold border transition-all cursor-pointer ${
+                activeTab === group.category
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent shadow-md shadow-blue-500/20'
+                  : 'bg-white/5 text-gray-300 border-blue-400/20 hover:bg-blue-400/10 hover:text-white'
+              }`}
+            >
+              {group.label}
+              <span className="ml-2 text-xs opacity-70">{group.projects.length}</span>
+            </button>
           ))}
         </div>
+
+        <ul className="divide-y divide-blue-400/10 rounded-xl bg-[#232b3a] shadow-lg overflow-hidden">
+          {activeGroup.projects.map((project, i) => (
+            <li key={i} className="flex flex-col md:flex-row md:items-center gap-4 px-6 py-6 hover:bg-blue-400/5 transition">
+              <div className="flex-1">
+                <div className="flex flex-col md:flex-row md:items-center gap-2">
+                  <h3 className="text-lg font-bold">{project.title}</h3>
+                  <span className={`ml-0 md:ml-4 px-2 py-1 rounded text-xs font-semibold ${project.status === 'Tamamlandı' ? 'bg-green-600/20 text-green-400' : 'bg-yellow-600/20 text-yellow-400'}`}>
+                    {project.status}
+                  </span>
+                </div>
+                <p className="text-gray-300 text-sm mt-2">{project.desc}</p>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {project.technologies.map((tech, idx) => (
+                    <span key={idx} className="bg-blue-500/10 text-blue-300 px-2 py-1 rounded text-xs font-mono">{tech}</span>
+                  ))}
+                </div>
+              </div>
+              {project.live && (
+                <div className="flex-shrink-0 mt-2 md:mt-0">
+                  {isInternalLink(project.live) ? (
+                    <Link
+                      href={project.live}
+                      className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
+                    >
+                      İncele
+                    </Link>
+                  ) : (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
+                    >
+                      Siteyi aç
+                    </a>
+                  )}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
       </section>
     </main>
   )
