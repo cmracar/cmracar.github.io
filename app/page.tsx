@@ -97,8 +97,8 @@ export default function Home() {
               </div>
               <p className="text-gray-300 leading-relaxed max-w-xl">
                 Kendi ürünüm: bir kelime bulmacası ve istersen bir dil öğretmeni. Dört oyun modu,
-                aralıklı tekrar programı, 3.500 kelimelik Türkçe ve İngilizce dağarcık. Tamamen
-                çevrimdışı çalışıyor.
+                aralıklı tekrar programı, 6.000&apos;den fazla kelimelik Türkçe, İngilizce ve
+                İspanyolca dağarcık. Tamamen çevrimdışı çalışıyor.
               </p>
               <div className="flex flex-wrap gap-2 mt-5">
                 {['React Native', 'Expo', 'TypeScript', 'SQLite'].map(tech => (
@@ -118,15 +118,15 @@ export default function Home() {
               <Image
                 src="/yelken/crossword.png"
                 alt="Yelken — kare bulmaca ekranı"
-                width={560}
-                height={1132}
+                width={1080}
+                height={1920}
                 className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-4 group-hover:translate-y-2 transition-transform"
               />
               <Image
                 src="/yelken/wordhunt.png"
                 alt="Yelken — kelime avı ekranı"
-                width={560}
-                height={1132}
+                width={1080}
+                height={1920}
                 className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-10 group-hover:translate-y-7 transition-transform"
               />
             </div>

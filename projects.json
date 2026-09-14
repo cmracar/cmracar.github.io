@@ -1,4 +1,17 @@
 [
+    {
+        "projectName": "Artifin Teftiş AI App UI/UX",
+        "description": "Vakıf Katılım'ın Artifin ürün ailesi için geliştirilen, yapay zeka destekli teftiş (denetim) uygulamasının arayüzü.",
+        "preview": "",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Redux Toolkit"
+        ],
+        "isCompleted": false,
+        "category": "carbon"
+    },
      {
         "projectName": "Vakıf Katılım Artifin Backoffice UI",
         "description": "Vakıf Katılım Bankası'nın Artifin uygulaması için geliştirilmiş backoffice arayüzü.",
@@ -30,7 +43,7 @@
     },
     {
         "projectName": "BeyondGuard UX/UI",
-        "description": "Siber güvenlik odaklı, kullanıcı arayüzü ve deneyimi ön planda tutularak geliştirilen bir web uygulaması.",
+        "description": "Kurumsal yapay zeka güvenliği için kontrol paneli (beyondguard.ai). LLM'e giden prompt, RAG ve ajan/araç çağrıları ile LLM'den dönen model çıktıları denetleniyor; dashboard, canlı izleme ve log ekranlarının arayüzünü geliştirdim.",
         "preview": "",
         "technologies": [
             "HTML",
@@ -97,7 +110,7 @@
     },
     {
         "projectName": "Yelken",
-        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, Türkçe ve İngilizce dağarcık. Tamamen çevrimdışı çalışıyor, hesap gerektirmiyor. Play Store yayınına hazırlanıyor.",
+        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, Türkçe, İngilizce ve İspanyolca dağarcık. Tamamen çevrimdışı çalışıyor, hesap gerektirmiyor. Play Store yayınına hazırlanıyor.",
         "preview": "/yelken",
         "technologies": [
             "React Native",

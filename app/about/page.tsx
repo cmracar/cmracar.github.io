@@ -11,7 +11,7 @@ const experiences = [
         company: 'Beyond Guard',
         position: 'Frontend Developer',
         date: '2024 - Devam',
-        desc: 'Siber güvenlik odaklı ürünün arayüzünü React ve Next.js ile geliştiriyorum, UI/UX tasarımlarını uyguluyorum.',
+        desc: 'Kurumsal yapay zeka güvenliği platformunun (beyondguard.ai) arayüzünü geliştiriyorum: LLM\'e giden prompt/RAG/ajan çağrıları ve LLM\'den dönen model çıktıları için dashboard, canlı izleme ve log ekranlarını React ve Next.js ile kodluyorum.',
         icon: <Briefcase size={28} className="text-cyan-400" />,
     },
     {

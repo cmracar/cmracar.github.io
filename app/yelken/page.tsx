@@ -60,6 +60,8 @@ const shots = [
   { src: '/yelken/crossword.png', title: 'Kare Bulmaca', desc: 'İpuçlarından kesişen kelimeleri yerleştir.' },
   { src: '/yelken/wordhunt.png', title: 'Kelime Avı', desc: 'Izgarada gizlenmiş kelimeleri parmağınla çiz.' },
   { src: '/yelken/voyage.png', title: 'Sefer', desc: 'Altı liman, üç erzak. Kaybedilebilen bir tur.' },
+  { src: '/yelken/ship.png', title: 'Gemi', desc: 'Oynadıkça büyüyen, kalıcı kademelerle gelişen bir yelkenli.' },
+  { src: '/yelken/sailor.png', title: 'Gemici', desc: 'Rütbeni taşı, kazandığın kıyafetlerle kendine göre giydir.' },
   { src: '/yelken/collection.png', title: 'Koleksiyon', desc: 'Rütbe ve rozetlerle ilerlemeni takip et.' },
 ]
 
@@ -153,14 +155,14 @@ export default function YelkenPage() {
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-8">Ekranlar</h2>
           {/* Dar ekranda yatay kaydırma: telefon görselleri küçültülünce okunmuyor. */}
-          <div className="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-4">
+          <div className="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-3">
             {shots.map(shot => (
               <figure key={shot.src} className="shrink-0 w-52 md:w-auto">
                 <Image
                   src={shot.src}
                   alt={`Yelken — ${shot.title}`}
-                  width={560}
-                  height={1132}
+                  width={1080}
+                  height={1920}
                   className="rounded-xl border border-white/10 shadow-xl shadow-black/40 w-full h-auto"
                 />
                 <figcaption className="mt-3">
