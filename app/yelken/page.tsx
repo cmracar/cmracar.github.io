@@ -9,8 +9,9 @@ import {
   Repeat,
   Grid3x3,
   Search,
-  Skull,
+  Anchor,
   Route,
+  Trophy,
 } from 'lucide-react'
 import Header from '@/app/components/Header'
 import legal from './legal.json'
@@ -57,26 +58,27 @@ function Mark({ size = 96 }: { size?: number }) {
 }
 
 const shots = [
-  { src: '/yelken/crossword.png', title: 'Kare Bulmaca', desc: 'İpuçlarından kesişen kelimeleri yerleştir.' },
+  { src: '/yelken/crossword.png', title: 'Kesişen Rotalar', desc: 'İpuçlarından kesişen kelimeleri yerleştir.' },
   { src: '/yelken/wordhunt.png', title: 'Kelime Avı', desc: 'Izgarada gizlenmiş kelimeleri parmağınla çiz.' },
   { src: '/yelken/voyage.png', title: 'Sefer', desc: 'Altı liman, üç erzak. Kaybedilebilen bir tur.' },
   { src: '/yelken/ship.png', title: 'Gemi', desc: 'Oynadıkça büyüyen, kalıcı kademelerle gelişen bir yelkenli.' },
   { src: '/yelken/sailor.png', title: 'Gemici', desc: 'Rütbeni taşı, kazandığın kıyafetlerle kendine göre giydir.' },
-  { src: '/yelken/collection.png', title: 'Koleksiyon', desc: 'Rütbe ve rozetlerle ilerlemeni takip et.' },
+  { src: '/yelken/collection.png', title: 'Koleksiyon', desc: 'Rütbe, rozetler ve online sıralamadaki yerin.' },
 ]
 
 const modes = [
-  { icon: <Grid3x3 size={20} />, name: 'Kare Bulmaca' },
+  { icon: <Grid3x3 size={20} />, name: 'Kesişen Rotalar' },
   { icon: <Search size={20} />, name: 'Kelime Avı' },
-  { icon: <Skull size={20} />, name: 'Adam Asmaca' },
+  { icon: <Anchor size={20} />, name: 'İskele Düğümü' },
   { icon: <Route size={20} />, name: 'Sefer' },
+  { icon: <Trophy size={20} />, name: 'Sıralama' },
 ]
 
 const features = [
   {
     icon: <Languages size={22} className="text-cyan-300" />,
-    title: 'İki dil ekseni',
-    desc: 'Arayüz dilini ve bulmaca dilini ayrı seçersin. Aynıysa saf kelime oyunu, farklıysa dil öğrenme.',
+    title: 'Üç dil, dokuz kombinasyon',
+    desc: 'Türkçe, İngilizce ve İspanyolca. Arayüz ve bulmaca dilini ayrı seçersin: aynıysa saf kelime oyunu, farklıysa dil öğrenme.',
   },
   {
     icon: <Repeat size={22} className="text-purple-300" />,
@@ -84,13 +86,26 @@ const features = [
     desc: 'Çözdüğün kelimeler aralıklı tekrar programına girer. Bildiklerin seyrekleşir, zorlandıkların geri gelir.',
   },
   {
+    icon: <Trophy size={22} className="text-yellow-300" />,
+    title: 'Online sıralama',
+    desc: 'Apple ya da Google ile giriş yap, çözdükçe puan topla, genel ve haftalık sıralamada yerini gör.',
+  },
+  {
     icon: <Wifi size={22} className="text-blue-300" />,
-    title: 'İnternet gerekmez',
-    desc: 'Bütün kelimeler cihazında. Hesap açman gerekmez, ilerlemen yalnızca sende durur.',
+    title: 'Çevrimdışı da oynanır',
+    desc: 'Bütün kelimeler cihazında. Hesap açmadan oynanır; sıralamaya girmek istersen ayrıca giriş yaparsın.',
   },
 ]
 
-const stack = ['React Native', 'Expo SDK 57', 'TypeScript', 'SQLite', 'Zustand', 'react-native-svg']
+const stack = [
+  'React Native',
+  'Expo SDK 57',
+  'TypeScript',
+  'SQLite',
+  'Zustand',
+  'react-native-svg',
+  'Supabase',
+]
 
 const documents = [
   { href: '/yelken/gizlilik', label: 'Gizlilik Politikası', lang: 'TR', icon: <Shield size={18} /> },
@@ -134,7 +149,8 @@ export default function YelkenPage() {
         <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
           Bir kelime bulmacası — ve istersen bir dil öğretmeni. Arayüz dilini ve bulmaca dilini ayrı
           seçersin: ikisi aynıysa saf bir kelime oyunu oynarsın, farklıysa çözdüğün her kelime bir
-          tekrar programına girer.
+          tekrar programına girer. Dört oyun modu, günün bulmacası ve artık isteyenler için online
+          bir sıralama.
         </p>
 
         <div className="flex flex-wrap gap-2.5 mt-7">
@@ -179,7 +195,7 @@ export default function YelkenPage() {
 
       {/* ÖZELLİKLER */}
       <section className="container mx-auto px-4 md:px-8 py-14 max-w-5xl">
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map(feature => (
             <div
               key={feature.title}
