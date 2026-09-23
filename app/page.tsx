@@ -6,6 +6,8 @@ import { Code, Smartphone, PenTool, ArrowRight } from 'lucide-react'
 import Header from './components/Header'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import StoreBadges from './yelken/StoreBadges'
+import { yelkenStatus } from './yelken/stores'
 
 const skills = [
   {
@@ -83,22 +85,27 @@ export default function Home() {
           kart değil. Tek iş gösteriliyor — vitrin bir liste değil. */}
       <section className="container mx-auto px-4 md:px-8 pb-24">
         <h2 className="text-3xl md:text-4xl font-bold mb-10">Öne Çıkan</h2>
-        <Link
-          href="/yelken"
-          className="group block rounded-2xl border border-blue-400/10 bg-[#232b3a] overflow-hidden shadow-lg shadow-blue-500/5 hover:border-blue-400/30 transition-all no-underline"
-        >
+        {/* Kartın tamamı tıklanır (genişletilmiş bağlantı); mağaza rozetleri
+            canlıyken kendi bağlantıları olduğu için iç içe <a> olmasın diye
+            bağlantı kartı sarmıyor, altında duruyor. */}
+        <div className="group relative block rounded-2xl border border-blue-400/10 bg-[#232b3a] overflow-hidden shadow-lg shadow-blue-500/5 hover:border-blue-400/30 transition-all">
+          <Link href="/yelken" aria-label="Yelken projesini incele" className="absolute inset-0 z-0" />
           <div className="flex flex-col md:flex-row items-stretch">
             <div className="flex-1 p-8 md:p-10">
               <div className="flex items-center gap-3 flex-wrap mb-4">
                 <h3 className="text-2xl font-bold text-white">Yelken</h3>
-                <span className="px-2.5 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-semibold">
-                  Yayına hazırlanıyor
+                <span
+                  className={`px-2.5 py-1 rounded-full text-xs font-semibold ${
+                    yelkenStatus().live ? 'bg-green-500/15 text-green-300' : 'bg-yellow-500/15 text-yellow-300'
+                  }`}
+                >
+                  {yelkenStatus().label}
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed max-w-xl">
                 Kendi ürünüm: bir kelime bulmacası ve istersen bir dil öğretmeni. Dört oyun modu,
                 aralıklı tekrar programı, 6.000&apos;den fazla kelimelik Türkçe, İngilizce ve
-                İspanyolca dağarcık. Tamamen çevrimdışı çalışıyor.
+                İspanyolca dağarcık. Çevrimdışı oynanıyor; isteyene online sıralama.
               </p>
               <div className="flex flex-wrap gap-2 mt-5">
                 {['React Native', 'Expo', 'TypeScript', 'SQLite'].map(tech => (
@@ -110,7 +117,10 @@ export default function Home() {
                   </span>
                 ))}
               </div>
-              <span className="inline-flex items-center gap-2 mt-7 text-blue-400 font-medium group-hover:gap-3 transition-all">
+              <div className="mt-6">
+                <StoreBadges size="sm" />
+              </div>
+              <span className="inline-flex items-center gap-2 mt-6 text-blue-400 font-medium group-hover:gap-3 transition-all">
                 Projeyi incele <ArrowRight size={18} />
               </span>
             </div>
@@ -131,7 +141,7 @@ export default function Home() {
               />
             </div>
           </div>
-        </Link>
+        </div>
       </section>
 
       {/* Skills Section */}

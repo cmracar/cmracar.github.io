@@ -1,20 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import {
-  Mail,
-  FileText,
-  Shield,
-  Wifi,
-  Languages,
-  Repeat,
-  Grid3x3,
-  Search,
-  Anchor,
-  Route,
-  Trophy,
-} from 'lucide-react'
+import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX } from 'lucide-react'
 import Header from '@/app/components/Header'
 import legal from './legal.json'
+import StoreBadges from './StoreBadges'
+import { yelkenStatus } from './stores'
 
 export const metadata = {
   title: 'Yelken | Kelime Bulmacası',
@@ -112,10 +102,13 @@ const documents = [
   { href: '/yelken/kosullar', label: 'Kullanım Koşulları', lang: 'TR', icon: <FileText size={18} /> },
   { href: '/yelken/privacy', label: 'Privacy Policy', lang: 'EN', icon: <Shield size={18} /> },
   { href: '/yelken/terms', label: 'Terms of Use', lang: 'EN', icon: <FileText size={18} /> },
+  { href: '/yelken/hesap-silme', label: 'Hesap Silme', lang: 'TR', icon: <UserX size={18} /> },
+  { href: '/yelken/delete-account', label: 'Account Deletion', lang: 'EN', icon: <UserX size={18} /> },
 ]
 
 export default function YelkenPage() {
   const { brand } = legal
+  const status = yelkenStatus()
 
   return (
     <main className="min-h-screen bg-[#181f2a] text-white">
@@ -128,8 +121,12 @@ export default function YelkenPage() {
           <div>
             <div className="flex items-center gap-3 flex-wrap">
               <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">{brand.app}</h1>
-              <span className="px-2.5 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-semibold">
-                Yayına hazırlanıyor
+              <span
+                className={`px-2.5 py-1 rounded-full text-xs font-semibold ${
+                  status.live ? 'bg-green-500/15 text-green-300' : 'bg-yellow-500/15 text-yellow-300'
+                }`}
+              >
+                {status.label}
               </span>
             </div>
             {/* Uygulamadaki kelime markasıyla aynı: ad tek renk, vurgu dalgada. */}
@@ -152,6 +149,10 @@ export default function YelkenPage() {
           tekrar programına girer. Dört oyun modu, günün bulmacası ve artık isteyenler için online
           bir sıralama.
         </p>
+
+        <div className="mt-7">
+          <StoreBadges />
+        </div>
 
         <div className="flex flex-wrap gap-2.5 mt-7">
           {modes.map(mode => (

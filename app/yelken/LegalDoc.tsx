@@ -11,7 +11,7 @@ type Doc = {
 }
 
 type Lang = 'tr' | 'en'
-type Kind = 'privacy' | 'terms'
+type Kind = 'privacy' | 'terms' | 'deletion'
 
 const BACK: Record<Lang, string> = {
   tr: 'Yelken',

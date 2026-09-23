@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Link from 'next/link'
 import { useState } from 'react'
 import projectsData from '../../projects.json'
+import StoreBadges from '../yelken/StoreBadges'
 
 type Category = 'carbon' | 'beyondguard' | 'freelance'
 
@@ -25,6 +26,9 @@ const allProjects = projectsData.map((p) => ({
   status: p.isCompleted ? 'Tamamlandı' : 'Devam Ediyor',
   technologies: p.technologies,
   category: p.category as Category,
+  // Mağaza rozetleri şimdilik yalnızca Yelken'de; değer, rozet ayarının hangi
+  // uygulamaya ait olduğunu söylüyor.
+  stores: 'stores' in p ? (p.stores as string) : null,
 }))
 
 const groups = CATEGORY_ORDER.map((category) => ({
@@ -81,6 +85,11 @@ export default function ProjectsPage() {
                     <span key={idx} className="bg-blue-500/10 text-blue-300 px-2 py-1 rounded text-xs font-mono">{tech}</span>
                   ))}
                 </div>
+                {project.stores === 'yelken' && (
+                  <div className="mt-4">
+                    <StoreBadges size="sm" />
+                  </div>
+                )}
               </div>
               {project.live && (
                 <div className="flex-shrink-0 mt-2 md:mt-0">

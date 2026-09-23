@@ -10,17 +10,38 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 11 Eylül 2026",
-        "intro": "Yelken hesap açmanızı istemez, adınızı veya e-postanızı toplamaz. Oyun ilerlemeniz yalnızca cihazınızda saklanır. Üçüncü taraflara giden tek veri, reklam gösterimi ve çökme raporları için gereken teknik bilgilerdir; ikisi de aşağıda tek tek sayılmıştır.",
+        "updated": "Son güncelleme: 23 Eylül 2026",
+        "intro": "Yelken’i hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
-            "heading": "Cihazınızda kalan veriler",
+            "heading": "Hesap olmadan: cihazınızda kalan veriler",
             "body": [
-              "Şunlar uygulamanın kendi veritabanında, yalnızca sizde durur; sunucumuza gönderilmez, yedeklenmez, okunmaz:",
-              "• Oyun ilerlemesi: seviye, seri, altın, çözülen kelimeler, tekrar programı",
+              "Giriş yapmadığınız sürece şunlar yalnızca uygulamanın kendi veritabanında, cihazınızda durur ve sunucumuza gönderilmez:",
+              "• Oyun ilerlemesi: seviye, seri, altın, elmas, çözülen kelimeler, tekrar programı",
               "• Tercihler: tema, dil, ses, titreşim, bildirim ve zorluk ayarları",
               "• Satın alma durumu ve mağazadan alınan biletler",
               "Uygulamayı silerseniz bu veriler cihazınızdan da silinir. Ayarlardaki \"Tüm oyun verilerini sıfırla\" ile istediğiniz zaman kendiniz de silebilirsiniz."
+            ]
+          },
+          {
+            "heading": "Giriş yaparsanız: sunucumuzda saklanan veriler",
+            "body": [
+              "Giriş isteğe bağlıdır ve yalnızca çevrimiçi sıralama ile bulut yedeği için kullanılır. Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
+              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, ve hesabınıza ait bir kullanıcı kimliği",
+              "• Sıralama profili: seçtiğiniz kullanıcı adı, dil tercihleriniz, rütbeniz, geminizin ve gemicinizin görünüşü, bayrağınız, toplam kazandığınız altın ve elmas, günlük seriniz ve hesabı hangi platformda açtığınız",
+              "• Puanlar: çözdüğünüz her kelime için kelimenin kimliği, oyun modu ve çözme süresi; sıralama puanı bunlardan sunucuda hesaplanır",
+              "• Bulut yedeği: cihazdaki oyun ilerlemenizin ve tercihlerinizin bir kopyası ile kelime başına tekrar geçmişiniz; başka bir cihazda aynı hesapla giriş yaptığınızda ilerlemenizi geri yükleyebilmek için",
+              "• Satın alma kayıtları: elmas paketi satın aldığınızda işlem kimliği, ürün ve tarih (bkz. \"Satın almalar\")",
+              "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
+              "Bu veriler Supabase altyapısında tutulur; sunucular yurt dışında bulunabilir. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
+            ]
+          },
+          {
+            "heading": "Hesabınızı silme",
+            "body": [
+              "Giriş yaptıysanız Ayarlar → \"Hesabımı sil\" ile hesabınızı istediğiniz an silebilirsiniz. Hesabınız ve yukarıda sayılan sunucudaki bütün verileriniz (sıralama profili, puanlar, bulut yedeği, satın alma kayıtları) kalıcı olarak silinir. Apple ile giriş yaptıysanız Apple hesabınızla bağlantımız da Apple’da iptal edilir.",
+              "Cihazınızdaki oyun ilerlemesi silinmez. Premium satın alımınız mağaza hesabınıza bağlı olduğu için etkilenmez ve \"Satın alımları geri yükle\" ile geri gelir.",
+              "Uygulamaya artık erişiminiz yoksa, giriş yaptığınız e-posta adresini belirterek bize yazın; hesabınızı 30 gün içinde sileriz."
             ]
           },
           {
@@ -42,7 +63,8 @@
           {
             "heading": "Satın almalar",
             "body": [
-              "Premium ve diğer satın almalar Apple App Store ve Google Play üzerinden yapılır. Kart bilgileriniz, adınız ve fatura bilgileriniz bize hiç ulaşmaz; ödemeyi ilgili mağaza yürütür. Uygulama yalnızca \"bu satın alma yapıldı\" bilgisini mağazadan okur ve cihazınıza yazar."
+              "Premium ve diğer satın almalar Apple App Store ve Google Play üzerinden yapılır. Kart bilgileriniz, adınız ve fatura bilgileriniz bize hiç ulaşmaz; ödemeyi ilgili mağaza yürütür.",
+              "Elmas paketi satın aldığınızda, sahteciliği önlemek için mağazanın bu satın alma için verdiği imzalı işlem kaydı sunucumuza gönderilir ve Apple ya da Google’a doğrulatılır. Hesabınıza bağlı olarak yalnızca işlem kimliği, ürün, elmas miktarı ve tarih saklanır. Giriş yapmadıysanız kayıt cihazınızda bekler ve giriş yaptığınızda doğrulanır."
             ]
           },
           {
@@ -61,7 +83,7 @@
           {
             "heading": "Haklarınız",
             "body": [
-              "Kişisel veri toplamadığımız için silinecek bir hesap kaydı yoktur. Yine de KVKK ve GDPR kapsamındaki haklarınızı kullanmak, reklam kimliğinizle ilişkili veriler hakkında bilgi almak veya çökme raporlarınızın silinmesini istemek için bize yazabilirsiniz.",
+              "KVKK ve GDPR kapsamında hakkınızda hangi verilerin tutulduğunu öğrenme, düzeltilmesini ya da silinmesini isteme haklarınız var. Hesabınızı uygulamanın içinden kendiniz silebilirsiniz (bkz. \"Hesabınızı silme\"); diğer talepleriniz, reklam kimliğinizle ilişkili sorularınız veya çökme raporlarınızın silinmesi için bize yazabilirsiniz.",
               "ABD’de ikamet ediyorsanız: kişisel bilgilerinizi satmıyor ve para karşılığı paylaşmıyoruz. Kaliforniya (CCPA/CPRA) ile benzer eyalet yasaları kapsamında, kişiselleştirilmiş reklam için verinizin paylaşılmasından çıkma (opt-out), bilgi talep etme ve silinmesini isteme haklarınız var. Çıkmanın en hızlı yolu “Ayarlar → Reklam gizliliği seçenekleri”; ayrıca bize de yazabilirsiniz. Bu hakları kullandığınız için size farklı davranmayız — oyunun tamamı aynı biçimde açık kalır."
             ]
           },
@@ -124,22 +146,83 @@
             ]
           }
         ]
+      },
+      "deletion": {
+        "title": "Yelken — Hesap Silme",
+        "updated": "Son güncelleme: 23 Eylül 2026",
+        "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Yelken uygulamasındaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır. Hesap isteğe bağlıdır; giriş yapmadıysanız sunucumuzda size ait bir kayıt yoktur.",
+        "sections": [
+          {
+            "heading": "Uygulamanın içinden silme",
+            "body": [
+              "1. Yelken’i açın ve sağ üstteki dişli simgesiyle Ayarlar’a girin.",
+              "2. Hesap bölümünün altındaki \"Hesabımı sil\" düğmesine dokunun.",
+              "3. Onaylayın. Apple ile giriş yaptıysanız Apple bir kez daha onay ister.",
+              "Silme hemen gerçekleşir ve geri alınamaz."
+            ]
+          },
+          {
+            "heading": "Uygulamaya erişiminiz yoksa",
+            "body": [
+              "Giriş yaptığınız e-posta adresinden, konu satırına \"Hesap silme\" yazarak cemreacar94@gmail.com adresine yazın. Hesabınızı ve aşağıda sayılan verileri 30 gün içinde siler, size bildiririz."
+            ]
+          },
+          {
+            "heading": "Silinen veriler",
+            "body": [
+              "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı ve kullanıcı kimliği",
+              "• Sıralama profili: kullanıcı adı, rütbe, gemi ve gemici görünüşü, bayrak, toplam altın/elmas, seri",
+              "• Puanlar ve çözülen kelime kayıtları",
+              "• Bulut yedeği: oyun ilerlemesi, tercihler ve kelime tekrar geçmişi",
+              "• Satın alma kayıtları: işlem kimliği, ürün, elmas miktarı ve tarih"
+            ]
+          },
+          {
+            "heading": "Silinmeyen veriler",
+            "body": [
+              "• Cihazınızdaki oyun ilerlemesi sunucuda değil telefonunuzda durur; uygulamayı silerek ya da Ayarlar → \"Tüm oyun verilerini sıfırla\" ile kaldırabilirsiniz.",
+              "• Premium ve diğer satın almaların kaydı Apple ve Google’ın kendi mağaza hesabınızda durur; bu kayıtlar mağazanın kurallarına tabidir ve bizim tarafımızdan silinemez.",
+              "Sunucumuzda silme sonrasında saklanan ek bir veri yoktur."
+            ]
+          }
+        ]
       }
     },
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 11 September 2026",
-        "intro": "Yelken does not ask you to create an account and does not collect your name or email address. Your game progress stays on your device. The only data that leaves it is the technical information needed to serve ads and report crashes — both listed in full below.",
+        "updated": "Last updated: 23 September 2026",
+        "intro": "You can play Yelken without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
-            "heading": "Data that stays on your device",
+            "heading": "Without an account: data that stays on your device",
             "body": [
-              "The following is stored in the app’s own database and never sent to us, backed up by us, or read by us:",
-              "• Game progress: level, streak, gold, solved words, review schedule",
+              "As long as you are not signed in, the following is stored only in the app’s own database on your device and is not sent to us:",
+              "• Game progress: level, streak, gold, gems, solved words, review schedule",
               "• Preferences: theme, language, sound, haptics, notification and difficulty settings",
               "• Purchase state and tickets bought in the in-game store",
               "Deleting the app removes this data from your device. You can also erase it yourself at any time with \"Reset all game data\" in Settings."
+            ]
+          },
+          {
+            "heading": "If you sign in: data stored on our server",
+            "body": [
+              "Signing in is optional and is used only for the online leaderboard and cloud backup. When you sign in with Apple or Google we store:",
+              "• Account details: the email address your sign-in provider shares with us (with Sign in with Apple this may be a private relay address), your name and profile photo link when you sign in with Google, and a user ID for your account",
+              "• Leaderboard profile: the username you choose, your language settings, your rank, the look of your ship and sailor, your flag, the total gold and gems you have earned, your daily streak and the platform on which you created the account",
+              "• Scores: for each word you solve, the word’s ID, the game mode and how long it took; your leaderboard score is calculated from these on the server",
+              "• Cloud backup: a copy of your game progress and preferences and your per-word review history, so you can restore your progress when you sign in on another device",
+              "• Purchase records: the transaction ID, product and date when you buy a gem pack (see \"Purchases\")",
+              "Other players see only your username, rank, scores, total gold and gems, streak and the look of your ship and sailor on the leaderboard. Your email address, name and backup are never shown to anyone.",
+              "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account."
+            ]
+          },
+          {
+            "heading": "Deleting your account",
+            "body": [
+              "If you have signed in, you can delete your account at any time with Settings → \"Delete my account\". Your account and all of the server-side data listed above (leaderboard profile, scores, cloud backup, purchase records) are permanently deleted. If you signed in with Apple, our link to your Apple ID is also revoked at Apple.",
+              "Your game progress on the device is not deleted. Premium is tied to your store account, so it is not affected and comes back with \"Restore purchases\".",
+              "If you no longer have access to the app, write to us from the email address you signed in with and we will delete your account within 30 days."
             ]
           },
           {
@@ -161,7 +244,8 @@
           {
             "heading": "Purchases",
             "body": [
-              "Premium and other purchases go through the Apple App Store and Google Play. Your card details, name and billing information never reach us; the store handles payment. The app only reads \"this purchase was made\" from the store and records it on your device."
+              "Premium and other purchases go through the Apple App Store and Google Play. Your card details, name and billing information never reach us; the store handles payment.",
+              "When you buy a gem pack, the signed transaction record the store issues for that purchase is sent to our server and verified with Apple or Google to prevent fraud. Only the transaction ID, product, number of gems and date are stored, linked to your account. If you are not signed in, the record waits on your device and is verified once you sign in."
             ]
           },
           {
@@ -180,7 +264,7 @@
           {
             "heading": "Your rights",
             "body": [
-              "Because we hold no personal data, there is no account record to delete. You may still exercise your rights under GDPR and Turkish data protection law, ask about data associated with your advertising identifier, or request deletion of your crash reports by writing to us.",
+              "Under GDPR and Turkish data protection law you have the right to know what data is held about you and to ask for it to be corrected or deleted. You can delete your account yourself from inside the app (see \"Deleting your account\"); for any other request, questions about data associated with your advertising identifier, or deletion of your crash reports, write to us.",
               "If you live in the United States: we do not sell your personal information and we do not share it for money. Under the California Consumer Privacy Act (CCPA/CPRA) and comparable state laws you have the right to opt out of your data being shared for personalised advertising, to ask what is held, and to request deletion. The fastest way to opt out is “Settings → Ad privacy options”; you may also write to us. We will not treat you differently for exercising these rights — the whole game stays equally available."
             ]
           },
@@ -240,6 +324,227 @@
             "heading": "Governing law",
             "body": [
               "These terms are governed by the law of the Republic of Türkiye. Mandatory consumer protections of your country of residence are reserved."
+            ]
+          }
+        ]
+      },
+      "deletion": {
+        "title": "Yelken — Account Deletion",
+        "updated": "Last updated: 23 September 2026",
+        "intro": "This page explains how to delete your account and its data in Yelken, developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
+        "sections": [
+          {
+            "heading": "Delete from inside the app",
+            "body": [
+              "1. Open Yelken and go to Settings with the gear icon at the top right.",
+              "2. Tap \"Delete my account\" below the Account section.",
+              "3. Confirm. If you signed in with Apple, Apple asks you to confirm once more.",
+              "Deletion happens immediately and cannot be undone."
+            ]
+          },
+          {
+            "heading": "If you no longer have access to the app",
+            "body": [
+              "Write to cemreacar94@gmail.com from the email address you signed in with, with \"Account deletion\" as the subject. We will delete your account and the data listed below within 30 days and let you know."
+            ]
+          },
+          {
+            "heading": "Data that is deleted",
+            "body": [
+              "• Account details: email address, name, profile photo link and user ID",
+              "• Leaderboard profile: username, rank, ship and sailor appearance, flag, total gold/gems, streak",
+              "• Scores and records of solved words",
+              "• Cloud backup: game progress, preferences and word review history",
+              "• Purchase records: transaction ID, product, number of gems and date"
+            ]
+          },
+          {
+            "heading": "Data that is not deleted",
+            "body": [
+              "• Your game progress on the device lives on your phone, not on our server; remove it by uninstalling the app or with Settings → \"Reset all game data\".",
+              "• Records of Premium and other purchases stay in your Apple or Google store account; they follow the store’s own rules and cannot be deleted by us.",
+              "No additional data is kept on our server after deletion."
+            ]
+          }
+        ]
+      }
+    },
+    "es": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "updated": "Last updated: 23 September 2026",
+        "intro": "You can play Yelken without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
+        "sections": [
+          {
+            "heading": "Without an account: data that stays on your device",
+            "body": [
+              "As long as you are not signed in, the following is stored only in the app’s own database on your device and is not sent to us:",
+              "• Game progress: level, streak, gold, gems, solved words, review schedule",
+              "• Preferences: theme, language, sound, haptics, notification and difficulty settings",
+              "• Purchase state and tickets bought in the in-game store",
+              "Deleting the app removes this data from your device. You can also erase it yourself at any time with \"Reset all game data\" in Settings."
+            ]
+          },
+          {
+            "heading": "If you sign in: data stored on our server",
+            "body": [
+              "Signing in is optional and is used only for the online leaderboard and cloud backup. When you sign in with Apple or Google we store:",
+              "• Account details: the email address your sign-in provider shares with us (with Sign in with Apple this may be a private relay address), your name and profile photo link when you sign in with Google, and a user ID for your account",
+              "• Leaderboard profile: the username you choose, your language settings, your rank, the look of your ship and sailor, your flag, the total gold and gems you have earned, your daily streak and the platform on which you created the account",
+              "• Scores: for each word you solve, the word’s ID, the game mode and how long it took; your leaderboard score is calculated from these on the server",
+              "• Cloud backup: a copy of your game progress and preferences and your per-word review history, so you can restore your progress when you sign in on another device",
+              "• Purchase records: the transaction ID, product and date when you buy a gem pack (see \"Purchases\")",
+              "Other players see only your username, rank, scores, total gold and gems, streak and the look of your ship and sailor on the leaderboard. Your email address, name and backup are never shown to anyone.",
+              "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account."
+            ]
+          },
+          {
+            "heading": "Deleting your account",
+            "body": [
+              "If you have signed in, you can delete your account at any time with Settings → \"Delete my account\". Your account and all of the server-side data listed above (leaderboard profile, scores, cloud backup, purchase records) are permanently deleted. If you signed in with Apple, our link to your Apple ID is also revoked at Apple.",
+              "Your game progress on the device is not deleted. Premium is tied to your store account, so it is not affected and comes back with \"Restore purchases\".",
+              "If you no longer have access to the app, write to us from the email address you signed in with and we will delete your account within 30 days."
+            ]
+          },
+          {
+            "heading": "Notifications",
+            "body": [
+              "Daily reminders are scheduled on your device. If you decline the permission the feature stays off and the rest of the app works normally. Notification content never leaves your device."
+            ]
+          },
+          {
+            "heading": "Advertising",
+            "body": [
+              "The free version shows Google AdMob ads. To serve them, AdMob accesses your advertising identifier (iOS: IDFA, Android: Advertising ID), IP address, approximate location at country/city level, device and OS information, and ad interactions.",
+              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation.",
+              "Where the law of your location requires it (the European Economic Area, the United Kingdom and the applicable US states) the app shows Google’s consent screen at startup, and no ad is requested until you have answered it. You can change your decision, or withdraw consent, at any time from “Settings → Ad privacy options”. Everywhere else you can still reset your advertising identifier or turn off personalisation in your device settings.",
+              "To remove ads entirely you can buy Premium from inside the app.",
+              "How Google handles this data: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Purchases",
+            "body": [
+              "Premium and other purchases go through the Apple App Store and Google Play. Your card details, name and billing information never reach us; the store handles payment.",
+              "When you buy a gem pack, the signed transaction record the store issues for that purchase is sent to our server and verified with Apple or Google to prevent fraud. Only the transaction ID, product, number of gems and date are stored, linked to your account. If you are not signed in, the record waits on your device and is verified once you sign in."
+            ]
+          },
+          {
+            "heading": "Crash reports",
+            "body": [
+              "If the app closes unexpectedly, a technical report is sent so the fault can be fixed: the error message and stack trace, app version, device model and OS version.",
+              "The report contains no game content, no words you have solved and no personal information; IP addresses are not stored. Reports are held on Sentry infrastructure and deleted after 90 days."
+            ]
+          },
+          {
+            "heading": "Children",
+            "body": [
+              "Yelken is a word game suitable for all ages and does not knowingly collect personal data from children. If you believe data belonging to a child under 13 has been processed, write to us and we will delete it."
+            ]
+          },
+          {
+            "heading": "Your rights",
+            "body": [
+              "Under GDPR and Turkish data protection law you have the right to know what data is held about you and to ask for it to be corrected or deleted. You can delete your account yourself from inside the app (see \"Deleting your account\"); for any other request, questions about data associated with your advertising identifier, or deletion of your crash reports, write to us.",
+              "If you live in the United States: we do not sell your personal information and we do not share it for money. Under the California Consumer Privacy Act (CCPA/CPRA) and comparable state laws you have the right to opt out of your data being shared for personalised advertising, to ask what is held, and to request deletion. The fastest way to opt out is “Settings → Ad privacy options”; you may also write to us. We will not treat you differently for exercising these rights — the whole game stays equally available."
+            ]
+          },
+          {
+            "heading": "Changes",
+            "body": [
+              "If this policy changes you will see the current version in the app and at its published address; the date above is renewed."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Terms of Use",
+        "updated": "Last updated: 5 September 2026",
+        "intro": "By downloading or using Yelken you accept these terms.",
+        "sections": [
+          {
+            "heading": "Licence",
+            "body": [
+              "You are granted a non-transferable, non-exclusive licence to use Yelken for personal, non-commercial purposes. You may not copy, decompile, rent out or redistribute the app."
+            ]
+          },
+          {
+            "heading": "Content",
+            "body": [
+              "The clues, definitions, example sentences and meanings in the app were written originally for Yelken. Game content, interface text, logo and artwork are protected by copyright."
+            ]
+          },
+          {
+            "heading": "Purchases",
+            "body": [
+              "• Premium is a one-time purchase, not a subscription.",
+              "• In-game gold and tickets are valid only inside the app, have no cash value, are non-refundable and non-transferable.",
+              "• Payment and refunds go through the Apple App Store or Google Play and follow that store’s rules.",
+              "• To restore your purchase on a new device, use \"Restore purchases\" in Settings."
+            ]
+          },
+          {
+            "heading": "Advertising",
+            "body": [
+              "The free version contains ads. Ad content is determined by Google AdMob; the publisher is not responsible for the content of the ads shown."
+            ]
+          },
+          {
+            "heading": "Availability",
+            "body": [
+              "The app is provided \"as is\". It is not guaranteed to run without interruption or fault. The right to change or discontinue part or all of the app is reserved; users who bought premium are told in advance in such a case."
+            ]
+          },
+          {
+            "heading": "Limitation of liability",
+            "body": [
+              "To the extent permitted by applicable law, no liability is accepted for indirect damages arising from use of the app. Your statutory rights as a consumer are not affected."
+            ]
+          },
+          {
+            "heading": "Governing law",
+            "body": [
+              "These terms are governed by the law of the Republic of Türkiye. Mandatory consumer protections of your country of residence are reserved."
+            ]
+          }
+        ]
+      },
+      "deletion": {
+        "title": "Yelken — Account Deletion",
+        "updated": "Last updated: 23 September 2026",
+        "intro": "This page explains how to delete your account and its data in Yelken, developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
+        "sections": [
+          {
+            "heading": "Delete from inside the app",
+            "body": [
+              "1. Open Yelken and go to Settings with the gear icon at the top right.",
+              "2. Tap \"Delete my account\" below the Account section.",
+              "3. Confirm. If you signed in with Apple, Apple asks you to confirm once more.",
+              "Deletion happens immediately and cannot be undone."
+            ]
+          },
+          {
+            "heading": "If you no longer have access to the app",
+            "body": [
+              "Write to cemreacar94@gmail.com from the email address you signed in with, with \"Account deletion\" as the subject. We will delete your account and the data listed below within 30 days and let you know."
+            ]
+          },
+          {
+            "heading": "Data that is deleted",
+            "body": [
+              "• Account details: email address, name, profile photo link and user ID",
+              "• Leaderboard profile: username, rank, ship and sailor appearance, flag, total gold/gems, streak",
+              "• Scores and records of solved words",
+              "• Cloud backup: game progress, preferences and word review history",
+              "• Purchase records: transaction ID, product, number of gems and date"
+            ]
+          },
+          {
+            "heading": "Data that is not deleted",
+            "body": [
+              "• Your game progress on the device lives on your phone, not on our server; remove it by uninstalling the app or with Settings → \"Reset all game data\".",
+              "• Records of Premium and other purchases stay in your Apple or Google store account; they follow the store’s own rules and cannot be deleted by us.",
+              "No additional data is kept on our server after deletion."
             ]
           }
         ]

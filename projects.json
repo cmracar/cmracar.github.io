@@ -110,8 +110,9 @@
     },
     {
         "projectName": "Yelken",
-        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, Türkçe, İngilizce ve İspanyolca dağarcık. Tamamen çevrimdışı oynanır, hesap gerektirmez — isteyenler için online sıralama da var. Play Store yayınına hazırlanıyor.",
+        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, Türkçe, İngilizce ve İspanyolca dağarcık. Çevrimdışı oynanır, hesap gerektirmez — isteyenler için online sıralama ve bulut yedeği de var. App Store ve Google Play yayınına hazırlanıyor.",
         "preview": "/yelken",
+        "stores": "yelken",
         "technologies": [
             "React Native",
             "Expo",
