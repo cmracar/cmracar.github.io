@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 23 Eylül 2026",
+        "updated": "Son güncelleme: 27 Eylül 2026",
         "intro": "Yelken’i hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
@@ -32,7 +32,8 @@
               "• Puanlar: çözdüğünüz her kelime için kelimenin kimliği, oyun modu ve çözme süresi; sıralama puanı bunlardan sunucuda hesaplanır",
               "• Bulut yedeği: cihazdaki oyun ilerlemenizin ve tercihlerinizin bir kopyası ile kelime başına tekrar geçmişiniz; başka bir cihazda aynı hesapla giriş yaptığınızda ilerlemenizi geri yükleyebilmek için",
               "• Satın alma kayıtları: elmas paketi satın aldığınızda işlem kimliği, ürün ve tarih (bkz. \"Satın almalar\")",
-              "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
+              "• Düello: oynadığınız düellolar ve bulmacaları, düelloda bulduğunuz kelimeler ve bulma süreleri, kupanız, liginiz ve günlük düello haklarınız",
+              "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, kupanızı ve liginizi, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür; Düello rakibiniz ayrıca o düellodaki puanınızı görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
               "Bu veriler Supabase altyapısında tutulur; sunucular yurt dışında bulunabilir. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
             ]
           },
@@ -72,6 +73,13 @@
             "body": [
               "Uygulama beklenmedik şekilde kapanırsa, hatayı düzeltebilmek için teknik bir rapor gönderilir: hata mesajı ve yığın izi, uygulama sürümü, cihaz modeli ve işletim sistemi sürümü.",
               "Rapor oyun içeriğinizi, kelimelerinizi veya kişisel bilgilerinizi içermez; IP adresi saklanmaz. Raporlar Sentry altyapısında tutulur ve 90 gün sonra silinir."
+            ]
+          },
+          {
+            "heading": "Kullanım istatistikleri",
+            "body": [
+              "Oyunu geliştirebilmek için anonim kullanım verisi toplarız: uygulamanın açılması, hangi modun oynandığı, seviye bitişleri, reklam gösterimleri ve satın alınan ürün türü. Her olayla birlikte uygulama sürümü, cihaz modeli, işletim sistemi, dil ayarları ve cihaz için rastgele üretilmiş bir kimlik gönderilir.",
+              "Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; çözdüğünüz kelimeler ve cevaplar gönderilmez, konumunuz çözümlenmez. Veri PostHog’un Avrupa Birliği’ndeki altyapısında tutulur. Ayarlar → Kullanım istatistikleri anahtarıyla istediğiniz an kapatabilirsiniz; kapalıyken hiçbir olay gönderilmez."
             ]
           },
           {
@@ -149,7 +157,7 @@
       },
       "deletion": {
         "title": "Yelken — Hesap Silme",
-        "updated": "Son güncelleme: 23 Eylül 2026",
+        "updated": "Son güncelleme: 27 Eylül 2026",
         "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Yelken uygulamasındaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır. Hesap isteğe bağlıdır; giriş yapmadıysanız sunucumuzda size ait bir kayıt yoktur.",
         "sections": [
           {
@@ -173,6 +181,7 @@
               "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı ve kullanıcı kimliği",
               "• Sıralama profili: kullanıcı adı, rütbe, gemi ve gemici görünüşü, bayrak, toplam altın/elmas, seri",
               "• Puanlar ve çözülen kelime kayıtları",
+              "• Düello kayıtları: düellolar, bulunan kelimeler, kupa ve günlük haklar",
               "• Bulut yedeği: oyun ilerlemesi, tercihler ve kelime tekrar geçmişi",
               "• Satın alma kayıtları: işlem kimliği, ürün, elmas miktarı ve tarih"
             ]
@@ -191,7 +200,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 23 September 2026",
+        "updated": "Last updated: 27 September 2026",
         "intro": "You can play Yelken without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
@@ -213,7 +222,8 @@
               "• Scores: for each word you solve, the word’s ID, the game mode and how long it took; your leaderboard score is calculated from these on the server",
               "• Cloud backup: a copy of your game progress and preferences and your per-word review history, so you can restore your progress when you sign in on another device",
               "• Purchase records: the transaction ID, product and date when you buy a gem pack (see \"Purchases\")",
-              "Other players see only your username, rank, scores, total gold and gems, streak and the look of your ship and sailor on the leaderboard. Your email address, name and backup are never shown to anyone.",
+              "• Duel: the duels you play and their puzzles, the words you find in a duel and when you found them, your trophies, your league and your daily duel tickets",
+              "Other players see only your username, rank, scores, trophies and league, total gold and gems, streak and the look of your ship and sailor on the leaderboard; your Duel opponent also sees your score in that duel. Your email address, name and backup are never shown to anyone.",
               "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account."
             ]
           },
@@ -253,6 +263,13 @@
             "body": [
               "If the app closes unexpectedly, a technical report is sent so the fault can be fixed: the error message and stack trace, app version, device model and OS version.",
               "The report contains no game content, no words you have solved and no personal information; IP addresses are not stored. Reports are held on Sentry infrastructure and deleted after 90 days."
+            ]
+          },
+          {
+            "heading": "Usage statistics",
+            "body": [
+              "To improve the game we collect anonymous usage data: app opens, which mode is played, level completions, ad impressions and the type of product purchased. Each event carries the app version, device model, OS version, language settings and a randomly generated identifier for the device.",
+              "This data is not linked to your account, name or email address; the words and answers you solve are not sent and your location is not resolved. The data is held on PostHog infrastructure in the European Union. You can turn it off at any time with Settings → Usage statistics; while it is off, no events are sent."
             ]
           },
           {
@@ -330,7 +347,7 @@
       },
       "deletion": {
         "title": "Yelken — Account Deletion",
-        "updated": "Last updated: 23 September 2026",
+        "updated": "Last updated: 27 September 2026",
         "intro": "This page explains how to delete your account and its data in Yelken, developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
         "sections": [
           {
@@ -354,6 +371,7 @@
               "• Account details: email address, name, profile photo link and user ID",
               "• Leaderboard profile: username, rank, ship and sailor appearance, flag, total gold/gems, streak",
               "• Scores and records of solved words",
+              "• Duel records: duels, words found, trophies and daily tickets",
               "• Cloud backup: game progress, preferences and word review history",
               "• Purchase records: transaction ID, product, number of gems and date"
             ]
@@ -371,180 +389,189 @@
     },
     "es": {
       "privacy": {
-        "title": "Privacy Policy",
-        "updated": "Last updated: 23 September 2026",
-        "intro": "You can play Yelken without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
+        "title": "Política de privacidad",
+        "updated": "Última actualización: 27 de septiembre de 2026",
+        "intro": "Puedes jugar a Yelken sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
         "sections": [
           {
-            "heading": "Without an account: data that stays on your device",
+            "heading": "Sin cuenta: datos que se quedan en tu dispositivo",
             "body": [
-              "As long as you are not signed in, the following is stored only in the app’s own database on your device and is not sent to us:",
-              "• Game progress: level, streak, gold, gems, solved words, review schedule",
-              "• Preferences: theme, language, sound, haptics, notification and difficulty settings",
-              "• Purchase state and tickets bought in the in-game store",
-              "Deleting the app removes this data from your device. You can also erase it yourself at any time with \"Reset all game data\" in Settings."
+              "Mientras no inicies sesión, lo siguiente se guarda solo en la base de datos de la aplicación en tu dispositivo y no se nos envía:",
+              "• Progreso del juego: nivel, racha, oro, gemas, palabras resueltas y calendario de repaso",
+              "• Preferencias: tema, idioma, sonido, vibración, notificaciones y dificultad",
+              "• Estado de compras y billetes comprados en la tienda del juego",
+              "Al eliminar la aplicación, estos datos se borran de tu dispositivo. También puedes borrarlos tú mismo en cualquier momento con «Reiniciar todos los datos» en Ajustes."
             ]
           },
           {
-            "heading": "If you sign in: data stored on our server",
+            "heading": "Si inicias sesión: datos guardados en nuestro servidor",
             "body": [
-              "Signing in is optional and is used only for the online leaderboard and cloud backup. When you sign in with Apple or Google we store:",
-              "• Account details: the email address your sign-in provider shares with us (with Sign in with Apple this may be a private relay address), your name and profile photo link when you sign in with Google, and a user ID for your account",
-              "• Leaderboard profile: the username you choose, your language settings, your rank, the look of your ship and sailor, your flag, the total gold and gems you have earned, your daily streak and the platform on which you created the account",
-              "• Scores: for each word you solve, the word’s ID, the game mode and how long it took; your leaderboard score is calculated from these on the server",
-              "• Cloud backup: a copy of your game progress and preferences and your per-word review history, so you can restore your progress when you sign in on another device",
-              "• Purchase records: the transaction ID, product and date when you buy a gem pack (see \"Purchases\")",
-              "Other players see only your username, rank, scores, total gold and gems, streak and the look of your ship and sailor on the leaderboard. Your email address, name and backup are never shown to anyone.",
-              "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account."
+              "Iniciar sesión es opcional y solo se usa para la clasificación en línea y la copia en la nube. Cuando inicias sesión con Apple o Google guardamos:",
+              "• Datos de la cuenta: la dirección de correo que nos comparte tu proveedor de inicio de sesión (con Iniciar sesión con Apple puede ser una dirección de reenvío privada), tu nombre y el enlace a tu foto de perfil si inicias sesión con Google, y un identificador de usuario para tu cuenta",
+              "• Perfil de clasificación: el nombre de usuario que elijas, tus ajustes de idioma, tu rango, el aspecto de tu barco y tu marinero, tu bandera, el total de oro y gemas que has ganado, tu racha diaria y la plataforma en la que creaste la cuenta",
+              "• Puntuaciones: por cada palabra que resuelves, el identificador de la palabra, el modo de juego y el tiempo empleado; tu puntuación en la clasificación se calcula en el servidor a partir de estos datos",
+              "• Copia en la nube: una copia de tu progreso y tus preferencias, y tu historial de repaso por palabra, para que puedas recuperar tu progreso al iniciar sesión en otro dispositivo",
+              "• Registros de compra: el identificador de la transacción, el producto y la fecha cuando compras un paquete de gemas (ver «Compras»)",
+              "• Duelo: los duelos que juegas y sus rompecabezas, las palabras que encuentras en un duelo y cuándo las encontraste, tus trofeos, tu liga y tus billetes diarios de duelo",
+              "Los demás jugadores solo ven en la clasificación tu nombre de usuario, rango, puntuaciones, trofeos y liga, total de oro y gemas, racha y el aspecto de tu barco y tu marinero; tu rival en un duelo ve además tu puntuación en ese duelo. Tu correo, tu nombre y tu copia nunca se muestran a nadie.",
+              "Estos datos se alojan en la infraestructura de Supabase; los servidores pueden estar fuera de tu país. Se conservan mientras exista tu cuenta y se eliminan cuando la eliminas."
             ]
           },
           {
-            "heading": "Deleting your account",
+            "heading": "Eliminar tu cuenta",
             "body": [
-              "If you have signed in, you can delete your account at any time with Settings → \"Delete my account\". Your account and all of the server-side data listed above (leaderboard profile, scores, cloud backup, purchase records) are permanently deleted. If you signed in with Apple, our link to your Apple ID is also revoked at Apple.",
-              "Your game progress on the device is not deleted. Premium is tied to your store account, so it is not affected and comes back with \"Restore purchases\".",
-              "If you no longer have access to the app, write to us from the email address you signed in with and we will delete your account within 30 days."
+              "Si has iniciado sesión, puedes eliminar tu cuenta en cualquier momento con Ajustes → «Eliminar mi cuenta». Tu cuenta y todos los datos del servidor indicados arriba (perfil de clasificación, puntuaciones, copia en la nube, registros de compra y duelos) se eliminan de forma permanente. Si iniciaste sesión con Apple, también se revoca en Apple nuestro vínculo con tu ID de Apple.",
+              "Tu progreso en el dispositivo no se elimina. Premium está vinculado a tu cuenta de la tienda, así que no se ve afectado y vuelve con «Restaurar compras».",
+              "Si ya no tienes acceso a la aplicación, escríbenos desde la dirección de correo con la que iniciaste sesión y eliminaremos tu cuenta en un plazo de 30 días."
             ]
           },
           {
-            "heading": "Notifications",
+            "heading": "Notificaciones",
             "body": [
-              "Daily reminders are scheduled on your device. If you decline the permission the feature stays off and the rest of the app works normally. Notification content never leaves your device."
+              "Los recordatorios diarios se programan en tu dispositivo. Si rechazas el permiso, la función queda desactivada y el resto de la aplicación funciona con normalidad. El contenido de las notificaciones nunca sale de tu dispositivo."
             ]
           },
           {
-            "heading": "Advertising",
+            "heading": "Publicidad",
             "body": [
-              "The free version shows Google AdMob ads. To serve them, AdMob accesses your advertising identifier (iOS: IDFA, Android: Advertising ID), IP address, approximate location at country/city level, device and OS information, and ad interactions.",
-              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation.",
-              "Where the law of your location requires it (the European Economic Area, the United Kingdom and the applicable US states) the app shows Google’s consent screen at startup, and no ad is requested until you have answered it. You can change your decision, or withdraw consent, at any time from “Settings → Ad privacy options”. Everywhere else you can still reset your advertising identifier or turn off personalisation in your device settings.",
-              "To remove ads entirely you can buy Premium from inside the app.",
-              "How Google handles this data: policies.google.com/technologies/partner-sites"
+              "La versión gratuita muestra anuncios de Google AdMob. Para servirlos, AdMob accede a tu identificador de publicidad (iOS: IDFA, Android: ID de publicidad), dirección IP, ubicación aproximada a nivel de país o ciudad, información del dispositivo y del sistema operativo, e interacciones con los anuncios.",
+              "En iOS la aplicación no accede al IDFA salvo que concedas el permiso de rastreo; si lo rechazas, los anuncios se muestran sin personalización.",
+              "Donde la ley de tu ubicación lo exige (el Espacio Económico Europeo, el Reino Unido y los estados de EE. UU. aplicables), la aplicación muestra al inicio la pantalla de consentimiento de Google y no se solicita ningún anuncio hasta que respondas. Puedes cambiar tu decisión o retirar el consentimiento en cualquier momento desde «Ajustes → Privacidad de anuncios». En cualquier otro lugar puedes restablecer tu identificador de publicidad o desactivar la personalización en los ajustes de tu dispositivo.",
+              "Para quitar los anuncios por completo puedes comprar Premium desde la aplicación.",
+              "Cómo trata Google estos datos: policies.google.com/technologies/partner-sites"
             ]
           },
           {
-            "heading": "Purchases",
+            "heading": "Compras",
             "body": [
-              "Premium and other purchases go through the Apple App Store and Google Play. Your card details, name and billing information never reach us; the store handles payment.",
-              "When you buy a gem pack, the signed transaction record the store issues for that purchase is sent to our server and verified with Apple or Google to prevent fraud. Only the transaction ID, product, number of gems and date are stored, linked to your account. If you are not signed in, the record waits on your device and is verified once you sign in."
+              "Premium y las demás compras se realizan a través de Apple App Store y Google Play. Los datos de tu tarjeta, tu nombre y tu información de facturación nunca nos llegan; la tienda gestiona el pago.",
+              "Cuando compras un paquete de gemas, el registro firmado de la transacción que emite la tienda se envía a nuestro servidor y se verifica con Apple o Google para evitar fraudes. Solo se guardan el identificador de la transacción, el producto, el número de gemas y la fecha, vinculados a tu cuenta. Si no has iniciado sesión, el registro espera en tu dispositivo y se verifica cuando inicias sesión."
             ]
           },
           {
-            "heading": "Crash reports",
+            "heading": "Informes de fallos",
             "body": [
-              "If the app closes unexpectedly, a technical report is sent so the fault can be fixed: the error message and stack trace, app version, device model and OS version.",
-              "The report contains no game content, no words you have solved and no personal information; IP addresses are not stored. Reports are held on Sentry infrastructure and deleted after 90 days."
+              "Si la aplicación se cierra inesperadamente, se envía un informe técnico para poder corregir el fallo: el mensaje de error y la traza, la versión de la aplicación, el modelo del dispositivo y la versión del sistema operativo.",
+              "El informe no contiene contenido del juego, ni palabras que hayas resuelto, ni información personal; las direcciones IP no se guardan. Los informes se alojan en la infraestructura de Sentry y se eliminan a los 90 días."
             ]
           },
           {
-            "heading": "Children",
+            "heading": "Estadísticas de uso",
             "body": [
-              "Yelken is a word game suitable for all ages and does not knowingly collect personal data from children. If you believe data belonging to a child under 13 has been processed, write to us and we will delete it."
+              "Para mejorar el juego recogemos datos de uso anónimos: aperturas de la aplicación, qué modo se juega, niveles completados, impresiones de anuncios y el tipo de producto comprado. Cada evento incluye la versión de la aplicación, el modelo del dispositivo, la versión del sistema operativo, los ajustes de idioma y un identificador generado al azar para el dispositivo.",
+              "Estos datos no se vinculan a tu cuenta, tu nombre ni tu correo; las palabras y respuestas que resuelves no se envían y tu ubicación no se determina. Los datos se alojan en la infraestructura de PostHog en la Unión Europea. Puedes desactivarlos en cualquier momento en Ajustes → Estadísticas de uso; mientras estén desactivados no se envía ningún evento."
             ]
           },
           {
-            "heading": "Your rights",
+            "heading": "Menores",
             "body": [
-              "Under GDPR and Turkish data protection law you have the right to know what data is held about you and to ask for it to be corrected or deleted. You can delete your account yourself from inside the app (see \"Deleting your account\"); for any other request, questions about data associated with your advertising identifier, or deletion of your crash reports, write to us.",
-              "If you live in the United States: we do not sell your personal information and we do not share it for money. Under the California Consumer Privacy Act (CCPA/CPRA) and comparable state laws you have the right to opt out of your data being shared for personalised advertising, to ask what is held, and to request deletion. The fastest way to opt out is “Settings → Ad privacy options”; you may also write to us. We will not treat you differently for exercising these rights — the whole game stays equally available."
+              "Yelken es un juego de palabras apto para todas las edades y no recoge a sabiendas datos personales de menores. Si crees que se han tratado datos de un menor de 13 años, escríbenos y los eliminaremos."
             ]
           },
           {
-            "heading": "Changes",
+            "heading": "Tus derechos",
             "body": [
-              "If this policy changes you will see the current version in the app and at its published address; the date above is renewed."
+              "En virtud del RGPD y de la ley turca de protección de datos tienes derecho a saber qué datos se guardan sobre ti y a pedir que se corrijan o eliminen. Puedes eliminar tu cuenta tú mismo desde la aplicación (ver «Eliminar tu cuenta»); para cualquier otra solicitud, preguntas sobre los datos asociados a tu identificador de publicidad o la eliminación de tus informes de fallos, escríbenos.",
+              "Si vives en Estados Unidos: no vendemos tu información personal ni la compartimos a cambio de dinero. Según la Ley de Privacidad del Consumidor de California (CCPA/CPRA) y leyes estatales similares tienes derecho a oponerte a que tus datos se compartan para publicidad personalizada, a preguntar qué se guarda y a solicitar su eliminación. La forma más rápida de oponerte es «Ajustes → Privacidad de anuncios»; también puedes escribirnos. No te trataremos de forma diferente por ejercer estos derechos: todo el juego sigue igual de disponible."
+            ]
+          },
+          {
+            "heading": "Cambios",
+            "body": [
+              "Si esta política cambia, verás la versión vigente en la aplicación y en su dirección publicada; la fecha de arriba se actualiza."
             ]
           }
         ]
       },
       "terms": {
-        "title": "Terms of Use",
-        "updated": "Last updated: 5 September 2026",
-        "intro": "By downloading or using Yelken you accept these terms.",
+        "title": "Condiciones de uso",
+        "updated": "Última actualización: 5 de septiembre de 2026",
+        "intro": "Al descargar o usar Yelken aceptas estas condiciones.",
         "sections": [
           {
-            "heading": "Licence",
+            "heading": "Licencia",
             "body": [
-              "You are granted a non-transferable, non-exclusive licence to use Yelken for personal, non-commercial purposes. You may not copy, decompile, rent out or redistribute the app."
+              "Se te concede una licencia intransferible y no exclusiva para usar Yelken con fines personales y no comerciales. No puedes copiar, descompilar, alquilar ni redistribuir la aplicación."
             ]
           },
           {
-            "heading": "Content",
+            "heading": "Contenido",
             "body": [
-              "The clues, definitions, example sentences and meanings in the app were written originally for Yelken. Game content, interface text, logo and artwork are protected by copyright."
+              "Las pistas, definiciones, frases de ejemplo y significados de la aplicación se escribieron originalmente para Yelken. El contenido del juego, los textos de la interfaz, el logotipo y las ilustraciones están protegidos por derechos de autor."
             ]
           },
           {
-            "heading": "Purchases",
+            "heading": "Compras",
             "body": [
-              "• Premium is a one-time purchase, not a subscription.",
-              "• In-game gold and tickets are valid only inside the app, have no cash value, are non-refundable and non-transferable.",
-              "• Payment and refunds go through the Apple App Store or Google Play and follow that store’s rules.",
-              "• To restore your purchase on a new device, use \"Restore purchases\" in Settings."
+              "• Premium es una compra única, no una suscripción.",
+              "• El oro y los billetes del juego solo son válidos dentro de la aplicación, no tienen valor en efectivo, no son reembolsables ni transferibles.",
+              "• El pago y los reembolsos se realizan a través de Apple App Store o Google Play y siguen las normas de esa tienda.",
+              "• Para restaurar tu compra en un dispositivo nuevo, usa «Restaurar compras» en Ajustes."
             ]
           },
           {
-            "heading": "Advertising",
+            "heading": "Publicidad",
             "body": [
-              "The free version contains ads. Ad content is determined by Google AdMob; the publisher is not responsible for the content of the ads shown."
+              "La versión gratuita contiene anuncios. El contenido de los anuncios lo determina Google AdMob; el editor no es responsable del contenido de los anuncios mostrados."
             ]
           },
           {
-            "heading": "Availability",
+            "heading": "Disponibilidad",
             "body": [
-              "The app is provided \"as is\". It is not guaranteed to run without interruption or fault. The right to change or discontinue part or all of the app is reserved; users who bought premium are told in advance in such a case."
+              "La aplicación se ofrece «tal cual». No se garantiza que funcione sin interrupciones ni fallos. Se reserva el derecho de modificar o interrumpir la aplicación total o parcialmente; en ese caso, los usuarios que compraron Premium serán avisados con antelación."
             ]
           },
           {
-            "heading": "Limitation of liability",
+            "heading": "Limitación de responsabilidad",
             "body": [
-              "To the extent permitted by applicable law, no liability is accepted for indirect damages arising from use of the app. Your statutory rights as a consumer are not affected."
+              "En la medida en que lo permita la ley aplicable, no se acepta responsabilidad por daños indirectos derivados del uso de la aplicación. Tus derechos legales como consumidor no se ven afectados."
             ]
           },
           {
-            "heading": "Governing law",
+            "heading": "Ley aplicable",
             "body": [
-              "These terms are governed by the law of the Republic of Türkiye. Mandatory consumer protections of your country of residence are reserved."
+              "Estas condiciones se rigen por la legislación de la República de Turquía. Quedan a salvo las protecciones obligatorias al consumidor de tu país de residencia."
             ]
           }
         ]
       },
       "deletion": {
-        "title": "Yelken — Account Deletion",
-        "updated": "Last updated: 23 September 2026",
-        "intro": "This page explains how to delete your account and its data in Yelken, developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
+        "title": "Yelken — Eliminación de la cuenta",
+        "updated": "Última actualización: 27 de septiembre de 2026",
+        "intro": "Esta página explica cómo eliminar tu cuenta y sus datos en Yelken, desarrollada por Cemre Acar. La cuenta es opcional; si nunca iniciaste sesión, no guardamos ningún registro sobre ti en nuestro servidor.",
         "sections": [
           {
-            "heading": "Delete from inside the app",
+            "heading": "Eliminar desde la aplicación",
             "body": [
-              "1. Open Yelken and go to Settings with the gear icon at the top right.",
-              "2. Tap \"Delete my account\" below the Account section.",
-              "3. Confirm. If you signed in with Apple, Apple asks you to confirm once more.",
-              "Deletion happens immediately and cannot be undone."
+              "1. Abre Yelken y entra en Ajustes con el icono del engranaje, arriba a la derecha.",
+              "2. Toca «Eliminar mi cuenta» debajo de la sección Cuenta.",
+              "3. Confirma. Si iniciaste sesión con Apple, Apple te pide confirmar una vez más.",
+              "La eliminación es inmediata y no se puede deshacer."
             ]
           },
           {
-            "heading": "If you no longer have access to the app",
+            "heading": "Si ya no tienes acceso a la aplicación",
             "body": [
-              "Write to cemreacar94@gmail.com from the email address you signed in with, with \"Account deletion\" as the subject. We will delete your account and the data listed below within 30 days and let you know."
+              "Escribe a cemreacar94@gmail.com desde la dirección de correo con la que iniciaste sesión, con el asunto «Eliminación de cuenta». Eliminaremos tu cuenta y los datos indicados abajo en un plazo de 30 días y te avisaremos."
             ]
           },
           {
-            "heading": "Data that is deleted",
+            "heading": "Datos que se eliminan",
             "body": [
-              "• Account details: email address, name, profile photo link and user ID",
-              "• Leaderboard profile: username, rank, ship and sailor appearance, flag, total gold/gems, streak",
-              "• Scores and records of solved words",
-              "• Cloud backup: game progress, preferences and word review history",
-              "• Purchase records: transaction ID, product, number of gems and date"
+              "• Datos de la cuenta: dirección de correo, nombre, enlace a la foto de perfil e identificador de usuario",
+              "• Perfil de clasificación: nombre de usuario, rango, aspecto del barco y del marinero, bandera, total de oro y gemas, racha",
+              "• Puntuaciones y registros de palabras resueltas",
+              "• Registros de duelos: duelos, palabras encontradas, trofeos y billetes diarios",
+              "• Copia en la nube: progreso del juego, preferencias e historial de repaso de palabras",
+              "• Registros de compra: identificador de la transacción, producto, número de gemas y fecha"
             ]
           },
           {
-            "heading": "Data that is not deleted",
+            "heading": "Datos que no se eliminan",
             "body": [
-              "• Your game progress on the device lives on your phone, not on our server; remove it by uninstalling the app or with Settings → \"Reset all game data\".",
-              "• Records of Premium and other purchases stay in your Apple or Google store account; they follow the store’s own rules and cannot be deleted by us.",
-              "No additional data is kept on our server after deletion."
+              "• Tu progreso en el dispositivo está en tu teléfono, no en nuestro servidor; puedes borrarlo desinstalando la aplicación o con Ajustes → «Reiniciar todos los datos».",
+              "• Los registros de Premium y de otras compras se quedan en tu cuenta de la tienda de Apple o Google; siguen las normas de la propia tienda y no podemos eliminarlos.",
+              "Tras la eliminación no se guarda ningún dato adicional en nuestro servidor."
             ]
           }
         ]

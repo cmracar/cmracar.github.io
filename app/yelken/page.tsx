@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX } from 'lucide-react'
+import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords } from 'lucide-react'
 import Header from '@/app/components/Header'
 import legal from './legal.json'
 import StoreBadges from './StoreBadges'
@@ -20,40 +20,75 @@ export const metadata = {
   },
 }
 
-/** Uygulama işaretiyle birebir aynı geometri (yelken/src/components/Logo.tsx). */
+/**
+ * Uygulama işaretiyle birebir aynı geometri (yelken/src/components/Logo.tsx →
+ * `GEOMETRY.compact`): direkli yelkenli ve altında dört harf kutusu, üçüncüsü
+ * vurgulu. Logo değişirse burası da değişir.
+ */
 function Mark({ size = 96 }: { size?: number }) {
+  const tile = 10.5
+  const gap = 1.8
+  const total = 4 * tile + 3 * gap
+  const xs = [0, 1, 2, 3].map(i => 32 - total / 2 + i * (tile + gap))
   return (
     <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
       <rect x={0} y={0} width={64} height={64} rx={15} fill="#1A1231" />
       <g transform="translate(8.32, 8.32) scale(0.74)">
-        <path d="M30 14 L30 37 L14 37 Z" fill="#FBBF24" />
-        <path d="M34 7 L34 37 L53 37 Z" fill="#22D3EE" />
+        <path d="M32 4 V40" stroke="#F5F3FF" strokeWidth={2.4} strokeLinecap="round" fill="none" />
         <path
-          d="M10 45 Q21 40 32 45 Q43 50 54 45"
-          stroke="#F5F3FF"
-          strokeWidth={4.2}
-          strokeLinecap="round"
-          fill="none"
+          d="M30 15 L30 38 L14 38 Q17 27 30 15 Z"
+          fill="#FBBF24"
+          stroke="#241C17"
+          strokeWidth={1.8}
+          strokeLinejoin="round"
         />
         <path
-          d="M17 54 Q26 50 33 54 Q40 58 49 54"
-          stroke="#F5F3FF"
-          strokeWidth={3.36}
-          strokeLinecap="round"
-          fill="none"
+          d="M34 7 L34 38 L54 38 Q49 20 34 7 Z"
+          fill="#22D3EE"
+          stroke="#241C17"
+          strokeWidth={1.8}
+          strokeLinejoin="round"
         />
+        {xs.map((x, i) => (
+          <rect
+            key={x}
+            x={x}
+            y={44}
+            width={tile}
+            height={tile}
+            rx={2.4}
+            fill={i === 2 ? '#FBBF24' : '#F5F3FF'}
+            stroke="#241C17"
+            strokeWidth={1.1}
+          />
+        ))}
       </g>
     </svg>
   )
 }
 
+/** Uygulamadaki kelime markası: büyük harf, geniş aralık, üçüncü harf vurgulu. */
+function Wordmark({ name }: { name: string }) {
+  const letters = [...name.toLocaleUpperCase('tr')]
+  return (
+    <h1 className="text-4xl md:text-5xl font-extrabold tracking-[0.18em]">
+      {letters.map((ch, i) => (
+        <span key={i} className={i === 2 ? 'text-[#FBBF24]' : undefined}>
+          {ch}
+        </span>
+      ))}
+    </h1>
+  )
+}
+
 const shots = [
+  { src: '/yelken/home.png', title: 'Ana ekran', desc: 'Beş oyun, günün bulmacası ve kimlik kartın tek bir denizde.' },
   { src: '/yelken/crossword.png', title: 'Kesişen Rotalar', desc: 'İpuçlarından kesişen kelimeleri yerleştir.' },
   { src: '/yelken/wordhunt.png', title: 'Kelime Avı', desc: 'Izgarada gizlenmiş kelimeleri parmağınla çiz.' },
-  { src: '/yelken/voyage.png', title: 'Sefer', desc: 'Altı liman, üç erzak. Kaybedilebilen bir tur.' },
+  { src: '/yelken/voyage.png', title: 'Sefer', desc: 'Serbest Sefer’de tek başına, Düello’da gerçek bir rakiple aynı limanlarda.' },
   { src: '/yelken/ship.png', title: 'Gemi', desc: 'Oynadıkça büyüyen, kalıcı kademelerle gelişen bir yelkenli.' },
   { src: '/yelken/sailor.png', title: 'Gemici', desc: 'Rütbeni taşı, kazandığın kıyafetlerle kendine göre giydir.' },
-  { src: '/yelken/collection.png', title: 'Koleksiyon', desc: 'Rütbe, rozetler ve online sıralamadaki yerin.' },
+  { src: '/yelken/collection.png', title: 'Koleksiyon', desc: 'Rütbe, rozetler ve ilerlemen.' },
 ]
 
 const modes = [
@@ -61,6 +96,7 @@ const modes = [
   { icon: <Search size={20} />, name: 'Kelime Avı' },
   { icon: <Anchor size={20} />, name: 'İskele Düğümü' },
   { icon: <Route size={20} />, name: 'Sefer' },
+  { icon: <Swords size={20} />, name: 'Düello' },
   { icon: <Trophy size={20} />, name: 'Sıralama' },
 ]
 
@@ -77,8 +113,8 @@ const features = [
   },
   {
     icon: <Trophy size={22} className="text-yellow-300" />,
-    title: 'Online sıralama',
-    desc: 'Apple ya da Google ile giriş yap, çözdükçe puan topla, genel ve haftalık sıralamada yerini gör.',
+    title: 'Sıralama ve Düello',
+    desc: 'Apple ya da Google ile giriş yap: haftalık sıralamada yerini gör, Düello’da rakiplerle yarışıp Kupa Ligi’nde yüksel.',
   },
   {
     icon: <Wifi size={22} className="text-blue-300" />,
@@ -104,6 +140,9 @@ const documents = [
   { href: '/yelken/terms', label: 'Terms of Use', lang: 'EN', icon: <FileText size={18} /> },
   { href: '/yelken/hesap-silme', label: 'Hesap Silme', lang: 'TR', icon: <UserX size={18} /> },
   { href: '/yelken/delete-account', label: 'Account Deletion', lang: 'EN', icon: <UserX size={18} /> },
+  { href: '/yelken/privacidad', label: 'Política de privacidad', lang: 'ES', icon: <Shield size={18} /> },
+  { href: '/yelken/condiciones', label: 'Condiciones de uso', lang: 'ES', icon: <FileText size={18} /> },
+  { href: '/yelken/eliminar-cuenta', label: 'Eliminación de la cuenta', lang: 'ES', icon: <UserX size={18} /> },
 ]
 
 export default function YelkenPage() {
@@ -120,7 +159,7 @@ export default function YelkenPage() {
           <Mark />
           <div>
             <div className="flex items-center gap-3 flex-wrap">
-              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">{brand.app}</h1>
+              <Wordmark name={brand.app} />
               <span
                 className={`px-2.5 py-1 rounded-full text-xs font-semibold ${
                   status.live ? 'bg-green-500/15 text-green-300' : 'bg-yellow-500/15 text-yellow-300'
@@ -129,25 +168,14 @@ export default function YelkenPage() {
                 {status.label}
               </span>
             </div>
-            {/* Uygulamadaki kelime markasıyla aynı: ad tek renk, vurgu dalgada. */}
-            <svg viewBox="0 0 120 10" className="w-36 h-2.5 mt-1.5" aria-hidden="true">
-              <path
-                d="M0 5 Q10 1 20 5 Q30 9 40 5 Q50 1 60 5 Q70 9 80 5 Q90 1 100 5 Q110 9 120 5"
-                stroke="#22D3EE"
-                strokeWidth={2.6}
-                strokeLinecap="round"
-                fill="none"
-                opacity={0.85}
-              />
-            </svg>
           </div>
         </div>
 
         <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
           Bir kelime bulmacası — ve istersen bir dil öğretmeni. Arayüz dilini ve bulmaca dilini ayrı
           seçersin: ikisi aynıysa saf bir kelime oyunu oynarsın, farklıysa çözdüğün her kelime bir
-          tekrar programına girer. Dört oyun modu, günün bulmacası ve artık isteyenler için online
-          bir sıralama.
+          tekrar programına girer. Kesişen Rotalar, Kelime Avı, İskele Düğümü ve Sefer; her gün
+          yeni bir bulmaca; isteyenler için online sıralama ve gerçek rakiplerle Düello.
         </p>
 
         <div className="mt-7">

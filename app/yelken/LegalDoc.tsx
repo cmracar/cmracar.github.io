@@ -10,12 +10,13 @@ type Doc = {
   sections: { heading: string; body: string[] }[]
 }
 
-type Lang = 'tr' | 'en'
+type Lang = 'tr' | 'en' | 'es'
 type Kind = 'privacy' | 'terms' | 'deletion'
 
 const BACK: Record<Lang, string> = {
   tr: 'Yelken',
   en: 'Yelken',
+  es: 'Yelken',
 }
 
 /**

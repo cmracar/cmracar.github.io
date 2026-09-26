@@ -104,8 +104,9 @@ export default function Home() {
               </div>
               <p className="text-gray-300 leading-relaxed max-w-xl">
                 Kendi ürünüm: bir kelime bulmacası ve istersen bir dil öğretmeni. Dört oyun modu,
-                aralıklı tekrar programı, 6.000&apos;den fazla kelimelik Türkçe, İngilizce ve
-                İspanyolca dağarcık. Çevrimdışı oynanıyor; isteyene online sıralama.
+                aralıklı tekrar programı, 9.900&apos;den fazla kelimelik Türkçe, İngilizce ve
+                İspanyolca dağarcık. Çevrimdışı oynanıyor; isteyene online sıralama ve gerçek
+                rakiplerle Düello.
               </p>
               <div className="flex flex-wrap gap-2 mt-5">
                 {['React Native', 'Expo', 'TypeScript', 'SQLite'].map(tech => (
