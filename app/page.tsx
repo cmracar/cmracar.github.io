@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import StoreBadges from './yelken/StoreBadges'
 import { yelkenStatus } from './yelken/stores'
+import YouTube from './yelken/YouTube'
 
 const skills = [
   {
@@ -103,8 +104,8 @@ export default function Home() {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed max-w-xl">
-                Kendi ürünüm: bir kelime bulmacası ve istersen bir dil öğretmeni. Dört oyun modu,
-                aralıklı tekrar programı, 9.900&apos;den fazla kelimelik Türkçe, İngilizce ve
+                Kendi ürünüm: bir kelime bulmacası ve istersen bir dil öğretmeni. Beş oyun modu,
+                aralıklı tekrar programı, 11.000&apos;den fazla kelimelik Türkçe, İngilizce ve
                 İspanyolca dağarcık. Çevrimdışı oynanıyor; isteyene online sıralama ve gerçek
                 rakiplerle Düello.
               </p>
@@ -127,14 +128,14 @@ export default function Home() {
             </div>
             <div className="md:w-[42%] bg-gradient-to-br from-[#1C1238] to-[#0A0714] flex items-end justify-center gap-3 px-6 pt-8 overflow-hidden">
               <Image
-                src="/yelken/crossword.png"
-                alt="Yelken — kare bulmaca ekranı"
+                src="/yelken/faceoff.jpg"
+                alt="Yelken — Düello ekranı"
                 width={1080}
                 height={1920}
                 className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-4 group-hover:translate-y-2 transition-transform"
               />
               <Image
-                src="/yelken/wordhunt.png"
+                src="/yelken/wordhunt.jpg"
                 alt="Yelken — kelime avı ekranı"
                 width={1080}
                 height={1920}
@@ -142,6 +143,11 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+        {/* Fragman kartın dışında: kart bütünüyle bir bağlantı ve oynatıcının
+            dokunuşu onu tetiklememeli. */}
+        <div className="mt-8 max-w-3xl mx-auto">
+          <YouTube id="mSz_UbkjBSA" title="Yelken — fragman" />
         </div>
       </section>
 

@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords } from 'lucide-react'
+import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube } from 'lucide-react'
 import Header from '@/app/components/Header'
 import legal from './legal.json'
 import StoreBadges from './StoreBadges'
 import { yelkenStatus } from './stores'
+import YouTube from './YouTube'
 
 export const metadata = {
   title: 'Yelken | Kelime Bulmacası',
@@ -82,13 +83,22 @@ function Wordmark({ name }: { name: string }) {
 }
 
 const shots = [
-  { src: '/yelken/home.png', title: 'Ana ekran', desc: 'Beş oyun, günün bulmacası ve kimlik kartın tek bir denizde.' },
-  { src: '/yelken/crossword.png', title: 'Kesişen Rotalar', desc: 'İpuçlarından kesişen kelimeleri yerleştir.' },
-  { src: '/yelken/wordhunt.png', title: 'Kelime Avı', desc: 'Izgarada gizlenmiş kelimeleri parmağınla çiz.' },
-  { src: '/yelken/voyage.png', title: 'Sefer', desc: 'Serbest Sefer’de tek başına, Düello’da gerçek bir rakiple aynı limanlarda.' },
-  { src: '/yelken/ship.png', title: 'Gemi', desc: 'Oynadıkça büyüyen, kalıcı kademelerle gelişen bir yelkenli.' },
-  { src: '/yelken/sailor.png', title: 'Gemici', desc: 'Rütbeni taşı, kazandığın kıyafetlerle kendine göre giydir.' },
-  { src: '/yelken/collection.png', title: 'Koleksiyon', desc: 'Rütbe, rozetler ve ilerlemen.' },
+  { src: '/yelken/home.jpg', title: 'Ana ekran', desc: 'Beş oyun, günün bulmacası ve kimlik kartın tek bir denizde.' },
+  { src: '/yelken/faceoff.jpg', title: 'Düello', desc: 'Çevrim içi bir rakiple aynı limanlarda yarış; puanı yüksek olan kupayı alır.' },
+  { src: '/yelken/wordhunt.jpg', title: 'Kelime Avı', desc: 'Izgarada gizlenmiş kelimeleri parmağınla çiz.' },
+  { src: '/yelken/duelhub.jpg', title: 'Kupa Ligi', desc: 'Kupa kazan, Liman’dan Efsane’ye beş ligde yüksel.' },
+  { src: '/yelken/voyagemodes.jpg', title: 'Sefer', desc: 'Serbest Sefer’de tek başına, Düello’da gerçek bir rakiple.' },
+  { src: '/yelken/ship.jpg', title: 'Gemi', desc: 'Oynadıkça büyüyen, kalıcı kademelerle gelişen bir yelkenli.' },
+  { src: '/yelken/sailor.jpg', title: 'Kaptan', desc: 'Rütbeni taşı, kazandığın kıyafetlerle kendine göre giydir.' },
+  { src: '/yelken/profile.jpg', title: 'Profil', desc: 'Rakibinin gemisini ve ligini gör, meydan oku.' },
+]
+
+/** YouTube kanalı: @cmracardev. Yatay fragman liste dışı, Shorts herkese açık. */
+const CHANNEL = 'https://www.youtube.com/@cmracardev'
+const trailer = { id: 'mSz_UbkjBSA', title: 'Yelken — fragman' }
+const shorts = [
+  { id: '5_wh1xCZYvM', title: 'Yelken — kısa fragman', poster: '/yelken/short-fragman.jpg' },
+  { id: 'ibtNQJwaObI', title: 'Yelken — Düello', poster: '/yelken/short-duello.jpg' },
 ]
 
 const modes = [
@@ -195,12 +205,35 @@ export default function YelkenPage() {
         </div>
       </section>
 
+      {/* VİDEOLAR */}
+      <section className="container mx-auto px-4 md:px-8 py-14 max-w-5xl">
+        <div className="flex items-end justify-between gap-4 mb-8 flex-wrap">
+          <h2 className="text-sm uppercase tracking-widest text-gray-500">Videolar</h2>
+          <a
+            href={CHANNEL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition no-underline"
+          >
+            <Youtube size={18} /> YouTube kanalı
+          </a>
+        </div>
+        <div className="grid gap-6 md:grid-cols-[1fr_auto] items-start">
+          <YouTube id={trailer.id} title={trailer.title} />
+          <div className="grid grid-cols-2 gap-4 md:w-72">
+            {shorts.map(short => (
+              <YouTube key={short.id} id={short.id} title={short.title} poster={short.poster} vertical />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* EKRANLAR */}
       <section className="pb-16 border-y border-white/5 bg-white/[0.02] py-14">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-8">Ekranlar</h2>
           {/* Dar ekranda yatay kaydırma: telefon görselleri küçültülünce okunmuyor. */}
-          <div className="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-3">
+          <div className="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-4">
             {shots.map(shot => (
               <figure key={shot.src} className="shrink-0 w-52 md:w-auto">
                 <Image
