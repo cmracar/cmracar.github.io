@@ -95,10 +95,16 @@ const shots = [
 
 /** YouTube kanalı: @cmracardev. Yatay fragman liste dışı, Shorts herkese açık. */
 const CHANNEL = 'https://www.youtube.com/@cmracardev'
-const trailer = { id: 'mSz_UbkjBSA', title: 'Yelken — fragman' }
-const shorts = [
-  { id: '5_wh1xCZYvM', title: 'Yelken — kısa fragman', poster: '/yelken/short-fragman.jpg' },
-  { id: 'ibtNQJwaObI', title: 'Yelken — Düello', poster: '/yelken/short-duello.jpg' },
+/**
+ * Galeri tek sırada ve **eşit yükseklikte**: sütun genişlikleri videoların
+ * en-boy oranından (16:9 → 256, 9:16 → 81; eşit yükseklikte genişlik oranı
+ * 16/9 : 9/16). `fr` boşluklar düşüldükten sonra bölündüğü için yükseklik
+ * birebir tutar.
+ */
+const videos = [
+  { id: 'mSz_UbkjBSA', title: 'Fragman', meta: 'Yatay · 50 sn', vertical: false },
+  { id: '5_wh1xCZYvM', title: 'Kısa fragman', meta: 'Short · 50 sn', vertical: true, poster: '/yelken/short-fragman.jpg' },
+  { id: 'ibtNQJwaObI', title: 'Düello', meta: 'Short · 35 sn', vertical: true, poster: '/yelken/short-duello.jpg' },
 ]
 
 const modes = [
@@ -218,13 +224,21 @@ export default function YelkenPage() {
             <Youtube size={18} /> YouTube kanalı
           </a>
         </div>
-        <div className="grid gap-6 md:grid-cols-[1fr_auto] items-start">
-          <YouTube id={trailer.id} title={trailer.title} />
-          <div className="grid grid-cols-2 gap-4 md:w-72">
-            {shorts.map(short => (
-              <YouTube key={short.id} id={short.id} title={short.title} poster={short.poster} vertical />
-            ))}
-          </div>
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-[256fr_81fr_81fr]">
+          {videos.map(video => (
+            <figure key={video.id} className={video.vertical ? '' : 'col-span-2 md:col-span-1'}>
+              <YouTube
+                id={video.id}
+                title={`Yelken — ${video.title}`}
+                vertical={video.vertical}
+                poster={video.poster}
+              />
+              <figcaption className="mt-3">
+                <span className="block text-sm font-semibold text-gray-100">{video.title}</span>
+                <span className="block text-xs text-gray-400 mt-0.5">{video.meta}</span>
+              </figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 

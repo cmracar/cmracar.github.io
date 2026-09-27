@@ -126,28 +126,15 @@ export default function Home() {
                 Projeyi incele <ArrowRight size={18} />
               </span>
             </div>
-            <div className="md:w-[42%] bg-gradient-to-br from-[#1C1238] to-[#0A0714] flex items-end justify-center gap-3 px-6 pt-8 overflow-hidden">
-              <Image
-                src="/yelken/faceoff.jpg"
-                alt="Yelken — Düello ekranı"
-                width={1080}
-                height={1920}
-                className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-4 group-hover:translate-y-2 transition-transform"
-              />
-              <Image
-                src="/yelken/wordhunt.jpg"
-                alt="Yelken — kelime avı ekranı"
-                width={1080}
-                height={1920}
-                className="w-32 md:w-36 h-auto rounded-t-xl border border-white/10 shadow-2xl translate-y-10 group-hover:translate-y-7 transition-transform"
-              />
+            {/* Fragman kartın sağında. Kart bütünüyle bir bağlantı (z-0 örtü);
+                oynatıcı onun üstünde (z-10) ki dokunuş videoyu oynatsın,
+                sayfaya gitmesin. */}
+            <div className="md:w-[46%] bg-gradient-to-br from-[#1C1238] to-[#0A0714] flex items-center justify-center p-6 md:p-8">
+              <div className="relative z-10 w-full">
+                <YouTube id="mSz_UbkjBSA" title="Yelken — fragman" />
+              </div>
             </div>
           </div>
-        </div>
-        {/* Fragman kartın dışında: kart bütünüyle bir bağlantı ve oynatıcının
-            dokunuşu onu tetiklememeli. */}
-        <div className="mt-8 max-w-3xl mx-auto">
-          <YouTube id="mSz_UbkjBSA" title="Yelken — fragman" />
         </div>
       </section>
 
