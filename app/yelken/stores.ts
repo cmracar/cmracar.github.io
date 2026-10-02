@@ -17,7 +17,7 @@ export const YELKEN_STORES = {
     name: 'Google Play',
     locative: 'Google Play’de',
     url: 'https://play.google.com/store/apps/details?id=io.github.cmracar.yelken',
-    live: false,
+    live: true,
   },
 } as const
 
