@@ -105,7 +105,7 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 5 Eylül 2026",
+        "updated": "Son güncelleme: 2 Ekim 2026",
         "intro": "Yelken’i indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -118,6 +118,12 @@
             "heading": "İçerik",
             "body": [
               "Uygulamadaki kelime ipuçları, tanımlar, örnek cümleler ve Türkçe karşılıklar Yelken için özgün olarak yazılmıştır. Oyun içeriği, arayüz metinleri, logo ve görseller telif hakkıyla korunur."
+            ]
+          },
+          {
+            "heading": "Düello",
+            "body": [
+              "Düello asenkron oynanır: rakibiniz aynı limanları sizden önce ya da sonra oynar. Uygun bir rakip bulunamadığında sizi yapay oyuncularla eşleştirebiliriz; bu oyuncular sıralamalarda da yer alabilir."
             ]
           },
           {
@@ -295,7 +301,7 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: 5 September 2026",
+        "updated": "Last updated: 2 October 2026",
         "intro": "By downloading or using Yelken you accept these terms.",
         "sections": [
           {
@@ -308,6 +314,12 @@
             "heading": "Content",
             "body": [
               "The clues, definitions, example sentences and meanings in the app were written originally for Yelken. Game content, interface text, logo and artwork are protected by copyright."
+            ]
+          },
+          {
+            "heading": "Duel",
+            "body": [
+              "Duels are asynchronous: your opponent plays the same ports before or after you. When no suitable opponent is available, we may match you with computer-controlled players, who may also appear on the leaderboards."
             ]
           },
           {
@@ -485,7 +497,7 @@
       },
       "terms": {
         "title": "Condiciones de uso",
-        "updated": "Última actualización: 5 de septiembre de 2026",
+        "updated": "Última actualización: 2 de octubre de 2026",
         "intro": "Al descargar o usar Yelken aceptas estas condiciones.",
         "sections": [
           {
@@ -498,6 +510,12 @@
             "heading": "Contenido",
             "body": [
               "Las pistas, definiciones, frases de ejemplo y significados de la aplicación se escribieron originalmente para Yelken. El contenido del juego, los textos de la interfaz, el logotipo y las ilustraciones están protegidos por derechos de autor."
+            ]
+          },
+          {
+            "heading": "Duelo",
+            "body": [
+              "Los duelos son asíncronos: tu rival juega los mismos puertos antes o después que tú. Si no hay un rival adecuado disponible, podemos emparejarte con jugadores controlados por la aplicación, que también pueden aparecer en las clasificaciones."
             ]
           },
           {
