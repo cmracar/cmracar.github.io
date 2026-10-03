@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 19,
-    "version": "1.3.2",
+    "versionCode": 21,
+    "version": "1.3.3",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Bulmacalar daha akıcı: limanlarda harfler ipucuna uçuyor, Kesişen Rotalar'da ipucu şeridi bastığın kelimeye kayıyor ve ipuçları 1, 2, 3 sırasında.",
-      "en": "Smoother puzzles: in ports the letters fly into their clue, and in Crossing Routes the clue strip follows the square you tap, with clues in 1, 2, 3 order.",
-      "es": "Puzles más fluidos: en los puertos las letras vuelan a su pista y en Rutas Cruzadas la tira de pistas sigue la casilla que tocas, con pistas en orden 1, 2, 3."
+      "tr": "Daha hafif bir Yelken: indirme boyutu küçüldü, tabletlerde oyun yatay da açılabiliyor. Ayrıca limanlarda harfler ipucuna uçuyor ve ipuçları 1, 2, 3 sırasında.",
+      "en": "A lighter Yelken: a smaller download, and on tablets the game can open in landscape. Plus letters fly into their clue in ports, and clues are in 1, 2, 3 order.",
+      "es": "Un Yelken más ligero: descarga más pequeña y en tabletas el juego puede abrirse en horizontal. Además, en los puertos las letras vuelan a su pista y las pistas van en orden 1, 2, 3."
     }
   }
 }
