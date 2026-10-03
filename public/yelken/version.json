@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 18,
-    "version": "1.3.1",
+    "versionCode": 19,
+    "version": "1.3.2",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Düello geldi: çevrim içi rakibinle aynı limanları oyna, Kupa Ligi'nde yüksel. Ayrıca 1.289 yeni kelime ve daha hızlı açılış.",
-      "en": "Duel is here: race an online rival through the same ports and climb the Trophy League. Plus 1,289 new words and a faster launch.",
-      "es": "Llega el Duelo: compite con un rival en línea en los mismos puertos y sube en la Liga de Trofeos. Además, 1.289 palabras nuevas y un inicio más rápido."
+      "tr": "Bulmacalar daha akıcı: limanlarda harfler ipucuna uçuyor, Kesişen Rotalar'da ipucu şeridi bastığın kelimeye kayıyor ve ipuçları 1, 2, 3 sırasında.",
+      "en": "Smoother puzzles: in ports the letters fly into their clue, and in Crossing Routes the clue strip follows the square you tap, with clues in 1, 2, 3 order.",
+      "es": "Puzles más fluidos: en los puertos las letras vuelan a su pista y en Rutas Cruzadas la tira de pistas sigue la casilla que tocas, con pistas en orden 1, 2, 3."
     }
   }
 }
