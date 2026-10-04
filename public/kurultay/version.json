@@ -1,0 +1,12 @@
+{
+  "android": {
+    "latest": "0.1.0",
+    "min": "0.1.0",
+    "url": "https://play.google.com/store/apps/details?id=io.github.cmracar.kurultay"
+  },
+  "ios": {
+    "latest": "0.1.0",
+    "min": "0.1.0",
+    "url": "https://cmracar.github.io/kurultay"
+  }
+}

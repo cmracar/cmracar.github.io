@@ -18,20 +18,6 @@ export const metadata = {
   },
 }
 
-/** Oyundaki başlık süsü: kırmızı flamalı tuğ (mızrak), koyu deri zemin üstünde. */
-function Mark({ size = 96 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
-      <rect x={0} y={0} width={64} height={64} rx={15} fill="#3B2414" />
-      <circle cx={32} cy={32} r={22} fill="none" stroke="#E2A93B" strokeWidth={2} opacity={0.55} />
-      <path d="M32 8 L35.5 20 L32 23 L28.5 20 Z" fill="#E2A93B" stroke="#1F130A" strokeWidth={1.2} strokeLinejoin="round" />
-      <path d="M32 23 V56" stroke="#E2A93B" strokeWidth={3} strokeLinecap="round" />
-      <path d="M33.5 25 L48 29.5 L33.5 34 Z" fill="#B23A2E" stroke="#1F130A" strokeWidth={1.2} strokeLinejoin="round" />
-      <path d="M30.5 24.5 Q24 30 26 38 M30.5 24.5 Q22.5 28 22 35" stroke="#F3E3C3" strokeWidth={1.6} strokeLinecap="round" fill="none" />
-    </svg>
-  )
-}
-
 const shots = [
   { src: '/kurultay/home.jpg', title: 'Ana ekran', desc: 'Obanın, rütben, Haftanın Akını ve sıradaki hedefin.' },
   { src: '/kurultay/day.jpg', title: 'Gündüz', desc: 'Altını nereye harcayacağını seç: yurt, ağıl, kule, çit.' },
@@ -93,17 +79,19 @@ export default function KurultayPage() {
 
       {/* HERO */}
       <section className="container mx-auto px-4 md:px-8 pt-12 pb-14 max-w-5xl">
-        <div className="flex items-center gap-5 mb-7">
-          <Mark />
-          <div>
-            <div className="flex items-center gap-3 flex-wrap">
-              <h1 className="text-4xl md:text-5xl font-extrabold tracking-[0.12em] text-amber-300">KURULTAY</h1>
-              <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-yellow-500/15 text-yellow-300">
-                Geliştiriliyor
-              </span>
-            </div>
-            <p className="text-sm uppercase tracking-[0.3em] text-gray-400 mt-1">Bozkır Savunması</p>
-          </div>
+        <div className="flex flex-col items-start gap-4 mb-8">
+          <h1 className="sr-only">Kurultay — Bozkır Savunması</h1>
+          <Image
+            src="/kurultay/logo.png"
+            alt="Kurultay — Bozkır Savunması"
+            width={1900}
+            height={965}
+            priority
+            className="w-full max-w-[520px] h-auto drop-shadow-2xl"
+          />
+          <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-yellow-500/15 text-yellow-300">
+            Geliştiriliyor
+          </span>
         </div>
 
         <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
