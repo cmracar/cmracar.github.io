@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 22,
-    "version": "1.3.4",
+    "versionCode": 23,
+    "version": "1.3.5",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Tabletler için yeni görünüm: oyun ekranın ortasında rahat okunur bir düzende açılıyor, dikey tutulan tablette yazılar, düğmeler ve klavye ekranı dolduracak kadar büyüyor.",
-      "en": "A new look for tablets: the game opens in a comfortable layout at the center of the screen, and in portrait, text, buttons and the keyboard grow to fill the screen.",
-      "es": "Un nuevo aspecto para tabletas: el juego se abre con un diseño cómodo en el centro de la pantalla y, en vertical, los textos, los botones y el teclado crecen hasta llenar la pantalla."
+      "tr": "Düello davetleri artık cebinde: biri sana meydan okuyunca bildirim gelir, dokununca doğrudan Düello açılır. Gece 23:00–09:00 arası bildirim gelmez; Ayarlar'dan ayrıca kapatabilirsin.",
+      "en": "Duel challenges now reach you: when someone challenges you, you get a notification and tapping it opens the Duel. None between 23:00 and 09:00; you can turn them off in Settings.",
+      "es": "Los retos de duelo ya te llegan: cuando alguien te reta, recibes una notificación y al tocarla se abre el Duelo. Ninguna entre las 23:00 y las 09:00; puedes desactivarlas en Ajustes."
     }
   }
 }
