@@ -1,0 +1,305 @@
+{
+  "$generated": "kurultay · Docs/legal/legal.json (kaynak). Siteye tools/legal_site.sh ile kopyalanır; sitedeki kopyayı elle düzenleme.",
+  "brand": {
+    "app": "Kurultay",
+    "publisher": "Cemre Acar",
+    "supportEmail": "cemreacar94@gmail.com",
+    "copyright": "© 2026 Cemre Acar"
+  },
+  "documents": {
+    "tr": {
+      "privacy": {
+        "title": "Gizlilik Politikası",
+        "updated": "Son güncelleme: 5 Ekim 2026",
+        "intro": "Kurultay'ı oynamak için Apple veya Google ile giriş yaparsınız; hesap, Haftanın Akını sıralamasında herkesin aynı tabloda yarışabilmesi için gereklidir. Oyun ilerlemeniz cihazınızda kalır; sunucumuza yalnızca hesabınız ve sıralama skorlarınız gider. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
+        "sections": [
+          {
+            "heading": "Cihazınızda kalan veriler",
+            "body": [
+              "Şunlar yalnızca cihazınızda durur ve sunucumuza gönderilmez:",
+              "• Oyun ilerlemesi: sürmekte olan sefer, Kut, Şan, rütbe, malzemeler, Kam Ağacı, Gökbörü'nün teçhizatı ve yetenekleri, Bozkır Haritası ve boy dostlukları\n• Günlük hediye, Bey'in Buyrukları ve Haftanın Akını deneme hakları\n• Tercihler: dil, müzik, ses, titreşim ve ekran sarsıntısı ayarları",
+              "Uygulamayı silerseniz bu veriler cihazınızdan da silinir."
+            ]
+          },
+          {
+            "heading": "Sunucumuzda saklanan veriler",
+            "body": [
+              "Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
+              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: size otomatik verilen takma ad (örneğin \"Akıncı 3f2a\")\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu",
+              "Diğer oyuncular sıralamada yalnızca takma adınızı ve skorlarınızı görür. E-posta adresiniz, adınız ve profil fotoğrafınız kimseye gösterilmez.",
+              "Bu veriler Supabase altyapısında, Avrupa Birliği'ndeki (Frankfurt) sunucularda tutulur. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
+            ]
+          },
+          {
+            "heading": "Hesabınızı silme",
+            "body": [
+              "Ayarlar → \"Hesabımı sil\" ile hesabınızı istediğiniz an silebilirsiniz. Hesabınız, takma adınız ve bütün sıralama skorlarınız kalıcı olarak silinir.",
+              "Cihazınızdaki oyun ilerlemesi silinmez; uygulamayı silerek kaldırabilirsiniz.",
+              "Uygulamaya artık erişiminiz yoksa, giriş yaptığınız e-posta adresini belirterek bize yazın; hesabınızı 30 gün içinde sileriz."
+            ]
+          },
+          {
+            "heading": "Bildirimler",
+            "body": [
+              "Hatırlatmalar (günlük hediye, Haftanın Akını, obanızın sizi beklemesi) cihazınızda planlanır; sunucumuz bildirim göndermez ve bildirim içeriği cihazınızdan çıkmaz. İzin vermezseniz özellik kapalı kalır, oyunun geri kalanı normal çalışır."
+            ]
+          },
+          {
+            "heading": "Reklamlar, satın almalar ve istatistik",
+            "body": [
+              "Bu sürümde reklam ağı, uygulama içi satın alma, kullanım istatistiği ya da çökme raporu yoktur; bu amaçlarla hiçbir veri toplanmaz ve üçüncü taraflarla paylaşılmaz. Bunlardan biri eklenirse bu politika, eklenmeden önce güncellenir."
+            ]
+          },
+          {
+            "heading": "Çocuklar",
+            "body": [
+              "Kurultay 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek kişisel veri toplamaz. 13 yaşından küçük bir çocuğun verisinin işlendiğini düşünüyorsanız bize yazın; ilgili hesabı sileriz."
+            ]
+          },
+          {
+            "heading": "Haklarınız",
+            "body": [
+              "KVKK ve GDPR kapsamında hakkınızda hangi verilerin tutulduğunu öğrenme, düzeltilmesini ya da silinmesini isteme haklarınız var. Hesabınızı oyunun içinden kendiniz silebilirsiniz; diğer talepleriniz için bize yazabilirsiniz. Kişisel bilgilerinizi satmıyor ve para karşılığı paylaşmıyoruz."
+            ]
+          },
+          {
+            "heading": "Değişiklikler",
+            "body": [
+              "Bu politika değişirse güncel sürümü yayımlandığı adreste görürsünüz; yukarıdaki tarih yenilenir."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Kullanım Koşulları",
+        "updated": "Son güncelleme: 5 Ekim 2026",
+        "intro": "Kurultay'ı indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
+        "sections": [
+          {
+            "heading": "Kullanım hakkı",
+            "body": [
+              "Kurultay'ı kişisel ve ticari olmayan amaçla kullanmanız için devredilemez, münhasır olmayan bir lisans verilir. Uygulamayı kopyalayamaz, kaynak koduna dönüştüremez, kiralayamaz veya yeniden dağıtamazsınız."
+            ]
+          },
+          {
+            "heading": "İçerik",
+            "body": [
+              "Oyunun dünyası, karakterleri, görselleri, müziği, sesleri ve metinleri Kurultay için özgün olarak üretilmiştir ve telif hakkıyla korunur."
+            ]
+          },
+          {
+            "heading": "Hesap ve sıralama",
+            "body": [
+              "Hesabınız tek kişiliktir; başkasına devredemezsiniz. Sıralamada size otomatik bir takma ad verilir.",
+              "Sıralamanın adil kalması için hile, oyunu değiştirme, otomatik oynatma ya da skor sunucusunu kötüye kullanma yasaktır. Böyle bir durumda ilgili skorları silme ve hesabı kapatma hakkı saklıdır."
+            ]
+          },
+          {
+            "heading": "Oyun içi değerler",
+            "body": [
+              "Altın, Kut, Kut Taşı, Şan ve malzemeler yalnızca oyun içinde geçerlidir; gerçek para karşılığı değildir, satılamaz ve devredilemez."
+            ]
+          },
+          {
+            "heading": "Hizmetin sürekliliği",
+            "body": [
+              "Uygulama \"olduğu gibi\" sunulur. Kesintisiz veya hatasız çalışacağı garanti edilmez. Oyunun, sıralamanın ya da Haftanın Akını'nın bir bölümünü veya tamamını değiştirme ya da sonlandırma hakkı saklıdır."
+            ]
+          },
+          {
+            "heading": "Sorumluluk sınırı",
+            "body": [
+              "Yürürlükteki hukukun izin verdiği ölçüde, uygulamanın kullanımından doğan dolaylı zararlardan sorumluluk kabul edilmez. Tüketici olarak sahip olduğunuz yasal haklar bu maddeden etkilenmez."
+            ]
+          },
+          {
+            "heading": "Uygulanacak hukuk",
+            "body": [
+              "Bu koşullara Türkiye Cumhuriyeti hukuku uygulanır. Tüketici olarak bulunduğunuz ülkenin zorunlu koruyucu hükümleri saklıdır."
+            ]
+          }
+        ]
+      },
+      "deletion": {
+        "title": "Kurultay — Hesap Silme",
+        "updated": "Son güncelleme: 5 Ekim 2026",
+        "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Kurultay oyunundaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır.",
+        "sections": [
+          {
+            "heading": "Oyunun içinden silme",
+            "body": [
+              "1. Kurultay'ı açın ve ana ekranda Ayarlar'a girin.\n2. Hesap satırının altındaki \"Hesabımı sil\"e dokunun.\n3. Onaylayın.",
+              "Silme hemen gerçekleşir ve geri alınamaz."
+            ]
+          },
+          {
+            "heading": "Oyuna erişiminiz yoksa",
+            "body": [
+              "Giriş yaptığınız e-posta adresinden, konu satırına \"Kurultay hesap silme\" yazarak cemreacar94@gmail.com adresine yazın. Hesabınızı ve aşağıda sayılan verileri 30 gün içinde siler, size bildiririz."
+            ]
+          },
+          {
+            "heading": "Silinen veriler",
+            "body": [
+              "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı, kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: takma ad\n• Haftanın Akını skorlarının tümü",
+              "Sunucumuzda silme sonrasında saklanan ek bir veri yoktur."
+            ]
+          },
+          {
+            "heading": "Silinmeyen veriler",
+            "body": [
+              "Cihazınızdaki oyun ilerlemesi sunucuda değil telefonunuzda durur; uygulamayı silerek kaldırabilirsiniz."
+            ]
+          }
+        ]
+      }
+    },
+    "en": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "updated": "Last updated: October 5, 2026",
+        "intro": "To play Kurultay you sign in with Apple or Google; an account is required so that everyone can compete on the same Raid of the Week leaderboard. Your game progress stays on your device; only your account and leaderboard scores reach our server. You can delete your account at any time from inside the game.",
+        "sections": [
+          {
+            "heading": "Data that stays on your device",
+            "body": [
+              "The following stays only on your device and is never sent to our server:",
+              "• Game progress: the current campaign, Kut, Glory, rank, materials, the Kam Tree, Gökbörü's gear and skills, the Steppe Map and clan friendships\n• Daily gift, the Bey's Orders and Raid of the Week attempts\n• Preferences: language, music, sound, vibration and screen shake settings",
+              "If you uninstall the app, this data is removed from your device too."
+            ]
+          },
+          {
+            "heading": "Data stored on our server",
+            "body": [
+              "When you sign in with Apple or Google we store:",
+              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname given to you automatically (for example \"Akıncı 3f2a\")\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed",
+              "Other players only see your nickname and your scores on the leaderboard. Your email address, name and profile picture are never shown to anyone.",
+              "This data is kept on Supabase infrastructure, on servers in the European Union (Frankfurt). It is kept for as long as your account exists and is deleted when you delete your account."
+            ]
+          },
+          {
+            "heading": "Deleting your account",
+            "body": [
+              "You can delete your account at any time in Settings → \"Delete my account\". Your account, nickname and all your leaderboard scores are permanently deleted.",
+              "Game progress on your device is not deleted; you can remove it by uninstalling the app.",
+              "If you no longer have access to the app, write to us from the email address you signed in with; we will delete your account within 30 days."
+            ]
+          },
+          {
+            "heading": "Notifications",
+            "body": [
+              "Reminders (daily gift, Raid of the Week, your camp waiting for you) are scheduled on your device; our server sends no notifications and their content never leaves your device. If you don't grant permission the feature stays off and the rest of the game works normally."
+            ]
+          },
+          {
+            "heading": "Ads, purchases and statistics",
+            "body": [
+              "This version has no ad network, no in-app purchases, no usage statistics and no crash reporting; no data is collected for these purposes or shared with third parties. If any of these is added, this policy will be updated before it is."
+            ]
+          },
+          {
+            "heading": "Children",
+            "body": [
+              "Kurultay is not directed at children under 13 and does not knowingly collect personal data from them. If you believe the data of a child under 13 is being processed, write to us and we will delete the account."
+            ]
+          },
+          {
+            "heading": "Your rights",
+            "body": [
+              "Under the GDPR and Turkish data protection law (KVKK) you have the right to know what data is held about you and to ask for it to be corrected or deleted. You can delete your account yourself from inside the game; for other requests, write to us. We do not sell your personal information or share it for money."
+            ]
+          },
+          {
+            "heading": "Changes",
+            "body": [
+              "If this policy changes, the current version will be available at the address where it is published and the date above will be updated."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Terms of Use",
+        "updated": "Last updated: October 5, 2026",
+        "intro": "By downloading or using Kurultay you agree to these terms.",
+        "sections": [
+          {
+            "heading": "Licence",
+            "body": [
+              "You are granted a non-transferable, non-exclusive licence to use Kurultay for personal, non-commercial purposes. You may not copy, decompile, rent or redistribute the app."
+            ]
+          },
+          {
+            "heading": "Content",
+            "body": [
+              "The game's world, characters, art, music, sounds and texts were made originally for Kurultay and are protected by copyright."
+            ]
+          },
+          {
+            "heading": "Account and leaderboard",
+            "body": [
+              "Your account is for you alone and cannot be transferred. You are given a nickname automatically on the leaderboard.",
+              "To keep the leaderboard fair, cheating, modifying the game, automated play and abuse of the score server are forbidden. In such cases we reserve the right to remove the scores concerned and to close the account."
+            ]
+          },
+          {
+            "heading": "In-game values",
+            "body": [
+              "Gold, Kut, Kut Stones, Glory and materials are valid only inside the game; they have no real-money value and cannot be sold or transferred."
+            ]
+          },
+          {
+            "heading": "Continuity of service",
+            "body": [
+              "The app is provided \"as is\". It is not guaranteed to run without interruption or errors. We reserve the right to change or discontinue any part of the game, the leaderboard or the Raid of the Week."
+            ]
+          },
+          {
+            "heading": "Limitation of liability",
+            "body": [
+              "To the extent permitted by applicable law, no liability is accepted for indirect damages arising from use of the app. Your statutory rights as a consumer are not affected."
+            ]
+          },
+          {
+            "heading": "Governing law",
+            "body": [
+              "These terms are governed by the laws of the Republic of Türkiye. Mandatory consumer protection rules of the country you live in remain unaffected."
+            ]
+          }
+        ]
+      },
+      "deletion": {
+        "title": "Kurultay — Account Deletion",
+        "updated": "Last updated: October 5, 2026",
+        "intro": "This page explains how to delete your account in Kurultay, a game developed by Cemre Acar, and the data linked to it.",
+        "sections": [
+          {
+            "heading": "Deleting from inside the game",
+            "body": [
+              "1. Open Kurultay and go to Settings on the home screen.\n2. Tap \"Delete my account\" below the account row.\n3. Confirm.",
+              "Deletion happens immediately and cannot be undone."
+            ]
+          },
+          {
+            "heading": "If you can't access the game",
+            "body": [
+              "Write to cemreacar94@gmail.com from the email address you signed in with, with \"Kurultay account deletion\" in the subject line. We will delete your account and the data listed below within 30 days and let you know."
+            ]
+          },
+          {
+            "heading": "Data that is deleted",
+            "body": [
+              "• Account details: email address, name, profile picture link, user ID and sign-in dates\n• Leaderboard profile: nickname\n• All Raid of the Week scores",
+              "No additional data is kept on our server after deletion."
+            ]
+          },
+          {
+            "heading": "Data that is not deleted",
+            "body": [
+              "Game progress on your device lives on your phone, not on the server; you can remove it by uninstalling the app."
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -109,6 +109,19 @@
         "category": "carbon"
     },
     {
+        "projectName": "Kurultay",
+        "description": "Kendi ürünüm: bozkırda geçen, kahraman kontrollü üs savunması, göç ve hafif roguelite oyunu. Gündüz oba kurulur, gece Gökbörü ile akınlar karşılanır; otlak tükenince göç edilir. Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor. Google ve Apple girişiyle Haftanın Akını sıralaması. Android ve iOS için geliştiriliyor.",
+        "preview": "/kurultay",
+        "technologies": [
+            "Unity 6",
+            "C#",
+            "URP",
+            "Supabase"
+        ],
+        "isCompleted": false,
+        "category": "freelance"
+    },
+    {
         "projectName": "Yelken",
         "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, 11.000'den fazla kelimelik Türkçe, İngilizce ve İspanyolca dağarcık. Çevrimdışı oynanır, hesap gerektirmez — isteyenler için online sıralama, bulut yedeği ve gerçek rakiplerle Düello da var. Google Play'de yayında; App Store yayını yolda.",
         "preview": "/yelken",
