@@ -11,7 +11,7 @@
       "privacy": {
         "title": "Gizlilik Politikası",
         "updated": "Son güncelleme: 5 Ekim 2026",
-        "intro": "Kurultay'ı oynamak için Apple veya Google ile giriş yaparsınız; hesap, Haftanın Akını sıralamasında herkesin aynı tabloda yarışabilmesi için gereklidir. Oyun ilerlemeniz cihazınızda kalır; sunucumuza yalnızca hesabınız ve sıralama skorlarınız gider. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
+        "intro": "Kurultay'ı oynamak için Apple veya Google ile giriş yaparsınız; hesap, Haftanın Akını sıralamasında herkesin aynı tabloda yarışabilmesi için gereklidir. Oyun ilerlemeniz cihazınızda kalır; sunucumuza yalnızca hesabınız ve sıralama skorlarınız gider; reklamlar Google AdMob ile gösterilir. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
             "heading": "Cihazınızda kalan veriler",
@@ -45,9 +45,19 @@
             ]
           },
           {
-            "heading": "Reklamlar, satın almalar ve istatistik",
+            "heading": "Reklamlar",
             "body": [
-              "Bu sürümde reklam ağı, uygulama içi satın alma, kullanım istatistiği ya da çökme raporu yoktur; bu amaçlarla hiçbir veri toplanmaz ve üçüncü taraflarla paylaşılmaz. Bunlardan biri eklenirse bu politika, eklenmeden önce güncellenir."
+              "Kurultay ücretsizdir ve Google AdMob reklamlarıyla desteklenir. Reklamların çoğu ödüllüdür: yalnızca siz bir ödül için izlemeyi seçtiğinizde açılır. Ayrıca göçte yeni yurda varınca ara sıra bir geçiş reklamı gösterilebilir.",
+              "AdMob, reklam gösterebilmek için reklam kimliğinize (iOS: IDFA, Android: Advertising ID), IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişir. Hesabınız, e-postanız ve oyun ilerlemeniz AdMob'a gönderilmez.",
+              "iOS'ta uygulama, izleme izni vermedikçe IDFA'ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir.",
+              "Bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre) oyun açılışta Google'ın onay ekranını gösterir ve onay alınmadan kişiselleştirilmiş reklam isteği yapılmaz. Kararınızı sonradan Ayarlar → Hesap → \"Reklam gizliliği seçenekleri\" ile değiştirebilirsiniz. Reklam kimliğinizi cihaz ayarlarından da sıfırlayabilir ya da kapatabilirsiniz.",
+              "Google'ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Satın almalar ve istatistik",
+            "body": [
+              "Bu sürümde uygulama içi satın alma, kullanım istatistiği ya da çökme raporu yoktur; bu amaçlarla veri toplanmaz. Bunlardan biri eklenirse bu politika, eklenmeden önce güncellenir."
             ]
           },
           {
@@ -98,6 +108,12 @@
             "heading": "Oyun içi değerler",
             "body": [
               "Altın, Kut, Kut Taşı, Şan ve malzemeler yalnızca oyun içinde geçerlidir; gerçek para karşılığı değildir, satılamaz ve devredilemez."
+            ]
+          },
+          {
+            "heading": "Reklamlar",
+            "body": [
+              "Oyun reklam içerir. Reklam içeriği Google AdMob tarafından belirlenir; gösterilen reklamların içeriğinden yayıncı sorumlu değildir. Ödüllü bir reklam yüklenemez ya da yarıda kapatılırsa ödül verilmeyebilir."
             ]
           },
           {
@@ -158,7 +174,7 @@
       "privacy": {
         "title": "Privacy Policy",
         "updated": "Last updated: October 5, 2026",
-        "intro": "To play Kurultay you sign in with Apple or Google; an account is required so that everyone can compete on the same Raid of the Week leaderboard. Your game progress stays on your device; only your account and leaderboard scores reach our server. You can delete your account at any time from inside the game.",
+        "intro": "To play Kurultay you sign in with Apple or Google; an account is required so that everyone can compete on the same Raid of the Week leaderboard. Your game progress stays on your device; only your account and leaderboard scores reach our server; ads are served by Google AdMob. You can delete your account at any time from inside the game.",
         "sections": [
           {
             "heading": "Data that stays on your device",
@@ -192,9 +208,19 @@
             ]
           },
           {
-            "heading": "Ads, purchases and statistics",
+            "heading": "Ads",
             "body": [
-              "This version has no ad network, no in-app purchases, no usage statistics and no crash reporting; no data is collected for these purposes or shared with third parties. If any of these is added, this policy will be updated before it is."
+              "Kurultay is free and supported by Google AdMob ads. Most ads are rewarded: they only play when you choose to watch one for a reward. An interstitial ad may occasionally be shown when you arrive at a new camp during migration.",
+              "To show ads, AdMob accesses your advertising ID (iOS: IDFA, Android: Advertising ID), IP address, country/city-level location, device and operating system information and ad interactions. Your account, email and game progress are not sent to AdMob.",
+              "On iOS the app does not access the IDFA unless you allow tracking; if you don't, ads are shown without personalisation.",
+              "Where the law requires it (European Economic Area, United Kingdom, Switzerland) the game shows Google's consent screen at launch and no personalised ad request is made without consent. You can change your choice later in Settings → Account → \"Ad privacy options\". You can also reset or turn off your advertising ID in your device settings.",
+              "How Google uses this data: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Purchases and statistics",
+            "body": [
+              "This version has no in-app purchases, no usage statistics and no crash reporting; no data is collected for these purposes. If any of these is added, this policy will be updated before it is."
             ]
           },
           {
@@ -245,6 +271,12 @@
             "heading": "In-game values",
             "body": [
               "Gold, Kut, Kut Stones, Glory and materials are valid only inside the game; they have no real-money value and cannot be sold or transferred."
+            ]
+          },
+          {
+            "heading": "Ads",
+            "body": [
+              "The game contains ads. Ad content is chosen by Google AdMob; the publisher is not responsible for the content of the ads shown. If a rewarded ad fails to load or is closed early, the reward may not be granted."
             ]
           },
           {
