@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 23,
-    "version": "1.3.5",
+    "versionCode": 24,
+    "version": "1.3.6",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Düello davetleri artık cebinde: biri sana meydan okuyunca bildirim gelir, dokununca doğrudan Düello açılır. Gece 23:00–09:00 arası bildirim gelmez; Ayarlar'dan ayrıca kapatabilirsin.",
-      "en": "Duel challenges now reach you: when someone challenges you, you get a notification and tapping it opens the Duel. None between 23:00 and 09:00; you can turn them off in Settings.",
-      "es": "Los retos de duelo ya te llegan: cuando alguien te reta, recibes una notificación y al tocarla se abre el Duelo. Ninguna entre las 23:00 y las 09:00; puedes desactivarlas en Ajustes."
+      "tr": "Yeni başlayanlar için rehber: her oyunun ilk açılışında kısa bir \"Nasıl oynanır\" gösterimi ve daha kolay bir ilk bulmaca. Günün bulmacası sonucunu ve Düello zaferini artık resim olarak paylaşabilirsin; Google ile tek dokunuşla giriş.",
+      "en": "A guide for new sailors: a short \"How to play\" demo the first time you open each game and an easier first puzzle. Share your daily puzzle result and Duel wins as an image; one-tap Google sign-in.",
+      "es": "Una guía para nuevos marineros: una breve demostración de \"Cómo se juega\" al abrir cada juego por primera vez y un primer reto más fácil. Comparte el resultado del reto del día y tus victorias en el Duelo como imagen; inicio de sesión con Google en un toque."
     }
   }
 }
