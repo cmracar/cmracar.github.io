@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kurultay görsel aktarıcı</title>
+<style>body{font:14px system-ui;background:#2a170e;color:#f3e3c3;padding:16px}</style></head>
+<body><p>Kurultay mağaza görselleri App Store Connect sekmesine aktarılıyor…</p>
+<script>
+// Yalnız App Store Connect penceresine, istenen dosyaları (bu sitedeki /kurultay/store/ altından) gönderir.
+const TARGET = 'https://appstoreconnect.apple.com';
+window.addEventListener('message', async (e) => {
+  if (e.origin !== TARGET || !e.data || e.data.kind !== 'kurultay-store-request') return;
+  const out = [];
+  for (const path of e.data.paths) {
+    if (!/^(iphone|ipad)\/(tr|en)_\d+\.jpg$/.test(path)) continue;
+    const buf = await (await fetch('/kurultay/store/' + path)).arrayBuffer();
+    out.push({ path, buf });
+  }
+  e.source.postMessage({ kind: 'kurultay-store-files', files: out }, TARGET, out.map(f => f.buf));
+  document.body.innerHTML += '<p>' + out.length + ' görsel gönderildi.</p>';
+});
+if (window.opener) window.opener.postMessage({ kind: 'kurultay-store-ready' }, TARGET);
+</script></body></html>
