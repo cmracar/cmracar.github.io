@@ -10,13 +10,13 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 5 Ekim 2026",
-        "intro": "Kurultay'ı oynamak için Apple veya Google ile giriş yaparsınız; hesap, Haftanın Akını sıralamasında herkesin aynı tabloda yarışabilmesi için gereklidir. Oyun ilerlemeniz cihazınızda kalır; sunucumuza yalnızca hesabınız ve sıralama skorlarınız gider; reklamlar Google AdMob ile gösterilir. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
+        "updated": "Son güncelleme: 6 Ekim 2026",
+        "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
             "heading": "Cihazınızda kalan veriler",
             "body": [
-              "Şunlar yalnızca cihazınızda durur ve sunucumuza gönderilmez:",
+              "Misafir olarak oynarken şunlar yalnızca cihazınızda durur ve sunucumuza gönderilmez (giriş yaparsanız aşağıdaki bulut kaydına da yazılır):",
               "• Oyun ilerlemesi: sürmekte olan sefer, Kut, Şan, rütbe, malzemeler, Kam Ağacı, Gökbörü'nün teçhizatı ve yetenekleri, Bozkır Haritası ve boy dostlukları\n• Günlük hediye, Bey'in Buyrukları ve Haftanın Akını deneme hakları\n• Tercihler: dil, müzik, ses, titreşim ve ekran sarsıntısı ayarları",
               "Uygulamayı silerseniz bu veriler cihazınızdan da silinir."
             ]
@@ -25,7 +25,7 @@
             "heading": "Sunucumuzda saklanan veriler",
             "body": [
               "Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
-              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: size otomatik verilen takma ad (örneğin \"Akıncı 3f2a\")\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu",
+              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: size otomatik verilen takma ad (örneğin \"Akıncı 3f2a\")\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu\n• Bulut kaydı: yukarıdaki oyun ilerlemesinin bir kopyası (sürmekte olan sefer, Kut, Şan, malzemeler, Kam Ağacı, teçhizat, yetenekler, dostluklar, günlük hediye, buyruklar, Haftanın Akını hakları ve oyun tercihleri); yeni cihazda ya da yeniden kurulumda ilerlemenizi geri getirmek için",
               "Diğer oyuncular sıralamada yalnızca takma adınızı ve skorlarınızı görür. E-posta adresiniz, adınız ve profil fotoğrafınız kimseye gösterilmez.",
               "Bu veriler Supabase altyapısında, Avrupa Birliği'ndeki (Frankfurt) sunucularda tutulur. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
             ]
@@ -33,8 +33,8 @@
           {
             "heading": "Hesabınızı silme",
             "body": [
-              "Ayarlar → \"Hesabımı sil\" ile hesabınızı istediğiniz an silebilirsiniz. Hesabınız, takma adınız ve bütün sıralama skorlarınız kalıcı olarak silinir.",
-              "Cihazınızdaki oyun ilerlemesi silinmez; uygulamayı silerek kaldırabilirsiniz.",
+              "Ayarlar → \"Hesabımı sil\" ile hesabınızı istediğiniz an silebilirsiniz. Hesabınız, takma adınız, bulut kaydınız ve bütün sıralama skorlarınız kalıcı olarak silinir.",
+              "Cihazınızdaki oyun ilerlemesinin kopyası silinmez; uygulamayı silerek kaldırabilirsiniz.",
               "Uygulamaya artık erişiminiz yoksa, giriş yaptığınız e-posta adresini belirterek bize yazın; hesabınızı 30 gün içinde sileriz."
             ]
           },
@@ -57,7 +57,9 @@
           {
             "heading": "Satın almalar ve istatistik",
             "body": [
-              "Bu sürümde uygulama içi satın alma, kullanım istatistiği ya da çökme raporu yoktur; bu amaçlarla veri toplanmaz. Bunlardan biri eklenirse bu politika, eklenmeden önce güncellenir."
+              "Uygulama içi satın almalar (Yada Taşı paketleri, Reklamsız Oba, Başlangıç Paketi) Apple App Store ya da Google Play üzerinden yapılır. Ödeme bilgileriniz (kart, adres) bize hiç ulaşmaz; ödemeyi mağaza alır ve bize yalnızca hangi ürünün alındığını ve işlem kimliğini bildirir.",
+              "Aldığınız ürünlerin etkisi (taşlar, reklamsız durum) ve son işlem kimlikleri, aynı ürün iki kez verilmesin diye cihazınızda saklanır; giriş yaptıysanız bulut kaydınıza da girer. Reklamsız Oba, mağazanın \"Satın alımları geri yükle\" özelliğiyle yeni cihazda geri gelir.",
+              "Bu sürümde kullanım istatistiği ya da çökme raporu yoktur; bu amaçlarla veri toplanmaz. Biri eklenirse bu politika, eklenmeden önce güncellenir."
             ]
           },
           {
@@ -82,7 +84,7 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 5 Ekim 2026",
+        "updated": "Son güncelleme: 6 Ekim 2026",
         "intro": "Kurultay'ı indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -107,7 +109,15 @@
           {
             "heading": "Oyun içi değerler",
             "body": [
-              "Altın, Kut, Kut Taşı, Şan ve malzemeler yalnızca oyun içinde geçerlidir; gerçek para karşılığı değildir, satılamaz ve devredilemez."
+              "Altın, Kut, Yada Taşı, Şan ve malzemeler yalnızca oyun içinde geçerlidir; gerçek para karşılığı değildir, satılamaz, devredilemez ve paraya çevrilemez."
+            ]
+          },
+          {
+            "heading": "Uygulama içi satın almalar",
+            "body": [
+              "Oyunda isteğe bağlı satın almalar vardır: Yada Taşı paketleri, Reklamsız Oba ve bir kez alınabilen Başlangıç Paketi. Oyunun tamamı satın almadan oynanabilir; Haftanın Akını'nda güç herkes için eşittir.",
+              "Ödeme ve iade, satın almayı yaptığınız mağazanın (Apple App Store, Google Play) kurallarına tabidir; iade talebi mağaza üzerinden yapılır. Tüketilen ürünler (harcanan taşlar) geri alınamaz.",
+              "Reklamsız Oba geçiş reklamlarını kaldırır; ödüllü reklamlar isteğe bağlı olarak kalır."
             ]
           },
           {
@@ -157,7 +167,7 @@
           {
             "heading": "Silinen veriler",
             "body": [
-              "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı, kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: takma ad\n• Haftanın Akını skorlarının tümü",
+              "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı, kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: takma ad\n• Haftanın Akını skorlarının tümü\n• Bulut kaydı: hesaptaki oyun ilerlemesi kopyası",
               "Sunucumuzda silme sonrasında saklanan ek bir veri yoktur."
             ]
           },
@@ -173,13 +183,13 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: October 5, 2026",
-        "intro": "To play Kurultay you sign in with Apple or Google; an account is required so that everyone can compete on the same Raid of the Week leaderboard. Your game progress stays on your device; only your account and leaderboard scores reach our server; ads are served by Google AdMob. You can delete your account at any time from inside the game.",
+        "updated": "Last updated: October 6, 2026",
+        "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob. You can delete your account at any time from inside the game.",
         "sections": [
           {
             "heading": "Data that stays on your device",
             "body": [
-              "The following stays only on your device and is never sent to our server:",
+              "While you play as a guest the following stays only on your device and is never sent to our server (if you sign in it is also written to the cloud save below):",
               "• Game progress: the current campaign, Kut, Glory, rank, materials, the Kam Tree, Gökbörü's gear and skills, the Steppe Map and clan friendships\n• Daily gift, the Bey's Orders and Raid of the Week attempts\n• Preferences: language, music, sound, vibration and screen shake settings",
               "If you uninstall the app, this data is removed from your device too."
             ]
@@ -188,7 +198,7 @@
             "heading": "Data stored on our server",
             "body": [
               "When you sign in with Apple or Google we store:",
-              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname given to you automatically (for example \"Akıncı 3f2a\")\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed",
+              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname given to you automatically (for example \"Akıncı 3f2a\")\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed\n• Cloud save: a copy of the game progress above (current campaign, Kut, Glory, materials, Kam Tree, gear, skills, friendships, daily gift, orders, Raid of the Week attempts and game preferences), used to bring your progress back on a new device or after reinstalling",
               "Other players only see your nickname and your scores on the leaderboard. Your email address, name and profile picture are never shown to anyone.",
               "This data is kept on Supabase infrastructure, on servers in the European Union (Frankfurt). It is kept for as long as your account exists and is deleted when you delete your account."
             ]
@@ -196,8 +206,8 @@
           {
             "heading": "Deleting your account",
             "body": [
-              "You can delete your account at any time in Settings → \"Delete my account\". Your account, nickname and all your leaderboard scores are permanently deleted.",
-              "Game progress on your device is not deleted; you can remove it by uninstalling the app.",
+              "You can delete your account at any time in Settings → \"Delete my account\". Your account, nickname, cloud save and all your leaderboard scores are permanently deleted.",
+              "The copy of your game progress on this device is not deleted; you can remove it by uninstalling the app.",
               "If you no longer have access to the app, write to us from the email address you signed in with; we will delete your account within 30 days."
             ]
           },
@@ -220,7 +230,9 @@
           {
             "heading": "Purchases and statistics",
             "body": [
-              "This version has no in-app purchases, no usage statistics and no crash reporting; no data is collected for these purposes. If any of these is added, this policy will be updated before it is."
+              "In-app purchases (Yada Stone packs, Ad-free Camp, Starter Pack) are made through the Apple App Store or Google Play. Your payment details (card, address) never reach us; the store takes the payment and only tells us which product was bought and its transaction ID.",
+              "The effect of your purchases (stones, ad-free status) and recent transaction IDs are stored on your device so a product is never granted twice; if you are signed in they are also part of your cloud save. Ad-free Camp returns on a new device through the store's \"Restore purchases\".",
+              "This version has no usage statistics and no crash reporting; no data is collected for these purposes. If either is added, this policy will be updated before it is."
             ]
           },
           {
@@ -245,7 +257,7 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: October 5, 2026",
+        "updated": "Last updated: October 6, 2026",
         "intro": "By downloading or using Kurultay you agree to these terms.",
         "sections": [
           {
@@ -270,7 +282,15 @@
           {
             "heading": "In-game values",
             "body": [
-              "Gold, Kut, Kut Stones, Glory and materials are valid only inside the game; they have no real-money value and cannot be sold or transferred."
+              "Gold, Kut, Yada Stones, Glory and materials are valid only inside the game; they have no real-money value and cannot be sold, transferred or exchanged for money."
+            ]
+          },
+          {
+            "heading": "In-app purchases",
+            "body": [
+              "The game offers optional purchases: Yada Stone packs, Ad-free Camp and a one-time Starter Pack. The whole game can be played without buying anything; in the Raid of the Week power is equal for everyone.",
+              "Payment and refunds follow the rules of the store you bought from (Apple App Store, Google Play); refund requests are made through that store. Consumed items (spent stones) cannot be returned.",
+              "Ad-free Camp removes interstitial ads; rewarded ads remain optional."
             ]
           },
           {
@@ -320,7 +340,7 @@
           {
             "heading": "Data that is deleted",
             "body": [
-              "• Account details: email address, name, profile picture link, user ID and sign-in dates\n• Leaderboard profile: nickname\n• All Raid of the Week scores",
+              "• Account details: email address, name, profile picture link, user ID and sign-in dates\n• Leaderboard profile: nickname\n• All Raid of the Week scores\n• Cloud save: the copy of your game progress in your account",
               "No additional data is kept on our server after deletion."
             ]
           },
