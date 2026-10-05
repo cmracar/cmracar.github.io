@@ -9,7 +9,7 @@ window.addEventListener('message', async (e) => {
   if (e.origin !== TARGET || !e.data || e.data.kind !== 'kurultay-store-request') return;
   const out = [];
   for (const path of e.data.paths) {
-    if (!/^(iphone|ipad)\/(tr|en)_\d+\.jpg$/.test(path)) continue;
+    if (!/^((iphone|ipad)\/(tr|en)_\d+|iap\/(review|img_[a-z0-9_]+))\.jpg$/.test(path)) continue;
     const buf = await (await fetch('/kurultay/store/' + path)).arrayBuffer();
     out.push({ path, buf });
   }
