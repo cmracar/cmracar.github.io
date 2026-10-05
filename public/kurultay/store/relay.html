@@ -17,4 +17,5 @@ window.addEventListener('message', async (e) => {
   document.body.innerHTML += '<p>' + out.length + ' görsel gönderildi.</p>';
 });
 if (window.opener) window.opener.postMessage({ kind: 'kurultay-store-ready' }, TARGET);
+else if (window.parent !== window) window.parent.postMessage({ kind: 'kurultay-store-ready' }, TARGET);
 </script></body></html>
