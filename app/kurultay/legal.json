@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 6 Ekim 2026",
+        "updated": "Son güncelleme: 7 Ekim 2026",
         "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
@@ -59,7 +59,7 @@
             "body": [
               "Uygulama içi satın almalar (Yada Taşı paketleri, Reklamsız Oba, Başlangıç Paketi) Apple App Store ya da Google Play üzerinden yapılır. Ödeme bilgileriniz (kart, adres) bize hiç ulaşmaz; ödemeyi mağaza alır ve bize yalnızca hangi ürünün alındığını ve işlem kimliğini bildirir.",
               "Aldığınız ürünlerin etkisi (taşlar, reklamsız durum) ve son işlem kimlikleri, aynı ürün iki kez verilmesin diye cihazınızda saklanır; giriş yaptıysanız bulut kaydınıza da girer. Reklamsız Oba, mağazanın \"Satın alımları geri yükle\" özelliğiyle yeni cihazda geri gelir.",
-              "Bu sürümde kullanım istatistiği ya da çökme raporu yoktur; bu amaçlarla veri toplanmaz. Biri eklenirse bu politika, eklenmeden önce güncellenir."
+              "Oyunu geliştirmek için anonim kullanım verisi toplanır: uygulamanın açılması, gecelerin ve seferlerin sonucu, kurulan binalar, açılan ekranlar, reklam gösterimleri ve satın alınan ürünün türü. Her olayla birlikte uygulama sürümü, cihaz modeli, ekran boyutu, işletim sistemi sürümü, dil ayarı ve cihaz için rastgele üretilmiş bir kimlik gönderilir. Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; konumunuz çözümlenmez, IP adresi saklanmaz ve reklam kimliği kullanılmaz. Veri PostHog'un Avrupa Birliği'ndeki altyapısında tutulur. Ayarlar → Hesap → Kullanım istatistikleri anahtarıyla istediğiniz an kapatabilirsiniz; kapalıyken hiçbir olay gönderilmez. Çökme raporu toplanmaz."
             ]
           },
           {
@@ -183,7 +183,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: October 6, 2026",
+        "updated": "Last updated: October 7, 2026",
         "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob. You can delete your account at any time from inside the game.",
         "sections": [
           {
@@ -232,7 +232,7 @@
             "body": [
               "In-app purchases (Yada Stone packs, Ad-free Camp, Starter Pack) are made through the Apple App Store or Google Play. Your payment details (card, address) never reach us; the store takes the payment and only tells us which product was bought and its transaction ID.",
               "The effect of your purchases (stones, ad-free status) and recent transaction IDs are stored on your device so a product is never granted twice; if you are signed in they are also part of your cloud save. Ad-free Camp returns on a new device through the store's \"Restore purchases\".",
-              "This version has no usage statistics and no crash reporting; no data is collected for these purposes. If either is added, this policy will be updated before it is."
+              "To improve the game we collect anonymous usage data: app opens, the outcome of nights and runs, buildings placed, screens opened, ad impressions and the type of product purchased. Each event carries the app version, device model, screen size, OS version, language setting and a randomly generated identifier for the device. This data is not linked to your account, name or email address; your location is not resolved, IP addresses are not stored and no advertising ID is used. The data is held on PostHog infrastructure in the European Union. You can turn it off at any time with Settings → Account → Usage statistics; while it is off, no events are sent. No crash reports are collected."
             ]
           },
           {
