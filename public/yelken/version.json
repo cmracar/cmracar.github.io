@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 27,
-    "version": "1.3.9",
+    "versionCode": 28,
+    "version": "1.3.10",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Tablette ve açık katlanabilir ekranda oyun artık ekranın tamamını kullanıyor; katlayıp açınca bulmaca kaldığı yerden devam ediyor. Oyun tablette de dikey kalıyor, paneller geniş ekranda daha derli toplu. Ayrıca yüzlerce yeni kelime, Günün Seferi'nde daha fazla süre ve Düello'da ipucu.",
-      "en": "On tablets and unfolded foldables the game now uses the whole screen, and folding or unfolding keeps your puzzle going. The game stays in portrait on tablets, and panels look tidier on large screens. Plus hundreds of new words, more time for the Daily Voyage and a hint in Duels.",
-      "es": "En tabletas y plegables abiertos el juego ahora usa toda la pantalla, y al plegar o desplegar el reto sigue donde lo dejaste. El juego se mantiene en vertical en tabletas y los paneles se ven más ordenados. Además, cientos de palabras nuevas, más tiempo en el Viaje del Día y una pista en el Duelo."
+      "tr": "Düello ipucu düzeltmesi: ipucu için reklam izlerken limanın süresi artık duruyor.",
+      "en": "Duel hint fix: the port timer now stops while you watch the ad for a hint.",
+      "es": "Corrección de la pista del Duelo: el tiempo del puerto se detiene mientras ves el anuncio."
     }
   }
 }
