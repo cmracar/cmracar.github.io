@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 24,
-    "version": "1.3.6",
+    "versionCode": 26,
+    "version": "1.3.8",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Yeni başlayanlar için rehber: her oyunun ilk açılışında kısa bir \"Nasıl oynanır\" gösterimi ve daha kolay bir ilk bulmaca. Günün bulmacası sonucunu ve Düello zaferini artık resim olarak paylaşabilirsin; Google ile tek dokunuşla giriş.",
-      "en": "A guide for new sailors: a short \"How to play\" demo the first time you open each game and an easier first puzzle. Share your daily puzzle result and Duel wins as an image; one-tap Google sign-in.",
-      "es": "Una guía para nuevos marineros: una breve demostración de \"Cómo se juega\" al abrir cada juego por primera vez y un primer reto más fácil. Comparte el resultado del reto del día y tus victorias en el Duelo como imagen; inicio de sesión con Google en un toque."
+      "tr": "Yüzlerce yeni kelime, deyim ve atasözü (TDK onaylı). Günün Seferi'nde daha fazla süre ve süre dolunca reklamla 1 dakika daha; Sefer limanlarında 30 saniye fazladan süre. Düello'da her maçta bir ipucu, daha uygun elmas paketleri.",
+      "en": "Hundreds of new words, idioms and proverbs. More time for the Daily Voyage, plus 1 more minute with an ad when time runs out; 30 extra seconds in every Voyage port. One hint per Duel and cheaper gem packs.",
+      "es": "Cientos de palabras, locuciones y refranes nuevos. Más tiempo en el Viaje del Día y 1 minuto más con un anuncio si se acaba; 30 segundos más en cada puerto del Viaje. Una pista por Duelo y paquetes de gemas más baratos."
     }
   }
 }
