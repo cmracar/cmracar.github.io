@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 28,
-    "version": "1.3.10",
+    "versionCode": 29,
+    "version": "1.3.11",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Düello ipucu düzeltmesi: ipucu için reklam izlerken limanın süresi artık duruyor.",
-      "en": "Duel hint fix: the port timer now stops while you watch the ad for a hint.",
-      "es": "Corrección de la pista del Duelo: el tiempo del puerto se detiene mientras ves el anuncio."
+      "tr": "Üç dilde yaklaşık 1.300 yeni kelime. Reklam izlerken bulmacanın süresi artık duruyor, reklamdan dönünce yanlışlıkla turdan çıkılmıyor.",
+      "en": "About 1,300 new words across three languages. The puzzle timer now stops during ads, and coming back from an ad no longer quits the round by accident.",
+      "es": "Unas 1.300 palabras nuevas en tres idiomas. El tiempo del pasatiempo se detiene durante los anuncios y al volver de uno ya no sales de la partida por error."
     }
   }
 }
