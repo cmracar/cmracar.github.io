@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 4 Ekim 2026",
+        "updated": "Son güncelleme: 8 Ekim 2026",
         "intro": "Yelken’i hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
@@ -34,6 +34,7 @@
               "• Satın alma kayıtları: elmas paketi satın aldığınızda işlem kimliği, ürün ve tarih (bkz. \"Satın almalar\")",
               "• Düello: oynadığınız düellolar ve bulmacaları, düelloda bulduğunuz kelimeler ve bulma süreleri, kupanız, liginiz ve günlük düello haklarınız",
               "• Bildirim adresi: Düello davetlerini size iletebilmek için cihazınızın bildirim adresi (push token), cihaz türü (iOS/Android) ve arayüz diliniz; Ayarlar'dan \"Düello davetleri\"ni kapattığınızda ya da çıkış yaptığınızda silinir",
+              "• Şikâyet ve engellemeler: şikâyet ettiğiniz ya da engellediğiniz oyuncu, sebep ve tarih; yalnızca kötüye kullanımı incelemek ve engeli uygulamak için",
               "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, kupanızı ve liginizi, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür; Düello rakibiniz ayrıca o düellodaki puanınızı görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
               "Bu veriler Supabase altyapısında tutulur; sunucular yurt dışında bulunabilir. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
             ]
@@ -107,7 +108,7 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 2 Ekim 2026",
+        "updated": "Son güncelleme: 8 Ekim 2026",
         "intro": "Yelken’i indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -126,6 +127,14 @@
             "heading": "Düello",
             "body": [
               "Düello asenkron oynanır: rakibiniz aynı limanları sizden önce ya da sonra oynar. Uygun bir rakip bulunamadığında sizi yapay oyuncularla eşleştirebiliriz; bu oyuncular sıralamalarda da yer alabilir."
+            ]
+          },
+          {
+            "heading": "Kullanıcı adları ve davranış",
+            "body": [
+              "Kullanıcı adınız diğer oyunculara görünür. Hakaret, küfür, nefret söylemi, cinsellik içeren ya da başkasını taklit eden adlara ve hile yapmaya tolerans gösterilmez.",
+              "Bir oyuncuyu profilinden şikâyet edebilir ya da engelleyebilirsiniz. Engellediğiniz oyuncuyu sıralamalarda görmezsiniz, birbirinize meydan okuyamaz ve düelloda eşleşmezsiniz; engeli Ayarlar'dan kaldırabilirsiniz.",
+              "Şikâyetleri 24 saat içinde inceleriz; uygunsuz adları değiştirir, kuralları çiğneyen hesapları sıralamalardan ve Düello'dan çıkarabiliriz."
             ]
           },
           {
@@ -208,7 +217,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 4 October 2026",
+        "updated": "Last updated: 8 October 2026",
         "intro": "You can play Yelken without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
@@ -232,6 +241,7 @@
               "• Purchase records: the transaction ID, product and date when you buy a gem pack (see \"Purchases\")",
               "• Duel: the duels you play and their puzzles, the words you find in a duel and when you found them, your trophies, your league and your daily duel tickets",
               "• Notification address: your device's push token, device type (iOS/Android) and interface language, so we can deliver duel challenges to you; deleted when you turn off \"Duel challenges\" in Settings or sign out",
+              "• Reports and blocks: the player you report or block, the reason and the date; used only to review abuse and enforce the block",
               "Other players see only your username, rank, scores, trophies and league, total gold and gems, streak and the look of your ship and sailor on the leaderboard; your Duel opponent also sees your score in that duel. Your email address, name and backup are never shown to anyone.",
               "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account."
             ]
@@ -305,7 +315,7 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: 2 October 2026",
+        "updated": "Last updated: 8 October 2026",
         "intro": "By downloading or using Yelken you accept these terms.",
         "sections": [
           {
@@ -324,6 +334,14 @@
             "heading": "Duel",
             "body": [
               "Duels are asynchronous: your opponent plays the same ports before or after you. When no suitable opponent is available, we may match you with computer-controlled players, who may also appear on the leaderboards."
+            ]
+          },
+          {
+            "heading": "Usernames and conduct",
+            "body": [
+              "Your username is visible to other players. There is no tolerance for abusive, profane, hateful, sexual or impersonating names, or for cheating.",
+              "You can report or block a player from their profile. You will not see a blocked player on the leaderboards, you cannot challenge each other and you will not be matched in duels; you can unblock them in Settings.",
+              "We review reports within 24 hours, change inappropriate names and may remove accounts that break these rules from the leaderboards and from Duel."
             ]
           },
           {
@@ -406,7 +424,7 @@
     "es": {
       "privacy": {
         "title": "Política de privacidad",
-        "updated": "Última actualización: 4 de octubre de 2026",
+        "updated": "Última actualización: 8 de octubre de 2026",
         "intro": "Puedes jugar a Yelken sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
         "sections": [
           {
@@ -430,6 +448,7 @@
               "• Registros de compra: el identificador de la transacción, el producto y la fecha cuando compras un paquete de gemas (ver «Compras»)",
               "• Duelo: los duelos que juegas y sus rompecabezas, las palabras que encuentras en un duelo y cuándo las encontraste, tus trofeos, tu liga y tus billetes diarios de duelo",
               "• Dirección de notificaciones: el token de notificaciones de tu dispositivo, el tipo de dispositivo (iOS/Android) y el idioma de la interfaz, para poder avisarte de los retos de duelo; se borra cuando desactivas \"Retos de duelo\" en Ajustes o cierras sesión",
+              "• Denuncias y bloqueos: el jugador al que denuncias o bloqueas, el motivo y la fecha; solo para revisar abusos y aplicar el bloqueo",
               "Los demás jugadores solo ven en la clasificación tu nombre de usuario, rango, puntuaciones, trofeos y liga, total de oro y gemas, racha y el aspecto de tu barco y tu marinero; tu rival en un duelo ve además tu puntuación en ese duelo. Tu correo, tu nombre y tu copia nunca se muestran a nadie.",
               "Estos datos se alojan en la infraestructura de Supabase; los servidores pueden estar fuera de tu país. Se conservan mientras exista tu cuenta y se eliminan cuando la eliminas."
             ]
@@ -503,7 +522,7 @@
       },
       "terms": {
         "title": "Condiciones de uso",
-        "updated": "Última actualización: 2 de octubre de 2026",
+        "updated": "Última actualización: 8 de octubre de 2026",
         "intro": "Al descargar o usar Yelken aceptas estas condiciones.",
         "sections": [
           {
@@ -522,6 +541,14 @@
             "heading": "Duelo",
             "body": [
               "Los duelos son asíncronos: tu rival juega los mismos puertos antes o después que tú. Si no hay un rival adecuado disponible, podemos emparejarte con jugadores controlados por la aplicación, que también pueden aparecer en las clasificaciones."
+            ]
+          },
+          {
+            "heading": "Nombres de usuario y conducta",
+            "body": [
+              "Tu nombre de usuario es visible para otros jugadores. No se tolera ningún nombre ofensivo, vulgar, de odio, sexual o que suplante a otra persona, ni las trampas.",
+              "Puedes denunciar o bloquear a un jugador desde su perfil. No verás a un jugador bloqueado en las clasificaciones, no podréis retaros y no os emparejaremos en duelos; puedes desbloquearlo en Ajustes.",
+              "Revisamos las denuncias en 24 horas, cambiamos los nombres inapropiados y podemos retirar de las clasificaciones y del Duelo las cuentas que incumplan estas normas."
             ]
           },
           {
