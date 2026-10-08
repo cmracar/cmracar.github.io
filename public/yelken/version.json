@@ -1,12 +1,12 @@
 {
   "android": {
-    "versionCode": 29,
-    "version": "1.3.11",
+    "versionCode": 30,
+    "version": "1.3.12",
     "minVersionCode": 0,
     "notes": {
-      "tr": "Üç dilde yaklaşık 1.300 yeni kelime. Reklam izlerken bulmacanın süresi artık duruyor, reklamdan dönünce yanlışlıkla turdan çıkılmıyor.",
-      "en": "About 1,300 new words across three languages. The puzzle timer now stops during ads, and coming back from an ad no longer quits the round by accident.",
-      "es": "Unas 1.300 palabras nuevas en tres idiomas. El tiempo del pasatiempo se detiene durante los anuncios y al volver de uno ya no sales de la partida por error."
+      "tr": "Geçmişteki bir düelloya dokunup aynı rakibe yeniden meydan okuyabilirsin. Oyuncuları şikâyet edebilir ya da engelleyebilirsin; uygunsuz kullanıcı adlarına izin verilmiyor.",
+      "en": "Tap a past duel to challenge the same rival again. You can report or block players, and inappropriate usernames are no longer allowed.",
+      "es": "Toca un duelo pasado para retar de nuevo al mismo rival. Puedes denunciar o bloquear jugadores y ya no se permiten nombres de usuario inapropiados."
     }
   }
 }
