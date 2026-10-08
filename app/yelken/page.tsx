@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube } from 'lucide-react'
-import Header from '@/app/components/Header'
+import Status, { SectionHeading } from '@/app/components/Status'
 import legal from './legal.json'
 import StoreBadges from './StoreBadges'
 import { yelkenStatus } from './stores'
@@ -72,9 +72,9 @@ function Mark({ size = 96 }: { size?: number }) {
 function Wordmark({ name }: { name: string }) {
   const letters = [...name.toLocaleUpperCase('tr')]
   return (
-    <h1 className="text-4xl md:text-5xl font-extrabold tracking-[0.18em]">
+    <h1 className="text-4xl font-extrabold tracking-[0.18em] text-ink md:text-5xl">
       {letters.map((ch, i) => (
-        <span key={i} className={i === 2 ? 'text-[#FBBF24]' : undefined}>
+        <span key={i} className={i === 2 ? 'text-[#D99A0B] dark:text-[#FBBF24]' : undefined}>
           {ch}
         </span>
       ))}
@@ -118,22 +118,22 @@ const modes = [
 
 const features = [
   {
-    icon: <Languages size={22} className="text-cyan-300" />,
+    icon: <Languages size={22} />,
     title: 'Üç dil, dokuz kombinasyon',
     desc: 'Türkçe, İngilizce ve İspanyolca. Arayüz ve bulmaca dilini ayrı seçersin: aynıysa saf kelime oyunu, farklıysa dil öğrenme.',
   },
   {
-    icon: <Repeat size={22} className="text-purple-300" />,
+    icon: <Repeat size={22} />,
     title: 'Akıllı tekrar',
     desc: 'Çözdüğün kelimeler aralıklı tekrar programına girer. Bildiklerin seyrekleşir, zorlandıkların geri gelir.',
   },
   {
-    icon: <Trophy size={22} className="text-yellow-300" />,
+    icon: <Trophy size={22} />,
     title: 'Sıralama ve Düello',
     desc: 'Apple ya da Google ile giriş yap: haftalık sıralamada yerini gör, Düello’da rakiplerle yarışıp Kupa Ligi’nde yüksel.',
   },
   {
-    icon: <Wifi size={22} className="text-blue-300" />,
+    icon: <Wifi size={22} />,
     title: 'Çevrimdışı da oynanır',
     desc: 'Bütün kelimeler cihazında. Hesap açmadan oynanır; sıralamaya girmek istersen ayrıca giriş yaparsın.',
   },
@@ -166,102 +166,96 @@ export default function YelkenPage() {
   const status = yelkenStatus()
 
   return (
-    <main className="min-h-screen bg-[#181f2a] text-white">
-      <Header />
-
-      {/* HERO */}
-      <section className="container mx-auto px-4 md:px-8 pt-12 pb-14 max-w-5xl">
-        <div className="flex items-center gap-5 mb-7">
-          <Mark />
-          <div>
-            <div className="flex items-center gap-3 flex-wrap">
-              <Wordmark name={brand.app} />
-              <span
-                className={`px-2.5 py-1 rounded-full text-xs font-semibold ${
-                  status.live ? 'bg-green-500/15 text-green-300' : 'bg-yellow-500/15 text-yellow-300'
-                }`}
-              >
-                {status.label}
-              </span>
+    <main>
+      {/* GİRİŞ */}
+      <section className="mx-auto max-w-6xl px-5 pb-20 pt-14 md:px-8 md:pt-20">
+        <Link href="/projects" className="eyebrow hover:text-ink">
+          ← Projeler
+        </Link>
+        <div className="mt-10 grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-7">
+            <div className="flex items-center gap-5">
+              <Mark size={72} />
+              <div>
+                <Wordmark name={brand.app} />
+                <div className="mt-2">
+                  <Status label={status.label} live={status.live} />
+                </div>
+              </div>
+            </div>
+            <p className="mt-10 font-serif text-3xl leading-snug tracking-tight text-ink md:text-4xl">
+              Bir kelime bulmacası — ve istersen bir dil öğretmeni.
+            </p>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+              Arayüz dilini ve bulmaca dilini ayrı seçersin: ikisi aynıysa saf bir kelime oyunu
+              oynarsın, farklıysa çözdüğün her kelime bir tekrar programına girer. Kesişen Rotalar,
+              Kelime Avı, İskele Düğümü ve Sefer; her gün yeni bir bulmaca; isteyenler için online
+              sıralama ve gerçek rakiplerle Düello.
+            </p>
+            <div className="mt-8">
+              <StoreBadges />
             </div>
           </div>
+          <aside className="md:col-span-4 md:col-start-9">
+            <p className="eyebrow mb-4">Oyun modları</p>
+            <ul className="divide-y divide-line border-y border-line">
+              {modes.map(mode => (
+                <li key={mode.name} className="flex items-center gap-3 py-3 text-ink">
+                  <span className="text-faint">{mode.icon}</span>
+                  {mode.name}
+                </li>
+              ))}
+            </ul>
+          </aside>
         </div>
+      </section>
 
-        <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
-          Bir kelime bulmacası — ve istersen bir dil öğretmeni. Arayüz dilini ve bulmaca dilini ayrı
-          seçersin: ikisi aynıysa saf bir kelime oyunu oynarsın, farklıysa çözdüğün her kelime bir
-          tekrar programına girer. Kesişen Rotalar, Kelime Avı, İskele Düğümü ve Sefer; her gün
-          yeni bir bulmaca; isteyenler için online sıralama ve gerçek rakiplerle Düello.
-        </p>
-
-        <div className="mt-7">
-          <StoreBadges />
-        </div>
-
-        <div className="flex flex-wrap gap-2.5 mt-7">
-          {modes.map(mode => (
-            <span
-              key={mode.name}
-              className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-200"
+      {/* VİDEOLAR + EKRANLAR: ürünün kendi renginde koyu bir sahne */}
+      <section className="bg-[#120c22] text-white">
+        <div className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+            <p className="font-mono text-xs uppercase tracking-[0.08em] text-white/50">Videolar</p>
+            <a
+              href={CHANNEL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-white"
             >
-              <span className="text-cyan-300">{mode.icon}</span>
-              {mode.name}
-            </span>
-          ))}
-        </div>
-      </section>
+              <Youtube size={18} /> YouTube kanalı
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-5 md:grid-cols-[256fr_81fr_81fr]">
+            {videos.map(video => (
+              <figure key={video.id} className={video.vertical ? '' : 'col-span-2 md:col-span-1'}>
+                <YouTube
+                  id={video.id}
+                  title={`Yelken — ${video.title}`}
+                  vertical={video.vertical}
+                  poster={video.poster}
+                />
+                <figcaption className="mt-3">
+                  <span className="block text-sm font-medium text-white">{video.title}</span>
+                  <span className="mt-0.5 block font-mono text-xs text-white/50">{video.meta}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
 
-      {/* VİDEOLAR */}
-      <section className="container mx-auto px-4 md:px-8 py-14 max-w-5xl">
-        <div className="flex items-end justify-between gap-4 mb-8 flex-wrap">
-          <h2 className="text-sm uppercase tracking-widest text-gray-500">Videolar</h2>
-          <a
-            href={CHANNEL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition no-underline"
-          >
-            <Youtube size={18} /> YouTube kanalı
-          </a>
-        </div>
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-[256fr_81fr_81fr]">
-          {videos.map(video => (
-            <figure key={video.id} className={video.vertical ? '' : 'col-span-2 md:col-span-1'}>
-              <YouTube
-                id={video.id}
-                title={`Yelken — ${video.title}`}
-                vertical={video.vertical}
-                poster={video.poster}
-              />
-              <figcaption className="mt-3">
-                <span className="block text-sm font-semibold text-gray-100">{video.title}</span>
-                <span className="block text-xs text-gray-400 mt-0.5">{video.meta}</span>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      {/* EKRANLAR */}
-      <section className="pb-16 border-y border-white/5 bg-white/[0.02] py-14">
-        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
-          <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-8">Ekranlar</h2>
+          <p className="mb-8 mt-20 font-mono text-xs uppercase tracking-[0.08em] text-white/50">Ekranlar</p>
           {/* Dar ekranda yatay kaydırma: telefon görselleri küçültülünce okunmuyor. */}
-          <div className="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-4">
+          <div className="-mx-5 flex gap-6 overflow-x-auto px-5 pb-4 md:mx-0 md:grid md:grid-cols-4 md:px-0">
             {shots.map(shot => (
-              <figure key={shot.src} className="shrink-0 w-52 md:w-auto">
+              <figure key={shot.src} className="w-52 shrink-0 md:w-auto">
                 <Image
                   src={shot.src}
                   alt={`Yelken — ${shot.title}`}
                   width={1080}
                   height={1920}
-                  className="rounded-xl border border-white/10 shadow-xl shadow-black/40 w-full h-auto"
+                  className="h-auto w-full rounded-xl border border-white/10"
                 />
                 <figcaption className="mt-3">
-                  <span className="block text-sm font-semibold text-gray-100">{shot.title}</span>
-                  <span className="block text-xs text-gray-400 leading-relaxed mt-0.5">
-                    {shot.desc}
-                  </span>
+                  <span className="block text-sm font-medium text-white">{shot.title}</span>
+                  <span className="mt-0.5 block text-xs leading-relaxed text-white/60">{shot.desc}</span>
                 </figcaption>
               </figure>
             ))}
@@ -270,58 +264,41 @@ export default function YelkenPage() {
       </section>
 
       {/* ÖZELLİKLER */}
-      <section className="container mx-auto px-4 md:px-8 py-14 max-w-5xl">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+        <SectionHeading label="Özellikler" />
+        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
           {features.map(feature => (
-            <div
-              key={feature.title}
-              className="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col gap-2"
-            >
-              {feature.icon}
-              <h2 className="font-semibold">{feature.title}</h2>
-              <p className="text-sm text-gray-400 leading-relaxed">{feature.desc}</p>
+            <div key={feature.title} className="flex flex-col gap-3 bg-paper p-6">
+              <span className="text-faint">{feature.icon}</span>
+              <h3 className="font-medium text-ink">{feature.title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{feature.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-10">
-          <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-4">Teknolojiler</h2>
-          <div className="flex flex-wrap gap-2">
-            {stack.map(tech => (
-              <span
-                key={tech}
-                className="bg-blue-500/10 text-blue-300 px-2.5 py-1 rounded text-xs font-mono"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+        <div className="mt-12 grid gap-4 md:grid-cols-12">
+          <p className="eyebrow md:col-span-3">Teknolojiler</p>
+          <p className="font-mono text-sm text-ink md:col-span-9">{stack.join(' · ')}</p>
         </div>
       </section>
 
       {/* YASAL */}
-      <section className="container mx-auto px-4 md:px-8 pb-24 max-w-5xl">
-        <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-4">Yasal</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-5 pb-12 md:px-8">
+        <SectionHeading label="Yasal ve destek" />
+        <ul className="grid gap-x-10 border-b border-line sm:grid-cols-2 lg:grid-cols-3">
           {documents.map(doc => (
-            <Link
-              key={doc.href}
-              href={doc.href}
-              className="flex items-center gap-3 bg-white/5 border border-white/10 hover:border-blue-400/40 hover:bg-white/10 transition rounded-lg px-4 py-3 no-underline text-gray-200"
-            >
-              <span className="text-blue-300">{doc.icon}</span>
-              <span className="flex-1">{doc.label}</span>
-              <span className="text-xs text-gray-500">{doc.lang}</span>
-            </Link>
+            <li key={doc.href} className="border-t border-line">
+              <Link href={doc.href} className="group flex items-center gap-3 py-4 text-ink">
+                <span className="text-faint">{doc.icon}</span>
+                <span className="flex-1 group-hover:text-accent">{doc.label}</span>
+                <span className="font-mono text-xs text-faint">{doc.lang}</span>
+              </Link>
+            </li>
           ))}
-        </div>
-
-        <div className="border-t border-white/10 pt-8 mt-10 flex flex-col gap-3 text-sm text-gray-400">
+        </ul>
+        <div className="mt-10 flex flex-col gap-2 text-sm text-muted">
           <span>{brand.copyright}</span>
-          <a
-            href={`mailto:${brand.supportEmail}`}
-            className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 transition no-underline w-fit"
-          >
+          <a href={`mailto:${brand.supportEmail}`} className="inline-flex w-fit items-center gap-2 text-ink hover:text-accent">
             <Mail size={16} /> {brand.supportEmail}
           </a>
         </div>

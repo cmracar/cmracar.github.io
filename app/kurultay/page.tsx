@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles } from 'lucide-react'
-import Header from '@/app/components/Header'
+import { SectionHeading } from '@/app/components/Status'
 import legal from './legal.json'
 
 export const metadata = {
@@ -38,22 +38,22 @@ const pillars = [
 
 const features = [
   {
-    icon: <Swords size={22} className="text-amber-300" />,
+    icon: <Swords size={22} />,
     title: 'Kahramanla savun',
     desc: 'Gökbörü’yü kendin yürütürsün: kuleler yetmez, akının en sıkıştığı yere sen koşarsın.',
   },
   {
-    icon: <Route size={22} className="text-red-300" />,
+    icon: <Route size={22} />,
     title: 'Göç ve konaklar',
     desc: 'Otlak tükenir, mevsim döner. Kervanı yeni yurda taşırken pusuya da düşebilirsin.',
   },
   {
-    icon: <Sparkles size={22} className="text-yellow-300" />,
+    icon: <Sparkles size={22} />,
     title: 'Her sefer bir adım',
     desc: 'Düşsen de Kut ve Şan kazanırsın; Bey’den Han’a, Han’dan Kağan’a yükselirsin.',
   },
   {
-    icon: <Trophy size={22} className="text-orange-300" />,
+    icon: <Trophy size={22} />,
     title: 'Haftanın Akını',
     desc: 'Herkese aynı harita, aynı akınlar, eşit güç. Haftalık sıralamada en çok Şanı toplayan kazanır.',
   },
@@ -74,50 +74,50 @@ export default function KurultayPage() {
   const { brand } = legal
 
   return (
-    <main className="min-h-screen bg-[#181f2a] text-white">
-      <Header />
+    <main>
+      {/* GİRİŞ: logo koyu zemine çizilmiş, sahne her temada koyu */}
+      <section className="bg-[#0d0b09] text-white">
+        <div className="mx-auto max-w-6xl px-5 pb-20 pt-14 md:px-8 md:pt-20">
+          <Link href="/projects" className="font-mono text-xs uppercase tracking-[0.08em] text-white/50 hover:text-white">
+            ← Projeler
+          </Link>
+          <div className="mt-10 grid items-center gap-12 md:grid-cols-12">
+            <div className="md:col-span-7">
+              <h1 className="sr-only">Kurultay — Bozkır Savunması</h1>
+              <Image
+                src="/kurultay/logo.png"
+                alt="Kurultay — Bozkır Savunması"
+                width={1900}
+                height={965}
+                priority
+                className="h-auto w-full max-w-[520px]"
+              />
+              <p className="mt-8 inline-flex items-center gap-2 font-mono text-xs text-white/60">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#e0a948]" aria-hidden="true" />
+                Geliştiriliyor · Android ve iOS
+              </p>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
+                Kara Tuğ birliği bozkırı yakıyor; boylar dağınık, otağlar yalnız. Gündüz obanı kur, gece
+                Gökbörü ile akınlara göğüs ger, her beşinci gece bir beyle yüzleş. Otlak tükenince göç et,
+                Kurultay’da boyları birleştir ve Han seçil. Android ve iOS için; Türkçe ve İngilizce.
+              </p>
+            </div>
+            <aside className="md:col-span-4 md:col-start-9">
+              <p className="mb-4 font-mono text-xs uppercase tracking-[0.08em] text-white/50">Oyun döngüsü</p>
+              <ol className="divide-y divide-white/10 border-y border-white/10">
+                {pillars.map((p, i) => (
+                  <li key={p.name} className="flex items-center gap-3 py-3">
+                    <span className="w-5 font-mono text-xs text-white/40">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-[#e0a948]">{p.icon}</span>
+                    {p.name}
+                  </li>
+                ))}
+              </ol>
+            </aside>
+          </div>
 
-      {/* HERO */}
-      <section className="container mx-auto px-4 md:px-8 pt-12 pb-14 max-w-5xl">
-        <div className="flex flex-col items-start gap-4 mb-8">
-          <h1 className="sr-only">Kurultay — Bozkır Savunması</h1>
-          <Image
-            src="/kurultay/logo.png"
-            alt="Kurultay — Bozkır Savunması"
-            width={1900}
-            height={965}
-            priority
-            className="w-full max-w-[520px] h-auto drop-shadow-2xl"
-          />
-          <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-yellow-500/15 text-yellow-300">
-            Geliştiriliyor
-          </span>
-        </div>
-
-        <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
-          Kara Tuğ birliği bozkırı yakıyor; boylar dağınık, otağlar yalnız. Gündüz obanı kur, gece
-          Gökbörü ile akınlara göğüs ger, her beşinci gece bir beyle yüzleş. Otlak tükenince göç et,
-          Kurultay’da boyları birleştir ve Han seçil. Android ve iOS için; Türkçe ve İngilizce.
-        </p>
-
-        <div className="flex flex-wrap gap-2.5 mt-7">
-          {pillars.map(p => (
-            <span
-              key={p.name}
-              className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-200"
-            >
-              <span className="text-amber-300">{p.icon}</span>
-              {p.name}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      {/* EKRANLAR */}
-      <section className="border-y border-white/5 bg-white/[0.02] py-14">
-        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
-          <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-8">Ekranlar</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <p className="mb-8 mt-20 font-mono text-xs uppercase tracking-[0.08em] text-white/50">Ekranlar</p>
+          <div className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {shots.map(shot => (
               <figure key={shot.src}>
                 <Image
@@ -125,11 +125,11 @@ export default function KurultayPage() {
                   alt={`Kurultay — ${shot.title}`}
                   width={1600}
                   height={738}
-                  className="rounded-xl border border-white/10 shadow-xl shadow-black/40 w-full h-auto"
+                  className="h-auto w-full rounded-lg border border-white/10"
                 />
                 <figcaption className="mt-3">
-                  <span className="block text-sm font-semibold text-gray-100">{shot.title}</span>
-                  <span className="block text-xs text-gray-400 leading-relaxed mt-0.5">{shot.desc}</span>
+                  <span className="block text-sm font-medium text-white">{shot.title}</span>
+                  <span className="mt-0.5 block text-xs leading-relaxed text-white/60">{shot.desc}</span>
                 </figcaption>
               </figure>
             ))}
@@ -138,52 +138,41 @@ export default function KurultayPage() {
       </section>
 
       {/* ÖZELLİKLER */}
-      <section className="container mx-auto px-4 md:px-8 py-14 max-w-5xl">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+        <SectionHeading label="Özellikler" />
+        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
           {features.map(feature => (
-            <div key={feature.title} className="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col gap-2">
-              {feature.icon}
-              <h2 className="font-semibold">{feature.title}</h2>
-              <p className="text-sm text-gray-400 leading-relaxed">{feature.desc}</p>
+            <div key={feature.title} className="flex flex-col gap-3 bg-paper p-6">
+              <span className="text-faint">{feature.icon}</span>
+              <h3 className="font-medium text-ink">{feature.title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{feature.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-10">
-          <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-4">Teknolojiler</h2>
-          <div className="flex flex-wrap gap-2">
-            {stack.map(tech => (
-              <span key={tech} className="bg-amber-500/10 text-amber-300 px-2.5 py-1 rounded text-xs font-mono">
-                {tech}
-              </span>
-            ))}
-          </div>
+        <div className="mt-12 grid gap-4 md:grid-cols-12">
+          <p className="eyebrow md:col-span-3">Teknolojiler</p>
+          <p className="font-mono text-sm text-ink md:col-span-9">{stack.join(' · ')}</p>
         </div>
       </section>
 
       {/* YASAL */}
-      <section className="container mx-auto px-4 md:px-8 pb-24 max-w-5xl">
-        <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-4">Yasal</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-5 pb-12 md:px-8">
+        <SectionHeading label="Yasal ve destek" />
+        <ul className="grid gap-x-10 border-b border-line sm:grid-cols-2 lg:grid-cols-3">
           {documents.map(doc => (
-            <Link
-              key={doc.href}
-              href={doc.href}
-              className="flex items-center gap-3 bg-white/5 border border-white/10 hover:border-amber-400/40 hover:bg-white/10 transition rounded-lg px-4 py-3 no-underline text-gray-200"
-            >
-              <span className="text-amber-300">{doc.icon}</span>
-              <span className="flex-1">{doc.label}</span>
-              <span className="text-xs text-gray-500">{doc.lang}</span>
-            </Link>
+            <li key={doc.href} className="border-t border-line">
+              <Link href={doc.href} className="group flex items-center gap-3 py-4 text-ink">
+                <span className="text-faint">{doc.icon}</span>
+                <span className="flex-1 group-hover:text-accent">{doc.label}</span>
+                <span className="font-mono text-xs text-faint">{doc.lang}</span>
+              </Link>
+            </li>
           ))}
-        </div>
-
-        <div className="border-t border-white/10 pt-8 mt-10 flex flex-col gap-3 text-sm text-gray-400">
+        </ul>
+        <div className="mt-10 flex flex-col gap-2 text-sm text-muted">
           <span>{brand.copyright}</span>
-          <a
-            href={`mailto:${brand.supportEmail}`}
-            className="inline-flex items-center gap-2 text-amber-300 hover:text-amber-200 transition no-underline w-fit"
-          >
+          <a href={`mailto:${brand.supportEmail}`} className="inline-flex w-fit items-center gap-2 text-ink hover:text-accent">
             <Mail size={16} /> {brand.supportEmail}
           </a>
         </div>

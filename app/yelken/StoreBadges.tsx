@@ -66,12 +66,12 @@ export default function StoreBadges({ size = 'md' }: { size?: 'md' | 'sm' }) {
           <span
             key={key}
             aria-label={`${store.locative} yakında`}
-            className="inline-flex items-center gap-2.5 rounded-lg border border-white/15 bg-black/40 px-3.5 text-white/85 select-none"
+            className="inline-flex items-center gap-2.5 rounded-lg border border-line bg-paper px-3.5 text-ink select-none"
             style={{ height }}
           >
             <Glyph size={size === 'md' ? 22 : 18} />
             <span className="flex flex-col leading-none">
-              <span className="text-[10px] uppercase tracking-wider text-white/55">Yakında</span>
+              <span className="text-[10px] uppercase tracking-wider text-faint">Yakında</span>
               <span className={`${size === 'md' ? 'text-[15px]' : 'text-[13px]'} font-semibold mt-0.5`}>
                 {store.name}
               </span>

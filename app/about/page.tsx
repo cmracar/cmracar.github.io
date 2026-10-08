@@ -1,162 +1,229 @@
-'use client'
-
-import React from 'react'
-import Header from '@/app/components/Header'
-import { Briefcase, GraduationCap, Mail, Linkedin, Github, Twitter, MapPin, BookText, Star, Languages } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowUpRight } from 'lucide-react'
 import ProfileImage from '@/public/avatar.png'
+import { CONTACT } from '../components/Footer'
+import ResumeMenu from '../components/ResumeMenu'
 
 const experiences = [
-    {
-        company: 'Beyond Guard',
-        position: 'Senior Frontend Developer',
-        date: '2024 - Devam',
-        desc: 'Beyond Guard Kurumsal yapay zeka güvenliği platformunun arayüzünü geliştiriyorum.',
-        icon: <Briefcase size={28} className="text-cyan-400" />,
-    },
-    {
-        company: 'Carbon Consulting',
-        position: 'Senior Frontend Developer',
-        date: 'Kasım 2021 - Devam',
-        desc: 'React ve Next.js ile web uygulamaları geliştiriyorum. Turkcell, Akbank ve Vakıf Katılım gibi firmaların projelerinde yer alıp UI/UX tasarımlarını geliştirdim. In-house projelerde de yer alarak sıfırdan uygulamalar geliştiriyorum. Ayrıca yapay zeka araçlarıyla verimliliği en üst düzeye çıkarmak için çalışıyorum.',
-        icon: <Briefcase size={28} className="text-blue-400" />,
-    },
-    {
-        company: 'Oley.com',
-        position: 'Full Stack Developer',
-        date: 'Eylül 2020 - Nisan 2021',
-        desc: 'Kullanıcı deneyimi ve arayüz tasarımları yaptım, Django ve Angular ile Oley.com özelinde hem UI hem backend tarafında iyileştirmeler yaptım.',
-        icon: <Briefcase size={28} className="text-purple-400" />,
-    },
+  {
+    company: 'Beyond Guard',
+    position: 'Senior Front-End Developer',
+    date: '2024 — Devam',
+    desc: 'Beyond Guard yapay zekâ güvenliği ürününün arayüzünü geliştiriyorum: dashboard’dan canlı izleme ve log ekranlarına kadar ürünün tamamı.',
+    points: [
+      'Dashboard, canlı izleme, istek ve denetim (audit) logları; konuşma geçmişi ve yetkiye göre kısıtlanan log detayları',
+      'LLM, ajan, MCP, RAG, dosya ve bağlam trafiğini denetleyen Guard modülleri ile ICAP bağlayıcısı: prompt injection, PII ve içerik kontrollerinin yapılandırması',
+      'AI, RAG ve içerik politikaları, politika grupları ve model kütüphanesinin yönetim ekranları',
+      'Red Teaming: senaryo ve tohum listeleri, CSV/XLSX içe aktarma, RAG hedefleri için tarama akışı',
+      'Shadow AI, politika grubu bazlı uyarılar ve SIEM entegrasyonları (Syslog, Splunk HEC)',
+      'Organizasyon, kullanıcı ve rol yönetimi; SSO ile giriş ve onboarding',
+      'Güvenlik sertleştirmesi: Content-Security-Policy ve HTTP güvenlik başlıkları, bağımlılık açıklarının kapatılması, çok aşamalı Docker imajı',
+      'Yeni arayüz için tasarım sistemi ve bileşen kütüphanesi: Base UI ve Tailwind v4 üzerinde 70’i aşkın bileşen, tasarım token’ları, açık/koyu tema, etkileşimli dokümantasyon ve shadcn registry ile paket dağıtımı',
+      'BeyondChat: Guard denetim sonuçlarını her mesajda gösteren sohbet uygulaması; WebSocket ile gerçek zamanlı akış, kopan bağlantıda HTTP’ye geçiş ve dosya yükleme',
+    ],
+  },
+  {
+    company: 'Carbon Consulting',
+    position: 'Senior Front-End Developer',
+    date: 'Kas 2021 — Devam',
+    desc: 'Danışmanlık tarafında React ve Next.js ile kurumsal firmalara, yapay zekâ destekli ürünler başta olmak üzere arayüz geliştiriyorum.',
+    points: [
+      'Turkcell, Akbank ve Vakıf Katılım projelerinde arayüz mimarisi ve UI/UX geliştirme',
+      'Vakıf Katılım Artifin uygulaması için uzman danışmanlık',
+      'Vakıf Katılım Artifin Teftiş: RKM, mevzuat analizi ve sınav hazırlamayı yapay zekâ ajanlarıyla üreten iç denetim uygulamasının arayüzü',
+      'In-house ürünlerde fikirden yayına front-end liderliği',
+      'Yapay zekâ araçlarıyla kod üretimi ve tasarım prototiplemede verimlilik',
+    ],
+  },
+  {
+    company: 'Oley.com',
+    position: 'Full Stack Developer',
+    date: 'Eyl 2020 — Nis 2021',
+    desc: 'Django (backend) ve Angular (frontend) ile Oley.com platformlarının geliştirilmesi ve bakımı.',
+    points: ['Backend–frontend entegrasyonunu iyileştirerek performans artışı', 'Kullanıcı deneyimi ve arayüz tasarımları'],
+  },
 ]
 
 const educations = [
-    {
-        school: 'İzmir Ekonomi Üniversitesi',
-        degree: 'Bilgisayar Mühendisliği',
-        date: '2017 - 2021',
-        desc: 'Lisans eğitimimi başarıyla tamamladım. Web ve mobil teknolojilere odaklandım.',
-        icon: <GraduationCap size={28} className="text-green-400" />,
-    },
-    {
-        school: 'İzmir Ekonomi Üniversitesi',
-        degree: 'Bilgisayar Programcılığı',
-        date: '2014 - 2016',
-        desc: 'Genel programcılık üzerine kapsamlı eğitim aldım.',
-        icon: <GraduationCap size={28} className="text-yellow-400" />,
-    },
+  { school: 'İzmir Ekonomi Üniversitesi', degree: 'Bilgisayar Mühendisliği, Lisans', date: '2017 — 2021' },
+  { school: 'İzmir Ekonomi Üniversitesi', degree: 'Bilgisayar Programcılığı, Ön Lisans', date: '2014 — 2016' },
 ]
 
-const technologies = [
-    'React', 'Next.js', 'TypeScript', 'JavaScript', 'Redux', 'Redux Toolkit', 'Tailwind CSS', 'CopilotKit', 'Material UI', 'Framer Motion', 'Three.js', 'D3.js', 'Highcharts',
-    'Python', 'Node.js', 'Express', 'REST API', 'WebSocket',
-    'React Native', 'Expo',
-    'Figma', 'Canva',
-    'Docker', 'Git', 'GitHub Actions',
+const skills = [
+  { group: 'Front-end', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Redux Toolkit', 'Zustand', 'NextAuth', 'Tailwind CSS', 'Material UI', 'React Flow', 'Framer Motion', 'Lodash'] },
+  { group: 'Yapay zekâ arayüzleri', items: ['Vercel AI SDK', 'CopilotKit', 'AG-UI', 'SSE', 'WebSocket'] },
+  { group: 'Veri görselleştirme', items: ['Highcharts', 'D3.js', 'Three.js'] },
+  { group: 'Mobil ve oyun', items: ['React Native', 'Expo', 'Unity', 'C#', 'Supabase', 'SQLite'] },
+  { group: 'Backend ve araçlar', items: ['Node.js', 'Express', 'Python', 'Django', 'REST API', 'Docker', 'Linux', 'Git', 'GitHub Actions', 'n8n'] },
+  { group: 'Tasarım', items: ['Figma', 'Canva'] },
+  { group: 'Süreç', items: ['Agile', 'Trello', 'ClickUp', 'Taiga'] },
 ]
 
-const hobbies = ['Para Piyasaları', 'Fitness', 'Müzik',]
+/** Özgeçmişteki "Core Competencies" bölümünün karşılığı. */
+const approach = [
+  ['Arayüz mimarisi', 'Ölçeklenebilir, bakımı kolay front-end mimarileri ve tasarım sistemleri kurmak.'],
+  ['Performans', 'Web uygulamalarında performans için en iyi uygulamaları hayata geçirmek.'],
+  ['Ekiplerle çalışma', 'Tasarım, backend ve ürün ekipleriyle aynı hedefe doğru verimli çalışmak.'],
+  ['Danışmanlık', 'Kurumsal müşterilere teknik uzmanlık ve çözüm önerileri sunmak.'],
+  ['Yapay zekâ ile geliştirme', 'Yapay zekâ araçlarıyla geliştirme süreçlerini ve prototiplemeyi hızlandırmak.'],
+  ['Problem çözme', 'Karmaşık gereksinimleri analiz edip uygulanabilir teknik çözümlere dönüştürmek.'],
+]
+
+const contactLinks = [
+  { label: 'E-posta', value: CONTACT.email, href: `mailto:${CONTACT.email}` },
+  ...CONTACT.links.map(l => ({ label: l.label, value: l.href.replace(/^https:\/\/(www\.)?/, ''), href: l.href })),
+  { label: 'X (Twitter)', value: 'twitter.com/cmracar', href: 'https://twitter.com/cmracar' },
+]
+
+function Row({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <section className="grid gap-6 border-t border-line py-12 md:grid-cols-12">
+      <h2 className="eyebrow md:col-span-3 md:pt-1">{label}</h2>
+      <div className="md:col-span-9">{children}</div>
+    </section>
+  )
+}
 
 export default function AboutPage() {
-    return (
-        <main className="min-h-screen bg-[#181f2a] text-white">
-            <Header />
-            {/* HERO */}
-            <section className="container mx-auto px-4 md:px-8 pt-16 pb-8 flex flex-col items-center">
-                <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-blue-400/40 shadow-xl bg-gradient-to-tr from-blue-500 via-purple-500 to-cyan-400 mb-4">
-                    <Image
-                        src={ProfileImage}
-                        alt="Cemre ACAR"
-                        className="object-cover w-full h-full"
-                        priority
-                    />
-                </div>
-                <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center">Cemre Acar</h1>
-                <p className="text-blue-300 text-lg mb-4 text-center">Front-End Developer @ Carbon Consulting & Beyond Guard</p>
-                <div className="flex flex-wrap gap-3 justify-center mb-6">
-                    <span className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-3 py-1 rounded-full text-xs"><MapPin size={16} /> İzmir</span>
-                    <span className="flex items-center gap-2 bg-purple-500/10 text-purple-300 px-3 py-1 rounded-full text-xs"><Star size={16} /> 4+ Yıl</span>
-                    <span className="flex items-center gap-2 bg-green-500/10 text-green-300 px-3 py-1 rounded-full text-xs"><Languages size={16} /> Türkçe, İngilizce</span>
-                </div>
-                <p className="text-gray-300 max-w-2xl text-center mb-6">
-                    Modern web ve mobil teknolojilerle kullanıcı odaklı, yenilikçi ve performanslı arayüzler geliştiriyorum. Tasarım ve kodun buluştuğu noktada üretmeyi seviyorum. Takım çalışmasına yatkın, öğrenmeye ve gelişime açık biriyim.
-                </p>
-            </section>
+  return (
+    <main className="mx-auto max-w-6xl px-5 pb-12 pt-16 md:px-8 md:pt-24">
+      <div className="grid gap-10 pb-16 md:grid-cols-12">
+        <div className="md:col-span-3">
+          <Image
+            src={ProfileImage}
+            alt="Cemre Acar"
+            priority
+            className="aspect-square w-32 rounded-full object-cover md:w-full md:max-w-[180px]"
+          />
+        </div>
+        <div className="md:col-span-9">
+          <p className="eyebrow">Hakkımda</p>
+          <h1 className="mt-6 font-serif text-5xl leading-[1.08] tracking-tight text-ink md:text-6xl">Cemre Acar</h1>
+          <p className="mt-3 text-lg text-ink">Senior Front-End Developer · Bilgisayar Mühendisi</p>
+          <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted">
+            <p>
+              2020’den beri ürün geliştiriyorum. Carbon Consulting’de danışmanlık tarafında kurumsal
+              firmalara ölçeklenebilir, kullanıcı odaklı arayüzler geliştiriyorum. Beyond Guard’da ise
+              yapay zekâ güvenliği ürününün arayüzünü
+              geliştiriyorum.
+            </p>
+            <p>
+              Son yıllarda en çok yapay zekâ ile arayüzlerin kesiştiği yerde çalışıyorum: akışlı yanıtlar,
+              ajan arayüzleri, denetim ve izleme panelleri. Bunun dışında{' '}
+              <Link href="/#uygulamalar" className="link-underline text-ink">
+                kendi mobil uygulamalarımı
+              </Link>{' '}
+              tek başıma geliştiriyor, öğrendiklerimi{' '}
+              <Link href="/yazilar" className="link-underline text-ink">
+                Medium’da yazıyorum
+              </Link>
+              .
+            </p>
+          </div>
+          <dl className="mt-10 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-3">
+            {[
+              ['Konum', 'İzmir, Türkiye'],
+              ['Diller', 'Türkçe (ana dil), İngilizce (profesyonel)'],
+              ['Çalışma', 'Uzaktan'],
+            ].map(([k, v]) => (
+              <div key={k}>
+                <dt className="eyebrow">{k}</dt>
+                <dd className="mt-1.5 text-sm text-ink">{v}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
 
-            {/* SKILLS */}
-            <section className="container mx-auto px-4 md:px-8 pb-10">
-                <h2 className="text-xl font-bold mb-4 text-center">Teknolojiler</h2>
-                <div className="flex flex-wrap gap-3 justify-center">
-                    {technologies.map((tech, i) => (
-                        <span
-                            key={tech + i}
-                            className="px-3 py-1.5 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-blue-200 font-semibold text-xs border border-blue-400/10 shadow-sm text-center cursor-default select-none transition hover:scale-105"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                </div>
-            </section>
+      <Row label="Deneyim">
+        <ol className="space-y-12">
+          {experiences.map(exp => (
+            <li key={exp.company}>
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <h3 className="font-serif text-2xl text-ink">{exp.company}</h3>
+                <span className="font-mono text-xs text-faint">{exp.date}</span>
+              </div>
+              <p className="mt-1 text-sm text-ink">{exp.position}</p>
+              <p className="mt-3 leading-relaxed text-muted">{exp.desc}</p>
+              <ul className="mt-4 space-y-2 text-sm text-ink">
+                {exp.points.map(point => (
+                  <li key={point} className="flex gap-3">
+                    <span className="mt-[0.6em] h-px w-3 shrink-0 bg-faint" aria-hidden="true" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ol>
+      </Row>
 
-            {/* EXPERIENCE & EDUCATION */}
-            <section className="container mx-auto px-4 md:px-8 pb-10">
-                <div className="grid md:grid-cols-2 gap-10 items-stretch">
-                    {/* Tecrübe */}
-                    <div className="flex flex-col h-full">
-                        <h2 className="text-xl font-bold mb-6 text-center md:text-left">Tecrübe</h2>
-                        <div className="flex-1 flex flex-col justify-center">
-                            {experiences.map((exp, i) => (
-                                <div key={i} className="bg-[#232b3a] border border-blue-400/20 rounded-2xl p-6 shadow-lg flex flex-col justify-center h-full min-h-[200px] mb-6 last:mb-0 transition hover:border-blue-400/40 hover:shadow-blue-400/10">
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="font-semibold text-white text-lg">{exp.position}</span>
-                                        <span className="text-xs text-blue-300 bg-blue-500/10 rounded px-2 py-1">{exp.date}</span>
-                                    </div>
-                                    <div className="text-blue-400 font-medium mb-1">{exp.company}</div>
-                                    <div className="text-gray-300 text-sm">{exp.desc}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    {/* Eğitim */}
-                    <div className="flex flex-col h-full">
-                        <h2 className="text-xl font-bold mb-6 text-center md:text-left">Eğitim</h2>
-                        <div className="flex-1 flex flex-col justify-center">
-                            {educations.map((edu, i) => (
-                                <div key={i} className="bg-[#232b3a] border border-green-400/20 rounded-2xl p-6 shadow-lg flex flex-col justify-center h-full min-h-[200px] mb-6 last:mb-0 transition hover:border-green-400/40 hover:shadow-green-400/10">
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="font-semibold text-white text-lg">{edu.degree}</span>
-                                        <span className="text-xs text-green-300 bg-green-500/10 rounded px-2 py-1">{edu.date}</span>
-                                    </div>
-                                    <div className="text-green-400 font-medium mb-1">{edu.school}</div>
-                                    <div className="text-gray-300 text-sm">{edu.desc}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <Row label="Yaklaşım">
+        <dl className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
+          {approach.map(([title, desc]) => (
+            <div key={title}>
+              <dt className="text-sm font-medium text-ink">{title}</dt>
+              <dd className="mt-1.5 text-sm leading-relaxed text-muted">{desc}</dd>
+            </div>
+          ))}
+        </dl>
+      </Row>
 
-            {/* HOBİLER */}
-            <section className="container mx-auto px-4 md:px-8 pb-10">
-                <h2 className="text-xl font-bold mb-4 text-center">Hobilerim</h2>
-                <div className="flex flex-wrap gap-3 justify-center">
-                    {hobbies.map((h) => (
-                        <span key={h} className="bg-purple-500/10 text-purple-300 px-4 py-2 rounded-full text-sm">{h}</span>
-                    ))}
-                </div>
-            </section>
+      <Row label="Yetkinlikler">
+        <dl className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
+          {skills.map(s => (
+            <div key={s.group}>
+              <dt className="text-sm font-medium text-ink">{s.group}</dt>
+              <dd className="mt-1.5 text-sm leading-relaxed text-muted">{s.items.join(', ')}</dd>
+            </div>
+          ))}
+        </dl>
+      </Row>
 
-            {/* SOSYAL */}
-            <section className="container mx-auto px-4 md:px-8 pb-16">
-                <h2 className="text-xl font-bold mb-4 text-center">İletişim & Sosyal</h2>
-                <div className="flex flex-wrap gap-4 justify-center">
-                    <a href="mailto:cemreacar94@gmail.com" className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg hover:bg-blue-500/20 transition no-underline"><Mail /> Mail</a>
-                    <a href="https://linkedin.com/in/cmracar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg hover:bg-blue-500/20 transition no-underline"><Linkedin /> LinkedIn</a>
-                    <a href="https://github.com/cmracar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg hover:bg-blue-500/20 transition no-underline"><Github /> GitHub</a>
-                    <a href="https://twitter.com/cmracar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg hover:bg-blue-500/20 transition no-underline"><Twitter /> Twitter</a>
-                    <a href="https://medium.com/@cmracar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg hover:bg-blue-500/20 transition no-underline"><BookText /> Medium</a>
-                </div>
-            </section>
-        </main>
-    )
+      <Row label="Eğitim">
+        <ul className="space-y-5">
+          {educations.map(edu => (
+            <li key={edu.degree} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+              <div>
+                <p className="text-ink">{edu.degree}</p>
+                <p className="mt-0.5 text-sm text-muted">{edu.school}</p>
+              </div>
+              <span className="font-mono text-xs text-faint">{edu.date}</span>
+            </li>
+          ))}
+        </ul>
+      </Row>
+
+      <Row label="İlgi alanları">
+        <p className="text-muted">Para piyasaları, fitness ve müzik.</p>
+      </Row>
+
+      <Row label="İletişim">
+        <ul className="divide-y divide-line border-y border-line">
+          {contactLinks.map(link => (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-4 py-4"
+              >
+                <span className="text-sm text-muted">{link.label}</span>
+                <span className="flex items-center gap-2 text-sm text-ink group-hover:text-accent">
+                  {link.value} <ArrowUpRight size={14} />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8">
+          <ResumeMenu
+            label="Özgeçmişi indir"
+            buttonClassName="inline-flex items-center gap-2 rounded-md bg-ink px-5 py-3 text-sm font-medium text-paper transition-opacity hover:opacity-85"
+          />
+        </div>
+      </Row>
+    </main>
+  )
 }

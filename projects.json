@@ -1,29 +1,27 @@
 [
     {
         "projectName": "Artifin Teftiş AI App UI/UX",
-        "description": "Vakıf Katılım'ın Artifin ürün ailesi için geliştirilen, yapay zeka destekli teftiş (denetim) uygulamasının arayüzü.",
+        "description": "Vakıf Katılım’ın Artifin ürün ailesi için, teftiş (iç denetim) ekiplerinin kullandığı yapay zekâ destekli uygulamanın arayüzü.",
         "preview": "",
         "technologies": [
-            "HTML",
-            "CSS",
             "React",
-            "Redux Toolkit"
+            "Next.js",
+            "TypeScript",
+            "Redux Toolkit",
+            "RTK Query",
+            "Material UI",
+            "Next Auth",
+            "SSE"
         ],
         "isCompleted": false,
-        "category": "carbon"
-    },
-     {
-        "projectName": "Vakıf Katılım Artifin Backoffice UI",
-        "description": "Vakıf Katılım Bankası'nın Artifin uygulaması için geliştirilmiş backoffice arayüzü.",
-        "preview": "",
-        "technologies": [
-            "HTML",
-            "CSS",
-            "React",
-            "Redux Toolkit"
-        ],
-        "isCompleted": false,
-        "category": "carbon"
+        "category": "carbon",
+        "highlights": [
+            "Risk kontrol matrisi (RKM), mevzuat analizi ve sınav hazırlamayı yapay zekâ ajanlarıyla üreten, adım adım ilerleme gösteren akışlar",
+            "Üretilen çıktılar için onay, değişiklik talebi ve ret adımlarıyla onay süreçleri; yapılandırılmış sonuçları düzenleme ekranları",
+            "Belgeler üzerinde karşılaştırma, uyumluluk ve mevzuat etki analizi yapan, SSE ile canlı yanıt veren asistan",
+            "Doküman yükleme, OCR ve veri kaynağı yönetimi; Excel şablonlarıyla içe ve dışa aktarma",
+            "Yetki bazlı menü ve sayfa erişimi; kurumun MUI tabanlı tasarım sistemiyle uyumlu arayüz"
+        ]
     },
     {
         "projectName": "Epiuse Chat UX/UI",
@@ -36,44 +34,82 @@
             "Next.js",
             "Redux Toolkit",
             "Tailwind CSS",
-            "Next Auth"
+            "Next Auth",
+            "WebSocket",
+            "Axios"
         ],
         "isCompleted": true,
-        "category": "carbon"
+        "category": "carbon",
+        "highlights": [
+            "WebSocket ve REST API’yi birlikte destekleyen çift mimari",
+            "Güvenli kimlik doğrulama (NextAuth) ve duyarlı tasarım"
+        ]
     },
     {
         "projectName": "BeyondGuard UX/UI",
-        "description": "Kurumsal yapay zeka güvenliği için kontrol paneli (beyondguard.ai). LLM'e giden prompt, RAG ve ajan/araç çağrıları ile LLM'den dönen model çıktıları denetleniyor; dashboard, canlı izleme ve log ekranlarının arayüzünü geliştirdim.",
+        "description": "Beyond Guard’ın yapay zekâ güvenliği ürünü. LLM'e giden prompt, RAG ve ajan/araç çağrıları ile LLM'den dönen model çıktıları denetleniyor; dashboard, canlı izleme ve log ekranları dahil ürünün production arayüzünü geliştirdim.",
         "preview": "",
         "technologies": [
-            "HTML",
-            "CSS",
             "React",
             "Next.js",
             "Redux Toolkit",
+            "Zustand",
+            "Material UI",
             "Tailwind CSS",
-            "Next Auth",
-            "Figma"
+            "Highcharts",
+            "React Flow",
+            "Next Auth"
         ],
         "isCompleted": false,
-        "category": "beyondguard"
+        "category": "beyondguard",
+        "highlights": [
+            "Dashboard, canlı izleme ve log ekranları; yetkiye göre kısıtlanan log detayları",
+            "LLM, ajan, MCP, RAG ve dosya trafiğini denetleyen Guard modülleri ve politika yönetimi",
+            "Red Teaming, Shadow AI, uyarılar ve SIEM entegrasyonları (Syslog, Splunk HEC)",
+            "Content-Security-Policy, güvenlik başlıkları ve bağımlılık açıklarının kapatılması"
+        ]
     },
     {
         "projectName": "BeyondChat UX/UI",
-        "description": "BeyondGuard ürünü için geliştirilen, gerçek zamanlı mesajlaşma ve destek deneyimi sunan sohbet arayüzü.",
+        "description": "Beyond Guard ile korunan sohbet uygulaması: kullanıcı mesajları ve model yanıtları Guard denetiminden geçiyor, sonuç her mesajın yanında gösteriliyor.",
         "preview": "",
         "technologies": [
-            "HTML",
-            "CSS",
             "React",
             "Next.js",
             "Redux Toolkit",
+            "Material UI",
             "Tailwind CSS",
             "Next Auth",
-            "Figma"
+            "WebSocket"
+        ],
+        "isCompleted": true,
+        "category": "beyondguard",
+        "highlights": [
+            "WebSocket ile gerçek zamanlı mesajlaşma; kopan bağlantıda yeniden deneme ve HTTP’ye geçiş",
+            "Mesaj başına Guard denetim sonucu ve ayrıntıları",
+            "Dosya yükleme, aktif ve geçmiş sohbet listeleri"
+        ]
+    },
+    {
+        "projectName": "Beyond Guard UI Kit",
+        "description": "Beyond Guard’ın yeni arayüzü için tasarım sistemi ve bileşen kütüphanesi. Her bileşen canlı örneği, kullanım kodu ve prop referansıyla etkileşimli bir dokümantasyon uygulamasında sunuluyor.",
+        "preview": "",
+        "technologies": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Base UI",
+            "Recharts",
+            "shadcn"
         ],
         "isCompleted": false,
-        "category": "beyondguard"
+        "category": "beyondguard",
+        "highlights": [
+            "70’i aşkın bileşen: form kontrolleri, veri tablosu, grafikler, dashboard ızgarası, bildirimler, komut paleti",
+            "Tasarım token’larıyla tek kaynaktan yönetilen açık/koyu tema ve erişilebilir Base UI temelleri",
+            "shadcn registry ve npm paketi yapısıyla ürünlere dağıtım; Cmd+K aramalı dokümantasyon"
+        ]
     },
     {
         "projectName": "Carbonetz UX/UI",
@@ -90,7 +126,11 @@
             "Figma"
         ],
         "isCompleted": false,
-        "category": "carbon"
+        "category": "carbon",
+        "highlights": [
+            "UI/UX tasarımı ve front-end geliştirmesini uçtan uca yürüttüm",
+            "Yeşil dönüşüm verilerini Highcharts ile anlaşılır kılan ekranlar"
+        ]
     },
     {
         "projectName": "Akbank Hazine İzleme Sistemi UX/UI",
@@ -103,10 +143,15 @@
             "Next.js",
             "Tailwind CSS",
             "Highcharts",
-            "Redux Toolkit"
+            "Redux Toolkit",
+            "Material UI"
         ],
         "isCompleted": true,
-        "category": "carbon"
+        "category": "carbon",
+        "highlights": [
+            "Hazine operasyonları için kapsamlı risk izleme platformu",
+            "Yapay zekâ destekli araçlarla hızlı prototipleme ve test"
+        ]
     },
     {
         "projectName": "Kurultay",
@@ -123,7 +168,7 @@
     },
     {
         "projectName": "Yelken",
-        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Dört oyun modu, aralıklı tekrar programı, 11.000'den fazla kelimelik Türkçe, İngilizce ve İspanyolca dağarcık. Çevrimdışı oynanır, hesap gerektirmez — isteyenler için online sıralama, bulut yedeği ve gerçek rakiplerle Düello da var. Google Play'de yayında; App Store yayını yolda.",
+        "description": "Kendi ürünüm: kelime bulmacası ve dil öğrenme oyunu. Beş oyun modu, aralıklı tekrar programı, 11.000'den fazla kelimelik Türkçe, İngilizce ve İspanyolca dağarcık. Çevrimdışı oynanır, hesap gerektirmez — isteyenler için online sıralama, bulut yedeği ve gerçek rakiplerle Düello da var. Google Play'de yayında; App Store yayını yolda.",
         "preview": "/yelken",
         "stores": "yelken",
         "technologies": [
@@ -159,10 +204,16 @@
             "HTML",
             "CSS",
             "React",
-            "Highcharts"
+            "Highcharts",
+            "Redux",
+            "Lodash"
         ],
         "isCompleted": true,
-        "category": "carbon"
+        "category": "carbon",
+        "highlights": [
+            "Turkcell TBot sohbet botu platformu için analitik dashboard’lar",
+            "Veri görselleştirme ve izleme yeteneklerini güçlendiren ekranlar"
+        ]
     },
     {
         "projectName": "Glosa UX/UI",
@@ -172,10 +223,15 @@
             "HTML",
             "CSS",
             "React",
-            "Context API"
+            "Context API",
+            "React Hooks",
+            "Lodash"
         ],
         "isCompleted": true,
-        "category": "carbon"
+        "category": "carbon",
+        "highlights": [
+            "Modern React kalıpları ve Context API ile sıfırdan kurulan uygulama"
+        ]
     },
     {
         "projectName": "DiasNDT Website",

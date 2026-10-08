@@ -1,0 +1,184 @@
+<!doctype html>
+<!--
+  Özgeçmişin kaynağı. Sitedeki /resume.pdf bu dosyadan üretilir; metni burada
+  güncelle, sonra depo kökünde çalıştır:
+
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
+    --no-pdf-header-footer --virtual-time-budget=10000 \
+    --print-to-pdf=public/resume.pdf cv/resume.html
+
+  Tek sütun ve gerçek metin: başvuru sistemleri (ATS) PDF'i okuyabilsin.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cemre Acar — Resume</title>
+<meta name="author" content="Cemre Acar">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=block" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 13mm 16mm 13mm 16mm; }
+  :root { --ink: #15171c; --muted: #4d525e; --faint: #7a7f8a; --line: #dcdad4; --accent: #2446b3; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Geist', system-ui, sans-serif; font-size: 9.4pt; line-height: 1.45; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+  h1 { font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 28pt; letter-spacing: -0.01em; line-height: 1; margin: 0; }
+  .role { margin-top: 6pt; font-size: 10.5pt; }
+  .contact { margin-top: 8pt; display: flex; flex-wrap: wrap; gap: 2pt 14pt; font-family: 'Geist Mono', monospace; font-size: 8pt; color: var(--muted); }
+  section { margin-top: 13pt; }
+  h2 { font-family: 'Geist Mono', monospace; font-weight: 400; font-size: 7.6pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); margin: 0 0 7pt; padding-bottom: 4pt; border-bottom: 0.6pt solid var(--line); }
+  p { margin: 0; }
+  .summary { color: var(--muted); font-size: 9.8pt; }
+  .job { margin-top: 11pt; }
+  .job-head, .position { break-after: avoid-page; }
+  li, .project { break-inside: avoid-page; }
+  .job:first-of-type { margin-top: 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  h3 { font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 13pt; margin: 0; }
+  .date { font-family: 'Geist Mono', monospace; font-size: 8pt; color: var(--faint); white-space: nowrap; }
+  .position { font-weight: 500; margin-top: 1pt; }
+  .desc { color: var(--muted); margin-top: 3pt; }
+  ul { margin: 4pt 0 0; padding: 0; list-style: none; }
+  li { position: relative; padding-left: 11pt; margin-top: 2pt; }
+  li::before { content: ''; position: absolute; left: 0; top: 0.72em; width: 6pt; height: 0.6pt; background: var(--faint); }
+  .sub { margin-top: 7pt; font-family: 'Geist Mono', monospace; font-size: 7.6pt; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+  .project { margin-top: 3pt; }
+  .project b { font-weight: 600; }
+  .tech { color: var(--faint); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5pt 18pt; }
+  .label { font-weight: 600; }
+  .muted { color: var(--muted); }
+  .row { display: flex; justify-content: space-between; gap: 12pt; }
+  .row + .row { margin-top: 4pt; }
+  .keep { break-inside: avoid-page; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cemre Acar</h1>
+  <p class="role">Senior Front-End Developer · Computer Engineer · UI Architect</p>
+  <div class="contact">
+    <a href="mailto:cemreacar94@gmail.com">cemreacar94@gmail.com</a>
+    <span>+90 541 532 5736</span>
+    <a href="https://cmracar.github.io">cmracar.github.io</a>
+    <a href="https://linkedin.com/in/cmracar">linkedin.com/in/cmracar</a>
+    <a href="https://github.com/cmracar">github.com/cmracar</a>
+    <a href="https://medium.com/@cmracar">medium.com/@cmracar</a>
+    <span>İzmir, Türkiye · Remote</span>
+  </div>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p class="summary">
+    Senior Front-End Developer with 6+ years of experience building scalable, user-centric web
+    interfaces with React and Next.js. At Carbon Consulting I develop interfaces for enterprise
+    clients on the consulting side; at Beyond Guard I build the interface of the AI security
+    product — from dashboards to live monitoring and logs. Most of my recent work sits where AI
+    meets the interface: agent workflows, streaming responses, approval flows and audit panels.
+    Alongside this, I design, build and ship my own mobile apps end to end.
+  </p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><h3>Beyond Guard</h3><span class="date">2024 — Present</span></div>
+    <p class="position">Senior Front-End Developer</p>
+    <p class="desc">I develop the interface of Beyond Guard’s AI security product: the whole product, from dashboards to live monitoring and log screens.</p>
+    <ul>
+      <li>Dashboard, live monitoring, request and audit logs; conversation history and role-restricted log details</li>
+      <li>Guard modules inspecting LLM, agent, MCP, RAG, file and context traffic, plus an ICAP connector: configuration of prompt-injection, PII and content checks</li>
+      <li>Management screens for AI, RAG and content policies, policy groups and the model library</li>
+      <li>Red Teaming: scenario and seed lists, CSV/XLSX import, scan flow for RAG targets</li>
+      <li>Shadow AI, policy-group-based alerts and SIEM integrations (Syslog, Splunk HEC)</li>
+      <li>Organization, user and role management; SSO sign-in and onboarding</li>
+      <li>Security hardening: Content-Security-Policy and HTTP security headers, dependency vulnerability remediation, multi-stage Docker image</li>
+      <li>Design system and component library for the new interface: 70+ components on Base UI and Tailwind v4, design tokens, light/dark themes, interactive documentation and distribution via a shadcn registry</li>
+      <li>BeyondChat: chat application showing Guard check results on every message; real-time streaming over WebSocket with HTTP fallback, file uploads</li>
+    </ul>
+    <p class="desc" style="margin-top:4pt"><span class="tech">React · Next.js · TypeScript · Redux Toolkit · Zustand · Material UI · Tailwind CSS · Base UI · Highcharts · React Flow · NextAuth · WebSocket · Docker</span></p>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Carbon Consulting</h3><span class="date">Nov 2021 — Present</span></div>
+    <p class="position">Senior Front-End Developer</p>
+    <p class="desc">On the consulting side, I develop interfaces for enterprise clients with React and Next.js, with a focus on AI-powered products.</p>
+    <ul>
+      <li>Front-end architecture and UI/UX development for enterprise clients including Turkcell, Akbank and Vakıf Katılım</li>
+      <li>Expert consultancy for Vakıf Katılım’s Artifin application</li>
+      <li>Vakıf Katılım Artifin Inspection: interface of an internal-audit application that generates risk control matrices, regulation analyses and exams with AI agents — step-by-step progress, approval workflows, document upload and OCR, and an assistant streaming answers over SSE</li>
+      <li>Front-end lead on in-house products from concept to release</li>
+      <li>AI-assisted development to speed up code generation and design prototyping</li>
+    </ul>
+    <p class="sub">Selected client projects</p>
+    <p class="project"><b>Akbank — Treasury Monitoring.</b> Comprehensive monitoring platform for treasury risk; rapid prototyping with AI tools. <span class="tech">Next.js · Redux Toolkit · Highcharts · Material UI</span></p>
+    <p class="project"><b>Turkcell — TBot Analytics.</b> Analytics dashboards for the TBot chatbot platform. <span class="tech">React · Redux · Highcharts</span></p>
+    <p class="project"><b>Carbonetz.</b> End-to-end UI/UX design and development of a green-transformation application. <span class="tech">Next.js · NextAuth · Highcharts · Figma</span></p>
+    <p class="project"><b>Epiuse Chat.</b> Real-time chatbot supporting both WebSocket and REST, with secure authentication. <span class="tech">Next.js · NextAuth · WebSocket</span></p>
+    <p class="project"><b>Glosa.</b> Web application built from scratch with modern React patterns. <span class="tech">React · Context API</span></p>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Oley.com</h3><span class="date">Sep 2020 — Apr 2021</span></div>
+    <p class="position">Full Stack Developer</p>
+    <ul>
+      <li>Developed and maintained Oley.com platforms with Django (backend) and Angular (frontend)</li>
+      <li>Improved performance through better backend–frontend integration; UX and interface design</li>
+    </ul>
+  </div>
+</section>
+
+<section class="keep">
+  <h2>Independent products</h2>
+  <p class="project"><b>Yelken</b> — Word puzzle and language-learning game for Android and iOS: 11,000+ words in Turkish, English and Spanish, spaced repetition, offline play, online leaderboards and real-time duels. Designed, built and published solo. <span class="tech">React Native · Expo · TypeScript · SQLite · Supabase</span></p>
+  <p class="project" style="margin-top:5pt"><b>Kurultay</b> — Hero-controlled base defence and migration game set on the steppe; all 3D models, UI art and audio are generated from code; weekly leaderboard with Google and Apple sign-in. <span class="tech">Unity 6 · C# · URP · Supabase</span></p>
+  <p class="project" style="margin-top:5pt"><b>Freelance websites</b> — Evde Gelişim (online learning platform), Turklerden, DiasNDT, AAT Hukuk. <span class="tech">Next.js · React · Django</span></p>
+</section>
+
+<section class="keep">
+  <h2>Skills</h2>
+  <div class="grid">
+    <p><span class="label">Front-end</span> <span class="muted">React, Next.js, TypeScript, JavaScript, Redux Toolkit, Zustand, NextAuth, Tailwind CSS, Material UI, Base UI, React Flow</span></p>
+    <p><span class="label">AI interfaces</span> <span class="muted">Vercel AI SDK, CopilotKit, AG-UI, SSE, WebSocket, prompt engineering</span></p>
+    <p><span class="label">Data visualization</span> <span class="muted">Highcharts, Recharts, D3.js, Three.js</span></p>
+    <p><span class="label">Mobile &amp; games</span> <span class="muted">React Native, Expo, Unity, C#, Supabase, SQLite</span></p>
+    <p><span class="label">Back-end &amp; tooling</span> <span class="muted">Node.js, Express, Python, Django, REST, Docker, Linux, Git, GitHub Actions, n8n</span></p>
+    <p><span class="label">Design &amp; process</span> <span class="muted">Figma, Canva, Agile, Trello, ClickUp, Taiga</span></p>
+  </div>
+</section>
+
+<section class="keep">
+  <h2>Core competencies</h2>
+  <div class="grid">
+    <p><span class="label">UI architecture</span> <span class="muted">Scalable, maintainable front-end architectures and design systems</span></p>
+    <p><span class="label">Performance</span> <span class="muted">Best practices for web application performance</span></p>
+    <p><span class="label">Collaboration</span> <span class="muted">Working closely with design, back-end and product teams</span></p>
+    <p><span class="label">Consulting</span> <span class="muted">Technical expertise and solutions for enterprise clients</span></p>
+    <p><span class="label">AI-assisted development</span> <span class="muted">Faster delivery and prototyping with AI tools</span></p>
+    <p><span class="label">Problem solving</span> <span class="muted">Turning complex requirements into workable technical solutions</span></p>
+  </div>
+</section>
+
+<section class="keep">
+  <h2>Education</h2>
+  <div class="row"><p><span class="label">B.Sc. Computer Engineering</span> <span class="muted">— İzmir University of Economics</span></p><span class="date">2017 — 2021</span></div>
+  <div class="row"><p><span class="label">Associate Degree, Computer Programming</span> <span class="muted">— İzmir University of Economics</span></p><span class="date">2014 — 2016</span></div>
+</section>
+
+<section class="keep">
+  <h2>Writing</h2>
+  <p class="muted">Articles on AI interfaces, React and Next.js at medium.com/@cmracar — including “Migrating from manual SSE handling to the Vercel AI SDK” (2026), “AG-UI protocol: CopilotKit and SSE integration flow” (2025) and “Generative UI and CopilotKit” (2025).</p>
+</section>
+
+<section class="keep">
+  <h2>Languages</h2>
+  <p><span class="label">Turkish</span> <span class="muted">native</span> · <span class="label">English</span> <span class="muted">professional working proficiency</span></p>
+</section>
+
+</body>
+</html>

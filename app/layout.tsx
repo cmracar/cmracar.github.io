@@ -1,30 +1,40 @@
 import type { Metadata } from "next";
-import { Oswald, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin", "latin-ext"],
 });
 
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin", "latin-ext"],
+});
+
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: "Cemre Acar | Kişisel Portfolio",
-  description: "Cemre Acar'ın kişisel portfolio sayfası. Projeler, deneyimler ve iletişim bilgileri.",
-  keywords: ["Cemre Acar", "portfolio", "kişisel", "web geliştirici", "projeler", "frontend", "yazılım"],
+  // Paylaşım görselleri (og:image) tam adrese çözülsün; yoksa localhost yazılıyor.
+  metadataBase: new URL("https://cmracar.github.io"),
+  title: "Cemre Acar | Senior Front-End Developer",
+  description:
+    "Cemre Acar — Senior Front-End Developer. Kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
+  keywords: ["Cemre Acar", "portfolio", "front-end", "React", "Next.js", "React Native", "Yelken", "Kurultay"],
   authors: [{ name: "Cemre Acar" }],
   creator: "Cemre Acar",
   openGraph: {
-    title: "Cemre Acar | Kişisel Portfolio",
-    description: "Cemre Acar'ın kişisel portfolio sayfası.",
-    url: "https://cmracar.github.io/", // kendi domainini ekleyebilirsin
-    siteName: "Cemre Acar Portfolio",
+    title: "Cemre Acar | Senior Front-End Developer",
+    description: "Kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
+    url: "https://cmracar.github.io/",
+    siteName: "Cemre Acar",
+    locale: "tr_TR",
     type: "website",
   },
 };
@@ -35,9 +45,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} ${oswald.variable} antialiased`}>
-        {children}
+    <html lang="tr">
+      <body className={`${geist.variable} ${geistMono.variable} ${newsreader.variable} flex min-h-screen flex-col`}>
+        <Header />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );

@@ -1,60 +1,96 @@
 'use client'
-// import Image from 'next/image'
-import { Braces, Menu, X } from 'lucide-react'
+
+import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import projectsData from '../../projects.json'
+import ResumeMenu, { RESUMES } from './ResumeMenu'
 
 const menuItems = [
-  { label: 'Anasayfa', href: '/' },
+  { label: 'Projeler', href: '/projects' },
+  { label: 'Yazılar', href: '/yazilar' },
   { label: 'Hakkımda', href: '/about' },
-  { label: 'Projelerim', href: '/projects' },
 ]
+
+/**
+ * Uygulama sayfaları (/yelken, /kurultay …) menüde ayrı yer almıyor; Projeler'in
+ * altında sayılıyor. Liste projects.json'dan gelir: iç sayfası olan her proje.
+ */
+const appPaths = projectsData.map(p => p.preview).filter(href => href.startsWith('/'))
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const under = (href: string) => pathname === href || pathname.startsWith(`${href}/`)
+  const isActive = (href: string) =>
+    under(href) || (href === '/projects' && appPaths.some(under))
+
   return (
-    <nav className="container mx-auto flex justify-between items-center px-4 md:px-8 h-20 text-base relative z-20">
-      <Link href="/" className="flex items-center gap-3 select-none h-12">
-        <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-gradient-to-tr from-blue-400 via-purple-400 to-cyan-400">
-          <Braces size={22} className="text-white drop-shadow" />
-        </span>
-        <span className="font-extrabold text-xl md:text-2xl tracking-wide text-white drop-shadow-sm oswald pb-0.5" style={{letterSpacing: '.02em'}}>CEMRE ACAR</span>
-      </Link>
-      {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-8 text-gray-200 font-medium text-base">
-        {menuItems.map((item) => (
-          <li key={item.label} className="hover:text-white transition-colors cursor-pointer">
-            <Link href={item.href}>{item.label}</Link>
+    <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur">
+      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
+        <Link href="/" className="flex items-baseline gap-3 no-underline" onClick={() => setMenuOpen(false)}>
+          <span className="font-serif text-xl tracking-tight text-ink">Cemre Acar</span>
+          <span className="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-faint sm:inline">
+            Front-End Developer
+          </span>
+        </Link>
+
+        <ul className="hidden items-center gap-7 text-sm md:flex">
+          {menuItems.map(item => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+                className={`transition-colors ${isActive(item.href) ? 'text-ink' : 'text-muted hover:text-ink'}`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <ResumeMenu
+              align="right"
+              buttonClassName="inline-flex items-center gap-1.5 rounded-md border border-line px-3 py-1.5 text-ink transition-colors hover:border-ink"
+            />
           </li>
-        ))}
-      </ul>
-      {/* Hamburger Icon */}
-      <button className="md:hidden p-2 h-12 flex items-center" onClick={() => setMenuOpen(true)} aria-label="Menüyü Aç">
-        <Menu size={22} />
-      </button>
-      {/* Mobile Menu */}
+        </ul>
+
+        <button
+          className="-mr-2 flex h-10 w-10 items-center justify-center text-ink md:hidden"
+          onClick={() => setMenuOpen(open => !open)}
+          aria-label={menuOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </nav>
+
       {menuOpen && (
-        <div className="fixed inset-0 bg-[#181f2a]/95 z-50 flex flex-col">
-          <div className="container mx-auto flex justify-between items-center px-4 md:px-8 h-20">
-            <Link href="/" className="flex items-center gap-3 select-none h-12" onClick={() => setMenuOpen(false)}>
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-gradient-to-tr from-blue-400 via-purple-400 to-cyan-400">
-                <Braces size={22} className="text-white drop-shadow" />
-              </span>
-              <span className="font-extrabold text-xl md:text-2xl tracking-wide text-white drop-shadow-sm oswald pb-0.5" style={{letterSpacing: '.02em'}}>CEMRE ACAR</span>
-            </Link>
-            <button className="p-2 h-12 flex items-center" onClick={() => setMenuOpen(false)} aria-label="Menüyü Kapat">
-              <X size={28} />
-            </button>
-          </div>
-          <ul className="flex flex-col gap-8 items-center justify-center flex-1 text-lg font-medium">
-            {menuItems.map((item) => (
-              <li key={item.label} className="hover:text-blue-400 transition-colors cursor-pointer" onClick={() => setMenuOpen(false)}>
-                <Link href={item.href}>{item.label}</Link>
+        <div className="border-t border-line bg-paper md:hidden">
+          <ul className="mx-auto flex max-w-6xl flex-col px-5 py-2">
+            {menuItems.map(item => (
+              <li key={item.href} className="border-b border-line">
+                <Link
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block py-4 text-lg ${isActive(item.href) ? 'text-ink' : 'text-muted'}`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            {RESUMES.map((r, i) => (
+              <li key={r.lang} className={i < RESUMES.length - 1 ? 'border-b border-line' : undefined}>
+                <a href={r.href} download={r.filename} className="flex items-center justify-between py-4 text-lg text-muted">
+                  Özgeçmiş — {r.label}
+                  <span className="font-mono text-xs text-faint">PDF ↓</span>
+                </a>
               </li>
             ))}
           </ul>
         </div>
       )}
-    </nav>
+    </header>
   )
-} 
+}

@@ -1,121 +1,122 @@
-'use client'
-import Header from '../components/Header'
 import Link from 'next/link'
-import { useState } from 'react'
+import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import projectsData from '../../projects.json'
+import Status, { SectionHeading } from '../components/Status'
 import StoreBadges from '../yelken/StoreBadges'
 
 type Category = 'carbon' | 'beyondguard' | 'freelance'
 
-const CATEGORY_ORDER: Category[] = ['carbon', 'beyondguard', 'freelance']
+const CATEGORY_ORDER: Category[] = ['freelance', 'beyondguard', 'carbon']
 
-const CATEGORY_LABELS: Record<Category, string> = {
-  carbon: 'Carbon Consulting',
-  beyondguard: 'Beyond Guard',
-  freelance: 'Bağımsız İşlerim',
+const CATEGORY_LABELS: Record<Category, { label: string; note: string }> = {
+  freelance: { label: 'Bağımsız işlerim', note: 'Kendi ürünlerim ve müşteriler için yürüttüğüm projeler.' },
+  beyondguard: { label: 'Beyond Guard', note: 'Yapay zekâ güvenliği ürünü. 2024 – devam.' },
+  carbon: { label: 'Carbon Consulting', note: 'Danışmanlık: kurumsal firmalar için arayüz geliştirme. 2021 – devam.' },
 }
 
 /** İç sayfalara (ör. /yelken) giden linkler Link ile, dış sitelere giden
  *  linkler <a target="_blank"> ile açılır. */
 const isInternalLink = (url: string) => url.startsWith('/')
 
-const allProjects = projectsData.map((p) => ({
+const allProjects = projectsData.map(p => ({
   title: p.projectName,
   desc: p.description,
   live: p.preview,
-  status: p.isCompleted ? 'Tamamlandı' : 'Devam Ediyor',
-  technologies: p.technologies,
+  done: p.isCompleted,
+  highlights: 'highlights' in p ? (p.highlights as string[]) : [],
+  technologies: p.technologies.filter(t => t !== 'HTML' && t !== 'CSS'),
   category: p.category as Category,
   // Mağaza rozetleri şimdilik yalnızca Yelken'de; değer, rozet ayarının hangi
   // uygulamaya ait olduğunu söylüyor.
   stores: 'stores' in p ? (p.stores as string) : null,
 }))
 
-const groups = CATEGORY_ORDER.map((category) => ({
+const groups = CATEGORY_ORDER.map(category => ({
   category,
-  label: CATEGORY_LABELS[category],
-  projects: allProjects.filter((p) => p.category === category),
-})).filter((g) => g.projects.length > 0)
+  ...CATEGORY_LABELS[category],
+  // Kendi ürünler (iç sayfası olanlar) grubun başında.
+  projects: allProjects
+    .filter(p => p.category === category)
+    .sort((a, b) => Number(isInternalLink(b.live)) - Number(isInternalLink(a.live))),
+})).filter(g => g.projects.length > 0)
 
 export default function ProjectsPage() {
-  const [activeTab, setActiveTab] = useState<Category>(groups[0].category)
-  const activeGroup = groups.find((g) => g.category === activeTab) ?? groups[0]
-
   return (
-    <main className="min-h-screen bg-[#181f2a] text-white">
-      <Header />
-      <section className="container mx-auto px-4 md:px-8 pt-16 pb-24">
-        <h1 className="text-4xl md:text-5xl font-bold mb-3 text-center">Projelerim</h1>
-        <p className="text-gray-400 text-center mb-10 max-w-xl mx-auto">
-          Çalıştığım şirketler ve bağımsız yürüttüğüm işler.
-        </p>
+    <main className="mx-auto max-w-6xl px-5 pb-12 pt-16 md:px-8 md:pt-24">
+      <p className="eyebrow">Projeler · {allProjects.length}</p>
+      <h1 className="mt-6 max-w-3xl font-serif text-5xl leading-[1.08] tracking-tight text-ink md:text-6xl">
+        Çalıştığım şirketler ve bağımsız yürüttüğüm işler.
+      </h1>
 
-        {/* Sekmeler */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
-          {groups.map((group) => (
-            <button
-              key={group.category}
-              onClick={() => setActiveTab(group.category)}
-              aria-pressed={activeTab === group.category}
-              className={`px-5 py-2.5 rounded-full text-sm font-semibold border transition-all cursor-pointer ${
-                activeTab === group.category
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent shadow-md shadow-blue-500/20'
-                  : 'bg-white/5 text-gray-300 border-blue-400/20 hover:bg-blue-400/10 hover:text-white'
-              }`}
-            >
-              {group.label}
-              <span className="ml-2 text-xs opacity-70">{group.projects.length}</span>
-            </button>
-          ))}
-        </div>
+      <nav aria-label="Bölümler" className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        {groups.map(group => (
+          <a key={group.category} href={`#${group.category}`} className="text-muted hover:text-ink">
+            {group.label} <span className="font-mono text-xs text-faint">{group.projects.length}</span>
+          </a>
+        ))}
+      </nav>
 
-        <ul className="divide-y divide-blue-400/10 rounded-xl bg-[#232b3a] shadow-lg overflow-hidden">
-          {activeGroup.projects.map((project, i) => (
-            <li key={i} className="flex flex-col md:flex-row md:items-center gap-4 px-6 py-6 hover:bg-blue-400/5 transition">
-              <div className="flex-1">
-                <div className="flex flex-col md:flex-row md:items-center gap-2">
-                  <h3 className="text-lg font-bold">{project.title}</h3>
-                  <span className={`ml-0 md:ml-4 px-2 py-1 rounded text-xs font-semibold ${project.status === 'Tamamlandı' ? 'bg-green-600/20 text-green-400' : 'bg-yellow-600/20 text-yellow-400'}`}>
-                    {project.status}
-                  </span>
-                </div>
-                <p className="text-gray-300 text-sm mt-2">{project.desc}</p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {project.technologies.map((tech, idx) => (
-                    <span key={idx} className="bg-blue-500/10 text-blue-300 px-2 py-1 rounded text-xs font-mono">{tech}</span>
-                  ))}
-                </div>
-                {project.stores === 'yelken' && (
-                  <div className="mt-4">
-                    <StoreBadges size="sm" />
+      {groups.map((group, gi) => (
+        <section key={group.category} id={group.category} className="mt-20 scroll-mt-24">
+          <SectionHeading index={String(gi + 1).padStart(2, '0')} label={group.label} title={group.note} />
+          <ul className="border-b border-line">
+            {group.projects.map(project => (
+              <li key={project.title} className="grid gap-3 border-t border-line py-7 md:grid-cols-12 md:gap-6">
+                <div className="md:col-span-4">
+                  <h3 className="text-lg font-medium text-ink">
+                    {project.live && isInternalLink(project.live) ? (
+                      <Link href={project.live} className="hover:text-accent">
+                        {project.title}
+                      </Link>
+                    ) : (
+                      project.title
+                    )}
+                  </h3>
+                  <div className="mt-2">
+                    <Status label={project.done ? 'Tamamlandı' : 'Devam ediyor'} live={project.done} />
                   </div>
-                )}
-              </div>
-              {project.live && (
-                <div className="flex-shrink-0 mt-2 md:mt-0">
-                  {isInternalLink(project.live) ? (
-                    <Link
-                      href={project.live}
-                      className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
-                    >
-                      İncele
-                    </Link>
-                  ) : (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 text-white text-sm font-semibold shadow-md shadow-blue-500/20 hover:scale-105 transition-transform text-center"
-                    >
-                      Siteyi aç
-                    </a>
+                </div>
+                <div className="md:col-span-6">
+                  <p className="text-sm leading-relaxed text-muted">{project.desc}</p>
+                  {project.highlights.length > 0 && (
+                    <ul className="mt-3 space-y-1.5 text-sm text-ink">
+                      {project.highlights.map(h => (
+                        <li key={h} className="flex gap-2.5">
+                          <span className="mt-[0.6em] h-px w-3 shrink-0 bg-faint" aria-hidden="true" />
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <p className="mt-3 font-mono text-xs text-faint">{project.technologies.join(' · ')}</p>
+                  {project.stores === 'yelken' && (
+                    <div className="mt-4">
+                      <StoreBadges size="sm" />
+                    </div>
                   )}
                 </div>
-              )}
-            </li>
-          ))}
-        </ul>
-      </section>
+                <div className="md:col-span-2 md:text-right">
+                  {project.live &&
+                    (isInternalLink(project.live) ? (
+                      <Link href={project.live} className="inline-flex items-center gap-1.5 text-sm text-ink hover:text-accent">
+                        İncele <ArrowRight size={15} />
+                      </Link>
+                    ) : (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-ink hover:text-accent"
+                      >
+                        Siteyi aç <ArrowUpRight size={15} />
+                      </a>
+                    ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </main>
   )
 }
