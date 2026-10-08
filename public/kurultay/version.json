@@ -1,12 +1,10 @@
 {
   "android": {
     "latest": "0.2.0",
-    "min": "0.1.0",
-    "url": "https://play.google.com/store/apps/details?id=io.github.cmracar.kurultay"
+    "min": "0.1.0"
   },
   "ios": {
     "latest": "0.2.0",
-    "min": "0.1.0",
-    "url": "https://apps.apple.com/app/id6819175567"
+    "min": "0.1.0"
   }
 }
