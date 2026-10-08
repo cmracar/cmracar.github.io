@@ -1,12 +1,6 @@
 {
   "android": {
     "versionCode": 30,
-    "version": "1.3.12",
-    "minVersionCode": 0,
-    "notes": {
-      "tr": "Geçmişteki bir düelloya dokunup aynı rakibe yeniden meydan okuyabilirsin. Oyuncuları şikâyet edebilir ya da engelleyebilirsin; uygunsuz kullanıcı adlarına izin verilmiyor.",
-      "en": "Tap a past duel to challenge the same rival again. You can report or block players, and inappropriate usernames are no longer allowed.",
-      "es": "Toca un duelo pasado para retar de nuevo al mismo rival. Puedes denunciar o bloquear jugadores y ya no se permiten nombres de usuario inapropiados."
-    }
+    "version": "1.3.12"
   }
 }
