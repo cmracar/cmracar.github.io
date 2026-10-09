@@ -100,7 +100,7 @@ export default function AboutPage() {
         <div className="md:col-span-9">
           <p className="eyebrow">Hakkımda</p>
           <h1 className="mt-6 font-serif text-5xl leading-[1.08] tracking-tight text-ink md:text-6xl">Cemre Acar</h1>
-          <p className="mt-3 text-lg text-ink">Senior Front-End Developer · Bilgisayar Mühendisi</p>
+          <p className="mt-3 text-lg text-ink">Senior Frontend Engineer, AI Products · Bilgisayar Mühendisi</p>
           <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted">
             <p>
               2020’den beri ürün geliştiriyorum. Carbon Consulting’de danışmanlık tarafında kurumsal

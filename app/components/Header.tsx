@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="/" className="flex items-baseline gap-3 no-underline" onClick={() => setMenuOpen(false)}>
           <span className="font-serif text-xl tracking-tight text-ink">Cemre Acar</span>
           <span className="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-faint sm:inline">
-            Front-End Developer
+            Frontend Engineer · AI Products
           </span>
         </Link>
 

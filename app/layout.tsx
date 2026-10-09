@@ -24,14 +24,14 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   // Paylaşım görselleri (og:image) tam adrese çözülsün; yoksa localhost yazılıyor.
   metadataBase: new URL("https://cmracar.github.io"),
-  title: "Cemre Acar | Senior Front-End Developer",
+  title: "Cemre Acar | Senior Frontend Engineer, AI Products",
   description:
-    "Cemre Acar — Senior Front-End Developer. Kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
+    "Cemre Acar — Senior Frontend Engineer, AI Products. Yapay zekâ ürünleri ve kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
   keywords: ["Cemre Acar", "portfolio", "front-end", "React", "Next.js", "React Native", "Yelken", "Kurultay"],
   authors: [{ name: "Cemre Acar" }],
   creator: "Cemre Acar",
   openGraph: {
-    title: "Cemre Acar | Senior Front-End Developer",
+    title: "Cemre Acar | Senior Frontend Engineer, AI Products",
     description: "Kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
     url: "https://cmracar.github.io/",
     siteName: "Cemre Acar",

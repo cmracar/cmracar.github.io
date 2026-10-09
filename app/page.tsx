@@ -85,7 +85,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
         <div className="grid items-end gap-12 md:grid-cols-12">
           <div className="md:col-span-8">
-            <p className="eyebrow">Senior Front-End Developer · İzmir</p>
+            <p className="eyebrow">Senior Frontend Engineer, AI Products · İzmir</p>
             <h1 className="mt-6 font-serif text-[2.6rem] leading-[1.08] tracking-tight text-ink md:text-6xl">
               Gün içinde kurumsal arayüzler, geri kalan zamanda kendi{' '}
               <em className="text-accent">uygulamalarım.</em>

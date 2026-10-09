@@ -1,6 +1,6 @@
 export const metadata = {
     title: 'Hakkımda | Cemre Acar',
-    description: 'Cemre Acar — Senior Front-End Developer. Deneyim, eğitim ve kullandığı teknolojiler.',
+    description: 'Cemre Acar — Senior Frontend Engineer, AI Products. Deneyim, eğitim ve kullandığı teknolojiler.',
     keywords: 'cemre acar, frontend, özgeçmiş, react, next.js, portfolio, yazılım',
     openGraph: {
         title: 'Hakkımda | Cemre Acar',
