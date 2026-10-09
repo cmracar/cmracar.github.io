@@ -14,7 +14,9 @@ Durum (9 Ekim 2026, sabah):
   `cmracar.github.io`, MX yerinde).
 - **3. adım:** site kodu `alan-adi-gecisi` dalında hazır (metadataBase,
   openGraph adresleri, özgeçmişlerde cemreacar.com; PDF'ler yeniden üretildi,
-  derleme ve kontroller temiz). Kalan tek iş: **Natro'da otomatik yenileme.**
+  derleme ve kontroller temiz).
+- **Otomatik yenileme açık** (9 Ekim): yenileme 2 Ekim 2028, 12 ay, kart sonu
+  6693, Profesyonel DNS dahil. 3. adım tamam; sıradaki **4. adım: geçiş.**
 - Hesapta GitHub Pages kullanan tek site cmracar.github.io (kullanıcı sitesine
   özel alan adı verilince hesabın proje siteleri de o alan adına taşınır;
   başka proje sitesi yok).
@@ -115,7 +117,7 @@ kurumsaleposta adresi dönmeli.
 > çalışır (Unity `UnityWebRequest` ve React Native `fetch` 301'i izliyor),
 > bu yüzden uygulama güncellemesi zorunlu değil.
 
-### 3. Hazırlık (geçiş gününden önce)
+### 3. Hazırlık (geçiş gününden önce) ✅ 9 Ekim 2026
 
 - **Natro'da otomatik yenilemeyi aç** (cemreacar.com → "Otomatik ödeme
   talimatı"). Geçişten sonra uygulamalar cemreacar.com'a bağımlı: alan adının
