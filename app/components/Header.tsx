@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import projectsData from '../../projects.json'
 import ResumeMenu, { RESUMES } from './ResumeMenu'
+import ThemeToggle from './ThemeToggle'
 
 const menuItems = [
   { label: 'Projeler', href: '/projects' },
@@ -48,6 +49,9 @@ export default function Header() {
               </Link>
             </li>
           ))}
+          <li className="-mx-2">
+            <ThemeToggle />
+          </li>
           <li>
             <ResumeMenu
               align="right"
@@ -56,14 +60,17 @@ export default function Header() {
           </li>
         </ul>
 
-        <button
-          className="-mr-2 flex h-10 w-10 items-center justify-center text-ink md:hidden"
-          onClick={() => setMenuOpen(open => !open)}
-          aria-label={menuOpen ? 'Menüyü kapat' : 'Menüyü aç'}
-          aria-expanded={menuOpen}
-        >
-          {menuOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        <div className="-mr-2 flex items-center md:hidden">
+          <ThemeToggle className="h-10 w-10" />
+          <button
+            className="flex h-10 w-10 items-center justify-center text-ink"
+            onClick={() => setMenuOpen(open => !open)}
+            aria-label={menuOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </nav>
 
       {menuOpen && (

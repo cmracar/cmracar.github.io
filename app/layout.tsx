@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { themeInitScript } from "./components/theme";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -45,7 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
+    // suppressHydrationWarning: data-theme, React'tan önce themeInitScript ile yazılıyor.
+    <html lang="tr" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className={`${geist.variable} ${geistMono.variable} ${newsreader.variable} flex min-h-screen flex-col`}>
         <Header />
         <div className="flex-1">{children}</div>
