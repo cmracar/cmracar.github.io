@@ -8,22 +8,32 @@ Bu plan iki rehberle birlikte okunur: `~/Desktop/yelken/store/site-rehberi.md`
 ve `~/Desktop/kurultay/Docs/site_rehberi.md`. İkisi de alan adı değişikliğini
 "önce konuşulacak" işler arasında sayıyor; bu belge o konuşmanın sonucu.
 
-Durum (9 Ekim 2026, sabah):
-- **1–2. adım tamam:** cemreacar.com GitHub'da doğrulandı; DNS kamuya
-  yayıldı (Google, Cloudflare, Quad9: dört GitHub IP'si, `www` →
-  `cmracar.github.io`, MX yerinde).
-- **3. adım:** site kodu `alan-adi-gecisi` dalında hazır (metadataBase,
-  openGraph adresleri, özgeçmişlerde cemreacar.com; PDF'ler yeniden üretildi,
-  derleme ve kontroller temiz).
-- **Otomatik yenileme açık** (9 Ekim): yenileme 2 Ekim 2028, 12 ay, kart sonu
-  6693, Profesyonel DNS dahil. 3. adım tamam; sıradaki **4. adım: geçiş.**
-- Hesapta GitHub Pages kullanan tek site cmracar.github.io (kullanıcı sitesine
-  özel alan adı verilince hesabın proje siteleri de o alan adına taşınır;
-  başka proje sitesi yok).
-- GitHub belgeleri, sertifika hazırlanırken github.io'nun nasıl yönlendirdiğini
-  söylemiyor. Risk süresi kısa (DNS hazır olduğu için kontrol hemen geçer) ama
-  sıfır değil: geçiş trafiğin en düşük olduğu saatte, izleyerek yapılır.
-- cmracar.github.io etkilenmedi.
+Durum (9 Ekim 2026, 12:55): **geçiş tamam.**
+- Ana adres **https://www.cemreacar.com**. `cemreacar.com` ve
+  `cmracar.github.io/*` oraya tek adımda, `https` ile 301 yönleniyor.
+- Pages ayarı: Custom domain `www.cemreacar.com`, **Enforce HTTPS açık**.
+- Rehberlerdeki 21 adres + iki özgeçmiş, üç alan adında da `200`;
+  `app-ads.txt` aynı içerikte; MX kayıtları yerinde.
+- Otomatik yenileme açık (2 Ekim 2028, 12 ay, kart sonu 6693).
+- Kalan işler isteğe bağlı: 5. adım (mağaza/AdMob/OAuth adresleri),
+  7. adım (uygulamalardaki adresler), iki rehberin güncellenmesi.
+
+### Geçişte öğrenilenler (9 Ekim)
+
+- Alan adı kaydedilince GitHub önce DNS kontrolü yapıp sertifikayı ~1 dk'da
+  üretti; github.io yönlendirmesi ondan sonra başladı (risk penceresi
+  oluşmadı).
+- **Enforce HTTPS kapalıyken github.io yönlendirmesi `http://` hedefe gider.**
+  iOS/Android uygulamalar düz http adımını reddedebilir (Kurultay:
+  `insecureHttpOption: 0`). Sertifika hazır olur olmaz Enforce HTTPS'i aç.
+- GitHub'ın CDN'i (Fastly) yönlendirme yanıtlarını **~1 saat**, sorgu
+  parametresine bakmadan önbelleğe alıyor ve site yeniden yayımlanınca
+  temizlenmiyor. Enforce HTTPS'ten önce önbelleğe giren
+  `/kurultay/version.json` yönlendirmesi 11:50–12:50 arası (en azından
+  Viyana sunucusunda) `https → http → https` zinciri olarak kaldı. Benzer
+  bir değişiklikte Enforce HTTPS, yönlendirme başlamadan açık olmalı.
+- Alan adını `cemreacar.com`'dan `www.cemreacar.com`'a çevirmek sertifikayı
+  yeniden üretmeyi gerektirmedi (www sertifikası zaten hazırdı).
 
 ---
 
@@ -137,7 +147,7 @@ kurumsaleposta adresi dönmeli.
   - `public/CNAME` **gerekmez**: site GitHub Actions ile yayımlanıyor, alan
     adı Pages ayarından tanımlanır.
 
-### 4. Geçiş (birlikte, trafiğin düşük olduğu bir saatte)
+### 4. Geçiş ✅ 9 Ekim 2026 (www.cemreacar.com)
 
 1. `alan-adi-gecisi` dalını `main`'e birleştir ve push et, Actions bitsin.
 2. Repo → **Settings → Pages → Custom domain**: `cemreacar.com` → Save.
