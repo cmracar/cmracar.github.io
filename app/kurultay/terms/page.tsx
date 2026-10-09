@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Terms of Use | Kurultay',
     description: 'Kurultay terms of use.',
-    url: 'https://cemreacar.com/kurultay/terms',
+    url: 'https://www.cemreacar.com/kurultay/terms',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Kullanım Koşulları | Yelken',
     description: 'Yelken kullanım koşulları.',
-    url: 'https://cemreacar.com/yelken/kosullar',
+    url: 'https://www.cemreacar.com/yelken/kosullar',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Política de privacidad | Yelken',
     description: 'Política de privacidad de Yelken: qué se recoge y qué se queda en tu dispositivo.',
-    url: 'https://cemreacar.com/yelken/privacidad',
+    url: 'https://www.cemreacar.com/yelken/privacidad',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

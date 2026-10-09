@@ -5,7 +5,7 @@ export const metadata = {
     openGraph: {
         title: 'Hakkımda | Cemre Acar',
         description: 'Deneyim, eğitim ve kullandığım teknolojiler.',
-        url: 'https://cemreacar.com/about',
+        url: 'https://www.cemreacar.com/about',
         siteName: 'Cemre Acar',
         locale: 'tr_TR',
         type: 'website',

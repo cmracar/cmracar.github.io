@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Condiciones de uso | Yelken',
     description: 'Condiciones de uso de Yelken.',
-    url: 'https://cemreacar.com/yelken/condiciones',
+    url: 'https://www.cemreacar.com/yelken/condiciones',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

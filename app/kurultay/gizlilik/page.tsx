@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Gizlilik Politikası | Kurultay',
     description: 'Kurultay gizlilik politikası: hangi veriler cihazda kalır, hangileri sunucuda saklanır.',
-    url: 'https://cemreacar.com/kurultay/gizlilik',
+    url: 'https://www.cemreacar.com/kurultay/gizlilik',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

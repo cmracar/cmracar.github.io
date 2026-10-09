@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: 'Yelken | Kelime Bulmacası',
     description: 'Kelime bulmacası: kendi dilinde oyna ya da yeni bir dil öğren.',
-    url: 'https://cemreacar.com/yelken',
+    url: 'https://www.cemreacar.com/yelken',
     siteName: 'Cemre Acar Portfolio',
     images: ['/yelken/og.png'],
     type: 'website',

@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Account Deletion | Kurultay',
     description: 'How to delete your Kurultay account and the data linked to it.',
-    url: 'https://cemreacar.com/kurultay/delete-account',
+    url: 'https://www.cemreacar.com/kurultay/delete-account',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },
