@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Hesap Silme | Yelken',
     description: 'Yelken hesabınızı ve ona bağlı verileri nasıl silersiniz.',
-    url: 'https://cmracar.github.io/yelken/hesap-silme',
+    url: 'https://cemreacar.com/yelken/hesap-silme',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

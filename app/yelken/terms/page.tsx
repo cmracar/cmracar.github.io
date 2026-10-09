@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Terms of Use | Yelken',
     description: 'Yelken terms of use.',
-    url: 'https://cmracar.github.io/yelken/terms',
+    url: 'https://cemreacar.com/yelken/terms',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Gizlilik Politikası | Yelken',
     description: 'Yelken gizlilik politikası: hangi veriler toplanır, hangileri cihazda kalır.',
-    url: 'https://cmracar.github.io/yelken/gizlilik',
+    url: 'https://cemreacar.com/yelken/gizlilik',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

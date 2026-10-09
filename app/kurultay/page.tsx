@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Kurultay | Bozkır Savunması',
     description: 'Kahraman kontrollü üs savunması, göç ve hafif roguelite; Android ve iOS için.',
-    url: 'https://cmracar.github.io/kurultay',
+    url: 'https://cemreacar.com/kurultay',
     siteName: 'Cemre Acar Portfolio',
     images: ['/kurultay/home.jpg'],
     type: 'website',

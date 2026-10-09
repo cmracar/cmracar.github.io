@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Hesap Silme | Kurultay',
     description: 'Kurultay hesabınızı ve ona bağlı verileri nasıl silersiniz.',
-    url: 'https://cmracar.github.io/kurultay/hesap-silme',
+    url: 'https://cemreacar.com/kurultay/hesap-silme',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

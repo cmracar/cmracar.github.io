@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: 'Privacy Policy | Kurultay',
     description: 'Kurultay privacy policy: what stays on your device and what is stored on the server.',
-    url: 'https://cmracar.github.io/kurultay/privacy',
+    url: 'https://cemreacar.com/kurultay/privacy',
     siteName: 'Cemre Acar Portfolio',
     type: 'article',
   },

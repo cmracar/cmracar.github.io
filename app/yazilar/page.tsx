@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: 'Yazılar | Cemre Acar',
     description: 'Yapay zekâ arayüzleri, React, Next.js ve geliştirme notları.',
-    url: 'https://cmracar.github.io/yazilar',
+    url: 'https://cemreacar.com/yazilar',
     siteName: 'Cemre Acar',
     locale: 'tr_TR',
     type: 'website',

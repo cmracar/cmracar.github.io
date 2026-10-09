@@ -22,7 +22,7 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   // Paylaşım görselleri (og:image) tam adrese çözülsün; yoksa localhost yazılıyor.
-  metadataBase: new URL("https://cmracar.github.io"),
+  metadataBase: new URL("https://cemreacar.com"),
   title: "Cemre Acar | Senior Front-End Developer",
   description:
     "Cemre Acar — Senior Front-End Developer. Kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cemre Acar | Senior Front-End Developer",
     description: "Kurumsal web arayüzleri, kendi mobil uygulamaları ve bağımsız projeler.",
-    url: "https://cmracar.github.io/",
+    url: "https://cemreacar.com/",
     siteName: "Cemre Acar",
     locale: "tr_TR",
     type: "website",
