@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tema <html data-theme="dark"> ile seçilir (ThemeToggle); varsayılan açık. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /*
  * Renkler token olarak tanımlı; açık ve koyu tema aynı sınıflarla çalışır
  * (bg-paper, text-ink, border-line …). Bileşenlerde ham renk yazma.
@@ -17,19 +20,18 @@
   --pending: #a86a12;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0f1013;
-    --surface: #17191e;
-    --ink: #ebecee;
-    --muted: #a0a5b0;
-    --faint: #6f7480;
-    --line: #272a31;
-    --accent: #93a9ff;
-    --accent-ink: #0f1013;
-    --live: #5cc795;
-    --pending: #e0a948;
-  }
+[data-theme="dark"] {
+  --paper: #0f1013;
+  --surface: #17191e;
+  --ink: #ebecee;
+  --muted: #a0a5b0;
+  --faint: #6f7480;
+  --line: #272a31;
+  --accent: #93a9ff;
+  --accent-ink: #0f1013;
+  --live: #5cc795;
+  --pending: #e0a948;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -50,7 +52,7 @@
 
 html {
   background: var(--paper);
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 body {

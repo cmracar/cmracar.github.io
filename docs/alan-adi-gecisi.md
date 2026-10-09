@@ -8,16 +8,20 @@ Bu plan iki rehberle birlikte okunur: `~/Desktop/yelken/store/site-rehberi.md`
 ve `~/Desktop/kurultay/Docs/site_rehberi.md`. İkisi de alan adı değişikliğini
 "önce konuşulacak" işler arasında sayıyor; bu belge o konuşmanın sonucu.
 
-Durum (8 Ekim 2026, akşam):
-- **1. adım tamam:** cemreacar.com GitHub'da doğrulandı ("Verified").
-- **2. adım tamam:** Natro DNS'te dört GitHub A kaydı ve `www` →
-  `cmracar.github.io` var; e-posta kayıtları yerinde. Kamu DNS'lerine
-  yayılması birkaç saat sürebilir.
-- cemreacar.com şu an GitHub'ın 404 sayfasını gösteriyor (beklenen).
-- cmracar.github.io etkilenmedi: rehberlerdeki 21 adresin hepsi `200`.
-- Site tasarım değişiklikleri henüz commit edilmedi.
-- **Sıradaki: 3. adım** (hazırlık: otomatik yenileme, site kodu), sonra
-  4. adım geçiş. Uygulama güncellemesi gerekmiyor (bkz. sıra düzeltmesi).
+Durum (9 Ekim 2026, sabah):
+- **1–2. adım tamam:** cemreacar.com GitHub'da doğrulandı; DNS kamuya
+  yayıldı (Google, Cloudflare, Quad9: dört GitHub IP'si, `www` →
+  `cmracar.github.io`, MX yerinde).
+- **3. adım:** site kodu `alan-adi-gecisi` dalında hazır (metadataBase,
+  openGraph adresleri, özgeçmişlerde cemreacar.com; PDF'ler yeniden üretildi,
+  derleme ve kontroller temiz). Kalan tek iş: **Natro'da otomatik yenileme.**
+- Hesapta GitHub Pages kullanan tek site cmracar.github.io (kullanıcı sitesine
+  özel alan adı verilince hesabın proje siteleri de o alan adına taşınır;
+  başka proje sitesi yok).
+- GitHub belgeleri, sertifika hazırlanırken github.io'nun nasıl yönlendirdiğini
+  söylemiyor. Risk süresi kısa (DNS hazır olduğu için kontrol hemen geçer) ama
+  sıfır değil: geçiş trafiğin en düşük olduğu saatte, izleyerek yapılır.
+- cmracar.github.io etkilenmedi.
 
 ---
 
@@ -133,7 +137,7 @@ kurumsaleposta adresi dönmeli.
 
 ### 4. Geçiş (birlikte, trafiğin düşük olduğu bir saatte)
 
-1. 3. adımdaki site kodu değişikliğini `main`'e push et, Actions bitsin.
+1. `alan-adi-gecisi` dalını `main`'e birleştir ve push et, Actions bitsin.
 2. Repo → **Settings → Pages → Custom domain**: `cemreacar.com` → Save.
 3. "DNS check successful" ve sertifika hazır olana kadar her dakika kontrol:
 
