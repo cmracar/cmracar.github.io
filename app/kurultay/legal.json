@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 7 Ekim 2026",
+        "updated": "Son güncelleme: 13 Ekim 2026",
         "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
@@ -25,8 +25,8 @@
             "heading": "Sunucumuzda saklanan veriler",
             "body": [
               "Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
-              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: size otomatik verilen takma ad (örneğin \"Akıncı 3f2a\")\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu\n• Bulut kaydı: yukarıdaki oyun ilerlemesinin bir kopyası (sürmekte olan sefer, Kut, Şan, malzemeler, Kam Ağacı, teçhizat, yetenekler, dostluklar, günlük hediye, buyruklar, Haftanın Akını hakları ve oyun tercihleri); yeni cihazda ya da yeniden kurulumda ilerlemenizi geri getirmek için",
-              "Diğer oyuncular sıralamada yalnızca takma adınızı ve skorlarınızı görür. E-posta adresiniz, adınız ve profil fotoğrafınız kimseye gösterilmez.",
+              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: ilk girişte bir kez seçtiğiniz takma ad ve herkese açık kahraman profiliniz (rütbe, Şan, Güç, teçhizat ve at seviyeleri, görünüş, kazanılan Haftanın Sancakları)\n• Şikayet ve engelleme: bir oyuncuyu şikayet ederseniz kullanıcı kimliğiniz, şikayet edilen oyuncu ve neden saklanır; engellediğiniz oyuncular cihazınızda ve bulut kaydınızda tutulur\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu\n• Bulut kaydı: yukarıdaki oyun ilerlemesinin bir kopyası (sürmekte olan sefer, Kut, Şan, malzemeler, Kam Ağacı, teçhizat, yetenekler, dostluklar, günlük hediye, buyruklar, Haftanın Akını hakları ve oyun tercihleri); yeni cihazda ya da yeniden kurulumda ilerlemenizi geri getirmek için",
+              "Diğer oyuncular yalnızca takma adınızı, skorlarınızı ve kahraman profilinizi görür. Takma adlar kaba sözlere karşı süzülür; birkaç oyuncunun şikayet ettiği ad gizlenir; her oyuncuyu profilinden şikayet edebilir ya da engelleyebilirsiniz. E-posta adresiniz, adınız ve profil fotoğrafınız kimseye gösterilmez.",
               "Bu veriler Supabase altyapısında, Avrupa Birliği'ndeki (Frankfurt) sunucularda tutulur. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
             ]
           },
@@ -48,9 +48,9 @@
             "heading": "Reklamlar",
             "body": [
               "Kurultay ücretsizdir ve Google AdMob reklamlarıyla desteklenir. Reklamların çoğu ödüllüdür: yalnızca siz bir ödül için izlemeyi seçtiğinizde açılır. Ayrıca göçte yeni yurda varınca ara sıra bir geçiş reklamı gösterilebilir.",
-              "AdMob, reklam gösterebilmek için reklam kimliğinize (iOS: IDFA, Android: Advertising ID), IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişir. Hesabınız, e-postanız ve oyun ilerlemeniz AdMob'a gönderilmez.",
-              "iOS'ta uygulama, izleme izni vermedikçe IDFA'ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir.",
-              "Bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre) oyun açılışta Google'ın onay ekranını gösterir ve onay alınmadan kişiselleştirilmiş reklam isteği yapılmaz. Kararınızı sonradan Ayarlar → Hesap → \"Reklam gizliliği seçenekleri\" ile değiştirebilirsiniz. Reklam kimliğinizi cihaz ayarlarından da sıfırlayabilir ya da kapatabilirsiniz.",
+              "AdMob, reklam gösterebilmek için IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişebilir; Android'de reklam kimliğinizi (Advertising ID) de kullanır. Hesabınız, e-postanız ve oyun ilerlemeniz AdMob'a gönderilmez.",
+              "iOS'ta uygulama sizi izlemez: izleme izni istemez, IDFA'ya erişmez, onay ekranı göstermez; yalnızca kişiselleştirilmemiş ve veri işlemesi kısıtlanmış reklam ister.",
+              "Android'de, bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre) oyun açılışta Google'ın onay ekranını gösterir ve onay alınmadan kişiselleştirilmiş reklam isteği yapılmaz. Kararınızı sonradan Ayarlar → Hesap → \"Reklam gizliliği seçenekleri\" ile değiştirebilirsiniz. Reklam kimliğinizi cihaz ayarlarından da sıfırlayabilir ya da kapatabilirsiniz.",
               "Google'ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
             ]
           },
@@ -59,7 +59,7 @@
             "body": [
               "Uygulama içi satın almalar (Yada Taşı paketleri, Reklamsız Oba, Başlangıç Paketi) Apple App Store ya da Google Play üzerinden yapılır. Ödeme bilgileriniz (kart, adres) bize hiç ulaşmaz; ödemeyi mağaza alır ve bize yalnızca hangi ürünün alındığını ve işlem kimliğini bildirir.",
               "Aldığınız ürünlerin etkisi (taşlar, reklamsız durum) ve son işlem kimlikleri, aynı ürün iki kez verilmesin diye cihazınızda saklanır; giriş yaptıysanız bulut kaydınıza da girer. Reklamsız Oba, mağazanın \"Satın alımları geri yükle\" özelliğiyle yeni cihazda geri gelir.",
-              "Oyunu geliştirmek için anonim kullanım verisi toplanır: uygulamanın açılması, gecelerin ve seferlerin sonucu, kurulan binalar, açılan ekranlar, reklam gösterimleri ve satın alınan ürünün türü. Her olayla birlikte uygulama sürümü, cihaz modeli, ekran boyutu, işletim sistemi sürümü, dil ayarı ve cihaz için rastgele üretilmiş bir kimlik gönderilir. Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; konumunuz çözümlenmez, IP adresi saklanmaz ve reklam kimliği kullanılmaz. Veri PostHog'un Avrupa Birliği'ndeki altyapısında tutulur. Ayarlar → Hesap → Kullanım istatistikleri anahtarıyla istediğiniz an kapatabilirsiniz; kapalıyken hiçbir olay gönderilmez. Çökme raporu toplanmaz."
+              "Oyunu geliştirmek için anonim kullanım verisi toplanır: uygulamanın açılması, gecelerin ve seferlerin sonucu, kurulan binalar, açılan ekranlar, reklam gösterimleri ve satın alınan ürünün türü. Her olayla birlikte uygulama sürümü, cihaz modeli, ekran boyutu, işletim sistemi sürümü, dil ayarı ve cihaz için rastgele üretilmiş bir kimlik gönderilir. Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; konumunuz çözümlenmez, IP adresi saklanmaz ve reklam kimliği kullanılmaz. Veri PostHog'un Avrupa Birliği'ndeki altyapısında tutulur. Ayarlar → Hesap → Kullanım istatistikleri anahtarıyla istediğiniz an kapatabilirsiniz; kapalıyken hiçbir olay gönderilmez. Oyun bir hatayla karşılaşırsa hatayı düzeltebilmemiz için hata iletisi, koddaki yeri ve uygulama sürümü bu istatistiklerle gönderilir; kişisel veri içermez."
             ]
           },
           {
@@ -84,7 +84,7 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 6 Ekim 2026",
+        "updated": "Son güncelleme: 13 Ekim 2026",
         "intro": "Kurultay'ı indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -102,7 +102,7 @@
           {
             "heading": "Hesap ve sıralama",
             "body": [
-              "Hesabınız tek kişiliktir; başkasına devredemezsiniz. Sıralamada size otomatik bir takma ad verilir.",
+              "Hesabınız tek kişiliktir; başkasına devredemezsiniz. Sıralamada görünecek takma adı ilk girişte bir kez siz seçersiniz. Kaba, nefret içeren, başkasını taklit eden ya da kişisel bilgi içeren adlar ve uygunsuz davranış kabul edilmez: böyle bir ad gizlenir, hesap kapatılabilir.",
               "Sıralamanın adil kalması için hile, oyunu değiştirme, otomatik oynatma ya da skor sunucusunu kötüye kullanma yasaktır. Böyle bir durumda ilgili skorları silme ve hesabı kapatma hakkı saklıdır."
             ]
           },
@@ -183,7 +183,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: October 7, 2026",
+        "updated": "Last updated: October 13, 2026",
         "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob. You can delete your account at any time from inside the game.",
         "sections": [
           {
@@ -198,8 +198,8 @@
             "heading": "Data stored on our server",
             "body": [
               "When you sign in with Apple or Google we store:",
-              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname given to you automatically (for example \"Akıncı 3f2a\")\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed\n• Cloud save: a copy of the game progress above (current campaign, Kut, Glory, materials, Kam Tree, gear, skills, friendships, daily gift, orders, Raid of the Week attempts and game preferences), used to bring your progress back on a new device or after reinstalling",
-              "Other players only see your nickname and your scores on the leaderboard. Your email address, name and profile picture are never shown to anyone.",
+              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname you choose once when you first sign in, and your public hero profile (rank, Glory, Power, gear and horse levels, look, Weekly Banners won)\n• Reports and blocks: if you report a player we store your user ID, the reported player and the reason; players you block are kept on your device and in your cloud save\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed\n• Cloud save: a copy of the game progress above (current campaign, Kut, Glory, materials, Kam Tree, gear, skills, friendships, daily gift, orders, Raid of the Week attempts and game preferences), used to bring your progress back on a new device or after reinstalling",
+              "Other players only see your nickname, your scores and your hero profile. Nicknames are filtered for offensive words; a nickname reported by several players is hidden, and you can report or block any player from their profile. Your email address, name and profile picture are never shown to anyone.",
               "This data is kept on Supabase infrastructure, on servers in the European Union (Frankfurt). It is kept for as long as your account exists and is deleted when you delete your account."
             ]
           },
@@ -221,9 +221,9 @@
             "heading": "Ads",
             "body": [
               "Kurultay is free and supported by Google AdMob ads. Most ads are rewarded: they only play when you choose to watch one for a reward. An interstitial ad may occasionally be shown when you arrive at a new camp during migration.",
-              "To show ads, AdMob accesses your advertising ID (iOS: IDFA, Android: Advertising ID), IP address, country/city-level location, device and operating system information and ad interactions. Your account, email and game progress are not sent to AdMob.",
-              "On iOS the app does not access the IDFA unless you allow tracking; if you don't, ads are shown without personalisation.",
-              "Where the law requires it (European Economic Area, United Kingdom, Switzerland) the game shows Google's consent screen at launch and no personalised ad request is made without consent. You can change your choice later in Settings → Account → \"Ad privacy options\". You can also reset or turn off your advertising ID in your device settings.",
+              "To show ads, AdMob may access your IP address, country/city-level location, device and operating system information and ad interactions; on Android it also uses your Advertising ID. Your account, email and game progress are not sent to AdMob.",
+              "On iOS the app does not track you: it does not ask for tracking permission, does not access the IDFA, shows no consent screen and requests only non-personalised ads with restricted data processing.",
+              "On Android, where the law requires it (European Economic Area, United Kingdom, Switzerland), the game shows Google's consent screen at launch and no personalised ad request is made without consent. You can change your choice later in Settings → Account → \"Ad privacy options\". You can also reset or turn off your advertising ID in your device settings.",
               "How Google uses this data: policies.google.com/technologies/partner-sites"
             ]
           },
@@ -232,7 +232,7 @@
             "body": [
               "In-app purchases (Yada Stone packs, Ad-free Camp, Starter Pack) are made through the Apple App Store or Google Play. Your payment details (card, address) never reach us; the store takes the payment and only tells us which product was bought and its transaction ID.",
               "The effect of your purchases (stones, ad-free status) and recent transaction IDs are stored on your device so a product is never granted twice; if you are signed in they are also part of your cloud save. Ad-free Camp returns on a new device through the store's \"Restore purchases\".",
-              "To improve the game we collect anonymous usage data: app opens, the outcome of nights and runs, buildings placed, screens opened, ad impressions and the type of product purchased. Each event carries the app version, device model, screen size, OS version, language setting and a randomly generated identifier for the device. This data is not linked to your account, name or email address; your location is not resolved, IP addresses are not stored and no advertising ID is used. The data is held on PostHog infrastructure in the European Union. You can turn it off at any time with Settings → Account → Usage statistics; while it is off, no events are sent. No crash reports are collected."
+              "To improve the game we collect anonymous usage data: app opens, the outcome of nights and runs, buildings placed, screens opened, ad impressions and the type of product purchased. Each event carries the app version, device model, screen size, OS version, language setting and a randomly generated identifier for the device. This data is not linked to your account, name or email address; your location is not resolved, IP addresses are not stored and no advertising ID is used. The data is held on PostHog infrastructure in the European Union. You can turn it off at any time with Settings → Account → Usage statistics; while it is off, no events are sent. When the game hits an error, the error message, the place in the code and the app version are sent with these statistics so we can fix it; no personal data is included."
             ]
           },
           {
@@ -257,7 +257,7 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: October 6, 2026",
+        "updated": "Last updated: October 13, 2026",
         "intro": "By downloading or using Kurultay you agree to these terms.",
         "sections": [
           {
@@ -275,7 +275,7 @@
           {
             "heading": "Account and leaderboard",
             "body": [
-              "Your account is for you alone and cannot be transferred. You are given a nickname automatically on the leaderboard.",
+              "Your account is for you alone and cannot be transferred. You choose the nickname shown on the leaderboard once, when you first sign in. Offensive, hateful, impersonating or personal-information nicknames and abusive behaviour are not tolerated: such a nickname is hidden and the account may be closed.",
               "To keep the leaderboard fair, cheating, modifying the game, automated play and abuse of the score server are forbidden. In such cases we reserve the right to remove the scores concerned and to close the account."
             ]
           },
