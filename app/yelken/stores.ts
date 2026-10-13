@@ -23,9 +23,13 @@ export const YELKEN_STORES = {
 
 export type StoreKey = keyof typeof YELKEN_STORES
 
-export function yelkenStatus(): { label: string; live: boolean } {
+export function yelkenStatus(lang: 'tr' | 'en' = 'tr'): { label: string; live: boolean } {
   const live = (Object.keys(YELKEN_STORES) as StoreKey[]).filter(key => YELKEN_STORES[key].live)
-  if (live.length === 2) return { label: 'App Store ve Google Play’de', live: true }
-  if (live.length === 1) return { label: `${YELKEN_STORES[live[0]].locative} yayında`, live: true }
-  return { label: 'Yayına hazırlanıyor', live: false }
+  if (live.length === 2)
+    return { label: lang === 'en' ? 'On the App Store and Google Play' : 'App Store ve Google Play’de', live: true }
+  if (live.length === 1) {
+    const store = YELKEN_STORES[live[0]]
+    return { label: lang === 'en' ? `Live on ${store.name}` : `${store.locative} yayında`, live: true }
+  }
+  return { label: lang === 'en' ? 'Preparing for release' : 'Yayına hazırlanıyor', live: false }
 }

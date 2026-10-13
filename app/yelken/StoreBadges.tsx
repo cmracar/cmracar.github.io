@@ -1,4 +1,5 @@
 import { YELKEN_STORES, type StoreKey } from './stores'
+import type { Lang } from '../i18n'
 
 function AppleGlyph({ size }: { size: number }) {
   return (
@@ -26,7 +27,7 @@ const GLYPH: Record<StoreKey, (props: { size: number }) => React.ReactElement> =
  * Google, rozetin değiştirilmesini ve canlı olmayan sayfaya bağlanmasını
  * yasaklıyor). Canlı değilken aynı boyda, tıklanamayan bir "Yakında" kutusu.
  */
-export default function StoreBadges({ size = 'md' }: { size?: 'md' | 'sm' }) {
+export default function StoreBadges({ size = 'md', lang = 'tr' }: { size?: 'md' | 'sm'; lang?: Lang }) {
   const height = size === 'md' ? 44 : 36
   // Google'ın PNG'si rozetin çevresinde saydam pay taşıyor; görünen
   // yükseklik Apple rozetiyle aynı olsun diye büyütülüp pay kırpılıyor.
@@ -65,13 +66,13 @@ export default function StoreBadges({ size = 'md' }: { size?: 'md' | 'sm' }) {
         return (
           <span
             key={key}
-            aria-label={`${store.locative} yakında`}
+            aria-label={lang === 'en' ? `Coming soon to ${store.name}` : `${store.locative} yakında`}
             className="inline-flex items-center gap-2.5 rounded-lg border border-line bg-paper px-3.5 text-ink select-none"
             style={{ height }}
           >
             <Glyph size={size === 'md' ? 22 : 18} />
             <span className="flex flex-col leading-none">
-              <span className="text-[10px] uppercase tracking-wider text-faint">Yakında</span>
+              <span className="text-[10px] uppercase tracking-wider text-faint">{lang === 'en' ? 'Coming soon' : 'Yakında'}</span>
               <span className={`${size === 'md' ? 'text-[15px]' : 'text-[13px]'} font-semibold mt-0.5`}>
                 {store.name}
               </span>

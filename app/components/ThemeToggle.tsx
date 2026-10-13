@@ -2,11 +2,12 @@
 
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import type { Lang } from '../i18n'
 import { THEME_STORAGE_KEY } from './theme'
 
 type Theme = 'light' | 'dark'
 
-export default function ThemeToggle({ className = '' }: { className?: string }) {
+export default function ThemeToggle({ className = '', lang = 'tr' }: { className?: string; lang?: Lang }) {
   const [theme, setTheme] = useState<Theme>('light')
 
   // Sunucu çıktısı her zaman açık; gerçek değer ilk çizimden sonra okunur.
@@ -24,7 +25,10 @@ export default function ThemeToggle({ className = '' }: { className?: string }) 
     } catch {}
   }
 
-  const label = theme === 'dark' ? 'Açık temaya geç' : 'Koyu temaya geç'
+  const label =
+    lang === 'en'
+      ? theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'
+      : theme === 'dark' ? 'Açık temaya geç' : 'Koyu temaya geç'
 
   return (
     <button

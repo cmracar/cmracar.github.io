@@ -21,6 +21,15 @@
             "Belgeler üzerinde karşılaştırma, uyumluluk ve mevzuat etki analizi yapan, SSE ile canlı yanıt veren asistan",
             "Doküman yükleme, OCR ve veri kaynağı yönetimi; Excel şablonlarıyla içe ve dışa aktarma",
             "Yetki bazlı menü ve sayfa erişimi; kurumun MUI tabanlı tasarım sistemiyle uyumlu arayüz"
+        ],
+        "projectName_en": "Artifin Inspection AI App UI/UX",
+        "description_en": "Interface of the AI-powered application used by internal-audit teams, built for Vakıf Katılım's Artifin product family.",
+        "highlights_en": [
+            "Step-by-step flows where AI agents generate risk control matrices, regulation analyses and exams",
+            "Approval workflows with approve, request-changes and reject steps; screens for editing structured results",
+            "An assistant that compares documents and runs compliance and regulatory-impact analyses, streaming answers over SSE",
+            "Document upload, OCR and data-source management; import and export with Excel templates",
+            "Permission-based menus and page access; interface aligned with the bank's MUI-based design system"
         ]
     },
     {
@@ -43,6 +52,11 @@
         "highlights": [
             "WebSocket ve REST API’yi birlikte destekleyen çift mimari",
             "Güvenli kimlik doğrulama (NextAuth) ve duyarlı tasarım"
+        ],
+        "description_en": "A chatbot project talking to its server over WebSocket, with a dynamic and interactive user experience.",
+        "highlights_en": [
+            "Dual architecture supporting both WebSocket and REST APIs",
+            "Secure authentication (NextAuth) and responsive design"
         ]
     },
     {
@@ -67,6 +81,13 @@
             "LLM, ajan, MCP, RAG ve dosya trafiğini denetleyen Guard modülleri ve politika yönetimi",
             "Red Teaming, Shadow AI, uyarılar ve SIEM entegrasyonları (Syslog, Splunk HEC)",
             "Content-Security-Policy, güvenlik başlıkları ve bağımlılık açıklarının kapatılması"
+        ],
+        "description_en": "Beyond Guard's AI security product. It inspects prompts, RAG and agent/tool calls going to LLMs as well as the model outputs coming back; I built the product's production interface, including the dashboard, live monitoring and log screens.",
+        "highlights_en": [
+            "Dashboard, live monitoring and log screens; role-restricted log details",
+            "Guard modules and policy management inspecting LLM, agent, MCP, RAG and file traffic",
+            "Red Teaming, Shadow AI, alerts and SIEM integrations (Syslog, Splunk HEC)",
+            "Content-Security-Policy, security headers and dependency vulnerability remediation"
         ]
     },
     {
@@ -88,6 +109,12 @@
             "WebSocket ile gerçek zamanlı mesajlaşma; kopan bağlantıda yeniden deneme ve HTTP’ye geçiş",
             "Mesaj başına Guard denetim sonucu ve ayrıntıları",
             "Dosya yükleme, aktif ve geçmiş sohbet listeleri"
+        ],
+        "description_en": "A chat application protected by Beyond Guard: user messages and model replies pass Guard checks, and the result is shown next to every message.",
+        "highlights_en": [
+            "Real-time messaging over WebSocket; retry and HTTP fallback when the connection drops",
+            "Per-message Guard check result and details",
+            "File uploads, active and past conversation lists"
         ]
     },
     {
@@ -109,6 +136,12 @@
             "70’i aşkın bileşen: form kontrolleri, veri tablosu, grafikler, dashboard ızgarası, bildirimler, komut paleti",
             "Tasarım token’larıyla tek kaynaktan yönetilen açık/koyu tema ve erişilebilir Base UI temelleri",
             "shadcn registry ve npm paketi yapısıyla ürünlere dağıtım; Cmd+K aramalı dokümantasyon"
+        ],
+        "description_en": "Design system and component library for Beyond Guard's new interface. Every component is presented in an interactive documentation app with a live example, usage code and prop reference.",
+        "highlights_en": [
+            "70+ components: form controls, data table, charts, dashboard grid, notifications, command palette",
+            "Light/dark themes driven from a single source of design tokens, on accessible Base UI primitives",
+            "Distribution to products via a shadcn registry and npm package; documentation with Cmd+K search"
         ]
     },
     {
@@ -130,6 +163,11 @@
         "highlights": [
             "UI/UX tasarımı ve front-end geliştirmesini uçtan uca yürüttüm",
             "Yeşil dönüşüm verilerini Highcharts ile anlaşılır kılan ekranlar"
+        ],
+        "description_en": "A web application built to accelerate companies' green transformation.",
+        "highlights_en": [
+            "Led the UI/UX design and front-end development end to end",
+            "Screens that make green-transformation data clear with Highcharts"
         ]
     },
     {
@@ -151,6 +189,12 @@
         "highlights": [
             "Hazine operasyonları için kapsamlı risk izleme platformu",
             "Yapay zekâ destekli araçlarla hızlı prototipleme ve test"
+        ],
+        "projectName_en": "Akbank Treasury Monitoring UX/UI",
+        "description_en": "An application with a user-friendly interface for monitoring treasury risks, built for Akbank.",
+        "highlights_en": [
+            "Comprehensive risk-monitoring platform for treasury operations",
+            "Rapid prototyping and testing with AI-powered tools"
         ]
     },
     {
@@ -164,7 +208,8 @@
             "Supabase"
         ],
         "isCompleted": false,
-        "category": "freelance"
+        "category": "freelance",
+        "description_en": "My own product: a hero-controlled base defence, migration and light roguelite game set on the steppe. Build your camp by day, hold off raids with Gökbörü by night, and migrate when the pasture runs out. All 3D models, UI art and audio are generated from code. Weekly Raid leaderboard with Google and Apple sign-in. In development for Android and iOS."
     },
     {
         "projectName": "Yelken: Kelime Oyunu & Bulmaca",
@@ -179,7 +224,8 @@
             "Zustand"
         ],
         "isCompleted": false,
-        "category": "freelance"
+        "category": "freelance",
+        "description_en": "My own product: a word game, puzzle and language-learning app. Five game modes, spaced repetition and a vocabulary of 11,000+ words in Turkish, English and Spanish. Plays offline with no account required — and for those who want it, online leaderboards, cloud backup and real-time Duels. Live on Google Play; App Store release on the way."
     },
     {
         "projectName": "Turklerden UX/UI",
@@ -194,7 +240,8 @@
             "Redux Toolkit"
         ],
         "isCompleted": true,
-        "category": "freelance"
+        "category": "freelance",
+        "description_en": "UX/UI design and development of a platform where the Turkish community discovers the latest news and events."
     },
     {
         "projectName": "Tbot Analytic Screens UI",
@@ -213,6 +260,11 @@
         "highlights": [
             "Turkcell TBot sohbet botu platformu için analitik dashboard’lar",
             "Veri görselleştirme ve izleme yeteneklerini güçlendiren ekranlar"
+        ],
+        "description_en": "Design and development of the analytics screens of Turkcell's Tbot application.",
+        "highlights_en": [
+            "Analytics dashboards for Turkcell's TBot chatbot platform",
+            "Screens that strengthen data visualisation and monitoring"
         ]
     },
     {
@@ -231,6 +283,10 @@
         "category": "carbon",
         "highlights": [
             "Modern React kalıpları ve Context API ile sıfırdan kurulan uygulama"
+        ],
+        "description_en": "User interface development for Glosa, a Carbon Consulting affiliate.",
+        "highlights_en": [
+            "An app built from scratch with modern React patterns and the Context API"
         ]
     },
     {
@@ -243,7 +299,8 @@
             "Django"
         ],
         "isCompleted": true,
-        "category": "freelance"
+        "category": "freelance",
+        "description_en": "Website showcasing DiasNDT's non-destructive testing (NDT) services and expertise."
     },
     {
         "projectName": "AAT Hukuk Website",
@@ -255,7 +312,8 @@
             "Django"
         ],
         "isCompleted": true,
-        "category": "freelance"
+        "category": "freelance",
+        "description_en": "Website introducing AAT Hukuk law firm's services and practice areas."
     },
     {
         "projectName": "Evde Gelişim",
@@ -267,6 +325,7 @@
             "Tailwind CSS"
         ],
         "isCompleted": true,
-        "category": "freelance"
+        "category": "freelance",
+        "description_en": "An online education and personal development platform offering an end-to-end learning experience with course bundles, live consultation bookings and seamless video playback."
     }
 ]

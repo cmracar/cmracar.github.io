@@ -24,7 +24,7 @@ export default function LegalDoc({ lang, kind }: { lang: Lang; kind: Kind }) {
   const { brand } = legal
 
   return (
-    <main className="mx-auto max-w-6xl px-5 pb-12 pt-14 md:px-8 md:pt-20">
+    <main lang={lang} className="mx-auto max-w-6xl px-5 pb-12 pt-14 md:px-8 md:pt-20">
       <div className="grid gap-10 md:grid-cols-12">
         <aside className="md:col-span-3">
           <Link href="/kurultay" className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink">

@@ -10,6 +10,8 @@ export type Article = {
   lang: 'TR' | 'EN'
   publication?: string
   summary: string
+  /** İngilizce özet; yazı zaten İngilizceyse gerekmez. */
+  summaryEn?: string
   tags: string[]
 }
 
@@ -23,6 +25,7 @@ export const articles: Article[] = [
     lang: 'TR',
     publication: 'Beyond Guard Field Notes',
     summary: 'Yapay zekâ yanıtlarını kelime kelime akıtmak için elle yazılan SSE katmanından Vercel AI SDK’ye geçişte neler değişti.',
+    summaryEn: 'What changed when moving from a hand-written SSE layer for word-by-word AI streaming to the Vercel AI SDK.',
     tags: ['Vercel AI SDK', 'SSE', 'Streaming'],
   },
   {
@@ -31,6 +34,7 @@ export const articles: Article[] = [
     date: '2025-10-30',
     lang: 'TR',
     summary: 'Ajan ile arayüz arasındaki AG-UI protokolü; CopilotKit ve SSE ile uçtan uca entegrasyon akışı.',
+    summaryEn: 'The AG-UI protocol between agents and interfaces; an end-to-end integration flow with CopilotKit and SSE.',
     tags: ['AG-UI', 'CopilotKit', 'Agentic UI'],
   },
   {
@@ -39,6 +43,7 @@ export const articles: Article[] = [
     date: '2025-06-01',
     lang: 'TR',
     summary: 'İş akışlarını otomatikleştiren n8n nedir, farklı uygulamaları birbirine nasıl bağlar.',
+    summaryEn: 'What n8n is and how it connects different applications to automate workflows.',
     tags: ['n8n', 'Otomasyon'],
   },
   {
@@ -47,6 +52,7 @@ export const articles: Article[] = [
     date: '2025-03-21',
     lang: 'TR',
     summary: 'Arayüzü modelin ürettiği Generative UI yaklaşımı ve CopilotKit’e ilk bakış.',
+    summaryEn: 'A first look at Generative UI, where the model produces the interface, and at CopilotKit.',
     tags: ['Generative UI', 'CopilotKit'],
   },
   {
@@ -55,6 +61,7 @@ export const articles: Article[] = [
     date: '2024-05-25',
     lang: 'TR',
     summary: 'SSR ile CSR arasındaki farklar ve bunların performans ile kullanıcı deneyimine etkisi.',
+    summaryEn: 'The differences between SSR and CSR and how they affect performance and user experience.',
     tags: ['Next.js', 'SSR', 'CSR'],
   },
   {
@@ -63,6 +70,7 @@ export const articles: Article[] = [
     date: '2024-05-14',
     lang: 'TR',
     summary: 'Kodu parçalara bölüp gerektiğinde yükleyerek React uygulamalarında performans kazanmak.',
+    summaryEn: 'Gaining performance in React apps by splitting code and loading it on demand.',
     tags: ['React', 'Performans'],
   },
   {
@@ -71,6 +79,7 @@ export const articles: Article[] = [
     date: '2024-04-28',
     lang: 'TR',
     summary: 'Büyüyen React uygulamalarında state yönetimini Redux Toolkit ile sadeleştirmek.',
+    summaryEn: 'Simplifying state management in growing React apps with Redux Toolkit.',
     tags: ['React', 'Redux Toolkit'],
   },
   {
@@ -102,9 +111,14 @@ export const articles: Article[] = [
   },
 ]
 
-const MONTHS = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara']
-
-export function formatDate(iso: string) {
-  const [y, m] = iso.split('-').map(Number)
-  return `${MONTHS[m - 1]} ${y}`
+const MONTHS = {
+  tr: ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'],
+  en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 }
+
+export function formatDate(iso: string, lang: 'tr' | 'en' = 'tr') {
+  const [y, m] = iso.split('-').map(Number)
+  return `${MONTHS[lang][m - 1]} ${y}`
+}
+
+export const summaryIn = (a: Article, lang: 'tr' | 'en') => (lang === 'en' ? a.summaryEn ?? a.summary : a.summary)

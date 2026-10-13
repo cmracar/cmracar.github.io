@@ -1,48 +1,35 @@
-import Link from 'next/link'
+'use client'
 
-export const CONTACT = {
-  email: 'cemreacar94@gmail.com',
-  links: [
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/cmracar' },
-    { label: 'GitHub', href: 'https://github.com/cmracar' },
-    { label: 'Medium', href: 'https://medium.com/@cmracar' },
-    { label: 'YouTube', href: 'https://www.youtube.com/@cmracardev' },
-    { label: 'Instagram', href: 'https://www.instagram.com/cmracardev' },
-  ],
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { CONTACT } from '../contact'
+import { href, langOfPath, type Lang } from '../i18n'
+
+const COPY = {
+  tr: { cta: 'Birlikte çalışalım.', app: 'Uygulama', legal: ['Gizlilik', 'Koşullar', 'Hesap silme'] },
+  en: { cta: 'Let’s work together.', app: 'App', legal: ['Privacy', 'Terms', 'Account deletion'] },
 }
 
 /**
  * Uygulamaların yasal sayfaları alt bilgide de bağlı: mağaza incelemesi ve
  * ziyaretçi bu adreslere sitenin her yerinden ulaşabilsin. Adresler
  * mağazalara kayıtlı; burada yalnızca bağlantı veriliyor, yol değiştirme.
+ * İngilizce sayfalarda aynı belgelerin İngilizce adresleri gösterilir.
  */
-const apps = [
-  {
-    name: 'Yelken',
-    href: '/yelken',
-    legal: [
-      { label: 'Gizlilik', href: '/yelken/gizlilik' },
-      { label: 'Koşullar', href: '/yelken/kosullar' },
-      { label: 'Hesap silme', href: '/yelken/hesap-silme' },
-    ],
-  },
-  {
-    name: 'Kurultay',
-    href: '/kurultay',
-    legal: [
-      { label: 'Gizlilik', href: '/kurultay/gizlilik' },
-      { label: 'Koşullar', href: '/kurultay/kosullar' },
-      { label: 'Hesap silme', href: '/kurultay/hesap-silme' },
-    ],
-  },
+const APPS = [
+  { name: 'Yelken', href: '/yelken', legal: ['/yelken/gizlilik', '/yelken/kosullar', '/yelken/hesap-silme'] },
+  { name: 'Kurultay', href: '/kurultay', legal: ['/kurultay/gizlilik', '/kurultay/kosullar', '/kurultay/hesap-silme'] },
 ]
 
 export default function Footer() {
+  const lang: Lang = langOfPath(usePathname())
+  const c = COPY[lang]
+
   return (
-    <footer className="mt-auto border-t border-line">
+    <footer lang={lang} className="mt-auto border-t border-line">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-6 gap-y-10 px-5 py-14 md:grid-cols-12 md:gap-10 md:px-8">
         <div className="col-span-2 md:col-span-5">
-          <p className="font-serif text-2xl text-ink">Birlikte çalışalım.</p>
+          <p className="font-serif text-2xl text-ink">{c.cta}</p>
           <a href={`mailto:${CONTACT.email}`} className="link-underline mt-3 inline-block text-muted hover:text-ink">
             {CONTACT.email}
           </a>
@@ -57,17 +44,17 @@ export default function Footer() {
           </ul>
         </div>
 
-        {apps.map(app => (
+        {APPS.map(app => (
           <div key={app.name} className="md:col-span-3">
-            <p className="eyebrow mb-3">Uygulama</p>
-            <Link href={app.href} className="text-ink hover:text-accent">
+            <p className="eyebrow mb-3">{c.app}</p>
+            <Link href={href(lang, app.href)} className="text-ink hover:text-accent">
               {app.name}
             </Link>
             <ul className="mt-2 text-sm">
-              {app.legal.map(item => (
-                <li key={item.href}>
-                  <Link href={item.href} className="inline-block py-1.5 text-muted hover:text-ink">
-                    {item.label}
+              {app.legal.map((trPath, i) => (
+                <li key={trPath}>
+                  <Link href={href(lang, trPath)} className="inline-block py-1.5 text-muted hover:text-ink">
+                    {c.legal[i]}
                   </Link>
                 </li>
               ))}

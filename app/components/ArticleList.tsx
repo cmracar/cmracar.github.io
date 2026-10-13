@@ -1,7 +1,8 @@
 import { ArrowUpRight } from 'lucide-react'
-import { formatDate, type Article } from '../articles'
+import { formatDate, summaryIn, type Article } from '../articles'
+import type { Lang } from '../i18n'
 
-export default function ArticleList({ items }: { items: Article[] }) {
+export default function ArticleList({ items, lang = 'tr' }: { items: Article[]; lang?: Lang }) {
   return (
     <ul className="border-b border-line">
       {items.map(article => (
@@ -13,13 +14,13 @@ export default function ArticleList({ items }: { items: Article[] }) {
             className="group grid gap-2 py-6 md:grid-cols-12 md:gap-6"
           >
             <span className="font-mono text-xs text-faint md:col-span-2 md:pt-1">
-              {formatDate(article.date)} · {article.lang}
+              {formatDate(article.date, lang)} · {article.lang}
             </span>
             <span className="md:col-span-8">
               <span className="block font-serif text-xl leading-snug text-ink group-hover:text-accent">
                 {article.title}
               </span>
-              <span className="mt-2 block text-sm leading-relaxed text-muted">{article.summary}</span>
+              <span className="mt-2 block text-sm leading-relaxed text-muted">{summaryIn(article, lang)}</span>
               {article.publication && (
                 <span className="mt-2 block font-mono text-xs text-faint">{article.publication}</span>
               )}

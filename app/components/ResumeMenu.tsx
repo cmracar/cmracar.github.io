@@ -2,6 +2,7 @@
 
 import { ChevronDown, Download } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
+import type { Lang } from '../i18n'
 
 /**
  * Özgeçmiş dosyaları. Kaynakları cv/ klasöründe (ozgecmis.html, resume.html);
@@ -14,14 +15,17 @@ export const RESUMES = [
 
 /** Butona basınca iki dil seçeneği açılır; seçilen PDF indirilir. */
 export default function ResumeMenu({
-  label = 'Özgeçmiş',
+  label,
   buttonClassName,
   align = 'left',
+  lang = 'tr',
 }: {
   label?: string
   buttonClassName: string
   align?: 'left' | 'right'
+  lang?: Lang
 }) {
+  label ??= lang === 'en' ? 'Resume' : 'Özgeçmiş'
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
