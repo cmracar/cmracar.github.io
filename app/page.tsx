@@ -132,6 +132,16 @@ export default function Home() {
             Ürün tasarımı, kod, içerik, sunucu, mağaza kayıtları, yasal metinler ve tanıtım videoları —
             her uygulamanın her parçası bana ait.
           </p>
+          <p className="mt-4 text-sm text-muted">
+            Uygulamaların videoları ve tanıtımları:{' '}
+            <a href="https://www.instagram.com/cmracardev" target="_blank" rel="noopener noreferrer" className="link-underline text-ink">
+              Instagram @cmracardev
+            </a>{' '}
+            ·{' '}
+            <a href="https://www.youtube.com/@cmracardev" target="_blank" rel="noopener noreferrer" className="link-underline text-ink">
+              YouTube
+            </a>
+          </p>
 
           {/* Yelken */}
           <article className="mt-16 grid gap-10 md:grid-cols-12 md:gap-14">
@@ -157,7 +167,7 @@ export default function Home() {
             <div className="md:col-span-5">
               <Status label={yelken.label} live={yelken.live} />
               <h3 className="mt-4 font-serif text-4xl text-ink">Yelken</h3>
-              <p className="mt-2 text-lg text-ink">Kelime bulmacası ve dil öğretmeni.</p>
+              <p className="mt-2 text-lg text-ink">Kelime Oyunu & Bulmaca</p>
               <p className="mt-4 leading-relaxed text-muted">
                 Arayüz ve bulmaca dilini ayrı seçersin: aynıysa saf bir kelime oyunu, farklıysa
                 çözdüğün her kelime aralıklı tekrar programına girer. Beş oyun modu, günlük bulmaca,

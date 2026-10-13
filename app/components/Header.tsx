@@ -32,7 +32,7 @@ export default function Header() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="flex items-baseline gap-3 no-underline" onClick={() => setMenuOpen(false)}>
           <span className="font-serif text-xl tracking-tight text-ink">Cemre Acar</span>
-          <span className="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-faint sm:inline">
+          <span className="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-faint lg:inline">
             Frontend Engineer · AI Products
           </span>
         </Link>

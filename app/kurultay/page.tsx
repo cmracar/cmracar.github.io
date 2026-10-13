@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles } from 'lucide-react'
+import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles, Instagram } from 'lucide-react'
 import { SectionHeading } from '@/app/components/Status'
 import legal from './legal.json'
 
@@ -113,6 +113,14 @@ export default function KurultayPage() {
                   </li>
                 ))}
               </ol>
+              <a
+                href="https://www.instagram.com/cmracardev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-white"
+              >
+                <Instagram size={18} /> Tanıtım videoları: Instagram
+              </a>
             </aside>
           </div>
 

@@ -7,6 +7,7 @@ export const CONTACT = {
     { label: 'GitHub', href: 'https://github.com/cmracar' },
     { label: 'Medium', href: 'https://medium.com/@cmracar' },
     { label: 'YouTube', href: 'https://www.youtube.com/@cmracardev' },
+    { label: 'Instagram', href: 'https://www.instagram.com/cmracardev' },
   ],
 }
 

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube } from 'lucide-react'
+import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube, Instagram } from 'lucide-react'
 import Status, { SectionHeading } from '@/app/components/Status'
 import legal from './legal.json'
 import StoreBadges from './StoreBadges'
@@ -8,11 +8,11 @@ import { yelkenStatus } from './stores'
 import YouTube from './YouTube'
 
 export const metadata = {
-  title: 'Yelken | Kelime Bulmacası',
+  title: 'Yelken: Kelime Oyunu & Bulmaca',
   description:
-    'Yelken bir kelime bulmacası — kendi dilinde oyna ya da yeni bir dil öğren. Cemre Acar tarafından geliştirildi.',
+    'Yelken: Kelime Oyunu & Bulmaca — kendi dilinde oyna ya da yeni bir dil öğren. Cemre Acar tarafından geliştirildi.',
   openGraph: {
-    title: 'Yelken | Kelime Bulmacası',
+    title: 'Yelken: Kelime Oyunu & Bulmaca',
     description: 'Kelime bulmacası: kendi dilinde oyna ya da yeni bir dil öğren.',
     url: 'https://www.cemreacar.com/yelken',
     siteName: 'Cemre Acar Portfolio',
@@ -69,18 +69,25 @@ function Mark({ size = 96 }: { size?: number }) {
 }
 
 /** Uygulamadaki kelime markası: büyük harf, geniş aralık, üçüncü harf vurgulu. */
-function Wordmark({ name }: { name: string }) {
+function Wordmark({ name, subtitle }: { name: string; subtitle?: string }) {
   const letters = [...name.toLocaleUpperCase('tr')]
   return (
     <h1 className="text-4xl font-extrabold tracking-[0.18em] text-ink md:text-5xl">
-      {letters.map((ch, i) => (
-        <span key={i} className={i === 2 ? 'text-[#D99A0B] dark:text-[#FBBF24]' : undefined}>
-          {ch}
-        </span>
-      ))}
+      {/* Ekran okuyucu ve arama motoru tam adı okusun: "Yelken: Kelime Oyunu & Bulmaca" */}
+      <span className="sr-only">{subtitle ? `${name}: ${subtitle}` : name}</span>
+      <span aria-hidden="true">
+        {letters.map((ch, i) => (
+          <span key={i} className={i === 2 ? 'text-[#D99A0B] dark:text-[#FBBF24]' : undefined}>
+            {ch}
+          </span>
+        ))}
+      </span>
     </h1>
   )
 }
+
+/** Mağazadaki tam ad "Yelken: Kelime Oyunu & Bulmaca"; logo yalnızca "Yelken". */
+const SUBTITLE = 'Kelime Oyunu & Bulmaca'
 
 const shots = [
   { src: '/yelken/home.jpg', title: 'Ana ekran', desc: 'Beş oyun, günün bulmacası ve kimlik kartın tek bir denizde.' },
@@ -95,6 +102,8 @@ const shots = [
 
 /** YouTube kanalı: @cmracardev. Yatay fragman liste dışı, Shorts herkese açık. */
 const CHANNEL = 'https://www.youtube.com/@cmracardev'
+/** Instagram: @cmracardev — uygulamaların videoları ve tanıtımları. */
+const INSTAGRAM = 'https://www.instagram.com/cmracardev'
 /**
  * Galeri tek sırada ve **eşit yükseklikte**: sütun genişlikleri videoların
  * en-boy oranından (16:9 → 256, 9:16 → 81; eşit yükseklikte genişlik oranı
@@ -177,7 +186,8 @@ export default function YelkenPage() {
             <div className="flex items-center gap-5">
               <Mark size={72} />
               <div>
-                <Wordmark name={brand.app} />
+                <Wordmark name={brand.app} subtitle={SUBTITLE} />
+                <p className="mt-1.5 text-sm font-medium text-muted">{SUBTITLE}</p>
                 <div className="mt-2">
                   <Status label={status.label} live={status.live} />
                 </div>
@@ -215,14 +225,24 @@ export default function YelkenPage() {
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <p className="font-mono text-xs uppercase tracking-[0.08em] text-white/50">Videolar</p>
-            <a
-              href={CHANNEL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-white"
-            >
-              <Youtube size={18} /> YouTube kanalı
-            </a>
+            <div className="flex flex-wrap gap-5">
+              <a
+                href={INSTAGRAM}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-white"
+              >
+                <Instagram size={18} /> Instagram
+              </a>
+              <a
+                href={CHANNEL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-white"
+              >
+                <Youtube size={18} /> YouTube kanalı
+              </a>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-5 md:grid-cols-[256fr_81fr_81fr]">
             {videos.map(video => (
