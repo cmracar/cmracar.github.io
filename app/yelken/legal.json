@@ -10,8 +10,8 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 8 Ekim 2026",
-        "intro": "Yelken’i hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
+        "updated": "Son güncelleme: 13 Ekim 2026",
+        "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
             "heading": "Hesap olmadan: cihazınızda kalan veriler",
@@ -58,6 +58,7 @@
             "heading": "Reklamlar",
             "body": [
               "Ücretsiz sürümde Google AdMob reklamları gösterilir. AdMob, reklam gösterebilmek için reklam kimliğinize (iOS: IDFA, Android: Advertising ID), IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişir.",
+              "Android’de AdMob, bir reklam alanını doldurmak için isteği reklam ortaklarına da iletebilir: AppLovin, Unity Ads ve Meta Audience Network. Bu ortaklar reklamı sunarken yukarıdaki verilerin aynısını işler ve onay ekranındaki kararınıza uyar. Gizlilik politikaları: applovin.com/privacy, unity.com/legal/privacy-policy, facebook.com/privacy/policy",
               "iOS’ta uygulama, izleme izni vermedikçe IDFA’ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir.",
               "Bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık ve ABD’nin ilgili eyaletleri) uygulama açılışta Google’ın onay ekranını gösterir ve onayınız alınmadan hiçbir reklam isteği yapılmaz. Kararınızı sonradan “Ayarlar → Reklam gizliliği seçenekleri” üzerinden değiştirebilir, verdiğiniz onayı geri çekebilirsiniz. Her yerde ayrıca reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya kişiselleştirmeyi oradan kapatabilirsiniz.",
               "Reklamları tamamen kaldırmak için uygulama içinden Premium satın alabilirsiniz.",
@@ -108,8 +109,8 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 8 Ekim 2026",
-        "intro": "Yelken’i indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
+        "updated": "Son güncelleme: 13 Ekim 2026",
+        "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
             "heading": "Kullanım hakkı",
@@ -174,8 +175,8 @@
       },
       "deletion": {
         "title": "Yelken — Hesap Silme",
-        "updated": "Son güncelleme: 27 Eylül 2026",
-        "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Yelken uygulamasındaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır. Hesap isteğe bağlıdır; giriş yapmadıysanız sunucumuzda size ait bir kayıt yoktur.",
+        "updated": "Son güncelleme: 13 Ekim 2026",
+        "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Yelken: Kelime Oyunu & Bulmaca (“Yelken”) uygulamasındaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır. Hesap isteğe bağlıdır; giriş yapmadıysanız sunucumuzda size ait bir kayıt yoktur.",
         "sections": [
           {
             "heading": "Uygulamanın içinden silme",
@@ -217,8 +218,8 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 8 October 2026",
-        "intro": "You can play Yelken without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
+        "updated": "Last updated: 13 October 2026",
+        "intro": "You can play Yelken: Kelime Oyunu & Bulmaca (“Yelken”) without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
             "heading": "Without an account: data that stays on your device",
@@ -265,6 +266,7 @@
             "heading": "Advertising",
             "body": [
               "The free version shows Google AdMob ads. To serve them, AdMob accesses your advertising identifier (iOS: IDFA, Android: Advertising ID), IP address, approximate location at country/city level, device and OS information, and ad interactions.",
+              "On Android, AdMob may also pass an ad request to its ad partners to fill a slot: AppLovin, Unity Ads and Meta Audience Network. When they serve the ad they process the same data as above and follow your choice on the consent screen. Their privacy policies: applovin.com/privacy, unity.com/legal/privacy-policy, facebook.com/privacy/policy",
               "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation.",
               "Where the law of your location requires it (the European Economic Area, the United Kingdom and the applicable US states) the app shows Google’s consent screen at startup, and no ad is requested until you have answered it. You can change your decision, or withdraw consent, at any time from “Settings → Ad privacy options”. Everywhere else you can still reset your advertising identifier or turn off personalisation in your device settings.",
               "To remove ads entirely you can buy Premium from inside the app.",
@@ -315,8 +317,8 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: 8 October 2026",
-        "intro": "By downloading or using Yelken you accept these terms.",
+        "updated": "Last updated: 13 October 2026",
+        "intro": "By downloading or using Yelken: Kelime Oyunu & Bulmaca (“Yelken”) you accept these terms.",
         "sections": [
           {
             "heading": "Licence",
@@ -381,8 +383,8 @@
       },
       "deletion": {
         "title": "Yelken — Account Deletion",
-        "updated": "Last updated: 27 September 2026",
-        "intro": "This page explains how to delete your account and its data in Yelken, developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
+        "updated": "Last updated: 13 October 2026",
+        "intro": "This page explains how to delete your account and its data in Yelken: Kelime Oyunu & Bulmaca (“Yelken”), developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
         "sections": [
           {
             "heading": "Delete from inside the app",
@@ -424,8 +426,8 @@
     "es": {
       "privacy": {
         "title": "Política de privacidad",
-        "updated": "Última actualización: 8 de octubre de 2026",
-        "intro": "Puedes jugar a Yelken sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
+        "updated": "Última actualización: 13 de octubre de 2026",
+        "intro": "Puedes jugar a Yelken: Kelime Oyunu & Bulmaca («Yelken») sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
         "sections": [
           {
             "heading": "Sin cuenta: datos que se quedan en tu dispositivo",
@@ -472,6 +474,7 @@
             "heading": "Publicidad",
             "body": [
               "La versión gratuita muestra anuncios de Google AdMob. Para servirlos, AdMob accede a tu identificador de publicidad (iOS: IDFA, Android: ID de publicidad), dirección IP, ubicación aproximada a nivel de país o ciudad, información del dispositivo y del sistema operativo, e interacciones con los anuncios.",
+              "En Android, AdMob también puede enviar la solicitud de anuncio a sus socios publicitarios para llenar un espacio: AppLovin, Unity Ads y Meta Audience Network. Al servir el anuncio tratan los mismos datos que se indican arriba y respetan tu decisión en la pantalla de consentimiento. Sus políticas de privacidad: applovin.com/privacy, unity.com/legal/privacy-policy, facebook.com/privacy/policy",
               "En iOS la aplicación no accede al IDFA salvo que concedas el permiso de rastreo; si lo rechazas, los anuncios se muestran sin personalización.",
               "Donde la ley de tu ubicación lo exige (el Espacio Económico Europeo, el Reino Unido y los estados de EE. UU. aplicables), la aplicación muestra al inicio la pantalla de consentimiento de Google y no se solicita ningún anuncio hasta que respondas. Puedes cambiar tu decisión o retirar el consentimiento en cualquier momento desde «Ajustes → Privacidad de anuncios». En cualquier otro lugar puedes restablecer tu identificador de publicidad o desactivar la personalización en los ajustes de tu dispositivo.",
               "Para quitar los anuncios por completo puedes comprar Premium desde la aplicación.",
@@ -522,8 +525,8 @@
       },
       "terms": {
         "title": "Condiciones de uso",
-        "updated": "Última actualización: 8 de octubre de 2026",
-        "intro": "Al descargar o usar Yelken aceptas estas condiciones.",
+        "updated": "Última actualización: 13 de octubre de 2026",
+        "intro": "Al descargar o usar Yelken: Kelime Oyunu & Bulmaca («Yelken») aceptas estas condiciones.",
         "sections": [
           {
             "heading": "Licencia",
@@ -588,8 +591,8 @@
       },
       "deletion": {
         "title": "Yelken — Eliminación de la cuenta",
-        "updated": "Última actualización: 27 de septiembre de 2026",
-        "intro": "Esta página explica cómo eliminar tu cuenta y sus datos en Yelken, desarrollada por Cemre Acar. La cuenta es opcional; si nunca iniciaste sesión, no guardamos ningún registro sobre ti en nuestro servidor.",
+        "updated": "Última actualización: 13 de octubre de 2026",
+        "intro": "Esta página explica cómo eliminar tu cuenta y sus datos en Yelken: Kelime Oyunu & Bulmaca («Yelken»), desarrollada por Cemre Acar. La cuenta es opcional; si nunca iniciaste sesión, no guardamos ningún registro sobre ti en nuestro servidor.",
         "sections": [
           {
             "heading": "Eliminar desde la aplicación",

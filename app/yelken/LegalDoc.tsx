@@ -12,6 +12,9 @@ type Doc = {
 type Lang = 'tr' | 'en' | 'es'
 type Kind = 'privacy' | 'terms' | 'deletion'
 
+/** Mağazadaki tam ad "Yelken: Kelime Oyunu & Bulmaca" (yelken/page.tsx ile aynı). */
+const SUBTITLE = 'Kelime Oyunu & Bulmaca'
+
 const BACK: Record<Lang, string> = {
   tr: 'Yelken',
   en: 'Yelken',
@@ -37,7 +40,7 @@ export default function LegalDoc({ lang, kind }: { lang: Lang; kind: Kind }) {
             <ArrowLeft size={16} /> {BACK[lang]}
           </Link>
           <p className="eyebrow mt-8">
-            {brand.app} · {brand.publisher}
+            {brand.app}: {SUBTITLE} · {brand.publisher}
           </p>
         </aside>
 
