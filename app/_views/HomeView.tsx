@@ -48,8 +48,8 @@ const COPY = {
       page: 'Yelken sayfası',
       shots: 'Yelken ekran görüntüleri',
       tagline: 'Kelime Oyunu & Bulmaca',
-      body: 'Arayüz ve bulmaca dilini ayrı seçersin: aynıysa saf bir kelime oyunu, farklıysa çözdüğün her kelime aralıklı tekrar programına girer. Beş oyun modu, günlük bulmaca, çevrimdışı oyun; isteyene online sıralama ve gerçek rakiplerle Düello.',
-      did: ['11.000’den fazla kelimelik üç dilli dağarcık', 'Kupa Ligi ve gerçek zamanlı Düello (Supabase)', 'Tanıtım videoları ve mağaza görselleri'],
+      body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve hepsini birleştiren bir sefer — beş kelime oyunu tek bir denizde. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca öğrenirsin. İsteyene sınırsız Düello ve Kupa Ligi.',
+      did: ['14.600 kelime; TDK, RAE ve Cambridge’e karşı doğrulandı', 'Sınırsız Düello ve Kupa Ligi (Supabase)', 'Tanıtım videoları ve mağaza görselleri'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Diller', value: 'Türkçe, İngilizce, İspanyolca' },
@@ -59,11 +59,11 @@ const COPY = {
     },
     kurultay: {
       page: 'Kurultay sayfası',
-      shot: 'Kurultay ana ekranı',
+      shot: 'Kurultay gece savaşı',
       status: 'Geliştiriliyor',
-      tagline: 'Bozkırda üs savunması ve göç.',
-      body: 'Gündüz obanı kurarsın, gece Gökbörü’yü kendin yürütüp akınlara göğüs gerersin. Otlak tükenince göç edersin; Kurultay’da boyları birleştirip Han seçilirsin. Haftanın Akını’nda herkes aynı haritada, eşit güçle yarışır.',
-      did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman kontrollü savunma, göç ve hafif roguelite ilerleme', 'Google ve Apple girişiyle haftalık sıralama'],
+      tagline: 'Bozkır Savunması',
+      body: 'Gündüz obanı kur, gece Gökbörü’yü kendin yönetip akınları karşıla, her beş gecede bir beyle yüzleş. Otlak tükenince göç et; Kurultay’da boyları birleştir ve Han seçil. Haftanın Akını’nda herkes aynı haritada, eşit güçle yarışır.',
+      did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman yetenekleri, üç bey, göç ve Kurultay antları', 'Google ve Apple girişiyle haftalık sıralama'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Diller', value: 'Türkçe, İngilizce' },
@@ -103,9 +103,9 @@ const COPY = {
     yelken: {
       page: 'Yelken page',
       shots: 'Yelken screenshots',
-      tagline: 'Word Game & Puzzle',
-      body: 'Pick the interface language and the puzzle language separately: if they match, it is a pure word game; if not, every word you solve enters a spaced-repetition schedule. Five game modes, a daily puzzle, offline play — and online leaderboards and real-time Duels for those who want them.',
-      did: ['A trilingual vocabulary of 11,000+ words', 'Trophy League and real-time Duels (Supabase)', 'Promo videos and store graphics'],
+      tagline: 'Word Game & Puzzles',
+      body: 'Crossword, word search, hangman, a word connect game and a voyage that ties them together — five word games on one sea. Plays offline; use the same games to learn Spanish or Turkish if you like. Unlimited Duels and a Trophy League for those who want them.',
+      did: ['14,600 words checked against TDK, RAE and Cambridge', 'Unlimited Duels and the Trophy League (Supabase)', 'Promo videos and store graphics'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Languages', value: 'Turkish, English, Spanish' },
@@ -115,11 +115,11 @@ const COPY = {
     },
     kurultay: {
       page: 'Kurultay page',
-      shot: 'Kurultay home screen',
+      shot: 'Kurultay night battle',
       status: 'In development',
-      tagline: 'Base defence and migration on the steppe.',
-      body: 'Build your camp by day; by night, take control of Gökbörü yourself and hold off the raids. When the pasture runs out you migrate; at the Kurultay you unite the clans and are chosen Khan. In the Weekly Raid everyone plays the same map with equal power.',
-      did: ['All 3D models, UI art and audio are generated from code', 'Hero-controlled defence, migration and light roguelite progression', 'Weekly leaderboard with Google and Apple sign-in'],
+      tagline: 'Steppe Defense',
+      body: 'Build your camp by day, lead Gökbörü yourself against the night raids and face a chief every fifth night. When the pasture runs dry, migrate; unite the clans at the Kurultay and be named Khan. In the Raid of the Week everyone plays the same map with equal power.',
+      did: ['All 3D models, UI art and audio are generated from code', 'Hero skills, three chiefs, migration and clan oaths', 'Weekly leaderboard with Google and Apple sign-in'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Languages', value: 'Turkish, English' },
@@ -239,7 +239,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
               className="group block self-start overflow-hidden rounded-lg border border-line bg-[#1A1231] md:col-span-7"
             >
               <div className="flex aspect-[16/10] items-start justify-center gap-[2.5%] overflow-hidden px-[2.5%] pt-[14%]">
-                {['/yelken/home.jpg', '/yelken/faceoff.jpg', '/yelken/wordhunt.jpg'].map((src, i) => (
+                {[1, 4, 5].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
                   <Image
                     key={src}
                     src={src}
@@ -277,11 +277,11 @@ export default function HomeView({ lang }: { lang: Lang }) {
             >
               <div className="relative aspect-[16/10]">
                 <Image
-                  src="/kurultay/home.jpg"
+                  src={`/kurultay/screens/${lang}/04.jpg`}
                   alt={c.kurultay.shot}
                   fill
                   sizes="(min-width: 768px) 55vw, 100vw"
-                  className="object-cover object-left transition-transform duration-700 group-hover:scale-[1.03]"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
             </Link>

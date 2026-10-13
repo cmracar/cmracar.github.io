@@ -198,8 +198,8 @@
         ]
     },
     {
-        "projectName": "Kurultay",
-        "description": "Kendi ürünüm: bozkırda geçen, kahraman kontrollü üs savunması, göç ve hafif roguelite oyunu. Gündüz oba kurulur, gece Gökbörü ile akınlar karşılanır; otlak tükenince göç edilir. Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor. Google ve Apple girişiyle Haftanın Akını sıralaması. Android ve iOS için geliştiriliyor.",
+        "projectName": "Kurultay: Bozkır Savunması",
+        "description": "Kendi ürünüm: bozkırda geçen, kahraman kontrollü üs savunması, göç ve hafif roguelite oyunu. Gündüz oba kurulur, gece Gökbörü’nün yetenekleriyle akınlar karşılanır, her beş gecede bir bey çıkar; otlak tükenince göç edilir, Kurultay’da boylarla ant içilir. Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor. Google ve Apple girişiyle Haftanın Akını sıralaması. Android ve iOS için geliştiriliyor.",
         "preview": "/kurultay",
         "technologies": [
             "Unity 6",
@@ -209,11 +209,12 @@
         ],
         "isCompleted": false,
         "category": "freelance",
-        "description_en": "My own product: a hero-controlled base defence, migration and light roguelite game set on the steppe. Build your camp by day, hold off raids with Gökbörü by night, and migrate when the pasture runs out. All 3D models, UI art and audio are generated from code. Weekly Raid leaderboard with Google and Apple sign-in. In development for Android and iOS."
+        "description_en": "My own product: a hero-controlled base defence, migration and light roguelite game set on the steppe. Build your camp by day, hold the night raids with Gökbörü’s skills and face a chief every fifth night; migrate when the pasture runs dry and swear oaths with the clans at the Kurultay. All 3D models, UI art and audio are generated from code. Raid of the Week leaderboard with Google and Apple sign-in. In development for Android and iOS.",
+        "projectName_en": "Kurultay: Steppe Defense"
     },
     {
         "projectName": "Yelken: Kelime Oyunu & Bulmaca",
-        "description": "Kendi ürünüm: kelime oyunu, bulmaca ve dil öğrenme uygulaması. Beş oyun modu, aralıklı tekrar programı, 11.000'den fazla kelimelik Türkçe, İngilizce ve İspanyolca dağarcık. Çevrimdışı oynanır, hesap gerektirmez — isteyenler için online sıralama, bulut yedeği ve gerçek rakiplerle Düello da var. Google Play'de yayında; App Store yayını yolda.",
+        "description": "Kendi ürünüm: beş kelime oyunu tek bir denizde — kare bulmaca, kelime avı, adam asmaca, kelime türetme ve hepsini birleştiren bir sefer. TDK, RAE ve Cambridge’e karşı doğrulanmış 14.600 kelimelik Türkçe, İngilizce ve İspanyolca dağarcık, aralıklı tekrar programı. İnternetsiz oynanır, hesap gerektirmez — isteyenler için sınırsız Düello, Kupa Ligi, çevrim içi sıralama ve bulut yedeği. Google Play'de yayında; App Store yayını yolda.",
         "preview": "/yelken",
         "stores": "yelken",
         "technologies": [
@@ -225,7 +226,8 @@
         ],
         "isCompleted": false,
         "category": "freelance",
-        "description_en": "My own product: a word game, puzzle and language-learning app. Five game modes, spaced repetition and a vocabulary of 11,000+ words in Turkish, English and Spanish. Plays offline with no account required — and for those who want it, online leaderboards, cloud backup and real-time Duels. Live on Google Play; App Store release on the way."
+        "description_en": "My own product: five word games on one sea — crossword, word search, hangman, word connect and a voyage that ties them together. A 14,600-word Turkish, English and Spanish vocabulary checked against TDK, RAE and Cambridge, with spaced repetition. Plays offline with no account required — plus unlimited Duels, the Trophy League, online leaderboards and cloud backup for those who want them. Live on Google Play; App Store release on the way.",
+        "projectName_en": "Yelken: Word Game & Puzzles"
     },
     {
         "projectName": "Turklerden UX/UI",

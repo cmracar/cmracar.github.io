@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, Wifi, Languages, Repeat, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube, Instagram } from 'lucide-react'
+import { Mail, FileText, Shield, Wifi, Languages, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube, Instagram, Compass, BookOpen, CalendarDays, Gem } from 'lucide-react'
 import Status, { SectionHeading } from '../components/Status'
 import { href, type Lang } from '../i18n'
 import legal from '../yelken/legal.json'
@@ -85,24 +85,34 @@ const INSTAGRAM = 'https://www.instagram.com/cmracardev'
  * 16/9 : 9/16). `fr` boşluklar düşüldükten sonra bölündüğü için yükseklik
  * birebir tutar.
  */
-const MODE_ICONS = [<Grid3x3 key="0" size={20} />, <Search key="1" size={20} />, <Anchor key="2" size={20} />, <Route key="3" size={20} />, <Swords key="4" size={20} />, <Trophy key="5" size={20} />]
-const FEATURE_ICONS = [<Languages key="0" size={22} />, <Repeat key="1" size={22} />, <Trophy key="2" size={22} />, <Wifi key="3" size={22} />]
-const SHOT_SRC = ['home', 'faceoff', 'wordhunt', 'duelhub', 'voyagemodes', 'ship', 'sailor', 'profile'].map(n => `/yelken/${n}.jpg`)
+const MODE_ICONS = [<Grid3x3 key="0" size={20} />, <Search key="1" size={20} />, <Compass key="2" size={20} />, <Anchor key="3" size={20} />, <Route key="4" size={20} />, <Swords key="5" size={20} />]
+const FEATURE_ICONS = [<Languages key="0" size={22} />, <BookOpen key="1" size={22} />, <Trophy key="2" size={22} />, <Wifi key="3" size={22} />, <CalendarDays key="4" size={22} />, <Gem key="5" size={22} />]
 const VIDEO_IDS = [
   { id: 'mSz_UbkjBSA', vertical: false },
   { id: '5_wh1xCZYvM', vertical: true, poster: '/yelken/short-fragman.jpg' },
   { id: 'ibtNQJwaObI', vertical: true, poster: '/yelken/short-duello.jpg' },
 ]
 
-/** Oyun modu adları uygulamanın kendi çevirilerinden (yelken/src/i18n/en.ts). */
+/**
+ * Metinler mağaza açıklamasından (yelken/store/listing.md, 13 Ekim 2026);
+ * mod adları uygulamanın kendi çevirilerinden. Ekranlar mağaza görselleri
+ * (yelken/store/play/{tr,en}-*.png → public/yelken/screens/{tr,en}/).
+ */
 const COPY = {
   tr: {
     back: '← Projeler',
     subtitle: 'Kelime Oyunu & Bulmaca',
-    lead: 'Bir kelime bulmacası — ve istersen bir dil öğretmeni.',
-    body: 'Arayüz dilini ve bulmaca dilini ayrı seçersin: ikisi aynıysa saf bir kelime oyunu oynarsın, farklıysa çözdüğün her kelime bir tekrar programına girer. Kesişen Rotalar, Kelime Avı, İskele Düğümü ve Sefer; her gün yeni bir bulmaca; isteyenler için online sıralama ve gerçek rakiplerle Düello.',
-    modesLabel: 'Oyun modları',
-    modes: ['Kesişen Rotalar', 'Kelime Avı', 'İskele Düğümü', 'Sefer', 'Düello', 'Sıralama'],
+    lead: 'Beş kelime oyunu, tek bir deniz.',
+    body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve hepsini birleştiren bir sefer. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca kelime öğrenirsin. Arayüz dilini ve bulmaca dilini ayrı seçersin: ikisi aynıysa saf bir kelime oyunu, farklıysa çözdüğün her kelime aralıklı tekrar programına girer.',
+    modesLabel: 'Oyunlar',
+    modes: [
+      { name: 'Kesişen Rotalar', kind: 'kare bulmaca' },
+      { name: 'Kelime Avı', kind: 'kelime avı' },
+      { name: 'Rüzgâr Gülü', kind: 'kelime türetme' },
+      { name: 'İskele Düğümü', kind: 'adam asmaca' },
+      { name: 'Sefer', kind: 'altı limanlık yolculuk' },
+      { name: 'Düello', kind: 'gerçek rakiple' },
+    ],
     videosLabel: 'Videolar',
     channel: 'YouTube kanalı',
     videos: [
@@ -111,33 +121,33 @@ const COPY = {
       { title: 'Düello', meta: 'Short · 35 sn' },
     ],
     shotsLabel: 'Ekranlar',
-    shots: [
-      { title: 'Ana ekran', desc: 'Beş oyun, günün bulmacası ve kimlik kartın tek bir denizde.' },
-      { title: 'Düello', desc: 'Çevrim içi bir rakiple aynı limanlarda yarış; puanı yüksek olan kupayı alır.' },
-      { title: 'Kelime Avı', desc: 'Izgarada gizlenmiş kelimeleri parmağınla çiz.' },
-      { title: 'Kupa Ligi', desc: 'Kupa kazan, Liman’dan Efsane’ye beş ligde yüksel.' },
-      { title: 'Sefer', desc: 'Serbest Sefer’de tek başına, Düello’da gerçek bir rakiple.' },
-      { title: 'Gemi', desc: 'Oynadıkça büyüyen, kalıcı kademelerle gelişen bir yelkenli.' },
-      { title: 'Kaptan', desc: 'Rütbeni taşı, kazandığın kıyafetlerle kendine göre giydir.' },
-      { title: 'Profil', desc: 'Rakibinin gemisini ve ligini gör, meydan oku.' },
-    ],
+    shots: ['Rüzgâr Gülü', 'Kelime Avı', 'Kesişen Rotalar', 'İskele Düğümü', 'Düello', 'Ana ekran', 'Gemi', 'Kaptan'],
     featuresLabel: 'Özellikler',
     features: [
-      { title: 'Üç dil, dokuz kombinasyon', desc: 'Türkçe, İngilizce ve İspanyolca. Arayüz ve bulmaca dilini ayrı seçersin: aynıysa saf kelime oyunu, farklıysa dil öğrenme.' },
-      { title: 'Akıllı tekrar', desc: 'Çözdüğün kelimeler aralıklı tekrar programına girer. Bildiklerin seyrekleşir, zorlandıkların geri gelir.' },
-      { title: 'Sıralama ve Düello', desc: 'Apple ya da Google ile giriş yap: haftalık sıralamada yerini gör, Düello’da rakiplerle yarışıp Kupa Ligi’nde yüksel.' },
-      { title: 'Çevrimdışı da oynanır', desc: 'Bütün kelimeler cihazında. Hesap açmadan oynanır; sıralamaya girmek istersen ayrıca giriş yaparsın.' },
+      { title: 'Kelime oyna ya da dil öğren', desc: 'Türkçe, İngilizce ve İspanyolca; dokuz dil eşleşmesinin hepsi oynanır. Öğrenme modunda ipucu kelimenin Türkçe karşılığıdır ve kelime unutmadan önce yeniden karşına gelir.' },
+      { title: '14.600 kelime, sözlükle doğrulandı', desc: 'A1’den B2’ye 6.500 İngilizce kelime; 4.300 Türkçe ve 3.700 İspanyolca kelime, 2.000’den fazla atasözü ve deyim. TDK, RAE ve Cambridge’e karşı tek tek doğrulandı.' },
+      { title: 'Düello ve Kupa Ligi', desc: 'Bir rakiple aynı dört limanı oyna, Liman’dan Efsane’ye yüksel. Düello sınırsız; Kupa Kalkanı açarsan kaybetsen de kupan düşmez.' },
+      { title: 'İnternetsiz oynanır', desc: 'Bütün kelimeler cihazında; yalnızca Düello ve çevrim içi sıralama bağlantı ister. Hesap açmak gerekmez.' },
+      { title: 'Günün Seferi', desc: 'Her gün herkese aynı bulmaca. Serini sürdürdükçe ödül büyür; bir gün kaçırırsan seri koruyucu devreye girer.' },
+      { title: 'Premium', desc: 'Tek seferlik satın alma: reklamlar kalkar, altın harcamalarında %25 indirim, Serbest Sefer sınırsız. Abonelik yok.' },
     ],
     stackLabel: 'Teknolojiler',
     legalLabel: 'Yasal ve destek',
   },
   en: {
     back: '← Projects',
-    subtitle: 'Kelime Oyunu & Bulmaca',
-    lead: 'A word puzzle — and, if you like, a language teacher.',
-    body: 'Pick the interface language and the puzzle language separately: if they match you play a pure word game; if not, every word you solve enters a spaced-repetition schedule. Crossing Routes, Word Hunt, Sailor’s Knot and Voyage; a new puzzle every day; online leaderboards and real-time Duels for those who want them.',
-    modesLabel: 'Game modes',
-    modes: ['Crossing Routes', 'Word Hunt', 'Sailor’s Knot', 'Voyage', 'Duel', 'Leaderboard'],
+    subtitle: 'Word Game & Puzzles',
+    lead: 'Five word games on one sea.',
+    body: 'Crossword, word search, hangman, a word connect game and a voyage that ties them all together. Play offline, and if you like, use the same games to learn Spanish or Turkish vocabulary. You choose the interface language and the puzzle language separately: match them for a pure word game, or mix them and every word you solve enters a spaced-repetition schedule.',
+    modesLabel: 'Games',
+    modes: [
+      { name: 'Crossing Routes', kind: 'crossword' },
+      { name: 'Word Hunt', kind: 'word search' },
+      { name: 'Compass Rose', kind: 'word connect' },
+      { name: 'Sailor’s Knot', kind: 'hangman' },
+      { name: 'Voyage', kind: 'six-port run' },
+      { name: 'Duel', kind: 'real opponents' },
+    ],
     videosLabel: 'Videos',
     channel: 'YouTube channel',
     videos: [
@@ -146,22 +156,15 @@ const COPY = {
       { title: 'Duel', meta: 'Short · 35 s' },
     ],
     shotsLabel: 'Screens',
-    shots: [
-      { title: 'Home', desc: 'Five games, the daily puzzle and your ID card on one sea.' },
-      { title: 'Duel', desc: 'Race an online opponent through the same ports; the higher score takes the trophy.' },
-      { title: 'Word Hunt', desc: 'Swipe out the words hidden in the grid.' },
-      { title: 'Trophy League', desc: 'Win trophies and climb five leagues, from Harbor to Legend.' },
-      { title: 'Voyage', desc: 'Alone in Free Voyage, or against a real opponent in Duel.' },
-      { title: 'Ship', desc: 'A sailboat that grows as you play, upgraded through permanent tiers.' },
-      { title: 'Captain', desc: 'Wear your rank and dress your captain with the outfits you earn.' },
-      { title: 'Profile', desc: 'See your opponent’s ship and league, and challenge them.' },
-    ],
+    shots: ['Compass Rose', 'Word Hunt', 'Crossing Routes', 'Sailor’s Knot', 'Duel', 'Home', 'Ship', 'Captain'],
     featuresLabel: 'Features',
     features: [
-      { title: 'Three languages, nine combinations', desc: 'Turkish, English and Spanish. Pick the interface and puzzle languages separately: the same for a pure word game, different for language learning.' },
-      { title: 'Smart review', desc: 'Words you solve enter a spaced-repetition schedule. The ones you know come back less often; the hard ones return.' },
-      { title: 'Leaderboard and Duel', desc: 'Sign in with Apple or Google: see your place on the weekly leaderboard, race opponents in Duel and climb the Trophy League.' },
-      { title: 'Plays offline too', desc: 'All the words live on your device. No account needed; sign in separately only if you want to join the leaderboard.' },
+      { title: 'Play words or learn a language', desc: 'English, Turkish and Spanish; all nine language pairs work. In learning mode the clue is the meaning in your language, and each word returns before you forget it.' },
+      { title: '14,600 dictionary-checked words', desc: '6,500 English words from A1 to B2, a 4,300-word Turkish set, a 3,700-word Spanish set and more than 2,000 proverbs and idioms — checked against TDK, RAE and Cambridge.' },
+      { title: 'Duel and the Trophy League', desc: 'Play the same four ports as a rival and climb from Harbor to Legend. Duels are unlimited; raise a Trophy Shield and a loss costs you no trophies.' },
+      { title: 'Plays offline', desc: 'Every word lives on your device; only Duel and the online leaderboard need a connection. No account needed.' },
+      { title: 'Daily Voyage', desc: 'One puzzle a day, the same for everyone. Keep your streak and the reward grows; miss a day and a streak freeze steps in.' },
+      { title: 'Premium', desc: 'A one-time purchase: no ads, 25% off every gold price and unlimited Free Voyage. No subscription.' },
     ],
     stackLabel: 'Stack',
     legalLabel: 'Legal and support',
@@ -194,9 +197,9 @@ export default function YelkenView({ lang }: { lang: Lang }) {
   const { brand } = legal
   const status = yelkenStatus(lang)
   const c = COPY[lang]
-  const modes = c.modes.map((name, i) => ({ name, icon: MODE_ICONS[i] }))
+  const modes = c.modes.map((m, i) => ({ ...m, icon: MODE_ICONS[i] }))
   const features = c.features.map((f, i) => ({ ...f, icon: FEATURE_ICONS[i] }))
-  const shots = c.shots.map((x, i) => ({ ...x, src: SHOT_SRC[i] }))
+  const shots = c.shots.map((title, i) => ({ title, src: `/yelken/screens/${lang}/${i + 1}.jpg` }))
   const videos = c.videos.map((x, i) => ({ ...x, ...VIDEO_IDS[i] }))
 
   return (
@@ -231,6 +234,7 @@ export default function YelkenView({ lang }: { lang: Lang }) {
                 <li key={mode.name} className="flex items-center gap-3 py-3 text-ink">
                   <span className="text-faint">{mode.icon}</span>
                   {mode.name}
+                  <span className="ml-auto font-mono text-xs text-faint">{mode.kind}</span>
                 </li>
               ))}
             </ul>
@@ -291,10 +295,7 @@ export default function YelkenView({ lang }: { lang: Lang }) {
                   height={1920}
                   className="h-auto w-full rounded-xl border border-white/10"
                 />
-                <figcaption className="mt-3">
-                  <span className="block text-sm font-medium text-white">{shot.title}</span>
-                  <span className="mt-0.5 block text-xs leading-relaxed text-white/60">{shot.desc}</span>
-                </figcaption>
+                <figcaption className="mt-3 text-sm font-medium text-white">{shot.title}</figcaption>
               </figure>
             ))}
           </div>
@@ -304,7 +305,7 @@ export default function YelkenView({ lang }: { lang: Lang }) {
       {/* ÖZELLİKLER */}
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         <SectionHeading label={c.featuresLabel} />
-        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
           {features.map(feature => (
             <div key={feature.title} className="flex flex-col gap-3 bg-paper p-6">
               <span className="text-faint">{feature.icon}</span>

@@ -1,67 +1,78 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles, Instagram } from 'lucide-react'
+import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles, Instagram, Users, Snowflake } from 'lucide-react'
 import { SectionHeading } from '../components/Status'
 import { href, type Lang } from '../i18n'
 import legal from '../kurultay/legal.json'
 
 
-const SHOT_SRC = ['home', 'day', 'dawn', 'kurultay', 'migration', 'kamtree'].map(n => `/kurultay/${n}.jpg`)
-const PILLAR_ICONS = [<Tent key="0" size={20} />, <Moon key="1" size={20} />, <Swords key="2" size={20} />, <Route key="3" size={20} />, <Sparkles key="4" size={20} />, <Trophy key="5" size={20} />]
-const FEATURE_ICONS = [<Swords key="0" size={22} />, <Route key="1" size={22} />, <Sparkles key="2" size={22} />, <Trophy key="3" size={22} />]
+const PILLAR_ICONS = [<Tent key="0" size={20} />, <Moon key="1" size={20} />, <Route key="2" size={20} />, <Users key="3" size={20} />, <Sparkles key="4" size={20} />, <Trophy key="5" size={20} />]
+const FEATURE_ICONS = [<Swords key="0" size={22} />, <Route key="1" size={22} />, <Users key="2" size={22} />, <Sparkles key="3" size={22} />, <Snowflake key="4" size={22} />, <Trophy key="5" size={22} />]
 
-/** Oyun terimleri oyunun kendi İngilizce metinlerinden (Assets/_Game/Scripts). */
+/**
+ * Metinler mağaza açıklamasından (kurultay/Docs/store/magaza_metinleri.md);
+ * ekranlar Play görselleri (Docs/store/play/phone_{tr,en}_* →
+ * public/kurultay/screens/{tr,en}/).
+ */
 const COPY = {
   tr: {
     back: '← Projeler',
-    name: 'Kurultay — Bozkır Savunması',
+    name: 'Kurultay: Bozkır Savunması',
     status: 'Geliştiriliyor · Android ve iOS',
-    body: 'Kara Tuğ birliği bozkırı yakıyor; boylar dağınık, otağlar yalnız. Gündüz obanı kur, gece Gökbörü ile akınlara göğüs ger, her beşinci gece bir beyle yüzleş. Otlak tükenince göç et, Kurultay’da boyları birleştir ve Han seçil. Android ve iOS için; Türkçe ve İngilizce.',
+    body: 'Kara Tuğ birliği bozkırı yakıyor. Boylar dağınık, otağlar yalnız. Küçük bir obanın beyi Gökbörü olarak obanı kur, gece akınlarına göğüs ger, boyları birleştir ve Kurultay’da Han seçil. Android ve iOS için; Türkçe ve İngilizce.',
     loop: 'Oyun döngüsü',
-    pillars: ['Oba kur', 'Geceyi savun', 'Beyleri yen', 'Göç et', 'Kut topla', 'Haftanın Akını'],
+    pillars: ['Gündüz kur', 'Gece savun', 'Göç et', 'Kurultay', 'Destan', 'Haftanın Akını'],
     videos: 'Tanıtım videoları: Instagram',
     shotsLabel: 'Ekranlar',
     shots: [
-      { title: 'Ana ekran', desc: 'Obanın, rütben, Haftanın Akını ve sıradaki hedefin.' },
-      { title: 'Gündüz', desc: 'Altını nereye harcayacağını seç: yurt, ağıl, kule, çit.' },
-      { title: 'Şafak', desc: 'Geceyi atlatan ganimet sandığını açar.' },
-      { title: 'Kurultay', desc: 'Beyi yenince boylardan biriyle birleş; nimet ve yük birlikte gelir.' },
-      { title: 'Göç', desc: 'Otlak tükenince yeni yurda göç et; her yolun bir bedeli var.' },
-      { title: 'Kam Ağacı', desc: 'Her seferde kazanılan Kut ile kalıcı güçler.' },
+      { title: 'Ana ekran', desc: 'Sefere çık; Kahraman, Kam Ağacı, Bozkır Haritası ve Buyruklar tek ekranda.' },
+      { title: 'Gökbörü', desc: 'Kılıcını, zırhını, börkünü ve tılsımını Ocakta döv; yeteneklerini seç.' },
+      { title: 'Gündüz', desc: 'Otağın çevresine kule, çit ve yapılar kur; akın gece başlar.' },
+      { title: 'Gece', desc: 'Akıncılar dört yandan gelir; Gökbörü’yü kendin yönet, yeteneklerini kullan.' },
+      { title: 'Bey', desc: 'Her beş gecede bir bey çıkar: Kızılmızrak, Demir Kağan, Kızıl Hatun.' },
+      { title: 'Kurultay', desc: 'Boylar otağında toplanır; her ant bir nimet ve bir yük getirir.' },
+      { title: 'Göç yolu', desc: 'Otlak tükenince yeni yurdu seç; her konağın nimeti ve tehlikesi var.' },
+      { title: 'Kervan', desc: 'Yolda pusular var; kervanı koru, sürüyü dağıtma.' },
     ],
     featuresLabel: 'Özellikler',
     features: [
-      { title: 'Kahramanla savun', desc: 'Gökbörü’yü kendin yürütürsün: kuleler yetmez, akının en sıkıştığı yere sen koşarsın.' },
-      { title: 'Göç ve konaklar', desc: 'Otlak tükenir, mevsim döner. Kervanı yeni yurda taşırken pusuya da düşebilirsin.' },
-      { title: 'Her sefer bir adım', desc: 'Düşsen de Kut ve Şan kazanırsın; Bey’den Han’a, Han’dan Kağan’a yükselirsin.' },
-      { title: 'Haftanın Akını', desc: 'Herkese aynı harita, aynı akınlar, eşit güç. Haftalık sıralamada en çok Şanı toplayan kazanır.' },
+      { title: 'Kahramanla savun', desc: 'Gökbörü’yü kendin yönet: Kılıç Kasırgası, Kement, Kurt Uluması ve Kut Kalkanı gibi yeteneklerle savaşın ortasına dal.' },
+      { title: 'Göç et', desc: 'Otlak tükenir, mevsim döner. Obanı kağnılara yükle; bereketli otlak, nehir kıyısı, dağ eteği ya da pazar yeri seni bekler.' },
+      { title: 'Kurultay', desc: 'Beyi yenince boylar otağında toplanır; biriyle birleş. Boylarla dostluğun seferden sefere büyür.' },
+      { title: 'Destan', desc: 'Her sefer bir yıl: 20 geceye dayan, Han seçil. Düşsen de Kut ile Kam Ağacı’nı büyütür, Er’den Alp’e, Bey’den Han’a yükselirsin.' },
+      { title: 'Ayaz kademeleri', desc: 'Zorluğu kendin seç; Bozkır Haritası’nda bölgeleri fethet.' },
+      { title: 'Haftanın Akını', desc: 'Her hafta herkese aynı harita, aynı akınlar, eşit güç. Hesapla gir, haftalık sıralamada yerini al.' },
     ],
     stackLabel: 'Teknolojiler',
     legalLabel: 'Yasal ve destek',
   },
   en: {
     back: '← Projects',
-    name: 'Kurultay — Steppe Defence',
+    name: 'Kurultay: Steppe Defense',
     status: 'In development · Android and iOS',
-    body: 'The Black Banner horde is burning the steppe; the clans are scattered, the camps alone. Build your camp by day, hold off the raids with Gökbörü by night, and face a warlord every fifth night. When the grassland runs out, migrate; unite the clans at the Kurultay and be chosen Khan. For Android and iOS; in Turkish and English.',
+    body: 'The Black Banner is burning the steppe. The clans are scattered, the great tents alone. As Gökbörü, chief of a small camp, build your camp, hold back the night raids, unite the clans and be named Khan at the Kurultay. For Android and iOS; in Turkish and English.',
     loop: 'Game loop',
-    pillars: ['Build your camp', 'Defend the night', 'Defeat the warlords', 'Migrate', 'Gather Kut', 'Weekly Raid'],
+    pillars: ['Build by day', 'Defend by night', 'Migrate', 'The Kurultay', 'The saga', 'Raid of the Week'],
     videos: 'Promo videos: Instagram',
     shotsLabel: 'Screens',
     shots: [
-      { title: 'Home', desc: 'Your camp, your title, the Weekly Raid and your next goal.' },
-      { title: 'Day', desc: 'Choose where to spend your gold: yurts, folds, towers, fences.' },
-      { title: 'Dawn', desc: 'Survive the night and open the loot chest.' },
-      { title: 'Kurultay', desc: 'Defeat a warlord and unite with one of the clans; boons and burdens come together.' },
-      { title: 'Migration', desc: 'When the grassland runs out, migrate to new land; every road has a price.' },
-      { title: 'Kam Tree', desc: 'Permanent powers bought with the Kut you earn each campaign.' },
+      { title: 'Home', desc: 'Set out on a campaign; the Hero, Kam Tree, Steppe Map and Orders on one screen.' },
+      { title: 'Gökbörü', desc: 'Forge his sword, armour, cap and talisman; choose his skills.' },
+      { title: 'Day', desc: 'Raise towers, fences and buildings around the Great Tent; the raid comes at night.' },
+      { title: 'Night', desc: 'Raiders come from every side; lead Gökbörü yourself and use his skills.' },
+      { title: 'Chief', desc: 'Every fifth night a chief rides in: Redlance, the Iron Khagan, the Crimson Khatun.' },
+      { title: 'The Kurultay', desc: 'The clans gather at your tent; every oath brings a blessing and a burden.' },
+      { title: 'Migration route', desc: 'When the pasture runs dry, choose new land; every camp has a blessing and a danger.' },
+      { title: 'Caravan', desc: 'Ambushes wait on the road; guard the caravan and keep the herd together.' },
     ],
     featuresLabel: 'Features',
     features: [
-      { title: 'Defend with a hero', desc: 'You steer Gökbörü yourself: towers are not enough, so you rush to wherever the raid presses hardest.' },
-      { title: 'Migration and camps', desc: 'The grassland runs out, the seasons turn. Moving the caravan to new land, you may also ride into an ambush.' },
-      { title: 'Every campaign counts', desc: 'Even when you fall you earn Kut and Glory, rising from Chief to Khan and from Khan to Khagan.' },
-      { title: 'Weekly Raid', desc: 'The same map, the same raids and equal power for everyone. Whoever gathers the most Glory on the weekly leaderboard wins.' },
+      { title: 'Defend with a hero', desc: 'Lead Gökbörü yourself: charge into battle with skills like Blade Storm, Lasso, Wolf Howl and Kut Shield.' },
+      { title: 'Migrate', desc: 'The pasture runs dry, the seasons turn. Pack your camp onto ox carts; rich pastures, riverbanks, foothills or a market town await.' },
+      { title: 'The Kurultay', desc: 'Defeat a chief and the clans gather at your tent; join one. Your friendship with the clans grows from campaign to campaign.' },
+      { title: 'The saga', desc: 'Each campaign is one year: survive 20 nights and be named Khan. Even when you fall you grow the Kam Tree with Kut and rise from Warrior to Hero, from Chief to Khan.' },
+      { title: 'Frost Tiers', desc: 'Choose your own challenge, and conquer regions on the Steppe Map.' },
+      { title: 'Raid of the Week', desc: 'Every week: the same map, the same raids and equal power for everyone. Sign in and climb the weekly leaderboard.' },
     ],
     stackLabel: 'Stack',
     legalLabel: 'Legal and support',
@@ -84,7 +95,7 @@ export default function KurultayView({ lang }: { lang: Lang }) {
   const c = COPY[lang]
   const pillars = c.pillars.map((name, i) => ({ name, icon: PILLAR_ICONS[i] }))
   const features = c.features.map((f, i) => ({ ...f, icon: FEATURE_ICONS[i] }))
-  const shots = c.shots.map((x, i) => ({ ...x, src: SHOT_SRC[i] }))
+  const shots = c.shots.map((x, i) => ({ ...x, src: `/kurultay/screens/${lang}/0${i + 1}.jpg` }))
 
   return (
     <main lang={lang}>
@@ -98,7 +109,7 @@ export default function KurultayView({ lang }: { lang: Lang }) {
             <div className="md:col-span-7">
               <h1 className="sr-only">{c.name}</h1>
               <Image
-                src="/kurultay/logo.png"
+                src={lang === 'en' ? '/kurultay/logo-en.png' : '/kurultay/logo.png'}
                 alt={c.name}
                 width={1900}
                 height={965}
@@ -134,14 +145,14 @@ export default function KurultayView({ lang }: { lang: Lang }) {
           </div>
 
           <p className="mb-8 mt-20 font-mono text-xs uppercase tracking-[0.08em] text-white/50">{c.shotsLabel}</p>
-          <div className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-6 gap-y-10 sm:grid-cols-2">
             {shots.map(shot => (
               <figure key={shot.src}>
                 <Image
                   src={shot.src}
                   alt={`Kurultay — ${shot.title}`}
                   width={1600}
-                  height={738}
+                  height={900}
                   className="h-auto w-full rounded-lg border border-white/10"
                 />
                 <figcaption className="mt-3">
@@ -157,7 +168,7 @@ export default function KurultayView({ lang }: { lang: Lang }) {
       {/* ÖZELLİKLER */}
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         <SectionHeading label={c.featuresLabel} />
-        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
           {features.map(feature => (
             <div key={feature.title} className="flex flex-col gap-3 bg-paper p-6">
               <span className="text-faint">{feature.icon}</span>
