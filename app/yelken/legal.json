@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 13 Ekim 2026",
+        "updated": "Son güncelleme: 15 Ekim 2026",
         "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
@@ -82,8 +82,15 @@
           {
             "heading": "Kullanım istatistikleri",
             "body": [
-              "Oyunu geliştirebilmek için anonim kullanım verisi toplarız: uygulamanın açılması, hangi modun oynandığı, seviye bitişleri, reklam gösterimleri ve satın alınan ürün türü. Her olayla birlikte uygulama sürümü, cihaz modeli, işletim sistemi, dil ayarları ve cihaz için rastgele üretilmiş bir kimlik gönderilir.",
+              "Oyunu geliştirebilmek için anonim kullanım verisi toplarız: uygulamanın açılması, hangi modun oynandığı, seviye bitişleri, reklam gösterimleri ve satın alınan ürün türü. Android’de uygulamanın hangi kanaldan kurulduğu da (örneğin bir Instagram reklamı ya da mağaza araması) Google Play’in kurulum bilgisinden okunup eklenir. Her olayla birlikte uygulama sürümü, cihaz modeli, işletim sistemi, dil ayarları ve cihaz için rastgele üretilmiş bir kimlik gönderilir.",
               "Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; çözdüğünüz kelimeler ve cevaplar gönderilmez, konumunuz çözümlenmez. Veri PostHog’un Avrupa Birliği’ndeki altyapısında tutulur. iOS’ta ve Avrupa Birliği, Avrupa Ekonomik Alanı, Birleşik Krallık ya da İsviçre’deki Android cihazlarda uygulama bunu önce size sorar ve yalnızca onay verirseniz gönderir; onay yokken hiçbir olay gönderilmez. Başka bölgelerdeki Android cihazlarda kullanım istatistikleri varsayılan olarak açıktır. Kararınızı her durumda Ayarlar → Kullanım istatistikleri anahtarıyla istediğiniz an değiştirebilirsiniz; kapalıyken hiçbir olay gönderilmez."
+            ]
+          },
+          {
+            "heading": "Reklam ölçümü (Meta)",
+            "body": [
+              "Yelken’i Instagram ve Facebook’ta tanıtıyoruz. Bu reklamların kaç kurulum getirdiğini ölçmek için Android uygulaması Meta’nın uygulama SDK’sını kullanır: uygulamanın kurulduğu ve açıldığı, karşılamanın bittiği, bir seviyenin tamamlandığı, ilk Düello’nun oynandığı ve hesap bağlandığı anlar, cihazın reklam kimliği ve Google Play’in kurulum bilgisiyle birlikte Meta Platforms Ireland Ltd.’ye gönderilir.",
+              "Çözdüğünüz kelimeler, cevaplar, adınız ya da e-posta adresiniz gönderilmez; Facebook ile giriş yoktur. Bu ölçüm yalnızca kullanım istatistikleri açıkken çalışır ve Avrupa Birliği, Avrupa Ekonomik Alanı, Birleşik Krallık ya da İsviçre’deki cihazlarda hiç çalışmaz. Ayarlar → Kullanım istatistikleri anahtarını kapattığınızda Meta’ya da olay gönderilmez. iOS uygulamasında Meta SDK’sı yoktur. Meta’nın gizlilik politikası: facebook.com/privacy/policy"
             ]
           },
           {
@@ -218,7 +225,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 13 October 2026",
+        "updated": "Last updated: 15 October 2026",
         "intro": "You can play Yelken: Kelime Oyunu & Bulmaca (“Yelken”) without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
@@ -290,8 +297,15 @@
           {
             "heading": "Usage statistics",
             "body": [
-              "To improve the game we collect anonymous usage data: app opens, which mode is played, level completions, ad impressions and the type of product purchased. Each event carries the app version, device model, OS version, language settings and a randomly generated identifier for the device.",
+              "To improve the game we collect anonymous usage data: app opens, which mode is played, level completions, ad impressions and the type of product purchased. On Android, the channel the app was installed from (for example an Instagram ad or a store search) is also read from Google Play’s install information and added. Each event carries the app version, device model, OS version, language settings and a randomly generated identifier for the device.",
               "This data is not linked to your account, name or email address; the words and answers you solve are not sent and your location is not resolved. The data is held on PostHog infrastructure in the European Union. On iOS, and on Android devices in the European Union, the European Economic Area, the United Kingdom or Switzerland, the app asks you first and sends it only if you agree; without your consent, no events are sent. On Android devices in other regions, usage statistics are on by default. In every case you can change your choice at any time with Settings → Usage statistics; while it is off, no events are sent."
+            ]
+          },
+          {
+            "heading": "Ad measurement (Meta)",
+            "body": [
+              "We promote Yelken on Instagram and Facebook. To measure how many installs these ads bring, the Android app uses Meta’s app SDK: the moments when the app is installed and opened, onboarding is finished, a level is completed, the first Duel is played and an account is linked are sent to Meta Platforms Ireland Ltd., together with the device’s advertising ID and Google Play’s install information.",
+              "The words and answers you solve, your name and your email address are not sent; there is no Facebook login. This measurement runs only while usage statistics are on, and never on devices in the European Union, the European Economic Area, the United Kingdom or Switzerland. When you turn off Settings → Usage statistics, no events are sent to Meta either. The iOS app does not include the Meta SDK. Meta’s privacy policy: facebook.com/privacy/policy"
             ]
           },
           {
@@ -426,7 +440,7 @@
     "es": {
       "privacy": {
         "title": "Política de privacidad",
-        "updated": "Última actualización: 13 de octubre de 2026",
+        "updated": "Última actualización: 15 de octubre de 2026",
         "intro": "Puedes jugar a Yelken: Kelime Oyunu & Bulmaca («Yelken») sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
         "sections": [
           {
@@ -498,8 +512,15 @@
           {
             "heading": "Estadísticas de uso",
             "body": [
-              "Para mejorar el juego recogemos datos de uso anónimos: aperturas de la aplicación, qué modo se juega, niveles completados, impresiones de anuncios y el tipo de producto comprado. Cada evento incluye la versión de la aplicación, el modelo del dispositivo, la versión del sistema operativo, los ajustes de idioma y un identificador generado al azar para el dispositivo.",
+              "Para mejorar el juego recogemos datos de uso anónimos: aperturas de la aplicación, qué modo se juega, niveles completados, impresiones de anuncios y el tipo de producto comprado. En Android también se añade el canal por el que se instaló la aplicación (por ejemplo, un anuncio de Instagram o una búsqueda en la tienda), leído de la información de instalación de Google Play. Cada evento incluye la versión de la aplicación, el modelo del dispositivo, la versión del sistema operativo, los ajustes de idioma y un identificador generado al azar para el dispositivo.",
               "Estos datos no se vinculan a tu cuenta, tu nombre ni tu correo; las palabras y respuestas que resuelves no se envían y tu ubicación no se determina. Los datos se alojan en la infraestructura de PostHog en la Unión Europea. En iOS, y en dispositivos Android de la Unión Europea, el Espacio Económico Europeo, el Reino Unido o Suiza, la aplicación te lo pregunta primero y solo los envía si aceptas; sin tu consentimiento no se envía ningún evento. En dispositivos Android de otras regiones, las estadísticas de uso están activadas por defecto. En todos los casos puedes cambiar tu decisión cuando quieras en Ajustes → Estadísticas de uso; mientras estén desactivadas no se envía ningún evento."
+            ]
+          },
+          {
+            "heading": "Medición de anuncios (Meta)",
+            "body": [
+              "Promocionamos Yelken en Instagram y Facebook. Para medir cuántas instalaciones traen estos anuncios, la aplicación de Android usa el SDK de aplicaciones de Meta: los momentos en que la aplicación se instala y se abre, se termina la bienvenida, se completa un nivel, se juega el primer Duelo y se vincula una cuenta se envían a Meta Platforms Ireland Ltd., junto con el ID de publicidad del dispositivo y la información de instalación de Google Play.",
+              "No se envían las palabras ni las respuestas que resuelves, tu nombre ni tu correo; no hay inicio de sesión con Facebook. Esta medición solo funciona mientras las estadísticas de uso están activadas y nunca en dispositivos de la Unión Europea, el Espacio Económico Europeo, el Reino Unido o Suiza. Si desactivas Ajustes → Estadísticas de uso, tampoco se envía ningún evento a Meta. La aplicación de iOS no incluye el SDK de Meta. Política de privacidad de Meta: facebook.com/privacy/policy"
             ]
           },
           {
