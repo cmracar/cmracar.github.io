@@ -10,8 +10,8 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 15 Ekim 2026",
-        "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
+        "updated": "Son güncelleme: 17 Ekim 2026",
+        "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya, Düello’ya ve Haftanın Yarışı’na katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
             "heading": "Hesap olmadan: cihazınızda kalan veriler",
@@ -19,20 +19,21 @@
               "Giriş yapmadığınız sürece şunlar yalnızca uygulamanın kendi veritabanında, cihazınızda durur ve sunucumuza gönderilmez:",
               "• Oyun ilerlemesi: seviye, seri, altın, elmas, çözülen kelimeler, tekrar programı",
               "• Tercihler: tema, dil, ses, titreşim, bildirim ve zorluk ayarları",
-              "• Satın alma durumu ve mağazadan alınan biletler",
+              "• Satın alma durumu ve oyun içi mağazadan aldıklarınız",
               "Uygulamayı silerseniz bu veriler cihazınızdan da silinir. Ayarlardaki \"Tüm oyun verilerini sıfırla\" ile istediğiniz zaman kendiniz de silebilirsiniz."
             ]
           },
           {
             "heading": "Giriş yaparsanız: sunucumuzda saklanan veriler",
             "body": [
-              "Giriş isteğe bağlıdır ve yalnızca çevrimiçi sıralama ile bulut yedeği için kullanılır. Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
+              "Giriş isteğe bağlıdır. Yalnızca şunlar için kullanılır: çevrimiçi sıralama, Düello, Haftanın Yarışı, bulut yedeği, elmas satın almalarının doğrulanması ve Düello bildirimleri. Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
               "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, ve hesabınıza ait bir kullanıcı kimliği",
               "• Sıralama profili: seçtiğiniz kullanıcı adı, dil tercihleriniz, rütbeniz, geminizin ve gemicinizin görünüşü, bayrağınız, toplam kazandığınız altın ve elmas, günlük seriniz ve hesabı hangi platformda açtığınız",
               "• Puanlar: çözdüğünüz her kelime için kelimenin kimliği, oyun modu ve çözme süresi; sıralama puanı bunlardan sunucuda hesaplanır",
               "• Bulut yedeği: cihazdaki oyun ilerlemenizin ve tercihlerinizin bir kopyası ile kelime başına tekrar geçmişiniz; başka bir cihazda aynı hesapla giriş yaptığınızda ilerlemenizi geri yükleyebilmek için",
               "• Satın alma kayıtları: elmas paketi satın aldığınızda işlem kimliği, ürün ve tarih (bkz. \"Satın almalar\")",
-              "• Düello: oynadığınız düellolar ve bulmacaları, düelloda bulduğunuz kelimeler ve bulma süreleri, kupanız, liginiz ve günlük düello haklarınız",
+              "• Düello: oynadığınız düellolar ve bulmacaları, düelloda bulduğunuz kelimeler ve bulma süreleri, kupanız, liginiz ve Kupa Kalkanı kullanımlarınız",
+              "• Haftanın Yarışı: oynadığınız yarış turları, puanları, bulduğunuz kelimeler ve kazandığınız ödüller",
               "• Bildirim adresi: Düello davetlerini size iletebilmek için cihazınızın bildirim adresi (push token), cihaz türü (iOS/Android) ve arayüz diliniz; Ayarlar'dan \"Düello davetleri\"ni kapattığınızda ya da çıkış yaptığınızda silinir",
               "• Şikâyet ve engellemeler: şikâyet ettiğiniz ya da engellediğiniz oyuncu, sebep ve tarih; yalnızca kötüye kullanımı incelemek ve engeli uygulamak için",
               "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, kupanızı ve liginizi, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür; Düello rakibiniz ayrıca o düellodaki puanınızı görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
@@ -73,13 +74,6 @@
             ]
           },
           {
-            "heading": "Çökme raporları",
-            "body": [
-              "Uygulama beklenmedik şekilde kapanırsa, hatayı düzeltebilmek için teknik bir rapor gönderilir: hata mesajı ve yığın izi, uygulama sürümü, cihaz modeli ve işletim sistemi sürümü.",
-              "Rapor oyun içeriğinizi, kelimelerinizi veya kişisel bilgilerinizi içermez; IP adresi saklanmaz. Raporlar Sentry altyapısında tutulur ve 90 gün sonra silinir."
-            ]
-          },
-          {
             "heading": "Kullanım istatistikleri",
             "body": [
               "Oyunu geliştirebilmek için anonim kullanım verisi toplarız: uygulamanın açılması, hangi modun oynandığı, seviye bitişleri, reklam gösterimleri ve satın alınan ürün türü. Android’de uygulamanın hangi kanaldan kurulduğu da (örneğin bir Instagram reklamı ya da mağaza araması) Google Play’in kurulum bilgisinden okunup eklenir. Her olayla birlikte uygulama sürümü, cihaz modeli, işletim sistemi, dil ayarları ve cihaz için rastgele üretilmiş bir kimlik gönderilir.",
@@ -102,7 +96,7 @@
           {
             "heading": "Haklarınız",
             "body": [
-              "KVKK ve GDPR kapsamında hakkınızda hangi verilerin tutulduğunu öğrenme, düzeltilmesini ya da silinmesini isteme haklarınız var. Hesabınızı uygulamanın içinden kendiniz silebilirsiniz (bkz. \"Hesabınızı silme\"); diğer talepleriniz, reklam kimliğinizle ilişkili sorularınız veya çökme raporlarınızın silinmesi için bize yazabilirsiniz.",
+              "KVKK ve GDPR kapsamında hakkınızda hangi verilerin tutulduğunu öğrenme, düzeltilmesini ya da silinmesini isteme haklarınız var. Hesabınızı uygulamanın içinden kendiniz silebilirsiniz (bkz. \"Hesabınızı silme\"); diğer talepleriniz, reklam kimliğinizle ilişkili sorularınız için bize yazabilirsiniz.",
               "ABD’de ikamet ediyorsanız: kişisel bilgilerinizi satmıyor ve para karşılığı paylaşmıyoruz. Kaliforniya (CCPA/CPRA) ile benzer eyalet yasaları kapsamında, kişiselleştirilmiş reklam için verinizin paylaşılmasından çıkma (opt-out), bilgi talep etme ve silinmesini isteme haklarınız var. Çıkmanın en hızlı yolu “Ayarlar → Reklam gizliliği seçenekleri”; ayrıca bize de yazabilirsiniz. Bu hakları kullandığınız için size farklı davranmayız — oyunun tamamı aynı biçimde açık kalır."
             ]
           },
@@ -116,7 +110,7 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 13 Ekim 2026",
+        "updated": "Son güncelleme: 17 Ekim 2026",
         "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -129,6 +123,22 @@
             "heading": "İçerik",
             "body": [
               "Uygulamadaki kelime ipuçları, tanımlar, örnek cümleler ve Türkçe karşılıklar Yelken için özgün olarak yazılmıştır. Oyun içeriği, arayüz metinleri, logo ve görseller telif hakkıyla korunur."
+            ]
+          },
+          {
+            "heading": "Haftanın Yarışı",
+            "body": [
+              "Yarışın resmî kuralları aşağıdadır; aynı metin yarış panelindeki \"Resmî kurallar\" bağlantısında da yer alır.",
+              "Düzenleyen: Yarışı Yelken’in geliştiricisi Cemre Acar düzenler ve yürütür. Apple bu yarışmanın sponsoru değildir ve hiçbir şekilde dahil değildir. Google da bu yarışmanın sponsoru değildir ve hiçbir şekilde dahil değildir.",
+              "Ücretsiz katılım: Katılım ücretsizdir; satın alma gerekmez. Satın alınan hiçbir şey yarış puanını değiştirmez. Herkesin her turda aynı tek ipucu hakkı vardır: ücretsiz bir ödüllü reklamla açılır, Premium oyuncularda reklamsız. Her turda herkese açık tek bir ipucu hakkı vardır ve ödüllü reklam izlenerek kullanılır; Premium oyuncular aynı hakkı reklamsız kullanır.",
+              "Kimler katılabilir: Katılmak için Apple veya Google ile giriş yapılmış bir Yelken hesabı gerekir. Her kişi yalnızca bir hesapla katılabilir. Uygulamadaki bilgisayar oyuncuları yarışa katılmaz ve yarış sıralamasında yer almaz.",
+              "Süre: Her yarış haftası Türkiye saatiyle (İstanbul, UTC+3) Pazartesi 00:00’da başlar ve Pazar 24:00’te biter. O hafta yarışılan oyun modu yarış panelinde gösterilir.",
+              "Puanlama: Puanları sunucumuz hesaplar. İstediğiniz kadar tur oynayabilirsiniz; her gün o günün en iyi 5 turunun puanı haftalık puanınıza eklenir. 10 saniyeden kısa süren ya da başladıktan 20 dakika sonra biten turlar 0 puan alır. Süre bonusunda molanın en fazla 60 saniyesi süreden düşülür; daha uzun bir mola bonusu azaltır. Yarış puanı genel sıralamayı etkilemez ve yarış turları altın vermez.",
+              "Eşitlik: Haftalık puanı eşit olan oyunculardan o puana daha önce ulaşan üstte sıralanır.",
+              "Ödüller: Haftanın ilk üç oyuncusu: 1. 300 altın + 15 elmas · 2. 200 altın + 10 elmas · 3. 100 altın + 5 elmas. Kürsü ödülü için haftalık puanın en az 1000 olması gerekir; bu puana ulaşmayan oyuncu ilk üçte olsa da ödül almaz. Sıradan bağımsız olarak, haftalık puan şu eşikleri geçince hedef sandıkları açılır: 300 puan: 40 altın · 1000 puan: 80 altın · 2500 puan: 120 altın + 3 elmas · 5000 puan: 200 altın + 5 elmas. Ödüller oyun içi sanal öğelerdir; nakit değeri yoktur, paraya çevrilemez ve devredilemez. Hafta bittikten sonra uygulamayı ilk açışınızda hesabınıza eklenir.",
+              "Hile: Hileli, otomatik ya da kuralları dolanarak oynandığını tespit ettiğimiz turları ve bunlarla kazanılan ödülleri geçersiz sayabilir, ilgili hesabı yarıştan çıkarabiliriz.",
+              "Değişiklikler: Yarışı, kurallarını ya da ödüllerini değiştirebilir, askıya alabilir veya sonlandırabiliriz. Değişiklikler uygulamada yayımlandığı andan itibaren geçerlidir; önceki haftalarda kazanılmış ödülleri geri almaz.",
+              "İletişim: Yarışla ilgili sorularınız için: cemreacar94@gmail.com"
             ]
           },
           {
@@ -149,7 +159,7 @@
             "heading": "Satın almalar",
             "body": [
               "• Premium tek seferlik bir satın almadır; abonelik değildir.",
-              "• Oyun içi altın ve biletler yalnızca uygulama içinde geçerlidir, gerçek para karşılığı değildir, geri ödenmez ve devredilemez.",
+              "• Elmas, uygulama içi satın alma ile de satılır; altın oynayarak kazanılır ve elmasla da alınabilir. Altın, elmas ve diğer sanal öğeler yalnızca uygulama içinde geçerlidir, gerçek para karşılığı değildir, paraya çevrilemez, geri ödenmez ve devredilemez.",
               "• Ödeme ve iade işlemleri Apple App Store veya Google Play üzerinden yürür; iade talepleri ilgili mağazanın kurallarına tabidir.",
               "• Satın almanızı yeni bir cihazda geri yüklemek için Ayarlar’daki \"Satın alımları geri yükle\" seçeneğini kullanabilirsiniz."
             ]
@@ -182,7 +192,7 @@
       },
       "deletion": {
         "title": "Yelken — Hesap Silme",
-        "updated": "Son güncelleme: 13 Ekim 2026",
+        "updated": "Son güncelleme: 17 Ekim 2026",
         "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Yelken: Kelime Oyunu & Bulmaca (“Yelken”) uygulamasındaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır. Hesap isteğe bağlıdır; giriş yapmadıysanız sunucumuzda size ait bir kayıt yoktur.",
         "sections": [
           {
@@ -206,7 +216,9 @@
               "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı ve kullanıcı kimliği",
               "• Sıralama profili: kullanıcı adı, rütbe, gemi ve gemici görünüşü, bayrak, toplam altın/elmas, seri",
               "• Puanlar ve çözülen kelime kayıtları",
-              "• Düello kayıtları: düellolar, bulunan kelimeler, kupa ve günlük haklar",
+              "• Düello kayıtları: düellolar, bulunan kelimeler, kupa ve Kupa Kalkanı kullanımları",
+              "• Haftanın Yarışı kayıtları: turlar, puanlar, ödüller ve açılan hedef sandıkları",
+              "• Şikâyet ve engelleme kayıtları: yaptığınız ve hakkınızda yapılan şikâyetler, engellemeleriniz",
               "• Bulut yedeği: oyun ilerlemesi, tercihler ve kelime tekrar geçmişi",
               "• Satın alma kayıtları: işlem kimliği, ürün, elmas miktarı ve tarih"
             ]
@@ -220,13 +232,83 @@
             ]
           }
         ]
+      },
+      "raceRules": {
+        "title": "Haftanın Yarışı — Resmî Kurallar",
+        "updated": "Son güncelleme: 17 Ekim 2026",
+        "intro": "Haftanın Yarışı, Yelken içinde her hafta düzenlenen ücretsiz bir beceri yarışmasıdır. Yarışa katılarak bu kuralları kabul etmiş olursunuz.",
+        "sections": [
+          {
+            "heading": "Düzenleyen",
+            "body": [
+              "Yarışı Yelken’in geliştiricisi Cemre Acar düzenler ve yürütür.",
+              "Apple bu yarışmanın sponsoru değildir ve hiçbir şekilde dahil değildir. Google da bu yarışmanın sponsoru değildir ve hiçbir şekilde dahil değildir."
+            ]
+          },
+          {
+            "heading": "Ücretsiz katılım",
+            "body": [
+              "Katılım ücretsizdir; satın alma gerekmez. Satın alınan hiçbir şey yarış puanını değiştirmez. Herkesin her turda aynı tek ipucu hakkı vardır: ücretsiz bir ödüllü reklamla açılır, Premium oyuncularda reklamsız.",
+              "Her turda herkese açık tek bir ipucu hakkı vardır ve ödüllü reklam izlenerek kullanılır; Premium oyuncular aynı hakkı reklamsız kullanır."
+            ]
+          },
+          {
+            "heading": "Kimler katılabilir",
+            "body": [
+              "Katılmak için Apple veya Google ile giriş yapılmış bir Yelken hesabı gerekir. Her kişi yalnızca bir hesapla katılabilir. Uygulamadaki bilgisayar oyuncuları yarışa katılmaz ve yarış sıralamasında yer almaz."
+            ]
+          },
+          {
+            "heading": "Süre",
+            "body": [
+              "Her yarış haftası Türkiye saatiyle (İstanbul, UTC+3) Pazartesi 00:00’da başlar ve Pazar 24:00’te biter. O hafta yarışılan oyun modu yarış panelinde gösterilir."
+            ]
+          },
+          {
+            "heading": "Puanlama",
+            "body": [
+              "Puanları sunucumuz hesaplar. İstediğiniz kadar tur oynayabilirsiniz; her gün o günün en iyi 5 turunun puanı haftalık puanınıza eklenir. 10 saniyeden kısa süren ya da başladıktan 20 dakika sonra biten turlar 0 puan alır. Süre bonusunda molanın en fazla 60 saniyesi süreden düşülür; daha uzun bir mola bonusu azaltır. Yarış puanı genel sıralamayı etkilemez ve yarış turları altın vermez."
+            ]
+          },
+          {
+            "heading": "Eşitlik",
+            "body": [
+              "Haftalık puanı eşit olan oyunculardan o puana daha önce ulaşan üstte sıralanır."
+            ]
+          },
+          {
+            "heading": "Ödüller",
+            "body": [
+              "Haftanın ilk üç oyuncusu: 1. 300 altın + 15 elmas · 2. 200 altın + 10 elmas · 3. 100 altın + 5 elmas. Kürsü ödülü için haftalık puanın en az 1000 olması gerekir; bu puana ulaşmayan oyuncu ilk üçte olsa da ödül almaz. Sıradan bağımsız olarak, haftalık puan şu eşikleri geçince hedef sandıkları açılır: 300 puan: 40 altın · 1000 puan: 80 altın · 2500 puan: 120 altın + 3 elmas · 5000 puan: 200 altın + 5 elmas.",
+              "Ödüller oyun içi sanal öğelerdir; nakit değeri yoktur, paraya çevrilemez ve devredilemez. Hafta bittikten sonra uygulamayı ilk açışınızda hesabınıza eklenir."
+            ]
+          },
+          {
+            "heading": "Hile",
+            "body": [
+              "Hileli, otomatik ya da kuralları dolanarak oynandığını tespit ettiğimiz turları ve bunlarla kazanılan ödülleri geçersiz sayabilir, ilgili hesabı yarıştan çıkarabiliriz."
+            ]
+          },
+          {
+            "heading": "Değişiklikler",
+            "body": [
+              "Yarışı, kurallarını ya da ödüllerini değiştirebilir, askıya alabilir veya sonlandırabiliriz. Değişiklikler uygulamada yayımlandığı andan itibaren geçerlidir; önceki haftalarda kazanılmış ödülleri geri almaz."
+            ]
+          },
+          {
+            "heading": "İletişim",
+            "body": [
+              "Yarışla ilgili sorularınız için: cemreacar94@gmail.com"
+            ]
+          }
+        ]
       }
     },
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 15 October 2026",
-        "intro": "You can play Yelken: Kelime Oyunu & Bulmaca (“Yelken”) without an account; your game progress then stays only on your device. To join the online leaderboard and back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
+        "updated": "Last updated: 17 October 2026",
+        "intro": "You can play Yelken: Kelime Oyunu & Bulmaca (“Yelken”) without an account; your game progress then stays only on your device. To join the online leaderboard, Duel and the Weekly Race and to back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
             "heading": "Without an account: data that stays on your device",
@@ -234,20 +316,21 @@
               "As long as you are not signed in, the following is stored only in the app’s own database on your device and is not sent to us:",
               "• Game progress: level, streak, gold, gems, solved words, review schedule",
               "• Preferences: theme, language, sound, haptics, notification and difficulty settings",
-              "• Purchase state and tickets bought in the in-game store",
+              "• Purchase state and items bought in the in-game store",
               "Deleting the app removes this data from your device. You can also erase it yourself at any time with \"Reset all game data\" in Settings."
             ]
           },
           {
             "heading": "If you sign in: data stored on our server",
             "body": [
-              "Signing in is optional and is used only for the online leaderboard and cloud backup. When you sign in with Apple or Google we store:",
+              "Signing in is optional. It is used only for the online leaderboard, Duel, the Weekly Race, cloud backup, verifying gem purchases and Duel notifications. When you sign in with Apple or Google we store:",
               "• Account details: the email address your sign-in provider shares with us (with Sign in with Apple this may be a private relay address), your name and profile photo link when you sign in with Google, and a user ID for your account",
               "• Leaderboard profile: the username you choose, your language settings, your rank, the look of your ship and sailor, your flag, the total gold and gems you have earned, your daily streak and the platform on which you created the account",
               "• Scores: for each word you solve, the word’s ID, the game mode and how long it took; your leaderboard score is calculated from these on the server",
               "• Cloud backup: a copy of your game progress and preferences and your per-word review history, so you can restore your progress when you sign in on another device",
               "• Purchase records: the transaction ID, product and date when you buy a gem pack (see \"Purchases\")",
-              "• Duel: the duels you play and their puzzles, the words you find in a duel and when you found them, your trophies, your league and your daily duel tickets",
+              "• Duel: the duels you play and their puzzles, the words you find in a duel and when you found them, your trophies, your league and your Trophy Shield uses",
+              "• Weekly Race: the race runs you play, their scores, the words you find and the prizes you win",
               "• Notification address: your device's push token, device type (iOS/Android) and interface language, so we can deliver duel challenges to you; deleted when you turn off \"Duel challenges\" in Settings or sign out",
               "• Reports and blocks: the player you report or block, the reason and the date; used only to review abuse and enforce the block",
               "Other players see only your username, rank, scores, trophies and league, total gold and gems, streak and the look of your ship and sailor on the leaderboard; your Duel opponent also sees your score in that duel. Your email address, name and backup are never shown to anyone.",
@@ -288,13 +371,6 @@
             ]
           },
           {
-            "heading": "Crash reports",
-            "body": [
-              "If the app closes unexpectedly, a technical report is sent so the fault can be fixed: the error message and stack trace, app version, device model and OS version.",
-              "The report contains no game content, no words you have solved and no personal information; IP addresses are not stored. Reports are held on Sentry infrastructure and deleted after 90 days."
-            ]
-          },
-          {
             "heading": "Usage statistics",
             "body": [
               "To improve the game we collect anonymous usage data: app opens, which mode is played, level completions, ad impressions and the type of product purchased. On Android, the channel the app was installed from (for example an Instagram ad or a store search) is also read from Google Play’s install information and added. Each event carries the app version, device model, OS version, language settings and a randomly generated identifier for the device.",
@@ -317,7 +393,7 @@
           {
             "heading": "Your rights",
             "body": [
-              "Under GDPR and Turkish data protection law you have the right to know what data is held about you and to ask for it to be corrected or deleted. You can delete your account yourself from inside the app (see \"Deleting your account\"); for any other request, questions about data associated with your advertising identifier, or deletion of your crash reports, write to us.",
+              "Under GDPR and Turkish data protection law you have the right to know what data is held about you and to ask for it to be corrected or deleted. You can delete your account yourself from inside the app (see \"Deleting your account\"); for any other request, or questions about data associated with your advertising identifier, write to us.",
               "If you live in the United States: we do not sell your personal information and we do not share it for money. Under the California Consumer Privacy Act (CCPA/CPRA) and comparable state laws you have the right to opt out of your data being shared for personalised advertising, to ask what is held, and to request deletion. The fastest way to opt out is “Settings → Ad privacy options”; you may also write to us. We will not treat you differently for exercising these rights — the whole game stays equally available."
             ]
           },
@@ -331,7 +407,7 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: 13 October 2026",
+        "updated": "Last updated: 17 October 2026",
         "intro": "By downloading or using Yelken: Kelime Oyunu & Bulmaca (“Yelken”) you accept these terms.",
         "sections": [
           {
@@ -344,6 +420,22 @@
             "heading": "Content",
             "body": [
               "The clues, definitions, example sentences and meanings in the app were written originally for Yelken. Game content, interface text, logo and artwork are protected by copyright."
+            ]
+          },
+          {
+            "heading": "Weekly Race",
+            "body": [
+              "The official rules of the race are below; the same text is in the race panel under \"Official rules\".",
+              "Organizer: The race is organized and run by Cemre Acar, the developer of Yelken. Apple is not a sponsor of this contest and is not involved in any way. Google is likewise not a sponsor of this contest and is not involved in any way.",
+              "Free entry: Entry is free; no purchase is necessary. Nothing you buy changes your race score. Everyone gets the same single hint per run: it is unlocked with a free rewarded ad, or without an ad for Premium players. Every run has one hint that is available to everyone and is used by watching a rewarded ad; Premium players use the same hint without an ad.",
+              "Eligibility: You need a Yelken account signed in with Apple or Google to take part. Each person may take part with one account only. Computer players in the app do not take part and do not appear on the race leaderboard.",
+              "Period: Each race week starts on Monday at 00:00 and ends on Sunday at 24:00, Turkey time (Istanbul, UTC+3). The game mode raced that week is shown in the race panel.",
+              "Scoring: Scores are calculated by our server. You can play as many runs as you like; every day the scores of your best 5 runs of that day are added to your weekly score. Runs shorter than 10 seconds, or finished more than 20 minutes after they started, score 0. For the time bonus, at most 60 seconds of pause are taken off the clock; a longer pause lowers the bonus. The race score does not affect the main leaderboard and race runs give no gold.",
+              "Ties: When two players have the same weekly score, the one who reached that score first ranks higher.",
+              "Prizes: Top three players of the week: 1. 300 gold + 15 gems · 2. 200 gold + 10 gems · 3. 100 gold + 5 gems. A podium prize requires a weekly score of at least 1000; a player below it receives no prize even when in the top three. Regardless of rank, goal chests open when your weekly score passes these thresholds: 300 points: 40 gold · 1000 points: 80 gold · 2500 points: 120 gold + 3 gems · 5000 points: 200 gold + 5 gems. Prizes are virtual in-game items; they have no cash value, cannot be exchanged for money and are non-transferable. They are added to your account the first time you open the app after the week ends.",
+              "Cheating: We may void runs we find to be cheated, automated or played in a way that gets around these rules, together with any prizes won with them, and remove the account from the race.",
+              "Changes: We may change, suspend or end the race, its rules or its prizes. Changes take effect when they are published in the app and do not take back prizes already won in earlier weeks.",
+              "Contact: Questions about the race: cemreacar94@gmail.com"
             ]
           },
           {
@@ -364,7 +456,7 @@
             "heading": "Purchases",
             "body": [
               "• Premium is a one-time purchase, not a subscription.",
-              "• In-game gold and tickets are valid only inside the app, have no cash value, are non-refundable and non-transferable.",
+              "• Gems are also sold as in-app purchases; gold is earned by playing and can also be bought with gems. Gold, gems and other virtual items are valid only inside the app, have no cash value, cannot be exchanged for money, are non-refundable and non-transferable.",
               "• Payment and refunds go through the Apple App Store or Google Play and follow that store’s rules.",
               "• To restore your purchase on a new device, use \"Restore purchases\" in Settings."
             ]
@@ -397,7 +489,7 @@
       },
       "deletion": {
         "title": "Yelken — Account Deletion",
-        "updated": "Last updated: 13 October 2026",
+        "updated": "Last updated: 17 October 2026",
         "intro": "This page explains how to delete your account and its data in Yelken: Kelime Oyunu & Bulmaca (“Yelken”), developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
         "sections": [
           {
@@ -421,7 +513,9 @@
               "• Account details: email address, name, profile photo link and user ID",
               "• Leaderboard profile: username, rank, ship and sailor appearance, flag, total gold/gems, streak",
               "• Scores and records of solved words",
-              "• Duel records: duels, words found, trophies and daily tickets",
+              "• Duel records: duels, words found, trophies and Trophy Shield uses",
+              "• Weekly Race records: runs, scores, prizes and opened goal chests",
+              "• Report and block records: reports you made or that were made about you, and your blocks",
               "• Cloud backup: game progress, preferences and word review history",
               "• Purchase records: transaction ID, product, number of gems and date"
             ]
@@ -435,13 +529,83 @@
             ]
           }
         ]
+      },
+      "raceRules": {
+        "title": "Weekly Race — Official Rules",
+        "updated": "Last updated: 17 October 2026",
+        "intro": "The Weekly Race is a free skill competition held every week inside Yelken. By taking part in the race you accept these rules.",
+        "sections": [
+          {
+            "heading": "Organizer",
+            "body": [
+              "The race is organized and run by Cemre Acar, the developer of Yelken.",
+              "Apple is not a sponsor of this contest and is not involved in any way. Google is likewise not a sponsor of this contest and is not involved in any way."
+            ]
+          },
+          {
+            "heading": "Free entry",
+            "body": [
+              "Entry is free; no purchase is necessary. Nothing you buy changes your race score. Everyone gets the same single hint per run: it is unlocked with a free rewarded ad, or without an ad for Premium players.",
+              "Every run has one hint that is available to everyone and is used by watching a rewarded ad; Premium players use the same hint without an ad."
+            ]
+          },
+          {
+            "heading": "Eligibility",
+            "body": [
+              "You need a Yelken account signed in with Apple or Google to take part. Each person may take part with one account only. Computer players in the app do not take part and do not appear on the race leaderboard."
+            ]
+          },
+          {
+            "heading": "Period",
+            "body": [
+              "Each race week starts on Monday at 00:00 and ends on Sunday at 24:00, Turkey time (Istanbul, UTC+3). The game mode raced that week is shown in the race panel."
+            ]
+          },
+          {
+            "heading": "Scoring",
+            "body": [
+              "Scores are calculated by our server. You can play as many runs as you like; every day the scores of your best 5 runs of that day are added to your weekly score. Runs shorter than 10 seconds, or finished more than 20 minutes after they started, score 0. For the time bonus, at most 60 seconds of pause are taken off the clock; a longer pause lowers the bonus. The race score does not affect the main leaderboard and race runs give no gold."
+            ]
+          },
+          {
+            "heading": "Ties",
+            "body": [
+              "When two players have the same weekly score, the one who reached that score first ranks higher."
+            ]
+          },
+          {
+            "heading": "Prizes",
+            "body": [
+              "Top three players of the week: 1. 300 gold + 15 gems · 2. 200 gold + 10 gems · 3. 100 gold + 5 gems. A podium prize requires a weekly score of at least 1000; a player below it receives no prize even when in the top three. Regardless of rank, goal chests open when your weekly score passes these thresholds: 300 points: 40 gold · 1000 points: 80 gold · 2500 points: 120 gold + 3 gems · 5000 points: 200 gold + 5 gems.",
+              "Prizes are virtual in-game items; they have no cash value, cannot be exchanged for money and are non-transferable. They are added to your account the first time you open the app after the week ends."
+            ]
+          },
+          {
+            "heading": "Cheating",
+            "body": [
+              "We may void runs we find to be cheated, automated or played in a way that gets around these rules, together with any prizes won with them, and remove the account from the race."
+            ]
+          },
+          {
+            "heading": "Changes",
+            "body": [
+              "We may change, suspend or end the race, its rules or its prizes. Changes take effect when they are published in the app and do not take back prizes already won in earlier weeks."
+            ]
+          },
+          {
+            "heading": "Contact",
+            "body": [
+              "Questions about the race: cemreacar94@gmail.com"
+            ]
+          }
+        ]
       }
     },
     "es": {
       "privacy": {
         "title": "Política de privacidad",
-        "updated": "Última actualización: 15 de octubre de 2026",
-        "intro": "Puedes jugar a Yelken: Kelime Oyunu & Bulmaca («Yelken») sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
+        "updated": "Última actualización: 17 de octubre de 2026",
+        "intro": "Puedes jugar a Yelken: Kelime Oyunu & Bulmaca («Yelken») sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea, al Duelo y a la Carrera Semanal y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
         "sections": [
           {
             "heading": "Sin cuenta: datos que se quedan en tu dispositivo",
@@ -449,20 +613,21 @@
               "Mientras no inicies sesión, lo siguiente se guarda solo en la base de datos de la aplicación en tu dispositivo y no se nos envía:",
               "• Progreso del juego: nivel, racha, oro, gemas, palabras resueltas y calendario de repaso",
               "• Preferencias: tema, idioma, sonido, vibración, notificaciones y dificultad",
-              "• Estado de compras y billetes comprados en la tienda del juego",
+              "• Estado de compras y lo que compras en la tienda del juego",
               "Al eliminar la aplicación, estos datos se borran de tu dispositivo. También puedes borrarlos tú mismo en cualquier momento con «Reiniciar todos los datos» en Ajustes."
             ]
           },
           {
             "heading": "Si inicias sesión: datos guardados en nuestro servidor",
             "body": [
-              "Iniciar sesión es opcional y solo se usa para la clasificación en línea y la copia en la nube. Cuando inicias sesión con Apple o Google guardamos:",
+              "Iniciar sesión es opcional. Solo se usa para la clasificación en línea, el Duelo, la Carrera Semanal, la copia en la nube, la verificación de las compras de gemas y las notificaciones de Duelo. Cuando inicias sesión con Apple o Google guardamos:",
               "• Datos de la cuenta: la dirección de correo que nos comparte tu proveedor de inicio de sesión (con Iniciar sesión con Apple puede ser una dirección de reenvío privada), tu nombre y el enlace a tu foto de perfil si inicias sesión con Google, y un identificador de usuario para tu cuenta",
               "• Perfil de clasificación: el nombre de usuario que elijas, tus ajustes de idioma, tu rango, el aspecto de tu barco y tu marinero, tu bandera, el total de oro y gemas que has ganado, tu racha diaria y la plataforma en la que creaste la cuenta",
               "• Puntuaciones: por cada palabra que resuelves, el identificador de la palabra, el modo de juego y el tiempo empleado; tu puntuación en la clasificación se calcula en el servidor a partir de estos datos",
               "• Copia en la nube: una copia de tu progreso y tus preferencias, y tu historial de repaso por palabra, para que puedas recuperar tu progreso al iniciar sesión en otro dispositivo",
               "• Registros de compra: el identificador de la transacción, el producto y la fecha cuando compras un paquete de gemas (ver «Compras»)",
-              "• Duelo: los duelos que juegas y sus rompecabezas, las palabras que encuentras en un duelo y cuándo las encontraste, tus trofeos, tu liga y tus billetes diarios de duelo",
+              "• Duelo: los duelos que juegas y sus rompecabezas, las palabras que encuentras en un duelo y cuándo las encontraste, tus trofeos, tu liga y tus usos del Escudo de Trofeos",
+              "• Carrera Semanal: las partidas de la carrera que juegas, sus puntuaciones, las palabras que encuentras y los premios que ganas",
               "• Dirección de notificaciones: el token de notificaciones de tu dispositivo, el tipo de dispositivo (iOS/Android) y el idioma de la interfaz, para poder avisarte de los retos de duelo; se borra cuando desactivas \"Retos de duelo\" en Ajustes o cierras sesión",
               "• Denuncias y bloqueos: el jugador al que denuncias o bloqueas, el motivo y la fecha; solo para revisar abusos y aplicar el bloqueo",
               "Los demás jugadores solo ven en la clasificación tu nombre de usuario, rango, puntuaciones, trofeos y liga, total de oro y gemas, racha y el aspecto de tu barco y tu marinero; tu rival en un duelo ve además tu puntuación en ese duelo. Tu correo, tu nombre y tu copia nunca se muestran a nadie.",
@@ -503,13 +668,6 @@
             ]
           },
           {
-            "heading": "Informes de fallos",
-            "body": [
-              "Si la aplicación se cierra inesperadamente, se envía un informe técnico para poder corregir el fallo: el mensaje de error y la traza, la versión de la aplicación, el modelo del dispositivo y la versión del sistema operativo.",
-              "El informe no contiene contenido del juego, ni palabras que hayas resuelto, ni información personal; las direcciones IP no se guardan. Los informes se alojan en la infraestructura de Sentry y se eliminan a los 90 días."
-            ]
-          },
-          {
             "heading": "Estadísticas de uso",
             "body": [
               "Para mejorar el juego recogemos datos de uso anónimos: aperturas de la aplicación, qué modo se juega, niveles completados, impresiones de anuncios y el tipo de producto comprado. En Android también se añade el canal por el que se instaló la aplicación (por ejemplo, un anuncio de Instagram o una búsqueda en la tienda), leído de la información de instalación de Google Play. Cada evento incluye la versión de la aplicación, el modelo del dispositivo, la versión del sistema operativo, los ajustes de idioma y un identificador generado al azar para el dispositivo.",
@@ -532,7 +690,7 @@
           {
             "heading": "Tus derechos",
             "body": [
-              "En virtud del RGPD y de la ley turca de protección de datos tienes derecho a saber qué datos se guardan sobre ti y a pedir que se corrijan o eliminen. Puedes eliminar tu cuenta tú mismo desde la aplicación (ver «Eliminar tu cuenta»); para cualquier otra solicitud, preguntas sobre los datos asociados a tu identificador de publicidad o la eliminación de tus informes de fallos, escríbenos.",
+              "En virtud del RGPD y de la ley turca de protección de datos tienes derecho a saber qué datos se guardan sobre ti y a pedir que se corrijan o eliminen. Puedes eliminar tu cuenta tú mismo desde la aplicación (ver «Eliminar tu cuenta»); para cualquier otra solicitud, o preguntas sobre los datos asociados a tu identificador de publicidad, escríbenos.",
               "Si vives en Estados Unidos: no vendemos tu información personal ni la compartimos a cambio de dinero. Según la Ley de Privacidad del Consumidor de California (CCPA/CPRA) y leyes estatales similares tienes derecho a oponerte a que tus datos se compartan para publicidad personalizada, a preguntar qué se guarda y a solicitar su eliminación. La forma más rápida de oponerte es «Ajustes → Privacidad de anuncios»; también puedes escribirnos. No te trataremos de forma diferente por ejercer estos derechos: todo el juego sigue igual de disponible."
             ]
           },
@@ -546,7 +704,7 @@
       },
       "terms": {
         "title": "Condiciones de uso",
-        "updated": "Última actualización: 13 de octubre de 2026",
+        "updated": "Última actualización: 17 de octubre de 2026",
         "intro": "Al descargar o usar Yelken: Kelime Oyunu & Bulmaca («Yelken») aceptas estas condiciones.",
         "sections": [
           {
@@ -559,6 +717,22 @@
             "heading": "Contenido",
             "body": [
               "Las pistas, definiciones, frases de ejemplo y significados de la aplicación se escribieron originalmente para Yelken. El contenido del juego, los textos de la interfaz, el logotipo y las ilustraciones están protegidos por derechos de autor."
+            ]
+          },
+          {
+            "heading": "Carrera Semanal",
+            "body": [
+              "Las reglas oficiales de la carrera están a continuación; el mismo texto está en el panel de la carrera, en «Reglas oficiales».",
+              "Organizador: La carrera la organiza y gestiona Cemre Acar, el desarrollador de Yelken. Apple no patrocina este concurso y no participa en él de ninguna manera. Google tampoco patrocina este concurso y no participa en él de ninguna manera.",
+              "Participación gratuita: La participación es gratuita; no es necesario comprar nada. Nada de lo que compres cambia tu puntuación en la carrera. Todos tienen la misma pista por partida: se desbloquea con un anuncio con recompensa gratuito, o sin anuncio para los jugadores Premium. Cada partida tiene una pista disponible para todos que se usa viendo un anuncio con recompensa; los jugadores Premium usan la misma pista sin anuncio.",
+              "Quién puede participar: Para participar necesitas una cuenta de Yelken con sesión iniciada con Apple o Google. Cada persona puede participar con una sola cuenta. Los jugadores controlados por la aplicación no participan y no aparecen en la clasificación de la carrera.",
+              "Periodo: Cada semana de carrera empieza el lunes a las 00:00 y termina el domingo a las 24:00, hora de Turquía (Estambul, UTC+3). El modo de juego de esa semana se muestra en el panel de la carrera.",
+              "Puntuación: Las puntuaciones las calcula nuestro servidor. Puedes jugar tantas partidas como quieras; cada día la puntuación de tus 5 mejores partidas de ese día se suma a tu puntuación semanal. Las partidas de menos de 10 segundos, o terminadas más de 20 minutos después de empezar, puntúan 0. Para la bonificación de tiempo se descuentan del reloj como máximo 60 segundos de pausa; una pausa más larga reduce la bonificación. La puntuación de la carrera no afecta a la clasificación principal y sus partidas no dan oro.",
+              "Empates: Si dos jugadores tienen la misma puntuación semanal, queda por delante quien llegó antes a esa puntuación.",
+              "Premios: Los tres primeros de la semana: 1. 300 oro + 15 gemas · 2. 200 oro + 10 gemas · 3. 100 oro + 5 gemas. Para el premio del podio la puntuación semanal debe ser de al menos 1000; quien no la alcance no recibe premio aunque esté entre los tres primeros. Sea cual sea tu puesto, los cofres de objetivo se abren cuando tu puntuación semanal supera estos umbrales: 300 puntos: 40 oro · 1000 puntos: 80 oro · 2500 puntos: 120 oro + 3 gemas · 5000 puntos: 200 oro + 5 gemas. Los premios son objetos virtuales del juego; no tienen valor en efectivo, no se pueden canjear por dinero y no son transferibles. Se añaden a tu cuenta la primera vez que abras la aplicación después de que termine la semana.",
+              "Trampas: Podemos anular las partidas que detectemos como fraudulentas, automatizadas o jugadas eludiendo estas reglas, junto con los premios obtenidos con ellas, y retirar la cuenta de la carrera.",
+              "Cambios: Podemos modificar, suspender o finalizar la carrera, sus reglas o sus premios. Los cambios se aplican desde que se publican en la aplicación y no retiran los premios ya ganados en semanas anteriores.",
+              "Contacto: Preguntas sobre la carrera: cemreacar94@gmail.com"
             ]
           },
           {
@@ -579,7 +753,7 @@
             "heading": "Compras",
             "body": [
               "• Premium es una compra única, no una suscripción.",
-              "• El oro y los billetes del juego solo son válidos dentro de la aplicación, no tienen valor en efectivo, no son reembolsables ni transferibles.",
+              "• Las gemas también se venden como compras dentro de la aplicación; el oro se gana jugando y también puede comprarse con gemas. El oro, las gemas y los demás objetos virtuales solo son válidos dentro de la aplicación, no tienen valor en efectivo, no se pueden canjear por dinero y no son reembolsables ni transferibles.",
               "• El pago y los reembolsos se realizan a través de Apple App Store o Google Play y siguen las normas de esa tienda.",
               "• Para restaurar tu compra en un dispositivo nuevo, usa «Restaurar compras» en Ajustes."
             ]
@@ -612,7 +786,7 @@
       },
       "deletion": {
         "title": "Yelken — Eliminación de la cuenta",
-        "updated": "Última actualización: 13 de octubre de 2026",
+        "updated": "Última actualización: 17 de octubre de 2026",
         "intro": "Esta página explica cómo eliminar tu cuenta y sus datos en Yelken: Kelime Oyunu & Bulmaca («Yelken»), desarrollada por Cemre Acar. La cuenta es opcional; si nunca iniciaste sesión, no guardamos ningún registro sobre ti en nuestro servidor.",
         "sections": [
           {
@@ -636,7 +810,9 @@
               "• Datos de la cuenta: dirección de correo, nombre, enlace a la foto de perfil e identificador de usuario",
               "• Perfil de clasificación: nombre de usuario, rango, aspecto del barco y del marinero, bandera, total de oro y gemas, racha",
               "• Puntuaciones y registros de palabras resueltas",
-              "• Registros de duelos: duelos, palabras encontradas, trofeos y billetes diarios",
+              "• Registros de duelos: duelos, palabras encontradas, trofeos y usos del Escudo de Trofeos",
+              "• Registros de la Carrera Semanal: partidas, puntuaciones, premios y cofres de meta abiertos",
+              "• Registros de denuncias y bloqueos: denuncias que hiciste o que se hicieron sobre ti, y tus bloqueos",
               "• Copia en la nube: progreso del juego, preferencias e historial de repaso de palabras",
               "• Registros de compra: identificador de la transacción, producto, número de gemas y fecha"
             ]
@@ -647,6 +823,76 @@
               "• Tu progreso en el dispositivo está en tu teléfono, no en nuestro servidor; puedes borrarlo desinstalando la aplicación o con Ajustes → «Reiniciar todos los datos».",
               "• Los registros de Premium y de otras compras se quedan en tu cuenta de la tienda de Apple o Google; siguen las normas de la propia tienda y no podemos eliminarlos.",
               "Tras la eliminación no se guarda ningún dato adicional en nuestro servidor."
+            ]
+          }
+        ]
+      },
+      "raceRules": {
+        "title": "Carrera Semanal — Reglas oficiales",
+        "updated": "Última actualización: 17 de octubre de 2026",
+        "intro": "La Carrera Semanal es una competición de habilidad gratuita que se celebra cada semana dentro de Yelken. Al participar en la carrera aceptas estas reglas.",
+        "sections": [
+          {
+            "heading": "Organizador",
+            "body": [
+              "La carrera la organiza y gestiona Cemre Acar, el desarrollador de Yelken.",
+              "Apple no patrocina este concurso y no participa en él de ninguna manera. Google tampoco patrocina este concurso y no participa en él de ninguna manera."
+            ]
+          },
+          {
+            "heading": "Participación gratuita",
+            "body": [
+              "La participación es gratuita; no es necesario comprar nada. Nada de lo que compres cambia tu puntuación en la carrera. Todos tienen la misma pista por partida: se desbloquea con un anuncio con recompensa gratuito, o sin anuncio para los jugadores Premium.",
+              "Cada partida tiene una pista disponible para todos que se usa viendo un anuncio con recompensa; los jugadores Premium usan la misma pista sin anuncio."
+            ]
+          },
+          {
+            "heading": "Quién puede participar",
+            "body": [
+              "Para participar necesitas una cuenta de Yelken con sesión iniciada con Apple o Google. Cada persona puede participar con una sola cuenta. Los jugadores controlados por la aplicación no participan y no aparecen en la clasificación de la carrera."
+            ]
+          },
+          {
+            "heading": "Periodo",
+            "body": [
+              "Cada semana de carrera empieza el lunes a las 00:00 y termina el domingo a las 24:00, hora de Turquía (Estambul, UTC+3). El modo de juego de esa semana se muestra en el panel de la carrera."
+            ]
+          },
+          {
+            "heading": "Puntuación",
+            "body": [
+              "Las puntuaciones las calcula nuestro servidor. Puedes jugar tantas partidas como quieras; cada día la puntuación de tus 5 mejores partidas de ese día se suma a tu puntuación semanal. Las partidas de menos de 10 segundos, o terminadas más de 20 minutos después de empezar, puntúan 0. Para la bonificación de tiempo se descuentan del reloj como máximo 60 segundos de pausa; una pausa más larga reduce la bonificación. La puntuación de la carrera no afecta a la clasificación principal y sus partidas no dan oro."
+            ]
+          },
+          {
+            "heading": "Empates",
+            "body": [
+              "Si dos jugadores tienen la misma puntuación semanal, queda por delante quien llegó antes a esa puntuación."
+            ]
+          },
+          {
+            "heading": "Premios",
+            "body": [
+              "Los tres primeros de la semana: 1. 300 oro + 15 gemas · 2. 200 oro + 10 gemas · 3. 100 oro + 5 gemas. Para el premio del podio la puntuación semanal debe ser de al menos 1000; quien no la alcance no recibe premio aunque esté entre los tres primeros. Sea cual sea tu puesto, los cofres de objetivo se abren cuando tu puntuación semanal supera estos umbrales: 300 puntos: 40 oro · 1000 puntos: 80 oro · 2500 puntos: 120 oro + 3 gemas · 5000 puntos: 200 oro + 5 gemas.",
+              "Los premios son objetos virtuales del juego; no tienen valor en efectivo, no se pueden canjear por dinero y no son transferibles. Se añaden a tu cuenta la primera vez que abras la aplicación después de que termine la semana."
+            ]
+          },
+          {
+            "heading": "Trampas",
+            "body": [
+              "Podemos anular las partidas que detectemos como fraudulentas, automatizadas o jugadas eludiendo estas reglas, junto con los premios obtenidos con ellas, y retirar la cuenta de la carrera."
+            ]
+          },
+          {
+            "heading": "Cambios",
+            "body": [
+              "Podemos modificar, suspender o finalizar la carrera, sus reglas o sus premios. Los cambios se aplican desde que se publican en la aplicación y no retiran los premios ya ganados en semanas anteriores."
+            ]
+          },
+          {
+            "heading": "Contacto",
+            "body": [
+              "Preguntas sobre la carrera: cemreacar94@gmail.com"
             ]
           }
         ]
