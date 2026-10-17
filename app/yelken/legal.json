@@ -37,7 +37,7 @@
               "• Bildirim adresi: Düello davetlerini size iletebilmek için cihazınızın bildirim adresi (push token), cihaz türü (iOS/Android) ve arayüz diliniz; Ayarlar'dan \"Düello davetleri\"ni kapattığınızda ya da çıkış yaptığınızda silinir",
               "• Şikâyet ve engellemeler: şikâyet ettiğiniz ya da engellediğiniz oyuncu, sebep ve tarih; yalnızca kötüye kullanımı incelemek ve engeli uygulamak için",
               "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, kupanızı ve liginizi, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür; Düello rakibiniz ayrıca o düellodaki puanınızı görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
-              "Bu veriler Supabase altyapısında tutulur; sunucular yurt dışında bulunabilir. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
+              "Bu veriler Supabase altyapısında tutulur; sunucular yurt dışında bulunabilir. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir. Veri işlediğimiz hizmet sağlayıcılar (Supabase, Google, Apple, Expo, PostHog) bu politikadaki korumanın aynısını ya da eşdeğerini sağlamakla yükümlüdür; verilerinizi satmayız."
             ]
           },
           {
@@ -60,7 +60,7 @@
             "body": [
               "Ücretsiz sürümde Google AdMob reklamları gösterilir. AdMob, reklam gösterebilmek için reklam kimliğinize (iOS: IDFA, Android: Advertising ID), IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişir.",
               "Android’de AdMob, bir reklam alanını doldurmak için isteği reklam ortaklarına da iletebilir: AppLovin, Unity Ads ve Meta Audience Network. Bu ortaklar reklamı sunarken yukarıdaki verilerin aynısını işler ve onay ekranındaki kararınıza uyar. Gizlilik politikaları: applovin.com/privacy, unity.com/legal/privacy-policy, facebook.com/privacy/policy",
-              "iOS’ta uygulama, izleme izni vermedikçe IDFA’ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir.",
+              "iOS’ta uygulama, izleme izni vermedikçe IDFA’ya erişmez; izin vermezseniz reklamlar kişiselleştirilmeden gösterilir, sizi takip etmeyiz ve size çerez ya da reklam onay ekranı da gösterilmez. Mevzuatı onay gerektiren bir yerdeyseniz (örneğin AB) bu durumda reklam hiç istenmez.",
               "Bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık ve ABD’nin ilgili eyaletleri) uygulama açılışta Google’ın onay ekranını gösterir ve onayınız alınmadan hiçbir reklam isteği yapılmaz. Kararınızı sonradan “Ayarlar → Reklam gizliliği seçenekleri” üzerinden değiştirebilir, verdiğiniz onayı geri çekebilirsiniz. Her yerde ayrıca reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya kişiselleştirmeyi oradan kapatabilirsiniz.",
               "Reklamları tamamen kaldırmak için uygulama içinden Premium satın alabilirsiniz.",
               "Google’ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
@@ -77,7 +77,7 @@
             "heading": "Kullanım istatistikleri",
             "body": [
               "Oyunu geliştirebilmek için anonim kullanım verisi toplarız: uygulamanın açılması, hangi modun oynandığı, seviye bitişleri, reklam gösterimleri ve satın alınan ürün türü. Android’de uygulamanın hangi kanaldan kurulduğu da (örneğin bir Instagram reklamı ya da mağaza araması) Google Play’in kurulum bilgisinden okunup eklenir. Her olayla birlikte uygulama sürümü, cihaz modeli, işletim sistemi, dil ayarları ve cihaz için rastgele üretilmiş bir kimlik gönderilir.",
-              "Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; çözdüğünüz kelimeler ve cevaplar gönderilmez, konumunuz çözümlenmez. Veri PostHog’un Avrupa Birliği’ndeki altyapısında tutulur. iOS’ta ve Avrupa Birliği, Avrupa Ekonomik Alanı, Birleşik Krallık ya da İsviçre’deki Android cihazlarda uygulama bunu önce size sorar ve yalnızca onay verirseniz gönderir; onay yokken hiçbir olay gönderilmez. Başka bölgelerdeki Android cihazlarda kullanım istatistikleri varsayılan olarak açıktır. Kararınızı her durumda Ayarlar → Kullanım istatistikleri anahtarıyla istediğiniz an değiştirebilirsiniz; kapalıyken hiçbir olay gönderilmez."
+              "Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; çözdüğünüz kelimeler ve cevaplar gönderilmez, konumunuz çözümlenmez. Veri PostHog’un Avrupa Birliği’ndeki altyapısında tutulur ve en fazla bir yıl saklanır. iOS’ta izleme iznini vermediyseniz bu soru sorulmaz ve kullanım istatistikleri kapalı kalır. iOS’ta ve Avrupa Birliği, Avrupa Ekonomik Alanı, Birleşik Krallık ya da İsviçre’deki Android cihazlarda uygulama bunu önce size sorar ve yalnızca onay verirseniz gönderir; onay yokken hiçbir olay gönderilmez. Başka bölgelerdeki Android cihazlarda kullanım istatistikleri varsayılan olarak açıktır. Kararınızı her durumda Ayarlar → Kullanım istatistikleri anahtarıyla istediğiniz an değiştirebilirsiniz; kapalıyken hiçbir olay gönderilmez."
             ]
           },
           {
@@ -130,7 +130,7 @@
             "body": [
               "Yarışın resmî kuralları aşağıdadır; aynı metin yarış panelindeki \"Resmî kurallar\" bağlantısında da yer alır.",
               "Düzenleyen: Yarışı Yelken’in geliştiricisi Cemre Acar düzenler ve yürütür. Apple bu yarışmanın sponsoru değildir ve hiçbir şekilde dahil değildir. Google da bu yarışmanın sponsoru değildir ve hiçbir şekilde dahil değildir.",
-              "Ücretsiz katılım: Katılım ücretsizdir; satın alma gerekmez. Satın alınan hiçbir şey yarış puanını değiştirmez. Herkesin her turda aynı tek ipucu hakkı vardır: ücretsiz bir ödüllü reklamla açılır, Premium oyuncularda reklamsız. Her turda herkese açık tek bir ipucu hakkı vardır ve ödüllü reklam izlenerek kullanılır; Premium oyuncular aynı hakkı reklamsız kullanır.",
+              "Ücretsiz katılım: Katılım ücretsizdir; satın alma gerekmez. Satın alınan hiçbir şey yarış puanını değiştirmez. Herkesin her turda aynı tek ipucu hakkı vardır: ücretsiz bir ödüllü reklamla açılır; Premium oyuncularda ve reklam gösterilemeyen durumlarda (örneğin reklam onayı verilmediğinde) reklamsız.",
               "Kimler katılabilir: Katılmak için Apple veya Google ile giriş yapılmış bir Yelken hesabı gerekir. Her kişi yalnızca bir hesapla katılabilir. Uygulamadaki bilgisayar oyuncuları yarışa katılmaz ve yarış sıralamasında yer almaz.",
               "Süre: Her yarış haftası Türkiye saatiyle (İstanbul, UTC+3) Pazartesi 00:00’da başlar ve Pazar 24:00’te biter. O hafta yarışılan oyun modu yarış panelinde gösterilir.",
               "Puanlama: Puanları sunucumuz hesaplar. İstediğiniz kadar tur oynayabilirsiniz; her gün o günün en iyi 5 turunun puanı haftalık puanınıza eklenir. 10 saniyeden kısa süren ya da başladıktan 20 dakika sonra biten turlar 0 puan alır. Süre bonusu yalnızca bütün kelimeler bulunduğunda ve tur kelime başına en az 4 saniye sürdüğünde verilir; molanın en fazla 60 saniyesi süreden düşülür, daha uzun bir mola bonusu azaltır. Serbest Sefer haftasında bir turda en fazla 20 kelime sayılır. O turun bulmacasında olamayacak kelimeler gönderen turlar 0 puan alır. Yarış puanı genel sıralamayı etkilemez ve yarış turları altın vermez.",
@@ -248,8 +248,7 @@
           {
             "heading": "Ücretsiz katılım",
             "body": [
-              "Katılım ücretsizdir; satın alma gerekmez. Satın alınan hiçbir şey yarış puanını değiştirmez. Herkesin her turda aynı tek ipucu hakkı vardır: ücretsiz bir ödüllü reklamla açılır, Premium oyuncularda reklamsız.",
-              "Her turda herkese açık tek bir ipucu hakkı vardır ve ödüllü reklam izlenerek kullanılır; Premium oyuncular aynı hakkı reklamsız kullanır."
+              "Katılım ücretsizdir; satın alma gerekmez. Satın alınan hiçbir şey yarış puanını değiştirmez. Herkesin her turda aynı tek ipucu hakkı vardır: ücretsiz bir ödüllü reklamla açılır; Premium oyuncularda ve reklam gösterilemeyen durumlarda (örneğin reklam onayı verilmediğinde) reklamsız."
             ]
           },
           {
@@ -334,7 +333,7 @@
               "• Notification address: your device's push token, device type (iOS/Android) and interface language, so we can deliver duel challenges to you; deleted when you turn off \"Duel challenges\" in Settings or sign out",
               "• Reports and blocks: the player you report or block, the reason and the date; used only to review abuse and enforce the block",
               "Other players see only your username, rank, scores, trophies and league, total gold and gems, streak and the look of your ship and sailor on the leaderboard; your Duel opponent also sees your score in that duel. Your email address, name and backup are never shown to anyone.",
-              "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account."
+              "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account. The service providers we use to process data (Supabase, Google, Apple, Expo, PostHog) are required to provide the same or equal protection as this policy; we do not sell your data."
             ]
           },
           {
@@ -357,7 +356,7 @@
             "body": [
               "The free version shows Google AdMob ads. To serve them, AdMob accesses your advertising identifier (iOS: IDFA, Android: Advertising ID), IP address, approximate location at country/city level, device and OS information, and ad interactions.",
               "On Android, AdMob may also pass an ad request to its ad partners to fill a slot: AppLovin, Unity Ads and Meta Audience Network. When they serve the ad they process the same data as above and follow your choice on the consent screen. Their privacy policies: applovin.com/privacy, unity.com/legal/privacy-policy, facebook.com/privacy/policy",
-              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation.",
+              "On iOS the app does not access the IDFA unless you grant tracking permission; if you decline, ads are served without personalisation, we do not track you and no cookie or ad consent screen is shown to you. If you are somewhere whose law requires consent (for example the EU), no ads are requested at all in that case.",
               "Where the law of your location requires it (the European Economic Area, the United Kingdom and the applicable US states) the app shows Google’s consent screen at startup, and no ad is requested until you have answered it. You can change your decision, or withdraw consent, at any time from “Settings → Ad privacy options”. Everywhere else you can still reset your advertising identifier or turn off personalisation in your device settings.",
               "To remove ads entirely you can buy Premium from inside the app.",
               "How Google handles this data: policies.google.com/technologies/partner-sites"
@@ -374,7 +373,7 @@
             "heading": "Usage statistics",
             "body": [
               "To improve the game we collect anonymous usage data: app opens, which mode is played, level completions, ad impressions and the type of product purchased. On Android, the channel the app was installed from (for example an Instagram ad or a store search) is also read from Google Play’s install information and added. Each event carries the app version, device model, OS version, language settings and a randomly generated identifier for the device.",
-              "This data is not linked to your account, name or email address; the words and answers you solve are not sent and your location is not resolved. The data is held on PostHog infrastructure in the European Union. On iOS, and on Android devices in the European Union, the European Economic Area, the United Kingdom or Switzerland, the app asks you first and sends it only if you agree; without your consent, no events are sent. On Android devices in other regions, usage statistics are on by default. In every case you can change your choice at any time with Settings → Usage statistics; while it is off, no events are sent."
+              "This data is not linked to your account, name or email address; the words and answers you solve are not sent and your location is not resolved. The data is held on PostHog infrastructure in the European Union and kept for at most one year. On iOS, if you did not allow tracking, you are not asked and usage statistics stay off. On iOS, and on Android devices in the European Union, the European Economic Area, the United Kingdom or Switzerland, the app asks you first and sends it only if you agree; without your consent, no events are sent. On Android devices in other regions, usage statistics are on by default. In every case you can change your choice at any time with Settings → Usage statistics; while it is off, no events are sent."
             ]
           },
           {
@@ -427,7 +426,7 @@
             "body": [
               "The official rules of the race are below; the same text is in the race panel under \"Official rules\".",
               "Organizer: The race is organized and run by Cemre Acar, the developer of Yelken. Apple is not a sponsor of this contest and is not involved in any way. Google is likewise not a sponsor of this contest and is not involved in any way.",
-              "Free entry: Entry is free; no purchase is necessary. Nothing you buy changes your race score. Everyone gets the same single hint per run: it is unlocked with a free rewarded ad, or without an ad for Premium players. Every run has one hint that is available to everyone and is used by watching a rewarded ad; Premium players use the same hint without an ad.",
+              "Free entry: Entry is free; no purchase is necessary. Nothing you buy changes your race score. Everyone gets the same single hint per run: it is unlocked with a free rewarded ad, or without an ad for Premium players and whenever ads cannot be shown (for example without ad consent).",
               "Eligibility: You need a Yelken account signed in with Apple or Google to take part. Each person may take part with one account only. Computer players in the app do not take part and do not appear on the race leaderboard.",
               "Period: Each race week starts on Monday at 00:00 and ends on Sunday at 24:00, Turkey time (Istanbul, UTC+3). The game mode raced that week is shown in the race panel.",
               "Scoring: Scores are calculated by our server. You can play as many runs as you like; every day the scores of your best 5 runs of that day are added to your weekly score. Runs shorter than 10 seconds, or finished more than 20 minutes after they started, score 0. The time bonus is given only when all words are found and the run lasted at least 4 seconds per word; at most 60 seconds of pause are taken off the clock, and a longer pause lowers the bonus. In a Free Voyage week at most 20 words count per run. Runs that submit words that cannot be in that run’s puzzle score 0. The race score does not affect the main leaderboard and race runs give no gold.",
@@ -545,8 +544,7 @@
           {
             "heading": "Free entry",
             "body": [
-              "Entry is free; no purchase is necessary. Nothing you buy changes your race score. Everyone gets the same single hint per run: it is unlocked with a free rewarded ad, or without an ad for Premium players.",
-              "Every run has one hint that is available to everyone and is used by watching a rewarded ad; Premium players use the same hint without an ad."
+              "Entry is free; no purchase is necessary. Nothing you buy changes your race score. Everyone gets the same single hint per run: it is unlocked with a free rewarded ad, or without an ad for Premium players and whenever ads cannot be shown (for example without ad consent)."
             ]
           },
           {
@@ -631,7 +629,7 @@
               "• Dirección de notificaciones: el token de notificaciones de tu dispositivo, el tipo de dispositivo (iOS/Android) y el idioma de la interfaz, para poder avisarte de los retos de duelo; se borra cuando desactivas \"Retos de duelo\" en Ajustes o cierras sesión",
               "• Denuncias y bloqueos: el jugador al que denuncias o bloqueas, el motivo y la fecha; solo para revisar abusos y aplicar el bloqueo",
               "Los demás jugadores solo ven en la clasificación tu nombre de usuario, rango, puntuaciones, trofeos y liga, total de oro y gemas, racha y el aspecto de tu barco y tu marinero; tu rival en un duelo ve además tu puntuación en ese duelo. Tu correo, tu nombre y tu copia nunca se muestran a nadie.",
-              "Estos datos se alojan en la infraestructura de Supabase; los servidores pueden estar fuera de tu país. Se conservan mientras exista tu cuenta y se eliminan cuando la eliminas."
+              "Estos datos se alojan en la infraestructura de Supabase; los servidores pueden estar fuera de tu país. Se conservan mientras exista tu cuenta y se eliminan cuando la eliminas. Los proveedores con los que tratamos datos (Supabase, Google, Apple, Expo, PostHog) están obligados a ofrecer la misma protección que esta política o una equivalente; no vendemos tus datos."
             ]
           },
           {
@@ -654,7 +652,7 @@
             "body": [
               "La versión gratuita muestra anuncios de Google AdMob. Para servirlos, AdMob accede a tu identificador de publicidad (iOS: IDFA, Android: ID de publicidad), dirección IP, ubicación aproximada a nivel de país o ciudad, información del dispositivo y del sistema operativo, e interacciones con los anuncios.",
               "En Android, AdMob también puede enviar la solicitud de anuncio a sus socios publicitarios para llenar un espacio: AppLovin, Unity Ads y Meta Audience Network. Al servir el anuncio tratan los mismos datos que se indican arriba y respetan tu decisión en la pantalla de consentimiento. Sus políticas de privacidad: applovin.com/privacy, unity.com/legal/privacy-policy, facebook.com/privacy/policy",
-              "En iOS la aplicación no accede al IDFA salvo que concedas el permiso de rastreo; si lo rechazas, los anuncios se muestran sin personalización.",
+              "En iOS la aplicación no accede al IDFA salvo que concedas el permiso de rastreo; si lo rechazas, los anuncios se muestran sin personalización, no te rastreamos y no se te muestra ninguna pantalla de consentimiento de cookies o anuncios. Si estás en un lugar cuya ley exige consentimiento (por ejemplo, la UE), en ese caso no se solicita ningún anuncio.",
               "Donde la ley de tu ubicación lo exige (el Espacio Económico Europeo, el Reino Unido y los estados de EE. UU. aplicables), la aplicación muestra al inicio la pantalla de consentimiento de Google y no se solicita ningún anuncio hasta que respondas. Puedes cambiar tu decisión o retirar el consentimiento en cualquier momento desde «Ajustes → Privacidad de anuncios». En cualquier otro lugar puedes restablecer tu identificador de publicidad o desactivar la personalización en los ajustes de tu dispositivo.",
               "Para quitar los anuncios por completo puedes comprar Premium desde la aplicación.",
               "Cómo trata Google estos datos: policies.google.com/technologies/partner-sites"
@@ -671,7 +669,7 @@
             "heading": "Estadísticas de uso",
             "body": [
               "Para mejorar el juego recogemos datos de uso anónimos: aperturas de la aplicación, qué modo se juega, niveles completados, impresiones de anuncios y el tipo de producto comprado. En Android también se añade el canal por el que se instaló la aplicación (por ejemplo, un anuncio de Instagram o una búsqueda en la tienda), leído de la información de instalación de Google Play. Cada evento incluye la versión de la aplicación, el modelo del dispositivo, la versión del sistema operativo, los ajustes de idioma y un identificador generado al azar para el dispositivo.",
-              "Estos datos no se vinculan a tu cuenta, tu nombre ni tu correo; las palabras y respuestas que resuelves no se envían y tu ubicación no se determina. Los datos se alojan en la infraestructura de PostHog en la Unión Europea. En iOS, y en dispositivos Android de la Unión Europea, el Espacio Económico Europeo, el Reino Unido o Suiza, la aplicación te lo pregunta primero y solo los envía si aceptas; sin tu consentimiento no se envía ningún evento. En dispositivos Android de otras regiones, las estadísticas de uso están activadas por defecto. En todos los casos puedes cambiar tu decisión cuando quieras en Ajustes → Estadísticas de uso; mientras estén desactivadas no se envía ningún evento."
+              "Estos datos no se vinculan a tu cuenta, tu nombre ni tu correo; las palabras y respuestas que resuelves no se envían y tu ubicación no se determina. Los datos se alojan en la infraestructura de PostHog en la Unión Europea y se conservan como máximo un año. En iOS, si no permitiste el rastreo, no se te pregunta y las estadísticas de uso quedan desactivadas. En iOS, y en dispositivos Android de la Unión Europea, el Espacio Económico Europeo, el Reino Unido o Suiza, la aplicación te lo pregunta primero y solo los envía si aceptas; sin tu consentimiento no se envía ningún evento. En dispositivos Android de otras regiones, las estadísticas de uso están activadas por defecto. En todos los casos puedes cambiar tu decisión cuando quieras en Ajustes → Estadísticas de uso; mientras estén desactivadas no se envía ningún evento."
             ]
           },
           {
@@ -724,7 +722,7 @@
             "body": [
               "Las reglas oficiales de la carrera están a continuación; el mismo texto está en el panel de la carrera, en «Reglas oficiales».",
               "Organizador: La carrera la organiza y gestiona Cemre Acar, el desarrollador de Yelken. Apple no patrocina este concurso y no participa en él de ninguna manera. Google tampoco patrocina este concurso y no participa en él de ninguna manera.",
-              "Participación gratuita: La participación es gratuita; no es necesario comprar nada. Nada de lo que compres cambia tu puntuación en la carrera. Todos tienen la misma pista por partida: se desbloquea con un anuncio con recompensa gratuito, o sin anuncio para los jugadores Premium. Cada partida tiene una pista disponible para todos que se usa viendo un anuncio con recompensa; los jugadores Premium usan la misma pista sin anuncio.",
+              "Participación gratuita: La participación es gratuita; no es necesario comprar nada. Nada de lo que compres cambia tu puntuación en la carrera. Todos tienen la misma pista por partida: se desbloquea con un anuncio con recompensa gratuito, o sin anuncio para los jugadores Premium y cuando no se pueden mostrar anuncios (por ejemplo, sin consentimiento publicitario).",
               "Quién puede participar: Para participar necesitas una cuenta de Yelken con sesión iniciada con Apple o Google. Cada persona puede participar con una sola cuenta. Los jugadores controlados por la aplicación no participan y no aparecen en la clasificación de la carrera.",
               "Periodo: Cada semana de carrera empieza el lunes a las 00:00 y termina el domingo a las 24:00, hora de Turquía (Estambul, UTC+3). El modo de juego de esa semana se muestra en el panel de la carrera.",
               "Puntuación: Las puntuaciones las calcula nuestro servidor. Puedes jugar tantas partidas como quieras; cada día la puntuación de tus 5 mejores partidas de ese día se suma a tu puntuación semanal. Las partidas de menos de 10 segundos, o terminadas más de 20 minutos después de empezar, puntúan 0. La bonificación de tiempo solo se concede si se encuentran todas las palabras y la partida dura al menos 4 segundos por palabra; se descuentan del reloj como máximo 60 segundos de pausa y una pausa más larga reduce la bonificación. En una semana de Travesía Libre cuentan como máximo 20 palabras por partida. Las partidas que envían palabras que no pueden estar en su puzle puntúan 0. La puntuación de la carrera no afecta a la clasificación principal y sus partidas no dan oro.",
@@ -842,8 +840,7 @@
           {
             "heading": "Participación gratuita",
             "body": [
-              "La participación es gratuita; no es necesario comprar nada. Nada de lo que compres cambia tu puntuación en la carrera. Todos tienen la misma pista por partida: se desbloquea con un anuncio con recompensa gratuito, o sin anuncio para los jugadores Premium.",
-              "Cada partida tiene una pista disponible para todos que se usa viendo un anuncio con recompensa; los jugadores Premium usan la misma pista sin anuncio."
+              "La participación es gratuita; no es necesario comprar nada. Nada de lo que compres cambia tu puntuación en la carrera. Todos tienen la misma pista por partida: se desbloquea con un anuncio con recompensa gratuito, o sin anuncio para los jugadores Premium y cuando no se pueden mostrar anuncios (por ejemplo, sin consentimiento publicitario)."
             ]
           },
           {
