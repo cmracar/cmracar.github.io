@@ -48,8 +48,8 @@ const COPY = {
       page: 'Yelken sayfası',
       shots: 'Yelken ekran görüntüleri',
       tagline: 'Kelime Oyunu & Bulmaca',
-      body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve hepsini birleştiren bir sefer — beş kelime oyunu tek bir denizde. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca öğrenirsin. İsteyene sınırsız Düello ve Kupa Ligi.',
-      did: ['14.600 kelime; TDK, RAE ve Cambridge’e karşı doğrulandı', 'Sınırsız Düello ve Kupa Ligi (Supabase)', 'Tanıtım videoları ve mağaza görselleri'],
+      body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve gemini sürüp kelime kurduğun Serbest Sefer — beş kelime oyunu tek bir denizde. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca öğrenirsin. İsteyene sınırsız Düello, Kupa Ligi ve her hafta başka bir oyunda Haftanın Yarışı.',
+      did: ['16.900 kelime; TDK, RAE ve Cambridge’e karşı doğrulandı', 'Sınırsız Düello, Kupa Ligi ve Haftanın Yarışı (Supabase)', 'Tanıtım videoları ve mağaza görselleri'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Diller', value: 'Türkçe, İngilizce, İspanyolca' },
@@ -104,8 +104,8 @@ const COPY = {
       page: 'Yelken page',
       shots: 'Yelken screenshots',
       tagline: 'Word Game & Puzzles',
-      body: 'Crossword, word search, hangman, a word connect game and a voyage that ties them together — five word games on one sea. Plays offline; use the same games to learn Spanish or Turkish if you like. Unlimited Duels and a Trophy League for those who want them.',
-      did: ['14,600 words checked against TDK, RAE and Cambridge', 'Unlimited Duels and the Trophy League (Supabase)', 'Promo videos and store graphics'],
+      body: 'Crossword, word search, hangman, a word connect game and a Free Voyage where you sail your ship and build words — five word games on one sea. Plays offline; use the same games to learn Spanish or Turkish if you like. Unlimited Duels, a Trophy League and a Weekly Race in a different game every week.',
+      did: ['16,900 words checked against TDK, RAE and Cambridge', 'Unlimited Duels, the Trophy League and the Weekly Race (Supabase)', 'Promo videos and store graphics'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Languages', value: 'Turkish, English, Spanish' },
@@ -239,7 +239,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
               className="group block self-start overflow-hidden rounded-lg border border-line bg-[#1A1231] md:col-span-7"
             >
               <div className="flex aspect-[16/10] items-start justify-center gap-[2.5%] overflow-hidden px-[2.5%] pt-[14%]">
-                {[1, 4, 5].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
+                {[2, 1, 4].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
                   <Image
                     key={src}
                     src={src}

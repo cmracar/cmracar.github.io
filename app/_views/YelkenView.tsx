@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, Wifi, Languages, Grid3x3, Search, Anchor, Route, Trophy, UserX, Swords, Youtube, Instagram, Compass, BookOpen, CalendarDays, Gem } from 'lucide-react'
+import { Mail, FileText, Shield, Languages, Grid3x3, Search, Anchor, Sailboat, Flag, UserX, Swords, Youtube, Instagram, Compass, BookOpen, CalendarDays, Gem } from 'lucide-react'
 import Status, { SectionHeading } from '../components/Status'
 import { href, type Lang } from '../i18n'
 import legal from '../yelken/legal.json'
@@ -85,16 +85,28 @@ const INSTAGRAM = 'https://www.instagram.com/cmracardev'
  * 16/9 : 9/16). `fr` boşluklar düşüldükten sonra bölündüğü için yükseklik
  * birebir tutar.
  */
-const MODE_ICONS = [<Grid3x3 key="0" size={20} />, <Search key="1" size={20} />, <Compass key="2" size={20} />, <Anchor key="3" size={20} />, <Route key="4" size={20} />, <Swords key="5" size={20} />]
-const FEATURE_ICONS = [<Languages key="0" size={22} />, <BookOpen key="1" size={22} />, <Trophy key="2" size={22} />, <Wifi key="3" size={22} />, <CalendarDays key="4" size={22} />, <Gem key="5" size={22} />]
-const VIDEO_IDS = [
-  { id: 'mSz_UbkjBSA', vertical: false },
-  { id: '5_wh1xCZYvM', vertical: true, poster: '/yelken/short-fragman.jpg' },
-  { id: 'ibtNQJwaObI', vertical: true, poster: '/yelken/short-duello.jpg' },
-]
+const MODE_ICONS = [<Grid3x3 key="0" size={20} />, <Search key="1" size={20} />, <Compass key="2" size={20} />, <Anchor key="3" size={20} />, <Sailboat key="4" size={20} />, <Swords key="5" size={20} />]
+const FEATURE_ICONS = [<Languages key="0" size={22} />, <BookOpen key="1" size={22} />, <Swords key="2" size={22} />, <Flag key="3" size={22} />, <CalendarDays key="4" size={22} />, <Gem key="5" size={22} />]
+/**
+ * Videolar dile göre (1.3.20 arayüzüyle, 2026-10-18; yelken/marketing/
+ * PAYLASIM.md → "Yayındaki videolar"): yatay mağaza fragmanı, dikey
+ * fragman ve yenilikler Short'u. Dikey kapaklar videonun kendi karesinden.
+ */
+const VIDEO_IDS = {
+  tr: [
+    { id: 'QwHdVh5EIBc', vertical: false },
+    { id: '98kdGhK6aPw', vertical: true, poster: '/yelken/short-fragman-tr.jpg' },
+    { id: 'O-UaDP6euyY', vertical: true, poster: '/yelken/short-yenilikler-tr.jpg' },
+  ],
+  en: [
+    { id: 'qLEh4yEYZps', vertical: false },
+    { id: '8LwtladqYOo', vertical: true, poster: '/yelken/short-fragman-en.jpg' },
+    { id: 'DXvR2yPRhlI', vertical: true, poster: '/yelken/short-yenilikler-en.jpg' },
+  ],
+}
 
 /**
- * Metinler mağaza açıklamasından (yelken/store/listing.md, 13 Ekim 2026);
+ * Metinler mağaza açıklamasından (yelken/store/listing.md, 19 Ekim 2026);
  * mod adları uygulamanın kendi çevirilerinden. Ekranlar mağaza görselleri
  * (yelken/store/play/{tr,en}-*.png → public/yelken/screens/{tr,en}/).
  */
@@ -103,32 +115,32 @@ const COPY = {
     back: '← Projeler',
     subtitle: 'Kelime Oyunu & Bulmaca',
     lead: 'Beş kelime oyunu, tek bir deniz.',
-    body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve hepsini birleştiren bir sefer. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca kelime öğrenirsin. Arayüz dilini ve bulmaca dilini ayrı seçersin: ikisi aynıysa saf bir kelime oyunu, farklıysa çözdüğün her kelime aralıklı tekrar programına girer.',
+    body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve harf kutularını toplayıp kelime kurduğun bir deniz seferi. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca kelime öğrenirsin. Arayüz dilini ve bulmaca dilini ayrı seçersin: ikisi aynıysa saf bir kelime oyunu, farklıysa çözdüğün her kelime aralıklı tekrar programına girer.',
     modesLabel: 'Oyunlar',
     modes: [
       { name: 'Kesişen Rotalar', kind: 'kare bulmaca' },
       { name: 'Kelime Avı', kind: 'kelime avı' },
       { name: 'Rüzgâr Gülü', kind: 'kelime türetme' },
       { name: 'İskele Düğümü', kind: 'adam asmaca' },
-      { name: 'Sefer', kind: 'altı limanlık yolculuk' },
+      { name: 'Serbest Sefer', kind: 'üç dakika denizde' },
       { name: 'Düello', kind: 'gerçek rakiple' },
     ],
     videosLabel: 'Videolar',
     channel: 'YouTube kanalı',
     videos: [
-      { title: 'Fragman', meta: 'Yatay · 50 sn' },
-      { title: 'Kısa fragman', meta: 'Short · 50 sn' },
-      { title: 'Düello', meta: 'Short · 35 sn' },
+      { title: 'Fragman', meta: 'Yatay · 63 sn' },
+      { title: 'Dikey fragman', meta: 'Short · 63 sn' },
+      { title: 'Yenilikler: Haftanın Yarışı', meta: 'Short · 30 sn' },
     ],
     shotsLabel: 'Ekranlar',
-    shots: ['Rüzgâr Gülü', 'Kelime Avı', 'Kesişen Rotalar', 'İskele Düğümü', 'Düello', 'Ana ekran', 'Gemi', 'Kaptan'],
+    shots: ['Ana ekran', 'Serbest Sefer', 'Kelime Avı', 'Rüzgâr Gülü', 'Kesişen Rotalar', 'Düello', 'Gemi', 'Kaptan'],
     featuresLabel: 'Özellikler',
     features: [
       { title: 'Kelime oyna ya da dil öğren', desc: 'Türkçe, İngilizce ve İspanyolca; dokuz dil eşleşmesinin hepsi oynanır. Öğrenme modunda ipucu kelimenin Türkçe karşılığıdır ve kelime unutmadan önce yeniden karşına gelir.' },
-      { title: '14.600 kelime, sözlükle doğrulandı', desc: 'A1’den B2’ye 6.500 İngilizce kelime; 4.300 Türkçe ve 3.700 İspanyolca kelime, 2.000’den fazla atasözü ve deyim. TDK, RAE ve Cambridge’e karşı tek tek doğrulandı.' },
+      { title: '16.900 kelime, sözlükle doğrulandı', desc: 'A1’den B2’ye 7.200 İngilizce kelime; 5.100 Türkçe ve 4.500 İspanyolca kelime, 2.000’den fazla atasözü ve deyim. TDK, RAE ve Cambridge’e karşı tek tek doğrulandı.' },
       { title: 'Düello ve Kupa Ligi', desc: 'Bir rakiple aynı dört limanı oyna, Liman’dan Efsane’ye yüksel. Düello sınırsız; Kupa Kalkanı açarsan kaybetsen de kupan düşmez.' },
-      { title: 'İnternetsiz oynanır', desc: 'Bütün kelimeler cihazında; yalnızca Düello ve çevrim içi sıralama bağlantı ister. Hesap açmak gerekmez.' },
-      { title: 'Günün Seferi', desc: 'Her gün herkese aynı bulmaca. Serini sürdürdükçe ödül büyür; bir gün kaçırırsan seri koruyucu devreye girer.' },
+      { title: 'Haftanın Yarışı', desc: 'Her hafta başka bir oyunda herkes aynı bulmacaları oynar; her günün en iyi beş turu sayılır. İlk üç altın ve elmas kazanır, puan eşiklerinde hedef sandıkları açılır.' },
+      { title: 'Günün Seferi', desc: 'Her gün herkese aynı bulmaca. Serini sürdürdükçe ödül büyür; bir gün kaçırırsan seri koruyucu devreye girer. Kelimeler cihazında, internetsiz oynanır.' },
       { title: 'Premium', desc: 'Tek seferlik satın alma: reklamlar kalkar, altın harcamalarında %25 indirim, Serbest Sefer sınırsız. Abonelik yok.' },
     ],
     stackLabel: 'Teknolojiler',
@@ -138,32 +150,32 @@ const COPY = {
     back: '← Projects',
     subtitle: 'Word Game & Puzzles',
     lead: 'Five word games on one sea.',
-    body: 'Crossword, word search, hangman, a word connect game and a voyage that ties them all together. Play offline, and if you like, use the same games to learn Spanish or Turkish vocabulary. You choose the interface language and the puzzle language separately: match them for a pure word game, or mix them and every word you solve enters a spaced-repetition schedule.',
+    body: 'Crossword, word search, hangman, a word connect game and a voyage where you sail your ship, collect letter crates and build words. Play offline, and if you like, use the same games to learn Spanish or Turkish vocabulary. You choose the interface language and the puzzle language separately: match them for a pure word game, or mix them and every word you solve enters a spaced-repetition schedule.',
     modesLabel: 'Games',
     modes: [
       { name: 'Crossing Routes', kind: 'crossword' },
       { name: 'Word Hunt', kind: 'word search' },
       { name: 'Compass Rose', kind: 'word connect' },
       { name: 'Sailor’s Knot', kind: 'hangman' },
-      { name: 'Voyage', kind: 'six-port run' },
+      { name: 'Free Voyage', kind: 'three minutes at sea' },
       { name: 'Duel', kind: 'real opponents' },
     ],
     videosLabel: 'Videos',
     channel: 'YouTube channel',
     videos: [
-      { title: 'Trailer', meta: 'Landscape · 50 s' },
-      { title: 'Short trailer', meta: 'Short · 50 s' },
-      { title: 'Duel', meta: 'Short · 35 s' },
+      { title: 'Trailer', meta: 'Landscape · 63 s' },
+      { title: 'Vertical trailer', meta: 'Short · 63 s' },
+      { title: 'What’s new: Weekly Race', meta: 'Short · 30 s' },
     ],
     shotsLabel: 'Screens',
-    shots: ['Compass Rose', 'Word Hunt', 'Crossing Routes', 'Sailor’s Knot', 'Duel', 'Home', 'Ship', 'Captain'],
+    shots: ['Home', 'Free Voyage', 'Word Hunt', 'Compass Rose', 'Crossing Routes', 'Duel', 'Ship', 'Captain'],
     featuresLabel: 'Features',
     features: [
       { title: 'Play words or learn a language', desc: 'English, Turkish and Spanish; all nine language pairs work. In learning mode the clue is the meaning in your language, and each word returns before you forget it.' },
-      { title: '14,600 dictionary-checked words', desc: '6,500 English words from A1 to B2, a 4,300-word Turkish set, a 3,700-word Spanish set and more than 2,000 proverbs and idioms — checked against TDK, RAE and Cambridge.' },
+      { title: '16,900 dictionary-checked words', desc: '7,200 English words from A1 to B2, a 5,100-word Turkish set, a 4,500-word Spanish set and more than 2,000 proverbs and idioms — checked against TDK, RAE and Cambridge.' },
       { title: 'Duel and the Trophy League', desc: 'Play the same four ports as a rival and climb from Harbor to Legend. Duels are unlimited; raise a Trophy Shield and a loss costs you no trophies.' },
-      { title: 'Plays offline', desc: 'Every word lives on your device; only Duel and the online leaderboard need a connection. No account needed.' },
-      { title: 'Daily Voyage', desc: 'One puzzle a day, the same for everyone. Keep your streak and the reward grows; miss a day and a streak freeze steps in.' },
+      { title: 'Weekly Race', desc: 'Every week everyone plays the same puzzles in a different game; each day’s best five runs count. The top three win gold and gems, and goal chests open as your score grows.' },
+      { title: 'Daily Voyage', desc: 'One puzzle a day, the same for everyone. Keep your streak and the reward grows; miss a day and a streak freeze steps in. Every word is on your device, so it plays offline.' },
       { title: 'Premium', desc: 'A one-time purchase: no ads, 25% off every gold price and unlimited Free Voyage. No subscription.' },
     ],
     stackLabel: 'Stack',
@@ -200,7 +212,7 @@ export default function YelkenView({ lang }: { lang: Lang }) {
   const modes = c.modes.map((m, i) => ({ ...m, icon: MODE_ICONS[i] }))
   const features = c.features.map((f, i) => ({ ...f, icon: FEATURE_ICONS[i] }))
   const shots = c.shots.map((title, i) => ({ title, src: `/yelken/screens/${lang}/${i + 1}.jpg` }))
-  const videos = c.videos.map((x, i) => ({ ...x, ...VIDEO_IDS[i] }))
+  const videos = c.videos.map((x, i) => ({ ...x, ...VIDEO_IDS[lang][i] }))
 
   return (
     <main lang={lang}>
