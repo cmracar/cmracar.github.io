@@ -9,7 +9,7 @@ import Status, { SectionHeading } from '../components/Status'
 import { href, type Lang } from '../i18n'
 import { localizedProjects } from '../projects-data'
 import StoreBadges from '../yelken/StoreBadges'
-import { yelkenStatus } from '../yelken/stores'
+import { storeStatus, yelkenStatus } from '../yelken/stores'
 
 const CATEGORY_LABELS: Record<Lang, Record<string, string>> = {
   tr: { carbon: 'Carbon Consulting', beyondguard: 'Beyond Guard', freelance: 'Bağımsız' },
@@ -60,12 +60,11 @@ const COPY = {
     kurultay: {
       page: 'Kurultay sayfası',
       shot: 'Kurultay gece savaşı',
-      status: 'Geliştiriliyor',
       tagline: 'Bozkır Savunması',
       body: 'Gündüz obanı kur, gece Gökbörü’yü kendin yönetip akınları karşıla, her beş gecede bir beyle yüzleş. Otlak tükenince göç et; Kurultay’da boyları birleştir ve Han seçil. Haftanın Akını’nda herkes aynı haritada, eşit güçle yarışır.',
-      did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman yetenekleri, üç bey, göç ve Kurultay antları', 'Google ve Apple girişiyle haftalık sıralama'],
+      did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman yetenekleri, Kara Tuğ’un beyleri, göç ve Kurultay antları', 'Google ve Apple girişiyle haftalık sıralama'],
       facts: [
-        { label: 'Platform', value: 'Android · iOS' },
+        { label: 'Platform', value: 'iOS · Android (kapalı test)' },
         { label: 'Diller', value: 'Türkçe, İngilizce' },
         { label: 'Teknoloji', value: 'Unity 6, C#, URP' },
         { label: 'Sunucu', value: 'Supabase' },
@@ -116,12 +115,11 @@ const COPY = {
     kurultay: {
       page: 'Kurultay page',
       shot: 'Kurultay night battle',
-      status: 'In development',
       tagline: 'Steppe Defense',
       body: 'Build your camp by day, lead Gökbörü yourself against the night raids and face a chief every fifth night. When the pasture runs dry, migrate; unite the clans at the Kurultay and be named Khan. In the Raid of the Week everyone plays the same map with equal power.',
-      did: ['All 3D models, UI art and audio are generated from code', 'Hero skills, three chiefs, migration and clan oaths', 'Weekly leaderboard with Google and Apple sign-in'],
+      did: ['All 3D models, UI art and audio are generated from code', 'Hero skills, the Black Banner’s chiefs, migration and clan oaths', 'Weekly leaderboard with Google and Apple sign-in'],
       facts: [
-        { label: 'Platform', value: 'Android · iOS' },
+        { label: 'Platform', value: 'iOS · Android (closed testing)' },
         { label: 'Languages', value: 'Turkish, English' },
         { label: 'Stack', value: 'Unity 6, C#, URP' },
         { label: 'Backend', value: 'Supabase' },
@@ -171,6 +169,7 @@ function Did({ items }: { items: string[] }) {
 export default function HomeView({ lang }: { lang: Lang }) {
   const c = COPY[lang]
   const yelken = yelkenStatus(lang)
+  const kurultay = storeStatus('kurultay', lang)
   const projects = localizedProjects(lang)
   const selected = FEATURED.flatMap(name => projects.filter(p => p.key === name)).map(p => ({
     ...p,
@@ -277,7 +276,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
             >
               <div className="relative aspect-[16/10]">
                 <Image
-                  src={`/kurultay/screens/${lang}/04.jpg`}
+                  src={`/kurultay/screens/${lang}/01.jpg`}
                   alt={c.kurultay.shot}
                   fill
                   sizes="(min-width: 768px) 55vw, 100vw"
@@ -286,13 +285,14 @@ export default function HomeView({ lang }: { lang: Lang }) {
               </div>
             </Link>
             <div className="md:order-1 md:col-span-5">
-              <Status label={c.kurultay.status} live={false} />
+              <Status label={kurultay.label} live={kurultay.live} />
               <h3 className="mt-4 font-serif text-4xl text-ink">Kurultay</h3>
               <p className="mt-2 text-lg text-ink">{c.kurultay.tagline}</p>
               <p className="mt-4 leading-relaxed text-muted">{c.kurultay.body}</p>
               <Did items={c.kurultay.did} />
               <AppFacts facts={c.kurultay.facts} />
-              <div className="mt-8">
+              <div className="mt-8 flex flex-wrap items-center gap-5">
+                <StoreBadges size="sm" lang={lang} app="kurultay" />
                 <Link href={href(lang, '/kurultay')} className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-accent">
                   {c.apps.details} <ArrowRight size={15} />
                 </Link>

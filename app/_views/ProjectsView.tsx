@@ -104,9 +104,9 @@ export default function ProjectsView({ lang }: { lang: Lang }) {
                       </ul>
                     )}
                     <p className="mt-3 font-mono text-xs text-faint">{project.technologies.join(' · ')}</p>
-                    {project.stores === 'yelken' && (
+                    {(project.stores === 'yelken' || project.stores === 'kurultay') && (
                       <div className="mt-4">
-                        <StoreBadges size="sm" lang={lang} />
+                        <StoreBadges size="sm" lang={lang} app={project.stores} />
                       </div>
                     )}
                   </div>

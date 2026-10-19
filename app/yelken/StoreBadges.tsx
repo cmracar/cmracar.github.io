@@ -1,4 +1,4 @@
-import { YELKEN_STORES, type StoreKey } from './stores'
+import { APP_STORES, STORE_KEYS, type AppKey, type StoreKey } from './stores'
 import type { Lang } from '../i18n'
 
 function AppleGlyph({ size }: { size: number }) {
@@ -27,7 +27,16 @@ const GLYPH: Record<StoreKey, (props: { size: number }) => React.ReactElement> =
  * Google, rozetin değiştirilmesini ve canlı olmayan sayfaya bağlanmasını
  * yasaklıyor). Canlı değilken aynı boyda, tıklanamayan bir "Yakında" kutusu.
  */
-export default function StoreBadges({ size = 'md', lang = 'tr' }: { size?: 'md' | 'sm'; lang?: Lang }) {
+export default function StoreBadges({
+  size = 'md',
+  lang = 'tr',
+  app = 'yelken',
+}: {
+  size?: 'md' | 'sm'
+  lang?: Lang
+  app?: AppKey
+}) {
+  const appName = app === 'kurultay' ? 'Kurultay' : 'Yelken'
   const height = size === 'md' ? 44 : 36
   // Google'ın PNG'si rozetin çevresinde saydam pay taşıyor; görünen
   // yükseklik Apple rozetiyle aynı olsun diye büyütülüp pay kırpılıyor.
@@ -36,8 +45,8 @@ export default function StoreBadges({ size = 'md', lang = 'tr' }: { size?: 'md' 
 
   return (
     <div className="flex flex-wrap items-center gap-3">
-      {(Object.keys(YELKEN_STORES) as StoreKey[]).map(key => {
-        const store = YELKEN_STORES[key]
+      {STORE_KEYS.map(key => {
+        const store = APP_STORES[app][key]
         if (store.live) {
           return (
             <a
@@ -45,7 +54,7 @@ export default function StoreBadges({ size = 'md', lang = 'tr' }: { size?: 'md' 
               href={store.url}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Yelken — ${store.name}`}
+              aria-label={`${appName} — ${store.name}`}
               className="relative z-10 inline-block transition-transform hover:scale-[1.03]"
             >
               {key === 'appStore' ? (

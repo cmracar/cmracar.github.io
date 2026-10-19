@@ -1,35 +1,60 @@
 /**
- * Yelken'in mağaza sayfaları — ana sayfa, /yelken ve Projelerim buradan okur.
+ * Uygulamaların mağaza sayfaları — ana sayfa, /yelken, /kurultay ve Projelerim
+ * buradan okur.
  *
  * Uygulama bir mağazada **herkese açık** yayına girince o mağazanın `live`
  * değerini `true` yap: "Yakında" rozeti resmî, tıklanabilir rozete döner ve
  * durum etiketi güncellenir. Apple ve Google resmî rozetin yalnızca canlı
  * sayfaya bağlanmasına izin veriyor; kapalı testteyken bağlantı 404 verir.
  */
-export const YELKEN_STORES = {
-  appStore: {
-    name: 'App Store',
-    locative: 'App Store’da',
-    url: 'https://apps.apple.com/app/id6814854315',
-    live: false,
+export const APP_STORES = {
+  yelken: {
+    appStore: {
+      name: 'App Store',
+      locative: 'App Store’da',
+      url: 'https://apps.apple.com/app/id6814854315',
+      live: false,
+    },
+    googlePlay: {
+      name: 'Google Play',
+      locative: 'Google Play’de',
+      url: 'https://play.google.com/store/apps/details?id=io.github.cmracar.yelken',
+      live: true,
+    },
   },
-  googlePlay: {
-    name: 'Google Play',
-    locative: 'Google Play’de',
-    url: 'https://play.google.com/store/apps/details?id=io.github.cmracar.yelken',
-    live: true,
+  kurultay: {
+    appStore: {
+      name: 'App Store',
+      locative: 'App Store’da',
+      url: 'https://apps.apple.com/app/id6819175567',
+      live: true,
+    },
+    // Play'de kapalı testte; üretim yayınından sonra true
+    googlePlay: {
+      name: 'Google Play',
+      locative: 'Google Play’de',
+      url: 'https://play.google.com/store/apps/details?id=io.github.cmracar.kurultay',
+      live: false,
+    },
   },
 } as const
 
-export type StoreKey = keyof typeof YELKEN_STORES
+export type AppKey = keyof typeof APP_STORES
+export type StoreKey = 'appStore' | 'googlePlay'
+export const STORE_KEYS: StoreKey[] = ['appStore', 'googlePlay']
 
-export function yelkenStatus(lang: 'tr' | 'en' = 'tr'): { label: string; live: boolean } {
-  const live = (Object.keys(YELKEN_STORES) as StoreKey[]).filter(key => YELKEN_STORES[key].live)
+export function storeStatus(app: AppKey, lang: 'tr' | 'en' = 'tr'): { label: string; live: boolean } {
+  const stores = APP_STORES[app]
+  const live = STORE_KEYS.filter(key => stores[key].live)
   if (live.length === 2)
     return { label: lang === 'en' ? 'On the App Store and Google Play' : 'App Store ve Google Play’de', live: true }
   if (live.length === 1) {
-    const store = YELKEN_STORES[live[0]]
+    const store = stores[live[0]]
     return { label: lang === 'en' ? `Live on ${store.name}` : `${store.locative} yayında`, live: true }
   }
   return { label: lang === 'en' ? 'Preparing for release' : 'Yayına hazırlanıyor', live: false }
+}
+
+export function yelkenStatus(lang: 'tr' | 'en' = 'tr') {
+  return storeStatus('yelken', lang)
 }
