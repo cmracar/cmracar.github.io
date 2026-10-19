@@ -59,7 +59,7 @@ const COPY = {
     },
     kurultay: {
       page: 'Kurultay sayfası',
-      shot: 'Kurultay gece savaşı',
+      shot: 'Kurultay ekranları: ana ekran, gece savunması, göç kervanı ve Kurultay',
       tagline: 'Bozkır Savunması',
       body: 'Gündüz obanı kur, gece Gökbörü’yü kendin yönetip akınları karşıla, her beş gecede bir beyle yüzleş. Otlak tükenince göç et; Kurultay’da boyları birleştir ve Han seçil. Haftanın Akını’nda herkes aynı haritada, eşit güçle yarışır.',
       did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman yetenekleri, Kara Tuğ’un beyleri, göç ve Kurultay antları', 'Google ve Apple girişiyle haftalık sıralama'],
@@ -114,7 +114,7 @@ const COPY = {
     },
     kurultay: {
       page: 'Kurultay page',
-      shot: 'Kurultay night battle',
+      shot: 'Kurultay screens: home, night defense, migration caravan and the Kurultay',
       tagline: 'Steppe Defense',
       body: 'Build your camp by day, lead Gökbörü yourself against the night raids and face a chief every fifth night. When the pasture runs dry, migrate; unite the clans at the Kurultay and be named Khan. In the Raid of the Week everyone plays the same map with equal power.',
       did: ['All 3D models, UI art and audio are generated from code', 'Hero skills, the Black Banner’s chiefs, migration and clan oaths', 'Weekly leaderboard with Google and Apple sign-in'],
@@ -137,6 +137,9 @@ const COPY = {
     },
   },
 }
+
+// Ana sayfadaki Kurultay ekranları: ana ekran, gece, kervan, Kurultay
+const KURULTAY_SHOTS = [1, 2, 3, 4]
 
 type Fact = { label: string; value: string }
 
@@ -272,16 +275,25 @@ export default function HomeView({ lang }: { lang: Lang }) {
             <Link
               href={href(lang, '/kurultay')}
               aria-label={c.kurultay.page}
-              className="group block self-start overflow-hidden rounded-lg border border-line bg-black md:order-2 md:col-span-7"
+              className="group block self-start overflow-hidden rounded-lg border border-line bg-[#0d0b09] bg-[radial-gradient(ellipse_at_50%_35%,rgba(224,169,72,0.16),transparent_65%)] md:order-2 md:col-span-7"
             >
-              <div className="relative aspect-[16/10]">
-                <Image
-                  src={`/kurultay/screens/${lang}/01.jpg`}
-                  alt={c.kurultay.shot}
-                  fill
-                  sizes="(min-width: 768px) 55vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                />
+              {/* Oyun ekranları (public/kurultay/home/{tr,en}/N.jpg, mağaza ham görüntüleri)
+                  sağa sola kayarak alt alta; üzerine gelince araları açılır */}
+              <div className="flex flex-col px-[5%] py-[6%]">
+                {KURULTAY_SHOTS.map((n, i) => (
+                  <Image
+                    key={n}
+                    src={`/kurultay/home/${lang}/${n}.jpg`}
+                    alt={i === 0 ? c.kurultay.shot : ''}
+                    width={1400}
+                    height={644}
+                    sizes="(min-width: 768px) 45vw, 85vw"
+                    style={{ zIndex: i + 1 }}
+                    className={`relative w-[82%] rounded-md border border-white/10 shadow-2xl shadow-black/60 transition-transform duration-500 ${
+                      i > 0 ? '-mt-[9%]' : ''
+                    } ${i % 2 ? 'self-end group-hover:translate-x-[3%]' : 'self-start group-hover:-translate-x-[3%]'}`}
+                  />
+                ))}
               </div>
             </Link>
             <div className="md:order-1 md:col-span-5">
