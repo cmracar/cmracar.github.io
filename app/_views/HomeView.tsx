@@ -242,15 +242,23 @@ export default function HomeView({ lang }: { lang: Lang }) {
             >
               <div className="flex aspect-[16/10] items-start justify-center gap-[2.5%] overflow-hidden px-[2.5%] pt-[14%]">
                 {[2, 1, 4].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
-                  <Image
+                  // Dik telefon: koyu gövde, metal kenar, üstte kamera adası (Kurultay'daki çerçeveyle aynı)
+                  <div
                     key={src}
-                    src={src}
-                    alt={i === 0 ? c.yelken.shots : ''}
-                    width={1080}
-                    height={1920}
-                    sizes="(min-width: 768px) 20vw, 30vw"
-                    className={`w-[31%] shrink-0 rounded-xl border border-white/10 shadow-2xl shadow-black/50 transition-transform duration-500 group-hover:-translate-y-1.5 ${i === 1 ? '' : 'translate-y-[10%]'}`}
-                  />
+                    className={`w-[31%] shrink-0 rounded-[14px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[3.5%] shadow-2xl shadow-black/60 ring-1 ring-white/20 transition-transform duration-500 group-hover:-translate-y-1.5 sm:rounded-[22px] ${i === 1 ? '' : 'translate-y-[10%]'}`}
+                  >
+                    <div className="relative overflow-hidden rounded-[10px] bg-black sm:rounded-[16px]">
+                      <Image
+                        src={src}
+                        alt={i === 0 ? c.yelken.shots : ''}
+                        width={1080}
+                        height={1920}
+                        sizes="(min-width: 768px) 20vw, 30vw"
+                        className="block h-auto w-full"
+                      />
+                      <span className="absolute left-1/2 top-[1.6%] h-[2.2%] w-[26%] -translate-x-1/2 rounded-full bg-black" aria-hidden="true" />
+                    </div>
+                  </div>
                 ))}
               </div>
             </Link>
