@@ -281,18 +281,26 @@ export default function HomeView({ lang }: { lang: Lang }) {
                   sağa sola kayarak alt alta; üzerine gelince araları açılır */}
               <div className="flex flex-col px-[5%] py-[6%]">
                 {KURULTAY_SHOTS.map((n, i) => (
-                  <Image
+                  // Yan yatırılmış telefon: koyu gövde, metal kenar, solda kamera adası
+                  <div
                     key={n}
-                    src={`/kurultay/home/${lang}/${n}.jpg`}
-                    alt={i === 0 ? c.kurultay.shot : ''}
-                    width={1400}
-                    height={644}
-                    sizes="(min-width: 768px) 45vw, 85vw"
                     style={{ zIndex: i + 1 }}
-                    className={`relative w-[82%] rounded-md border border-white/10 shadow-2xl shadow-black/60 transition-transform duration-500 ${
-                      i > 0 ? '-mt-[9%]' : ''
+                    className={`relative w-[82%] rounded-[12px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[1.6%] shadow-2xl shadow-black/70 ring-1 ring-white/20 transition-transform duration-500 sm:rounded-[20px] ${
+                      i > 0 ? '-mt-[8%]' : ''
                     } ${i % 2 ? 'self-end group-hover:translate-x-[3%]' : 'self-start group-hover:-translate-x-[3%]'}`}
-                  />
+                  >
+                    <div className="relative overflow-hidden rounded-[8px] bg-black sm:rounded-[14px]">
+                      <Image
+                        src={`/kurultay/home/${lang}/${n}.jpg`}
+                        alt={i === 0 ? c.kurultay.shot : ''}
+                        width={1400}
+                        height={644}
+                        sizes="(min-width: 768px) 45vw, 85vw"
+                        className="block h-auto w-full"
+                      />
+                      <span className="absolute left-[1.6%] top-1/2 h-[24%] w-[2%] -translate-y-1/2 rounded-full bg-black" aria-hidden="true" />
+                    </div>
+                  </div>
                 ))}
               </div>
             </Link>
