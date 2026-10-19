@@ -245,9 +245,9 @@ export default function HomeView({ lang }: { lang: Lang }) {
                   // Dik telefon: koyu gövde, metal kenar, üstte kamera adası (Kurultay'daki çerçeveyle aynı)
                   <div
                     key={src}
-                    className={`w-[31%] shrink-0 rounded-[12px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[1.4%] shadow-2xl shadow-black/60 ring-1 ring-white/20 transition-transform duration-500 group-hover:-translate-y-1.5 sm:rounded-[20px] ${i === 1 ? '' : 'translate-y-[10%]'}`}
+                    className={`w-[31%] shrink-0 rounded-[14px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[4px] shadow-2xl shadow-black/60 ring-1 ring-white/20 transition-transform duration-500 group-hover:-translate-y-1.5 sm:rounded-[22px] sm:p-[6px] ${i === 1 ? '' : 'translate-y-[10%]'}`}
                   >
-                    <div className="relative overflow-hidden rounded-[9px] bg-black sm:rounded-[16px]">
+                    <div className="relative overflow-hidden rounded-[10px] bg-black sm:rounded-[16px]">
                       <Image
                         src={src}
                         alt={i === 0 ? c.yelken.shots : ''}
@@ -256,7 +256,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
                         sizes="(min-width: 768px) 20vw, 30vw"
                         className="block h-auto w-full"
                       />
-                      <span className="absolute left-1/2 top-[1.4%] h-[1.8%] w-[22%] -translate-x-1/2 rounded-full bg-black" aria-hidden="true" />
+                      <span className="absolute left-1/2 top-[5px] h-[5px] w-[18px] sm:top-[7px] sm:h-[7px] sm:w-[26px] -translate-x-1/2 rounded-full bg-black" aria-hidden="true" />
                     </div>
                   </div>
                 ))}
@@ -293,11 +293,11 @@ export default function HomeView({ lang }: { lang: Lang }) {
                   <div
                     key={n}
                     style={{ zIndex: i + 1 }}
-                    className={`relative w-[82%] rounded-[12px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[1.6%] shadow-2xl shadow-black/70 ring-1 ring-white/20 transition-transform duration-500 sm:rounded-[20px] ${
+                    className={`relative w-[82%] rounded-[14px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[4px] shadow-2xl shadow-black/70 ring-1 ring-white/20 transition-transform duration-500 sm:rounded-[22px] sm:p-[6px] ${
                       i > 0 ? '-mt-[8%]' : ''
                     } ${i % 2 ? 'self-end group-hover:translate-x-[3%]' : 'self-start group-hover:-translate-x-[3%]'}`}
                   >
-                    <div className="relative overflow-hidden rounded-[8px] bg-black sm:rounded-[14px]">
+                    <div className="relative overflow-hidden rounded-[10px] bg-black sm:rounded-[16px]">
                       <Image
                         src={`/kurultay/home/${lang}/${n}.jpg`}
                         alt={i === 0 ? c.kurultay.shot : ''}
@@ -306,7 +306,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
                         sizes="(min-width: 768px) 45vw, 85vw"
                         className="block h-auto w-full"
                       />
-                      <span className="absolute left-[1.6%] top-1/2 h-[24%] w-[2%] -translate-y-1/2 rounded-full bg-black" aria-hidden="true" />
+                      <span className="absolute left-[5px] top-1/2 h-[18px] w-[5px] sm:left-[7px] sm:h-[26px] sm:w-[7px] -translate-y-1/2 rounded-full bg-black" aria-hidden="true" />
                     </div>
                   </div>
                 ))}
