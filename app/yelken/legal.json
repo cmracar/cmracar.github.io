@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 17 Ekim 2026",
+        "updated": "Son güncelleme: 20 Ekim 2026",
         "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) hesap açmadan oynayabilirsiniz; bu durumda oyun ilerlemeniz yalnızca cihazınızda kalır. Çevrimiçi sıralamaya, Düello’ya ve Haftanın Yarışı’na katılmak ve ilerlemenizi buluta yedeklemek için isteğe bağlı olarak Apple veya Google ile giriş yapabilirsiniz; o zaman aşağıda sayılan veriler sunucumuzda saklanır. Hesabınızı istediğiniz an uygulamanın içinden silebilirsiniz.",
         "sections": [
           {
@@ -36,6 +36,7 @@
               "• Haftanın Yarışı: oynadığınız yarış turları, puanları, bulduğunuz kelimeler ve kazandığınız ödüller",
               "• Bildirim adresi: Düello davetlerini size iletebilmek için cihazınızın bildirim adresi (push token), cihaz türü (iOS/Android) ve arayüz diliniz; Ayarlar'dan \"Düello davetleri\"ni kapattığınızda ya da çıkış yaptığınızda silinir",
               "• Şikâyet ve engellemeler: şikâyet ettiğiniz ya da engellediğiniz oyuncu, sebep ve tarih; yalnızca kötüye kullanımı incelemek ve engeli uygulamak için",
+              "• Arkadaşlar: gönderdiğiniz ve aldığınız arkadaşlık istekleri ve arkadaş listeniz (oyuncu ve tarih); yalnızca Düello'da arkadaşınıza meydan okuyabilmeniz için. Listenizi yalnızca siz görürsünüz; isteği alan oyuncu kullanıcı adınızı görür",
               "Diğer oyuncular sıralamada yalnızca kullanıcı adınızı, rütbenizi, puanlarınızı, kupanızı ve liginizi, toplam altın/elmasınızı, serinizi ve geminizle gemicinizin görünüşünü görür; Düello rakibiniz ayrıca o düellodaki puanınızı görür. E-posta adresiniz, adınız ve yedeğiniz kimseye gösterilmez.",
               "Bu veriler Supabase altyapısında tutulur; sunucular yurt dışında bulunabilir. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir. Veri işlediğimiz hizmet sağlayıcılar (Supabase, Google, Apple, Expo, PostHog) bu politikadaki korumanın aynısını ya da eşdeğerini sağlamakla yükümlüdür; verilerinizi satmayız."
             ]
@@ -52,7 +53,7 @@
             "heading": "Bildirimler",
             "body": [
               "Günlük hatırlatmalar cihazınızda planlanır. İzin vermezseniz özellik kapalı kalır, oyunun geri kalanı normal çalışır. Bildirim içeriği cihazınızdan çıkmaz.",
-              "Giriş yaptıysanız biri size Düello'da meydan okuduğunda sunucumuz size bildirim gönderir. Bildirim, Expo (Expo Push) üzerinden Google Firebase Cloud Messaging (Android) ya da Apple Push Notification service (iOS) ile iletilir; içeriği meydan okuyan oyuncunun kullanıcı adı ve puanıdır. Bulunduğunuz yerin saatiyle 00:00–09:00 arasında gönderilmez; bu saatlerdeki bildirimler sabaha kalır. Bunun için cihazınızın saat dilimi bildirim adresiyle birlikte saklanır. Ayarlar → \"Düello bildirimleri\" ile kapatabilirsiniz."
+              "Giriş yaptıysanız biri size Düello'da meydan okuduğunda sunucumuz size bildirim gönderir. Bildirim, Expo (Expo Push) üzerinden Google Firebase Cloud Messaging (Android) ya da Apple Push Notification service (iOS) ile iletilir; içeriği meydan okuyan oyuncunun kullanıcı adı ve puanıdır. Bulunduğunuz yerin saatiyle 00:00–09:00 arasında gönderilmez; bu saatlerdeki bildirimler sabaha kalır. Bunun için cihazınızın saat dilimi bildirim adresiyle birlikte saklanır. Size arkadaşlık isteği geldiğinde ve isteğiniz kabul edildiğinde de aynı yoldan, istekteki oyuncunun kullanıcı adıyla bildirim gönderilir. Ayarlar → \"Düello bildirimleri\" ile kapatabilirsiniz."
             ]
           },
           {
@@ -110,7 +111,7 @@
       },
       "terms": {
         "title": "Kullanım Koşulları",
-        "updated": "Son güncelleme: 17 Ekim 2026",
+        "updated": "Son güncelleme: 20 Ekim 2026",
         "intro": "Yelken: Kelime Oyunu & Bulmaca’yı (“Yelken”) indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -144,7 +145,8 @@
           {
             "heading": "Düello",
             "body": [
-              "Düello asenkron oynanır: rakibiniz aynı limanları sizden önce ya da sonra oynar. Uygun bir rakip bulunamadığında sizi yapay oyuncularla eşleştirebiliriz; yapay rakip düelloda \"bilgisayar\" diye gösterilir ve sıralamalarda yer almaz."
+              "Düello asenkron oynanır: rakibiniz aynı limanları sizden önce ya da sonra oynar. Uygun bir rakip bulunamadığında sizi yapay oyuncularla eşleştirebiliriz; yapay rakip düelloda \"bilgisayar\" diye gösterilir ve sıralamalarda yer almaz.",
+              "Giriş yaptıysanız başka bir oyuncuya arkadaşlık isteği gönderebilirsiniz; karşı taraf kabul ederse Düello'daki arkadaş listenizde görünür ve oradan meydan okuyabilirsiniz. Arkadaşlık yalnızca Düello içindir: sohbet ya da mesajlaşma yoktur. İsteği reddedebilir, arkadaşlıktan istediğiniz an çıkarabilirsiniz; bir oyuncuyu engellemek arkadaşlığı ve bekleyen istekleri de siler."
             ]
           },
           {
@@ -192,7 +194,7 @@
       },
       "deletion": {
         "title": "Yelken — Hesap Silme",
-        "updated": "Son güncelleme: 17 Ekim 2026",
+        "updated": "Son güncelleme: 20 Ekim 2026",
         "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Yelken: Kelime Oyunu & Bulmaca (“Yelken”) uygulamasındaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır. Hesap isteğe bağlıdır; giriş yapmadıysanız sunucumuzda size ait bir kayıt yoktur.",
         "sections": [
           {
@@ -219,6 +221,7 @@
               "• Düello kayıtları: düellolar, bulunan kelimeler, kupa ve Kupa Kalkanı kullanımları",
               "• Haftanın Yarışı kayıtları: turlar, puanlar, ödüller ve açılan hedef sandıkları",
               "• Şikâyet ve engelleme kayıtları: yaptığınız ve hakkınızda yapılan şikâyetler, engellemeleriniz",
+              "• Arkadaşlıklar ve arkadaşlık istekleri",
               "• Bulut yedeği: oyun ilerlemesi, tercihler ve kelime tekrar geçmişi",
               "• Satın alma kayıtları: işlem kimliği, ürün, elmas miktarı ve tarih"
             ]
@@ -235,7 +238,7 @@
       },
       "raceRules": {
         "title": "Haftanın Yarışı — Resmî Kurallar",
-        "updated": "Son güncelleme: 17 Ekim 2026",
+        "updated": "Son güncelleme: 20 Ekim 2026",
         "intro": "Haftanın Yarışı, Yelken içinde her hafta düzenlenen ücretsiz bir beceri yarışmasıdır. Yarışa katılarak bu kuralları kabul etmiş olursunuz.",
         "sections": [
           {
@@ -306,7 +309,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 17 October 2026",
+        "updated": "Last updated: 20 October 2026",
         "intro": "You can play Yelken: Kelime Oyunu & Bulmaca (“Yelken”) without an account; your game progress then stays only on your device. To join the online leaderboard, Duel and the Weekly Race and to back up your progress to the cloud you can optionally sign in with Apple or Google, in which case the data listed below is stored on our server. You can delete your account at any time from inside the app.",
         "sections": [
           {
@@ -332,6 +335,7 @@
               "• Weekly Race: the race runs you play, their scores, the words you find and the prizes you win",
               "• Notification address: your device's push token, device type (iOS/Android) and interface language, so we can deliver duel challenges to you; deleted when you turn off \"Duel challenges\" in Settings or sign out",
               "• Reports and blocks: the player you report or block, the reason and the date; used only to review abuse and enforce the block",
+              "• Friends: friend requests you send and receive and your friend list (player and date); used only so you can challenge friends in Duels. Only you see your list; a player who receives your request sees your username",
               "Other players see only your username, rank, scores, trophies and league, total gold and gems, streak and the look of your ship and sailor on the leaderboard; your Duel opponent also sees your score in that duel. Your email address, name and backup are never shown to anyone.",
               "This data is held on Supabase infrastructure; the servers may be located outside your country. It is kept for as long as your account exists and is deleted when you delete your account. The service providers we use to process data (Supabase, Google, Apple, Expo, PostHog) are required to provide the same or equal protection as this policy; we do not sell your data."
             ]
@@ -348,7 +352,7 @@
             "heading": "Notifications",
             "body": [
               "Daily reminders are scheduled on your device. If you decline the permission the feature stays off and the rest of the app works normally. Notification content never leaves your device.",
-              "If you are signed in, our server sends you a notification when someone challenges you to a Duel. It is delivered through Expo (Expo Push) via Google Firebase Cloud Messaging (Android) or the Apple Push Notification service (iOS); it contains the challenger's username and score. None are sent between 00:00 and 09:00 in your local time; those are held until morning. To do this, your device's time zone is stored together with the notification address. You can turn them off in Settings → \"Duel notifications\"."
+              "If you are signed in, our server sends you a notification when someone challenges you to a Duel. It is delivered through Expo (Expo Push) via Google Firebase Cloud Messaging (Android) or the Apple Push Notification service (iOS); it contains the challenger's username and score. None are sent between 00:00 and 09:00 in your local time; those are held until morning. To do this, your device's time zone is stored together with the notification address. The same channel is used when you receive a friend request and when your request is accepted; it contains that player's username. You can turn them off in Settings → \"Duel notifications\"."
             ]
           },
           {
@@ -406,7 +410,7 @@
       },
       "terms": {
         "title": "Terms of Use",
-        "updated": "Last updated: 17 October 2026",
+        "updated": "Last updated: 20 October 2026",
         "intro": "By downloading or using Yelken: Kelime Oyunu & Bulmaca (“Yelken”) you accept these terms.",
         "sections": [
           {
@@ -440,7 +444,8 @@
           {
             "heading": "Duel",
             "body": [
-              "Duels are asynchronous: your opponent plays the same ports before or after you. When no suitable opponent is available, we may match you with computer-controlled players; a computer opponent is labeled as such in the duel and does not appear on the leaderboards."
+              "Duels are asynchronous: your opponent plays the same ports before or after you. When no suitable opponent is available, we may match you with computer-controlled players; a computer opponent is labeled as such in the duel and does not appear on the leaderboards.",
+              "If you are signed in, you can send another player a friend request; if they accept, they appear in your friend list in Duels and you can challenge them from there. Friends exist only for Duels: there is no chat or messaging. You can decline a request and remove a friend at any time; blocking a player also removes the friendship and any pending requests."
             ]
           },
           {
@@ -488,7 +493,7 @@
       },
       "deletion": {
         "title": "Yelken — Account Deletion",
-        "updated": "Last updated: 17 October 2026",
+        "updated": "Last updated: 20 October 2026",
         "intro": "This page explains how to delete your account and its data in Yelken: Kelime Oyunu & Bulmaca (“Yelken”), developed by Cemre Acar. An account is optional; if you never signed in, we hold no record about you on our server.",
         "sections": [
           {
@@ -515,6 +520,7 @@
               "• Duel records: duels, words found, trophies and Trophy Shield uses",
               "• Weekly Race records: runs, scores, prizes and opened goal chests",
               "• Report and block records: reports you made or that were made about you, and your blocks",
+              "• Friendships and friend requests",
               "• Cloud backup: game progress, preferences and word review history",
               "• Purchase records: transaction ID, product, number of gems and date"
             ]
@@ -531,7 +537,7 @@
       },
       "raceRules": {
         "title": "Weekly Race — Official Rules",
-        "updated": "Last updated: 17 October 2026",
+        "updated": "Last updated: 20 October 2026",
         "intro": "The Weekly Race is a free skill competition held every week inside Yelken. By taking part in the race you accept these rules.",
         "sections": [
           {
@@ -602,7 +608,7 @@
     "es": {
       "privacy": {
         "title": "Política de privacidad",
-        "updated": "Última actualización: 17 de octubre de 2026",
+        "updated": "Última actualización: 20 de octubre de 2026",
         "intro": "Puedes jugar a Yelken: Kelime Oyunu & Bulmaca («Yelken») sin cuenta; en ese caso tu progreso se queda solo en tu dispositivo. Para unirte a la clasificación en línea, al Duelo y a la Carrera Semanal y guardar tu progreso en la nube puedes iniciar sesión, de forma opcional, con Apple o Google; entonces los datos que se indican a continuación se guardan en nuestro servidor. Puedes eliminar tu cuenta en cualquier momento desde la propia aplicación.",
         "sections": [
           {
@@ -628,6 +634,7 @@
               "• Carrera Semanal: las partidas de la carrera que juegas, sus puntuaciones, las palabras que encuentras y los premios que ganas",
               "• Dirección de notificaciones: el token de notificaciones de tu dispositivo, el tipo de dispositivo (iOS/Android) y el idioma de la interfaz, para poder avisarte de los retos de duelo; se borra cuando desactivas \"Retos de duelo\" en Ajustes o cierras sesión",
               "• Denuncias y bloqueos: el jugador al que denuncias o bloqueas, el motivo y la fecha; solo para revisar abusos y aplicar el bloqueo",
+              "• Amigos: las solicitudes de amistad que envías y recibes y tu lista de amigos (jugador y fecha); solo para que puedas retar a tus amigos en los Duelos. Solo tú ves tu lista; quien recibe tu solicitud ve tu nombre de usuario",
               "Los demás jugadores solo ven en la clasificación tu nombre de usuario, rango, puntuaciones, trofeos y liga, total de oro y gemas, racha y el aspecto de tu barco y tu marinero; tu rival en un duelo ve además tu puntuación en ese duelo. Tu correo, tu nombre y tu copia nunca se muestran a nadie.",
               "Estos datos se alojan en la infraestructura de Supabase; los servidores pueden estar fuera de tu país. Se conservan mientras exista tu cuenta y se eliminan cuando la eliminas. Los proveedores con los que tratamos datos (Supabase, Google, Apple, Expo, PostHog) están obligados a ofrecer la misma protección que esta política o una equivalente; no vendemos tus datos."
             ]
@@ -644,7 +651,7 @@
             "heading": "Notificaciones",
             "body": [
               "Los recordatorios diarios se programan en tu dispositivo. Si rechazas el permiso, la función queda desactivada y el resto de la aplicación funciona con normalidad. El contenido de las notificaciones nunca sale de tu dispositivo.",
-              "Si has iniciado sesión, nuestro servidor te envía una notificación cuando alguien te reta a un Duelo. Se entrega mediante Expo (Expo Push) a través de Google Firebase Cloud Messaging (Android) o Apple Push Notification service (iOS); contiene el nombre de usuario y la puntuación de quien te reta. No se envían entre las 00:00 y las 09:00 de tu hora local; esas se envían por la mañana. Para ello, la zona horaria de tu dispositivo se guarda junto con la dirección de notificaciones. Puedes desactivarlas en Ajustes → \"Avisos de duelo\"."
+              "Si has iniciado sesión, nuestro servidor te envía una notificación cuando alguien te reta a un Duelo. Se entrega mediante Expo (Expo Push) a través de Google Firebase Cloud Messaging (Android) o Apple Push Notification service (iOS); contiene el nombre de usuario y la puntuación de quien te reta. No se envían entre las 00:00 y las 09:00 de tu hora local; esas se envían por la mañana. Para ello, la zona horaria de tu dispositivo se guarda junto con la dirección de notificaciones. También se envía por el mismo canal cuando recibes una solicitud de amistad y cuando aceptan la tuya; contiene el nombre de usuario de ese jugador. Puedes desactivarlas en Ajustes → \"Avisos de duelo\"."
             ]
           },
           {
@@ -702,7 +709,7 @@
       },
       "terms": {
         "title": "Condiciones de uso",
-        "updated": "Última actualización: 17 de octubre de 2026",
+        "updated": "Última actualización: 20 de octubre de 2026",
         "intro": "Al descargar o usar Yelken: Kelime Oyunu & Bulmaca («Yelken») aceptas estas condiciones.",
         "sections": [
           {
@@ -736,7 +743,8 @@
           {
             "heading": "Duelo",
             "body": [
-              "Los duelos son asíncronos: tu rival juega los mismos puertos antes o después que tú. Si no hay un rival adecuado disponible, podemos emparejarte con jugadores controlados por la aplicación; el rival automático se indica como tal en el duelo y no aparece en las clasificaciones."
+              "Los duelos son asíncronos: tu rival juega los mismos puertos antes o después que tú. Si no hay un rival adecuado disponible, podemos emparejarte con jugadores controlados por la aplicación; el rival automático se indica como tal en el duelo y no aparece en las clasificaciones.",
+              "Si has iniciado sesión, puedes enviar una solicitud de amistad a otro jugador; si la acepta, aparecerá en tu lista de amigos en los Duelos y podrás retarlo desde allí. La amistad existe solo para los Duelos: no hay chat ni mensajes. Puedes rechazar una solicitud y quitar a un amigo cuando quieras; bloquear a un jugador también elimina la amistad y las solicitudes pendientes."
             ]
           },
           {
@@ -784,7 +792,7 @@
       },
       "deletion": {
         "title": "Yelken — Eliminación de la cuenta",
-        "updated": "Última actualización: 17 de octubre de 2026",
+        "updated": "Última actualización: 20 de octubre de 2026",
         "intro": "Esta página explica cómo eliminar tu cuenta y sus datos en Yelken: Kelime Oyunu & Bulmaca («Yelken»), desarrollada por Cemre Acar. La cuenta es opcional; si nunca iniciaste sesión, no guardamos ningún registro sobre ti en nuestro servidor.",
         "sections": [
           {
@@ -811,6 +819,7 @@
               "• Registros de duelos: duelos, palabras encontradas, trofeos y usos del Escudo de Trofeos",
               "• Registros de la Carrera Semanal: partidas, puntuaciones, premios y cofres de meta abiertos",
               "• Registros de denuncias y bloqueos: denuncias que hiciste o que se hicieron sobre ti, y tus bloqueos",
+              "• Amistades y solicitudes de amistad",
               "• Copia en la nube: progreso del juego, preferencias e historial de repaso de palabras",
               "• Registros de compra: identificador de la transacción, producto, número de gemas y fecha"
             ]
@@ -827,7 +836,7 @@
       },
       "raceRules": {
         "title": "Carrera Semanal — Reglas oficiales",
-        "updated": "Última actualización: 17 de octubre de 2026",
+        "updated": "Última actualización: 20 de octubre de 2026",
         "intro": "La Carrera Semanal es una competición de habilidad gratuita que se celebra cada semana dentro de Yelken. Al participar en la carrera aceptas estas reglas.",
         "sections": [
           {
