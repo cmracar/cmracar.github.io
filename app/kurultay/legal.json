@@ -10,8 +10,8 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 20 Ekim 2026",
-        "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
+        "updated": "Son güncelleme: 21 Ekim 2026",
+        "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir, reklamlarımızın sonucu Meta ile ölçülür. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
             "heading": "Cihazınızda kalan veriler",
@@ -49,9 +49,17 @@
             "body": [
               "Kurultay ücretsizdir ve Google AdMob reklamlarıyla desteklenir. Reklamların çoğu ödüllüdür: yalnızca siz bir ödül için izlemeyi seçtiğinizde açılır. Ayrıca göçte yeni yurda varınca ara sıra bir geçiş reklamı gösterilebilir.",
               "AdMob, reklam gösterebilmek için IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişebilir; Android'de reklam kimliğinizi (Advertising ID) de kullanır. Hesabınız, e-postanız ve oyun ilerlemeniz AdMob'a gönderilmez.",
-              "iOS'ta uygulama sizi izlemez: izleme izni istemez, IDFA'ya erişmez, onay ekranı göstermez; yalnızca kişiselleştirilmemiş ve veri işlemesi kısıtlanmış reklam ister.",
+              "iOS'ta, ilk gecenizi atlattıktan sonra Apple'ın izleme izni penceresi bir kez açılır. İzin verirseniz AdMob size daha uygun reklamlar gösterebilir ve reklam kimliğiniz (IDFA) reklam ölçümü için kullanılır. İzin vermezseniz IDFA'ya erişilmez; yalnızca kişiselleştirilmemiş ve veri işlemesi kısıtlanmış reklam istenir. Oyunun hiçbir bölümü bu izne bağlı değildir; kararınızı iPhone Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden istediğiniz an değiştirebilirsiniz. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de iOS'ta yalnızca kişiselleştirilmemiş reklam istenir.",
               "Android'de, bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre) oyun açılışta Google'ın onay ekranını gösterir ve onay alınmadan kişiselleştirilmiş reklam isteği yapılmaz. Kararınızı sonradan Ayarlar → Hesap → \"Reklam gizliliği seçenekleri\" ile değiştirebilirsiniz. Reklam kimliğinizi cihaz ayarlarından da sıfırlayabilir ya da kapatabilirsiniz.",
               "Google'ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Reklam ölçümü (Meta)",
+            "body": [
+              "Kurultay'ı Facebook ve Instagram'daki reklamlarla da tanıtıyoruz. Bu reklamların işe yarayıp yaramadığını görmek için oyunda Meta'nın uygulama olayları aracı (Meta SDK) bulunur. Meta'ya yalnızca şunlar gider: uygulamanın kurulması ve açılması, ilk gecenin atlatılması, rütbe atlama ve mağaza satın almalarının ürünü ve tutarı; bunlarla birlikte cihaz ve işletim sistemi bilgisi, IP adresi, Android'de reklam kimliği (Advertising ID) ve iOS'ta yalnızca izin verdiyseniz IDFA. Hesabınız, adınız, e-postanız ve oyun kaydınız Meta'ya gönderilmez.",
+              "Meta bu bilgiyi, reklamlarımızı görenlerden kaçının oyunu kurduğunu bize toplu olarak göstermek ve reklam gösterimini iyileştirmek için kullanır; Meta'nın bu veriyi nasıl işlediği kendi politikasına tabidir: facebook.com/privacy/policy. iOS'ta izleme izni vermediyseniz Meta reklam kimliği almaz; ölçüm Apple'ın kişiyi tanımayan toplu ölçümüyle (SKAdNetwork) yapılır.",
+              "Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de Meta SDK hiç çalışmaz. ABD'de gizlilik yasası olan eyaletlerde Meta'nın sınırlı veri kullanımı (Limited Data Use) açıktır. Ayarlar → Hesap → Kullanım istatistikleri kapalıyken Meta'ya da hiçbir olay gönderilmez."
             ]
           },
           {
@@ -183,8 +191,8 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: October 20, 2026",
-        "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob. You can delete your account at any time from inside the game.",
+        "updated": "Last updated: October 21, 2026",
+        "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob and the results of our own ads are measured with Meta. You can delete your account at any time from inside the game.",
         "sections": [
           {
             "heading": "Data that stays on your device",
@@ -222,9 +230,17 @@
             "body": [
               "Kurultay is free and supported by Google AdMob ads. Most ads are rewarded: they only play when you choose to watch one for a reward. An interstitial ad may occasionally be shown when you arrive at a new camp during migration.",
               "To show ads, AdMob may access your IP address, country/city-level location, device and operating system information and ad interactions; on Android it also uses your Advertising ID. Your account, email and game progress are not sent to AdMob.",
-              "On iOS the app does not track you: it does not ask for tracking permission, does not access the IDFA, shows no consent screen and requests only non-personalised ads with restricted data processing.",
+              "On iOS, Apple's tracking permission prompt appears once, after you survive your first night. If you allow it, AdMob can show you more relevant ads and your advertising identifier (IDFA) is used for ad measurement. If you don't, the IDFA is not accessed and only non-personalised ads with restricted data processing are requested. No part of the game depends on this permission; you can change your choice at any time in iPhone Settings → Privacy & Security → Tracking. In the European Economic Area, the United Kingdom and Switzerland only non-personalised ads are requested on iOS.",
               "On Android, where the law requires it (European Economic Area, United Kingdom, Switzerland), the game shows Google's consent screen at launch and no personalised ad request is made without consent. You can change your choice later in Settings → Account → \"Ad privacy options\". You can also reset or turn off your advertising ID in your device settings.",
               "How Google uses this data: policies.google.com/technologies/partner-sites"
+            ]
+          },
+          {
+            "heading": "Ad measurement (Meta)",
+            "body": [
+              "We also promote Kurultay with ads on Facebook and Instagram. To see whether those ads work, the game includes Meta's app events tool (Meta SDK). Only the following reaches Meta: installing and opening the app, surviving the first night, ranking up, and the product and amount of store purchases; together with device and OS information, IP address, the Advertising ID on Android and, on iOS, the IDFA only if you allowed tracking. Your account, name, email and game save are not sent to Meta.",
+              "Meta uses this to show us, in aggregate, how many people who saw our ads installed the game and to improve ad delivery; how Meta processes this data is governed by its own policy: facebook.com/privacy/policy. If you did not allow tracking on iOS, Meta gets no advertising identifier; measurement uses Apple's aggregated, non-identifying measurement (SKAdNetwork).",
+              "In the European Economic Area, the United Kingdom and Switzerland the Meta SDK does not run at all. In US states with privacy laws, Meta's Limited Data Use is on. While Settings → Account → Usage statistics is off, no events are sent to Meta either."
             ]
           },
           {
