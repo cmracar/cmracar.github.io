@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 21 Ekim 2026",
+        "updated": "Son güncelleme: 22 Ekim 2026",
         "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir, reklamlarımızın sonucu Meta ile ölçülür. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
@@ -57,9 +57,16 @@
           {
             "heading": "Reklam ölçümü (Meta)",
             "body": [
-              "Kurultay'ı Facebook ve Instagram'daki reklamlarla da tanıtıyoruz. Bu reklamların işe yarayıp yaramadığını görmek için oyunda Meta'nın uygulama olayları aracı (Meta SDK) bulunur. Meta'ya yalnızca şunlar gider: uygulamanın kurulması ve açılması, ilk gecenin atlatılması, rütbe atlama ve mağaza satın almalarının ürünü ve tutarı; bunlarla birlikte cihaz ve işletim sistemi bilgisi, IP adresi, Android'de reklam kimliği (Advertising ID) ve iOS'ta yalnızca izin verdiyseniz IDFA. Hesabınız, adınız, e-postanız ve oyun kaydınız Meta'ya gönderilmez.",
+              "Kurultay'ı Facebook ve Instagram'daki reklamlarla da tanıtıyoruz. Bu reklamların işe yarayıp yaramadığını görmek için oyunda Meta'nın uygulama olayları aracı (Meta SDK) bulunur. Meta'ya yalnızca şunlar gider: uygulamanın kurulması ve açılması, ilk gecenin atlatılması, rütbe atlama, mağaza satın almalarının ürünü ve tutarı ve izlenen reklamların tahmini geliri; bunlarla birlikte cihaz ve işletim sistemi bilgisi, IP adresi, Android'de reklam kimliği (Advertising ID) ve iOS'ta yalnızca izin verdiyseniz IDFA. Hesabınız, adınız, e-postanız ve oyun kaydınız Meta'ya gönderilmez.",
               "Meta bu bilgiyi, reklamlarımızı görenlerden kaçının oyunu kurduğunu bize toplu olarak göstermek ve reklam gösterimini iyileştirmek için kullanır; Meta'nın bu veriyi nasıl işlediği kendi politikasına tabidir: facebook.com/privacy/policy. iOS'ta izleme izni vermediyseniz Meta reklam kimliği almaz; ölçüm Apple'ın kişiyi tanımayan toplu ölçümüyle (SKAdNetwork) yapılır.",
               "Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de Meta SDK hiç çalışmaz. ABD'de gizlilik yasası olan eyaletlerde Meta'nın sınırlı veri kullanımı (Limited Data Use) açıktır. Ayarlar → Hesap → Kullanım istatistikleri kapalıyken Meta'ya da hiçbir olay gönderilmez."
+            ]
+          },
+          {
+            "heading": "Reklam ölçümü (Google Analytics for Firebase)",
+            "body": [
+              "Kurultay'ı Google reklamlarıyla da tanıtıyoruz. Bu reklamların sonucunu ölçmek için oyunda Google Analytics for Firebase bulunur. Google'a şunlar gider: uygulamanın kurulması ve açılması, oturum süresi, ilk gecenin atlatılması, belirli gecelere ulaşılması, rütbe atlama, seferin ve Akın Yolu koşusunun sonucu, sonuna kadar izlenen ödüllü reklamlar, AdMob reklam gösterimleri ve gelirleri ve mağaza satın almaları; bunlarla birlikte cihaz ve işletim sistemi bilgisi, ülke düzeyinde konum, uygulama için rastgele bir kimlik, Android'de reklam kimliği ve iOS'ta yalnızca izleme izni verdiyseniz IDFA. Hesabınız ve e-postanız gönderilmez.",
+              "Google bu bilgiyi bize toplu raporlar ve reklam ölçümü sunmak için kullanır; işleyişi Google'ın politikasına tabidir: policies.google.com/privacy. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklam amaçlı izinler kapalıdır (Google'ın izin modu: reklam depolama, reklam kullanıcı verisi ve kişiselleştirme reddedilmiş olarak gönderilir). Ayarlar → Hesap → Kullanım istatistikleri kapalıyken Firebase hiçbir veri toplamaz."
             ]
           },
           {
@@ -67,7 +74,7 @@
             "body": [
               "Uygulama içi satın almalar (Yada Taşı paketleri, Reklamsız Oba, Başlangıç Paketi) Apple App Store ya da Google Play üzerinden yapılır. Ödeme bilgileriniz (kart, adres) bize hiç ulaşmaz; ödemeyi mağaza alır ve bize yalnızca hangi ürünün alındığını ve işlem kimliğini bildirir.",
               "Aldığınız ürünlerin etkisi (taşlar, reklamsız durum) ve son işlem kimlikleri, aynı ürün iki kez verilmesin diye cihazınızda saklanır; giriş yaptıysanız bulut kaydınıza da girer. Reklamsız Oba, mağazanın \"Satın alımları geri yükle\" özelliğiyle yeni cihazda geri gelir.",
-              "Oyunu geliştirmek için anonim kullanım verisi toplanır: uygulamanın açılması, gecelerin ve seferlerin sonucu, kurulan binalar, açılan ekranlar, reklam gösterimleri, satın alınan ürünün türü ve oyundaki ilerlemeniz (rütbe, Şan, oyuna başladığınız gün). Her olayla birlikte uygulama sürümü, cihaz modeli, ekran boyutu, işletim sistemi sürümü, dil ayarı ve cihaz için rastgele üretilmiş bir kimlik gönderilir. Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; konumunuz çözümlenmez, IP adresi saklanmaz ve reklam kimliği kullanılmaz. Veri PostHog'un Avrupa Birliği'ndeki altyapısında tutulur. Ayarlar → Hesap → Kullanım istatistikleri anahtarıyla istediğiniz an kapatabilirsiniz; kapalıyken hiçbir olay gönderilmez. Oyun bir hatayla karşılaşırsa hatayı düzeltebilmemiz için hata iletisi, koddaki yeri ve uygulama sürümü bu istatistiklerle gönderilir; kişisel veri içermez."
+              "Oyunu geliştirmek için anonim kullanım verisi toplanır: uygulamanın açılması, gecelerin ve seferlerin sonucu, kurulan binalar, açılan ekranlar, reklam gösterimleri ve tahmini gelirleri, satın alınan ürünün türü ve oyundaki ilerlemeniz (rütbe, Şan, oyuna başladığınız gün). Her olayla birlikte uygulama sürümü, cihaz modeli, ekran boyutu, işletim sistemi sürümü, dil ayarı ve cihaz için rastgele üretilmiş bir kimlik gönderilir. Bu veri hesabınıza, adınıza ya da e-posta adresinize bağlanmaz; konumunuz çözümlenmez, IP adresi saklanmaz ve reklam kimliği kullanılmaz. Veri PostHog'un Avrupa Birliği'ndeki altyapısında tutulur. Ayarlar → Hesap → Kullanım istatistikleri anahtarıyla istediğiniz an kapatabilirsiniz; kapalıyken hiçbir olay gönderilmez. Oyun bir hatayla karşılaşırsa hatayı düzeltebilmemiz için hata iletisi, koddaki yeri ve uygulama sürümü bu istatistiklerle gönderilir; kişisel veri içermez."
             ]
           },
           {
@@ -191,7 +198,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: October 21, 2026",
+        "updated": "Last updated: 22 October 2026",
         "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob and the results of our own ads are measured with Meta. You can delete your account at any time from inside the game.",
         "sections": [
           {
@@ -238,9 +245,16 @@
           {
             "heading": "Ad measurement (Meta)",
             "body": [
-              "We also promote Kurultay with ads on Facebook and Instagram. To see whether those ads work, the game includes Meta's app events tool (Meta SDK). Only the following reaches Meta: installing and opening the app, surviving the first night, ranking up, and the product and amount of store purchases; together with device and OS information, IP address, the Advertising ID on Android and, on iOS, the IDFA only if you allowed tracking. Your account, name, email and game save are not sent to Meta.",
+              "We also promote Kurultay with ads on Facebook and Instagram. To see whether those ads work, the game includes Meta's app events tool (Meta SDK). Only the following reaches Meta: installing and opening the app, surviving the first night, ranking up, the product and amount of store purchases and the estimated revenue of ads watched; together with device and OS information, IP address, the Advertising ID on Android and, on iOS, the IDFA only if you allowed tracking. Your account, name, email and game save are not sent to Meta.",
               "Meta uses this to show us, in aggregate, how many people who saw our ads installed the game and to improve ad delivery; how Meta processes this data is governed by its own policy: facebook.com/privacy/policy. If you did not allow tracking on iOS, Meta gets no advertising identifier; measurement uses Apple's aggregated, non-identifying measurement (SKAdNetwork).",
               "In the European Economic Area, the United Kingdom and Switzerland the Meta SDK does not run at all. In US states with privacy laws, Meta's Limited Data Use is on. While Settings → Account → Usage statistics is off, no events are sent to Meta either."
+            ]
+          },
+          {
+            "heading": "Ad measurement (Google Analytics for Firebase)",
+            "body": [
+              "We also promote Kurultay with Google ads. To measure the results of those ads, the game includes Google Analytics for Firebase. The following reaches Google: installing and opening the app, session length, surviving the first night, reaching certain nights, ranking up, the outcome of runs and Raid Road rides, rewarded ads watched to the end, AdMob ad impressions and their revenue, and store purchases; together with device and OS information, country-level location, a random app identifier, the Advertising ID on Android and, on iOS, the IDFA only if you allowed tracking. Your account and email are not sent.",
+              "Google uses this to provide us with aggregated reports and ad measurement; its processing is governed by Google's policy: policies.google.com/privacy. In the European Economic Area, the United Kingdom and Switzerland advertising consents are off (Google consent mode: ad storage, ad user data and personalisation are sent as denied). While Settings → Account → Usage statistics is off, Firebase collects nothing."
             ]
           },
           {
@@ -248,7 +262,7 @@
             "body": [
               "In-app purchases (Yada Stone packs, Ad-free Camp, Starter Pack) are made through the Apple App Store or Google Play. Your payment details (card, address) never reach us; the store takes the payment and only tells us which product was bought and its transaction ID.",
               "The effect of your purchases (stones, ad-free status) and recent transaction IDs are stored on your device so a product is never granted twice; if you are signed in they are also part of your cloud save. Ad-free Camp returns on a new device through the store's \"Restore purchases\".",
-              "To improve the game we collect anonymous usage data: app opens, the outcome of nights and runs, buildings placed, screens opened, ad impressions, the type of product purchased and your progress in the game (rank, Glory, the day you started playing). Each event carries the app version, device model, screen size, OS version, language setting and a randomly generated identifier for the device. This data is not linked to your account, name or email address; your location is not resolved, IP addresses are not stored and no advertising ID is used. The data is held on PostHog infrastructure in the European Union. You can turn it off at any time with Settings → Account → Usage statistics; while it is off, no events are sent. When the game hits an error, the error message, the place in the code and the app version are sent with these statistics so we can fix it; no personal data is included."
+              "To improve the game we collect anonymous usage data: app opens, the outcome of nights and runs, buildings placed, screens opened, ad impressions and their estimated revenue, the type of product purchased and your progress in the game (rank, Glory, the day you started playing). Each event carries the app version, device model, screen size, OS version, language setting and a randomly generated identifier for the device. This data is not linked to your account, name or email address; your location is not resolved, IP addresses are not stored and no advertising ID is used. The data is held on PostHog infrastructure in the European Union. You can turn it off at any time with Settings → Account → Usage statistics; while it is off, no events are sent. When the game hits an error, the error message, the place in the code and the app version are sent with these statistics so we can fix it; no personal data is included."
             ]
           },
           {
