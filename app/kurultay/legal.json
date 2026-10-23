@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 22 Ekim 2026",
+        "updated": "Son güncelleme: 23 Ekim 2026",
         "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir, reklamlarımızın sonucu Meta ile ölçülür. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
@@ -66,7 +66,8 @@
             "heading": "Reklam ölçümü (Google Analytics for Firebase)",
             "body": [
               "Kurultay'ı Google reklamlarıyla da tanıtıyoruz. Bu reklamların sonucunu ölçmek için oyunda Google Analytics for Firebase bulunur. Google'a şunlar gider: uygulamanın kurulması ve açılması, oturum süresi, ilk gecenin atlatılması, belirli gecelere ulaşılması, rütbe atlama, seferin ve Akın Yolu koşusunun sonucu, sonuna kadar izlenen ödüllü reklamlar, AdMob reklam gösterimleri ve gelirleri ve mağaza satın almaları; bunlarla birlikte cihaz ve işletim sistemi bilgisi, ülke düzeyinde konum, uygulama için rastgele bir kimlik, Android'de reklam kimliği ve iOS'ta yalnızca izleme izni verdiyseniz IDFA. Hesabınız ve e-postanız gönderilmez.",
-              "Google bu bilgiyi bize toplu raporlar ve reklam ölçümü sunmak için kullanır; işleyişi Google'ın politikasına tabidir: policies.google.com/privacy. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklam amaçlı izinler kapalıdır (Google'ın izin modu: reklam depolama, reklam kullanıcı verisi ve kişiselleştirme reddedilmiş olarak gönderilir). Ayarlar → Hesap → Kullanım istatistikleri kapalıyken Firebase hiçbir veri toplamaz."
+              "Google bu bilgiyi bize toplu raporlar ve reklam ölçümü sunmak için kullanır; işleyişi Google'ın politikasına tabidir: policies.google.com/privacy. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklam amaçlı izinler kapalıdır (Google'ın izin modu: reklam depolama, reklam kullanıcı verisi ve kişiselleştirme reddedilmiş olarak gönderilir). Ayarlar → Hesap → Kullanım istatistikleri kapalıyken Firebase hiçbir veri toplamaz.",
+              "Android'de oyun, Google Play'in kurulum bilgisinden oyunun hangi kaynaktan kurulduğunu bir kez okur (Google reklamı, Meta reklamı ya da Play Store araması gibi kampanya etiketi). Bu kişisel bir bilgi değildir; yalnızca reklamlarımızın işe yarayıp yaramadığını görmek için anonim kullanım istatistiklerine eklenir."
             ]
           },
           {
@@ -198,7 +199,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 22 October 2026",
+        "updated": "Last updated: 23 October 2026",
         "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob and the results of our own ads are measured with Meta. You can delete your account at any time from inside the game.",
         "sections": [
           {
@@ -254,7 +255,8 @@
             "heading": "Ad measurement (Google Analytics for Firebase)",
             "body": [
               "We also promote Kurultay with Google ads. To measure the results of those ads, the game includes Google Analytics for Firebase. The following reaches Google: installing and opening the app, session length, surviving the first night, reaching certain nights, ranking up, the outcome of runs and Raid Road rides, rewarded ads watched to the end, AdMob ad impressions and their revenue, and store purchases; together with device and OS information, country-level location, a random app identifier, the Advertising ID on Android and, on iOS, the IDFA only if you allowed tracking. Your account and email are not sent.",
-              "Google uses this to provide us with aggregated reports and ad measurement; its processing is governed by Google's policy: policies.google.com/privacy. In the European Economic Area, the United Kingdom and Switzerland advertising consents are off (Google consent mode: ad storage, ad user data and personalisation are sent as denied). While Settings → Account → Usage statistics is off, Firebase collects nothing."
+              "Google uses this to provide us with aggregated reports and ad measurement; its processing is governed by Google's policy: policies.google.com/privacy. In the European Economic Area, the United Kingdom and Switzerland advertising consents are off (Google consent mode: ad storage, ad user data and personalisation are sent as denied). While Settings → Account → Usage statistics is off, Firebase collects nothing.",
+              "On Android the game reads once, from Google Play's install information, which source the game was installed from (a campaign label such as a Google ad, a Meta ad or a Play Store search). This is not personal information; it is only added to the anonymous usage statistics so we can see whether our ads work."
             ]
           },
           {
