@@ -4,11 +4,11 @@ import { alternates } from '../i18n'
 export const metadata = {
   title: 'Yelken: Kelime Oyunu & Bulmaca',
   description:
-    'Yelken: Kelime Oyunu & Bulmaca — kare bulmaca, kelime avı, adam asmaca, kelime türetme ve sefer. İnternetsiz oyna ya da dil öğren. Cemre Acar tarafından geliştirildi.',
+    'Yelken: Kelime Oyunu & Bulmaca — kare bulmaca, kelime avı, adam asmaca, kelime türetme, Serbest Sefer ve Düello. App Store ve Google Play’de ücretsiz; internetsiz oyna ya da dil öğren. Cemre Acar tarafından geliştirildi.',
   alternates: alternates('/yelken', 'tr'),
   openGraph: {
     title: 'Yelken: Kelime Oyunu & Bulmaca',
-    description: 'Beş kelime oyunu tek bir denizde: internetsiz oyna ya da dil öğren.',
+    description: 'Altı kelime oyunu tek bir dümende. iPhone ve Android’de ücretsiz.',
     url: 'https://www.cemreacar.com/yelken',
     siteName: 'Cemre Acar Portfolio',
     images: ['/yelken/og.png'],

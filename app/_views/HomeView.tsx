@@ -48,8 +48,8 @@ const COPY = {
       page: 'Yelken sayfası',
       shots: 'Yelken ekran görüntüleri',
       tagline: 'Kelime Oyunu & Bulmaca',
-      body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme ve gemini sürüp kelime kurduğun Serbest Sefer — beş kelime oyunu tek bir denizde. İnternetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca öğrenirsin. İsteyene sınırsız Düello, Kupa Ligi ve her hafta başka bir oyunda Haftanın Yarışı.',
-      did: ['16.900 kelime; TDK, RAE ve Cambridge’e karşı doğrulandı', 'Sınırsız Düello, Kupa Ligi ve Haftanın Yarışı (Supabase)', 'Tanıtım videoları ve mağaza görselleri'],
+      body: 'Kare bulmaca, kelime avı, adam asmaca, kelime türetme, ipucundaki kelimenin harflerini gemiyle topladığın Serbest Sefer ve Düello — altı kelime oyunu tek bir dümende. App Store ve Google Play’de ücretsiz, internetsiz oynanır; istersen aynı oyunla İngilizce ya da İspanyolca öğrenirsin. İsteyene sınırsız Düello, Kupa Ligi ve her hafta başka bir oyunda Haftanın Yarışı.',
+      did: ['17.500 kelime; TDK, RAE ve Cambridge’e karşı doğrulandı', 'Sınırsız Düello, Kupa Ligi ve Haftanın Yarışı (Supabase)', 'Tanıtım videoları ve mağaza görselleri'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Diller', value: 'Türkçe, İngilizce, İspanyolca' },
@@ -103,8 +103,8 @@ const COPY = {
       page: 'Yelken page',
       shots: 'Yelken screenshots',
       tagline: 'Word Game & Puzzles',
-      body: 'Crossword, word search, hangman, a word connect game and a Free Voyage where you sail your ship and build words — five word games on one sea. Plays offline; use the same games to learn Spanish or Turkish if you like. Unlimited Duels, a Trophy League and a Weekly Race in a different game every week.',
-      did: ['16,900 words checked against TDK, RAE and Cambridge', 'Unlimited Duels, the Trophy League and the Weekly Race (Supabase)', 'Promo videos and store graphics'],
+      body: 'Crossword, word search, hangman, word connect, a Free Voyage where your ship catches the letters of a clue’s answer, and Duel — six word games on one helm. Free on the App Store and Google Play, plays offline; use the same games to learn Spanish or Turkish if you like. Unlimited Duels, a Trophy League and a Weekly Race in a different game every week.',
+      did: ['17,500 words checked against TDK, RAE and Cambridge', 'Unlimited Duels, the Trophy League and the Weekly Race (Supabase)', 'Promo videos and store graphics'],
       facts: [
         { label: 'Platform', value: 'Android · iOS' },
         { label: 'Languages', value: 'Turkish, English, Spanish' },
@@ -241,7 +241,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
               className="group block self-start overflow-hidden rounded-lg border border-line bg-[#1A1231] md:col-span-7"
             >
               <div className="flex aspect-[16/10] items-start justify-center gap-[2.5%] overflow-hidden px-[2.5%] pt-[14%]">
-                {[2, 1, 4].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
+                {[2, 1, 3].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
                   // Dik telefon: koyu gövde, metal kenar, üstte kamera adası (Kurultay'daki çerçeveyle aynı)
                   <div
                     key={src}

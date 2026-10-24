@@ -13,7 +13,7 @@ export const APP_STORES = {
       name: 'App Store',
       locative: 'App Store’da',
       url: 'https://apps.apple.com/app/id6814854315',
-      live: false,
+      live: true,
     },
     googlePlay: {
       name: 'Google Play',

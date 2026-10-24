@@ -215,7 +215,7 @@
     },
     {
         "projectName": "Yelken: Kelime Oyunu & Bulmaca",
-        "description": "Kendi ürünüm: beş kelime oyunu tek bir denizde — kare bulmaca, kelime avı, adam asmaca, kelime türetme ve hepsini birleştiren bir sefer. TDK, RAE ve Cambridge’e karşı doğrulanmış 14.600 kelimelik Türkçe, İngilizce ve İspanyolca dağarcık, aralıklı tekrar programı. İnternetsiz oynanır, hesap gerektirmez — isteyenler için sınırsız Düello, Kupa Ligi, çevrim içi sıralama ve bulut yedeği. Google Play'de yayında; App Store yayını yolda.",
+        "description": "Kendi ürünüm: altı kelime oyunu tek bir dümende — kare bulmaca, kelime avı, adam asmaca, kelime türetme, ipucundaki kelimenin harflerini gemiyle topladığın Serbest Sefer ve Düello. TDK, RAE ve Cambridge’e karşı doğrulanmış 17.500 kelimelik Türkçe, İngilizce ve İspanyolca dağarcık, aralıklı tekrar programı. İnternetsiz oynanır, hesap gerektirmez — isteyenler için sınırsız Düello, Kupa Ligi, çevrim içi sıralama ve bulut yedeği. App Store ve Google Play'de yayında.",
         "preview": "/yelken",
         "stores": "yelken",
         "technologies": [
@@ -227,7 +227,7 @@
         ],
         "isCompleted": false,
         "category": "freelance",
-        "description_en": "My own product: five word games on one sea — crossword, word search, hangman, word connect and a voyage that ties them together. A 14,600-word Turkish, English and Spanish vocabulary checked against TDK, RAE and Cambridge, with spaced repetition. Plays offline with no account required — plus unlimited Duels, the Trophy League, online leaderboards and cloud backup for those who want them. Live on Google Play; App Store release on the way.",
+        "description_en": "My own product: six word games on one helm — crossword, word search, hangman, word connect, a Free Voyage where your ship catches the letters of a clue's answer, and Duel. A 17,500-word Turkish, English and Spanish vocabulary checked against TDK, RAE and Cambridge, with spaced repetition. Plays offline with no account required — plus unlimited Duels, the Trophy League, online leaderboards and cloud backup for those who want them. Live on the App Store and Google Play.",
         "projectName_en": "Yelken: Word Game & Puzzles"
     },
     {
