@@ -29,12 +29,11 @@ export const APP_STORES = {
       url: 'https://apps.apple.com/app/id6819175567',
       live: true,
     },
-    // Play'de kapalı testte; üretim yayınından sonra true
     googlePlay: {
       name: 'Google Play',
       locative: 'Google Play’de',
       url: 'https://play.google.com/store/apps/details?id=io.github.cmracar.kurultay',
-      live: false,
+      live: true,
     },
   },
 } as const
