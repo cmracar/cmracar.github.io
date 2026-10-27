@@ -21,8 +21,8 @@ const COPY = {
   tr: {
     back: '← Projeler',
     name: 'Kurultay: Bozkır Savunması',
-    platforms: 'iPhone ve iPad’de ücretsiz · Android kapalı testte',
-    body: 'Kara Tuğ birliği bozkırı yakıyor. Boylar dağınık, otağlar yalnız. Küçük bir obanın beyi Gökbörü olarak obanı kur, gece akınlarına göğüs ger, boyları birleştir ve Kurultay’da Han seçil. Türkçe ve İngilizce; İspanyolca ve Rusça sıradaki sürümle geliyor.',
+    platforms: 'App Store ve Google Play’de ücretsiz · iPhone, iPad ve Android',
+    body: 'Kara Tuğ birliği bozkırı yakıyor. Boylar dağınık, otağlar yalnız. Küçük bir obanın beyi Gökbörü olarak obanı kur, gece akınlarına göğüs ger, boyları birleştir ve Kurultay’da Han seçil. Türkçe, İngilizce, İspanyolca ve Rusça.',
     loop: 'Oyun döngüsü',
     pillars: ['Gündüz kur', 'Gece savun', 'Göç et', 'Kurultay', 'Destan', 'Haftanın Akını'],
     videos: 'Tanıtım videoları: Instagram',
@@ -52,8 +52,8 @@ const COPY = {
   en: {
     back: '← Projects',
     name: 'Kurultay: Steppe Defense',
-    platforms: 'Free on iPhone and iPad · Android in closed testing',
-    body: 'The Black Banner is burning the steppe. The clans are scattered, the great tents alone. As Gökbörü, chief of a small camp, build your camp, hold back the night raids, unite the clans and be named Khan at the Kurultay. In Turkish and English; Spanish and Russian arrive with the next update.',
+    platforms: 'Free on the App Store and Google Play · iPhone, iPad and Android',
+    body: 'The Black Banner is burning the steppe. The clans are scattered, the great tents alone. As Gökbörü, chief of a small camp, build your camp, hold back the night raids, unite the clans and be named Khan at the Kurultay. In Turkish, English, Spanish and Russian.',
     loop: 'Game loop',
     pillars: ['Build by day', 'Defend by night', 'Migrate', 'The Kurultay', 'The saga', 'Raid of the Week'],
     videos: 'Promo videos: Instagram',

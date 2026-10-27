@@ -23,7 +23,7 @@ export function localizedProjects(lang: Lang) {
       done: x.isCompleted,
       technologies: x.technologies.filter(t => t !== 'HTML' && t !== 'CSS'),
       category: x.category as Category,
-      // Mağaza rozetleri şimdilik yalnızca Yelken'de.
+      // Mağaza rozetleri `stores` alanı olan projelerde (Yelken, Kurultay); canlılık app/yelken/stores.ts'ten.
       stores: x.stores ?? null,
     }
   })

@@ -64,8 +64,8 @@ const COPY = {
       body: 'Gündüz obanı kur, gece Gökbörü’yü kendin yönetip akınları karşıla, her beş gecede bir beyle yüzleş. Otlak tükenince göç et; Kurultay’da boyları birleştir ve Han seçil. Haftanın Akını’nda herkes aynı haritada, eşit güçle yarışır.',
       did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman yetenekleri, Kara Tuğ’un beyleri, göç ve Kurultay antları', 'Google ve Apple girişiyle haftalık sıralama'],
       facts: [
-        { label: 'Platform', value: 'iOS · Android (kapalı test)' },
-        { label: 'Diller', value: 'Türkçe, İngilizce' },
+        { label: 'Platform', value: 'iOS · Android' },
+        { label: 'Diller', value: 'Türkçe, İngilizce, İspanyolca, Rusça' },
         { label: 'Teknoloji', value: 'Unity 6, C#, URP' },
         { label: 'Sunucu', value: 'Supabase' },
       ],
@@ -119,8 +119,8 @@ const COPY = {
       body: 'Build your camp by day, lead Gökbörü yourself against the night raids and face a chief every fifth night. When the pasture runs dry, migrate; unite the clans at the Kurultay and be named Khan. In the Raid of the Week everyone plays the same map with equal power.',
       did: ['All 3D models, UI art and audio are generated from code', 'Hero skills, the Black Banner’s chiefs, migration and clan oaths', 'Weekly leaderboard with Google and Apple sign-in'],
       facts: [
-        { label: 'Platform', value: 'iOS · Android (closed testing)' },
-        { label: 'Languages', value: 'Turkish, English' },
+        { label: 'Platform', value: 'iOS · Android' },
+        { label: 'Languages', value: 'Turkish, English, Spanish, Russian' },
         { label: 'Stack', value: 'Unity 6, C#, URP' },
         { label: 'Backend', value: 'Supabase' },
       ],
