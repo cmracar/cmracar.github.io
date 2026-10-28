@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>relay</title>
+<script>
+// Mağaza konsoluna (App Store Connect) ürün görsellerini aktarır: ?f=a.jpg,b.jpg → üst pencereye Blob olarak gönderir.
+(async () => {
+  const files = (new URLSearchParams(location.search).get('f') || '').split(',').filter(Boolean);
+  for (const name of files) {
+    try {
+      const blob = await (await fetch(name, { cache: 'no-store' })).blob();
+      parent.postMessage({ name, blob }, 'https://appstoreconnect.apple.com');
+    } catch (e) { parent.postMessage({ name, error: String(e) }, 'https://appstoreconnect.apple.com'); }
+  }
+})();
+</script>
