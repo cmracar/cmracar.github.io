@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles, Instagram, Users, Snowflake } from 'lucide-react'
+import { Mail, FileText, Shield, UserX, Swords, Tent, Route, Trophy, Moon, Sparkles, Instagram, Users, Snowflake, Flame } from 'lucide-react'
 import { SectionHeading } from '../components/Status'
 import StoreBadges from '../yelken/StoreBadges'
 import { storeStatus } from '../yelken/stores'
@@ -8,32 +8,32 @@ import { href, type Lang } from '../i18n'
 import legal from '../kurultay/legal.json'
 
 
-const PILLAR_ICONS = [<Tent key="0" size={20} />, <Moon key="1" size={20} />, <Route key="2" size={20} />, <Users key="3" size={20} />, <Sparkles key="4" size={20} />, <Trophy key="5" size={20} />]
-const FEATURE_ICONS = [<Swords key="0" size={22} />, <Route key="1" size={22} />, <Users key="2" size={22} />, <Sparkles key="3" size={22} />, <Snowflake key="4" size={22} />, <Trophy key="5" size={22} />]
+const PILLAR_ICONS = [<Tent key="0" size={20} />, <Moon key="1" size={20} />, <Route key="2" size={20} />, <Users key="3" size={20} />, <Sparkles key="4" size={20} />, <Flame key="5" size={20} />]
+const FEATURE_ICONS = [<Swords key="0" size={22} />, <Route key="1" size={22} />, <Users key="2" size={22} />, <Sparkles key="3" size={22} />, <Flame key="4" size={22} />, <Snowflake key="5" size={22} />, <Trophy key="6" size={22} />]
 
 /**
  * Metinler mağaza açıklamasından (kurultay/Docs/store/magaza_metinleri.md);
  * ekranlar Play görselleri (Docs/store/screens/play/{tr,en}_0* → 1600×900,
  * public/kurultay/screens/{tr,en}/0N.jpg; sıra: gece, oba, bey, Gökbörü,
- * kervan, göç yolu, Kurultay, harita).
+ * Akın Yolu, kervan, Kurultay, harita; 0.2.8 görselleri).
  */
 const COPY = {
   tr: {
     back: '← Projeler',
     name: 'Kurultay: Bozkır Savunması',
     platforms: 'App Store ve Google Play’de ücretsiz · iPhone, iPad ve Android',
-    body: 'Kara Tuğ birliği bozkırı yakıyor. Boylar dağınık, otağlar yalnız. Küçük bir obanın beyi Gökbörü olarak obanı kur, gece akınlarına göğüs ger, boyları birleştir ve Kurultay’da Han seçil. Türkçe, İngilizce, İspanyolca ve Rusça.',
+    body: 'Kara Tuğ birliği bozkırı yakıyor. Boylar dağınık, otağlar yalnız. Küçük bir obanın beyi Gökbörü olarak obanı kur, gece akınlarına göğüs ger, boyları birleştir ve Kurultay’da Han seçil. Akın Yolu’nda atını sonsuz yolda sür. Türkçe, İngilizce, İspanyolca ve Rusça.',
     loop: 'Oyun döngüsü',
-    pillars: ['Gündüz kur', 'Gece savun', 'Göç et', 'Kurultay', 'Destan', 'Haftanın Akını'],
+    pillars: ['Gündüz kur', 'Gece savun', 'Göç et', 'Kurultay', 'Destan', 'Akın Yolu'],
     videos: 'Tanıtım videoları: Instagram',
     shotsLabel: 'Ekranlar',
     shots: [
-      { title: 'Gece savunması', desc: 'Akıncılar dört yandan gelir; Gökbörü’yü kendin yönet, Ok Yağmuru, Savaş Narası ve Kılıç Kasırgası ile karşıla.' },
+      { title: 'Gece savunması', desc: 'Akıncılar dört yandan gelir; Gökbörü’yü kendin yönet, pala, yay ya da mızrakla, Savaş Narası ve Kılıç Kasırgası ile karşıla.' },
       { title: 'Gündüz kur', desc: 'Otağın çevresine kule, çit ve yapılar kur; akın gece başlar.' },
       { title: 'Bey geceleri', desc: 'Her beş gecede bir Kara Tuğ’un beylerinden biri gelir: Kızılmızrak, Demir Tarkan, Kızıl Hatun.' },
       { title: 'Gökbörü', desc: 'Teçhizatını ve Boz At’ın eşyalarını dövdür, yeteneklerini geliştir, görünüşünü seç.' },
-      { title: 'Göç', desc: 'Yolda pusular var; kervanı koru, sürüyü dağıtma.' },
-      { title: 'Yeni yurt', desc: 'Otlak tükenince yeni yurdu seç; her konağın nimeti ve tehlikesi var.' },
+      { title: 'Akın Yolu', desc: 'Oba yok, yalnız sen ve atın: akıncılar ormandan fırlar, bozkır arkandan yanar; durursan yangın sana yetişir.' },
+      { title: 'Göç', desc: 'Otlak tükenince obanı kağnılara yükle; yolda pusular var, kervanı koru, sürüyü dağıtma.' },
       { title: 'Kurultay', desc: 'Beylerin boyları otağında toplanır; her ant bir nimet ve bir yük getirir.' },
       { title: 'Destan', desc: 'Bozkır Haritası’nda bölgeleri fethet; bozkırı birleştir, Han ol.' },
     ],
@@ -43,6 +43,7 @@ const COPY = {
       { title: 'Göç et', desc: 'Otlak tükenir, mevsim döner. Obanı kağnılara yükle, kervanı pusulardan koru; bereketli otlak, nehir kıyısı, dağ eteği ya da pazar yeri seni bekler.' },
       { title: 'Kurultay', desc: 'Beyi yenince boylar otağında toplanır; biriyle birleş. Boylarla dostluğun seferden sefere büyür.' },
       { title: 'Destan', desc: 'Her sefer bir yıl: 20 geceye dayan, Han seçil. Düşsen de Kut ile Kam Ağacı’nı büyütür, Gökbörü’yü güçlendirir, Er’den Alp’e, Bey’den Han’a yükselirsin.' },
+      { title: 'Akın Yolu', desc: 'Kuzeye uzanan sonsuz yolda ne kadar ileri gidersen puanın o kadar büyür. Kam Taşı’nda lütfunu seç, ayın ilk 10’una gir, Yol Beyi ol.' },
       { title: 'Çile kademeleri', desc: 'Zorluğu kendin seç; Bozkır Haritası’nda bölgeleri fethet.' },
       { title: 'Haftanın Akını', desc: 'Her hafta herkese aynı harita, aynı akınlar, eşit güç. Hesapla gir, haftalık sıralamada yerini al.' },
     ],
@@ -53,18 +54,18 @@ const COPY = {
     back: '← Projects',
     name: 'Kurultay: Steppe Defense',
     platforms: 'Free on the App Store and Google Play · iPhone, iPad and Android',
-    body: 'The Black Banner is burning the steppe. The clans are scattered, the great tents alone. As Gökbörü, chief of a small camp, build your camp, hold back the night raids, unite the clans and be named Khan at the Kurultay. In Turkish, English, Spanish and Russian.',
+    body: 'The Black Banner is burning the steppe. The clans are scattered, the great tents alone. As Gökbörü, chief of a small camp, build your camp, hold back the night raids, unite the clans and be named Khan at the Kurultay. On the Raid Road, ride an endless trail. In Turkish, English, Spanish and Russian.',
     loop: 'Game loop',
-    pillars: ['Build by day', 'Defend by night', 'Migrate', 'The Kurultay', 'The saga', 'Raid of the Week'],
+    pillars: ['Build by day', 'Defend by night', 'Migrate', 'The Kurultay', 'The saga', 'Raid Road'],
     videos: 'Promo videos: Instagram',
     shotsLabel: 'Screens',
     shots: [
-      { title: 'Night defense', desc: 'Raiders come from every side; lead Gökbörü yourself and meet them with Arrow Rain, War Cry and Blade Storm.' },
+      { title: 'Night defense', desc: 'Raiders come from every side; lead Gökbörü yourself with sabre, bow or spear, and meet them with War Cry and Blade Storm.' },
       { title: 'Build by day', desc: 'Raise towers, fences and buildings around the Great Tent; the raid comes at night.' },
       { title: 'Chief nights', desc: 'Every fifth night one of the Black Banner’s chiefs rides in: Redlance, the Iron Tarkhan, the Crimson Khatun.' },
       { title: 'Gökbörü', desc: 'Forge his gear and the Grey Steed’s tack, level up his skills and choose his look.' },
-      { title: 'Migration', desc: 'Ambushes wait on the road; guard the caravan and keep the herd together.' },
-      { title: 'New land', desc: 'When the pasture runs dry, choose new land; every camp has a blessing and a danger.' },
+      { title: 'Raid Road', desc: 'No camp, just you and your horse: raiders burst from the forest and the steppe burns behind you; stop and the fire catches you.' },
+      { title: 'Migration', desc: 'When the pasture runs dry, pack the camp onto ox carts; ambushes wait on the road, so guard the caravan and keep the herd together.' },
       { title: 'The Kurultay', desc: 'The clans of the chiefs gather at your tent; every oath brings a blessing and a burden.' },
       { title: 'The saga', desc: 'Conquer regions on the Steppe Map; unite the steppe and become Khan.' },
     ],
@@ -74,6 +75,7 @@ const COPY = {
       { title: 'Migrate', desc: 'The pasture runs dry, the seasons turn. Pack your camp onto ox carts and guard the caravan from ambushes; rich pastures, riverbanks, foothills or a market town await.' },
       { title: 'The Kurultay', desc: 'Defeat a chief and the clans gather at your tent; join one. Your friendship with the clans grows from campaign to campaign.' },
       { title: 'The saga', desc: 'Each campaign is one year: survive 20 nights and be named Khan. Even when you fall you grow the Kam Tree with Kut, make Gökbörü stronger and rise from Warrior to Hero, from Chief to Khan.' },
+      { title: 'Raid Road', desc: 'The further you ride the endless road north, the higher your score. Pick a blessing at the Kam Stone, reach the month’s top 10 and become a Road Lord.' },
       { title: 'Ordeal tiers', desc: 'Choose your own challenge, and conquer regions on the Steppe Map.' },
       { title: 'Raid of the Week', desc: 'Every week: the same map, the same raids and equal power for everyone. Sign in and climb the weekly leaderboard.' },
     ],

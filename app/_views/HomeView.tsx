@@ -59,9 +59,9 @@ const COPY = {
     },
     kurultay: {
       page: 'Kurultay sayfası',
-      shot: 'Kurultay ekranları: ana ekran, gece savunması, göç kervanı ve Kurultay',
+      shot: 'Kurultay ekranları: ana ekran, gece savunması, Akın Yolu ve göç kervanı',
       tagline: 'Bozkır Savunması',
-      body: 'Gündüz obanı kur, gece Gökbörü’yü kendin yönetip akınları karşıla, her beş gecede bir beyle yüzleş. Otlak tükenince göç et; Kurultay’da boyları birleştir ve Han seçil. Haftanın Akını’nda herkes aynı haritada, eşit güçle yarışır.',
+      body: 'Gündüz obanı kur, gece Gökbörü’yü kendin yönetip akınları karşıla, her beş gecede bir beyle yüzleş. Otlak tükenince göç et; Kurultay’da boyları birleştir ve Han seçil. Akın Yolu’nda atını sonsuz yolda sür, ayın ilk 10’una gir.',
       did: ['Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor', 'Kahraman yetenekleri, Kara Tuğ’un beyleri, göç ve Kurultay antları', 'Google ve Apple girişiyle haftalık sıralama'],
       facts: [
         { label: 'Platform', value: 'iOS · Android' },
@@ -114,9 +114,9 @@ const COPY = {
     },
     kurultay: {
       page: 'Kurultay page',
-      shot: 'Kurultay screens: home, night defense, migration caravan and the Kurultay',
+      shot: 'Kurultay screens: home, night defense, the Raid Road and the migration caravan',
       tagline: 'Steppe Defense',
-      body: 'Build your camp by day, lead Gökbörü yourself against the night raids and face a chief every fifth night. When the pasture runs dry, migrate; unite the clans at the Kurultay and be named Khan. In the Raid of the Week everyone plays the same map with equal power.',
+      body: 'Build your camp by day, lead Gökbörü yourself against the night raids and face a chief every fifth night. When the pasture runs dry, migrate; unite the clans at the Kurultay and be named Khan. On the Raid Road, ride an endless trail and reach the month’s top 10.',
       did: ['All 3D models, UI art and audio are generated from code', 'Hero skills, the Black Banner’s chiefs, migration and clan oaths', 'Weekly leaderboard with Google and Apple sign-in'],
       facts: [
         { label: 'Platform', value: 'iOS · Android' },

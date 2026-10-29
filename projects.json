@@ -199,7 +199,7 @@
     },
     {
         "projectName": "Kurultay: Bozkır Savunması",
-        "description": "Kendi ürünüm: bozkırda geçen, kahraman kontrollü üs savunması, göç ve hafif roguelite oyunu. Gündüz oba kurulur, gece Gökbörü’nün yetenekleriyle akınlar karşılanır, her beş gecede bir bey çıkar; otlak tükenince göç edilir, Kurultay’da boylarla ant içilir. Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor. Google ve Apple girişiyle Haftanın Akını sıralaması. App Store ve Google Play'de yayında (iPhone, iPad ve Android); Türkçe, İngilizce, İspanyolca ve Rusça.",
+        "description": "Kendi ürünüm: bozkırda geçen, kahraman kontrollü üs savunması, göç ve hafif roguelite oyunu. Gündüz oba kurulur, gece Gökbörü’nün yetenekleriyle akınlar karşılanır, her beş gecede bir bey çıkar; otlak tükenince göç edilir, Kurultay’da boylarla ant içilir. Bütün 3D modeller, arayüz çizimleri ve sesler koddan üretiliyor. Atlı sonsuz Akın Yolu; Google ve Apple girişiyle Haftanın Akını ve Akın Yolu sıralamaları. App Store ve Google Play'de yayında (iPhone, iPad ve Android); Türkçe, İngilizce, İspanyolca ve Rusça.",
         "preview": "/kurultay",
         "stores": "kurultay",
         "technologies": [
@@ -210,7 +210,7 @@
         ],
         "isCompleted": false,
         "category": "freelance",
-        "description_en": "My own product: a hero-controlled base defence, migration and light roguelite game set on the steppe. Build your camp by day, hold the night raids with Gökbörü’s skills and face a chief every fifth night; migrate when the pasture runs dry and swear oaths with the clans at the Kurultay. All 3D models, UI art and audio are generated from code. Raid of the Week leaderboard with Google and Apple sign-in. Live on the App Store and Google Play (iPhone, iPad and Android); in Turkish, English, Spanish and Russian.",
+        "description_en": "My own product: a hero-controlled base defence, migration and light roguelite game set on the steppe. Build your camp by day, hold the night raids with Gökbörü’s skills and face a chief every fifth night; migrate when the pasture runs dry and swear oaths with the clans at the Kurultay. All 3D models, UI art and audio are generated from code. An endless mounted Raid Road; Raid of the Week and Raid Road leaderboards with Google and Apple sign-in. Live on the App Store and Google Play (iPhone, iPad and Android); in Turkish, English, Spanish and Russian.",
         "projectName_en": "Kurultay: Steppe Defense"
     },
     {
