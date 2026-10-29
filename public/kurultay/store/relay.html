@@ -3,17 +3,19 @@
 <style>body{font:14px system-ui;background:#2a170e;color:#f3e3c3;padding:16px}</style></head>
 <body><p>Kurultay mağaza görselleri App Store Connect sekmesine aktarılıyor…</p>
 <script>
-// Yalnız App Store Connect penceresine, istenen dosyaları (bu sitedeki /kurultay/store/ altından) gönderir.
-const TARGET = 'https://appstoreconnect.apple.com';
+// Yalnız App Store Connect ve YouTube Studio pencerelerine, istenen dosyaları (bu sitedeki /kurultay/store/ altından) gönderir.
+// YouTube Studio: Play fragmanı ve küçük resmi (video/play_fragman_<dil>.mp4, video/play_kucuk_resim_<dil>.jpg).
+const TARGETS = ['https://appstoreconnect.apple.com', 'https://studio.youtube.com'];
+const TARGET = TARGETS[new URLSearchParams(location.search).get('o') === 'youtube' ? 1 : 0];
 window.addEventListener('message', async (e) => {
-  if (e.origin !== TARGET || !e.data || e.data.kind !== 'kurultay-store-request') return;
+  if (!TARGETS.includes(e.origin) || !e.data || e.data.kind !== 'kurultay-store-request') return;
   const out = [];
   for (const path of e.data.paths) {
-    if (path !== 'asc.json' && !/^((iphone|ipad|duo|play|play_tablet)\/(tr|en|es|ru)_\d+|creative\/(header|search)_(tr|en|es|ru)|play\/feature_(tr|en|es|ru)|iap\/(review|img_[a-z0-9_]+))\.(jpg|png)$/.test(path)) continue;
+    if (path !== 'asc.json' && !/^((iphone|ipad|duo|play|play_tablet)\/(tr|en|es|ru)_\d+|creative\/(header|search)_(tr|en|es|ru)|play\/feature_(tr|en|es|ru)|iap\/(review|img_[a-z0-9_]+))\.(jpg|png)$/.test(path) && !/^video\/(play_fragman_(tr|en|es|ru)\.mp4|play_kucuk_resim_(tr|en|es|ru)\.jpg)$/.test(path)) continue;
     const buf = await (await fetch('/kurultay/store/' + path)).arrayBuffer();
     out.push({ path, buf });
   }
-  e.source.postMessage({ kind: 'kurultay-store-files', files: out }, TARGET, out.map(f => f.buf));
+  e.source.postMessage({ kind: 'kurultay-store-files', files: out }, e.origin, out.map(f => f.buf));
   document.body.innerHTML += '<p>' + out.length + ' görsel gönderildi.</p>';
 });
 if (window.opener) window.opener.postMessage({ kind: 'kurultay-store-ready' }, TARGET);
