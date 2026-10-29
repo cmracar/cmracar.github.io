@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>relay</title>
+<script>
+// Geçici: YouTube Studio'ya video ve kapak aktarır (?f=a.mp4,b.jpg → üst pencereye Blob).
+(async () => {
+  const files = (new URLSearchParams(location.search).get('f') || '').split(',').filter(Boolean);
+  for (const name of files) {
+    try {
+      const blob = await (await fetch(name, { cache: 'no-store' })).blob();
+      parent.postMessage({ name, blob }, 'https://studio.youtube.com');
+    } catch (e) { parent.postMessage({ name, error: String(e) }, 'https://studio.youtube.com'); }
+  }
+})();
+</script>
