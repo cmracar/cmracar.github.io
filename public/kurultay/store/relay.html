@@ -4,14 +4,15 @@
 <body><p>Kurultay mağaza görselleri App Store Connect sekmesine aktarılıyor…</p>
 <script>
 // Yalnız App Store Connect ve YouTube Studio pencerelerine, istenen dosyaları (bu sitedeki /kurultay/store/ altından) gönderir.
+// Google Ads: oynanabilir reklam (playable/kurultay_playable.zip).
 // YouTube Studio: Play fragmanı ve küçük resmi (video/play_fragman_<dil>.mp4, video/play_kucuk_resim_<dil>.jpg).
-const TARGETS = ['https://appstoreconnect.apple.com', 'https://studio.youtube.com'];
-const TARGET = TARGETS[new URLSearchParams(location.search).get('o') === 'youtube' ? 1 : 0];
+const TARGETS = ['https://appstoreconnect.apple.com', 'https://studio.youtube.com', 'https://ads.google.com'];
+const TARGET = TARGETS[{ youtube: 1, ads: 2 }[new URLSearchParams(location.search).get('o')] || 0];
 window.addEventListener('message', async (e) => {
   if (!TARGETS.includes(e.origin) || !e.data || e.data.kind !== 'kurultay-store-request') return;
   const out = [];
   for (const path of e.data.paths) {
-    if (path !== 'asc.json' && !/^((iphone|ipad|duo|play|play_tablet)\/(tr|en|es|ru)_\d+|creative\/(header|search)_(tr|en|es|ru)|play\/feature_(tr|en|es|ru)|iap\/(review|img_[a-z0-9_]+))\.(jpg|png)$/.test(path) && !/^video\/(play_fragman_(tr|en|es|ru)(_v\d+)?\.mp4|reklam_(dikey|kare)_(tr|en|es|ru)(_v\d+)?\.mp4|play_kucuk_resim_(tr|en|es|ru)\.jpg)$/.test(path)) continue;
+    if (path !== 'asc.json' && !/^((iphone|ipad|duo|play|play_tablet)\/(tr|en|es|ru)_\d+|creative\/(header|search)_(tr|en|es|ru)|play\/feature_(tr|en|es|ru)|iap\/(review|img_[a-z0-9_]+))\.(jpg|png)$/.test(path) && !/^video\/(play_fragman_(tr|en|es|ru)(_v\d+)?\.mp4|reklam_(dikey|kare)_(tr|en|es|ru)(_v\d+)?\.mp4|play_kucuk_resim_(tr|en|es|ru)\.jpg)$/.test(path) && path !== 'playable/kurultay_playable.zip') continue;
     const buf = await (await fetch('/kurultay/store/' + path)).arrayBuffer();
     out.push({ path, buf });
   }
