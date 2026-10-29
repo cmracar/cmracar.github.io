@@ -26,6 +26,8 @@ const COPY = {
     loop: 'Oyun döngüsü',
     pillars: ['Gündüz kur', 'Gece savun', 'Göç et', 'Kurultay', 'Destan', 'Akın Yolu'],
     videos: 'Tanıtım videoları: Instagram',
+    trailerLabel: 'Fragman',
+    trailer: 'RVUGlli1AgE',
     shotsLabel: 'Ekranlar',
     shots: [
       { title: 'Gece savunması', desc: 'Akıncılar dört yandan gelir; Gökbörü’yü kendin yönet, pala, yay ya da mızrakla, Savaş Narası ve Kılıç Kasırgası ile karşıla.' },
@@ -58,6 +60,8 @@ const COPY = {
     loop: 'Game loop',
     pillars: ['Build by day', 'Defend by night', 'Migrate', 'The Kurultay', 'The saga', 'Raid Road'],
     videos: 'Promo videos: Instagram',
+    trailerLabel: 'Trailer',
+    trailer: '6ddK4Uxq6OY',
     shotsLabel: 'Screens',
     shots: [
       { title: 'Night defense', desc: 'Raiders come from every side; lead Gökbörü yourself with sabre, bow or spear, and meet them with War Cry and Blade Storm.' },
@@ -151,6 +155,20 @@ export default function KurultayView({ lang }: { lang: Lang }) {
                 <Instagram size={18} /> {c.videos}
               </a>
             </aside>
+          </div>
+
+          {/* FRAGMAN: YouTube (çerezsiz gömme), TR/EN ayrı video */}
+          <p className="mb-8 mt-20 font-mono text-xs uppercase tracking-[0.08em] text-white/50">{c.trailerLabel}</p>
+          <div className="aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-black">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${c.trailer}?rel=0`}
+              title={`${c.name} — ${c.trailerLabel}`}
+              loading="lazy"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              className="h-full w-full"
+            />
           </div>
 
           <p className="mb-8 mt-20 font-mono text-xs uppercase tracking-[0.08em] text-white/50">{c.shotsLabel}</p>
