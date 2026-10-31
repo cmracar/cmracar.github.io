@@ -5,7 +5,7 @@
     "minVersionCode": 22
   },
   "ios": {
-    "versionCode": 20,
-    "version": "0.2.7"
+    "versionCode": 22,
+    "version": "0.2.10"
   }
 }
