@@ -1,11 +1,40 @@
 {
   "android": {
-    "versionCode": 23,
-    "version": "0.2.12",
+    "versionCode": 26,
+    "version": "0.2.15",
     "minVersionCode": 23
   },
   "ios": {
     "versionCode": 24,
     "version": "0.2.12"
+  },
+  "roadEvent": {
+    "id": "2026-11",
+    "start": "2026-11-10T00:00:00Z",
+    "end": "2026-12-01T00:00:00Z"
+  },
+  "announce": {
+    "id": "kasim-yarisi-2026",
+    "start": "2026-11-10T00:00:00Z",
+    "end": "2026-12-01T00:00:00Z",
+    "action": "road",
+    "title": {
+      "tr": "Kasım Yarışı başladı!",
+      "en": "The November Race is on!",
+      "es": "¡Empieza la Carrera de noviembre!",
+      "ru": "Ноябрьская гонка началась!"
+    },
+    "body": {
+      "tr": "Akın Yolu'nda ayın ilk 10'una gir, Yol Beyi ol: tuğcun yanında Yol Beyi Tuğu'nu taşır, adının yanında Yol Beyi yazar. Ayda 40 km sür, satılmayan Kasım Akını Sancağı senin olsun. Yarış 30 Kasım'da biter.",
+      "en": "Reach the month's top 10 on the Raid Road and become a Road Lord: a standard-bearer rides beside you with the Road Lord's standard, and the title shows by your name. Ride 40 km this month to win the November Raid Banner, which is never sold. The race ends on November 30.",
+      "es": "Entra en el top 10 del mes en el Camino de Incursión y sé Señor del Camino: un abanderado cabalga a tu lado con el estandarte y el título aparece junto a tu nombre. Recorre 40 km este mes y gana el Estandarte de la Incursión de Noviembre, que no se vende. La carrera termina el 30 de noviembre.",
+      "ru": "Войди в десятку месяца на Пути набега и стань владыкой пути: рядом скачет бунчужный с тугом владыки, а титул виден рядом с именем. Проскачи 40 км за месяц и получи Знамя ноябрьского набега — его не купить. Гонка закончится 30 ноября."
+    },
+    "button": {
+      "tr": "Akın Yolu'na çık",
+      "en": "Ride the Raid Road",
+      "es": "Al Camino de Incursión",
+      "ru": "На Путь набега"
+    }
   }
 }
