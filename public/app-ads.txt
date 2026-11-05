@@ -1,6 +1,9 @@
 # AdMob
 google.com, pub-6769070869552073, DIRECT, f08c47fec0942fa0
 
+# Liftoff Monetize (AdMob teklif sistemi)
+vungle.com, 6aec308e072353e2c43ce312, DIRECT, c107d686becd2d77
+
 # Unity Ads (AdMob uyumlulaştırması)
 unity.com, 97493331, DIRECT, 96cabb5fbdde37a7
 adwmg.com, 159512, RESELLER, c9688a22012618e7
