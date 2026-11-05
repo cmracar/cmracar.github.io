@@ -49,7 +49,7 @@
             "body": [
               "Kurultay ücretsizdir ve Google AdMob reklamlarıyla desteklenir. Reklamların çoğu ödüllüdür: yalnızca siz bir ödül için izlemeyi seçtiğinizde açılır. Ayrıca göçte yeni yurda varınca ara sıra bir geçiş reklamı gösterilebilir.",
               "AdMob, reklam gösterebilmek için IP adresinize, ülke/şehir düzeyinde konumunuza, cihaz ve işletim sistemi bilgilerinize ve reklam etkileşimlerinize erişebilir; Android'de reklam kimliğinizi (Advertising ID) de kullanır. Hesabınız, e-postanız ve oyun ilerlemeniz AdMob'a gönderilmez.",
-              "Daha çok reklam bulunabilmesi için AdMob, reklam isteğini uyumlulaştırma ortaklarına da iletebilir: Unity Ads (Unity Technologies), AppLovin, Liftoff Monetize (Vungle) ve Mintegral. Bu durumda bu ortaklar da reklam göstermek ve ölçmek için aynı türden verileri işler (IP adresi, cihaz bilgisi, reklam kimliği ve reklam etkileşimleri); onayınız ve izleme izniniz onlara da iletilir. Bu verileri nasıl işledikleri: unity.com/legal/game-player-and-app-user-privacy-policy, applovin.com/privacy, liftoff.io/privacy-policy, mintegral.com/en/privacy",
+              "Daha çok reklam bulunabilmesi için AdMob, reklam isteğini uyumlulaştırma ortaklarına da iletebilir: Unity Ads (Unity Technologies), Liftoff Monetize (Vungle) ve Mintegral. Bu durumda bu ortaklar da reklam göstermek ve ölçmek için aynı türden verileri işler (IP adresi, cihaz bilgisi, reklam kimliği ve reklam etkileşimleri); onayınız ve izleme izniniz onlara da iletilir. Bu verileri nasıl işledikleri: unity.com/legal/game-player-and-app-user-privacy-policy, liftoff.io/privacy-policy, mintegral.com/en/privacy",
               "iOS'ta, ilk gecenizi atlattıktan sonra Apple'ın izleme izni penceresi bir kez açılır. İzin verirseniz AdMob size daha uygun reklamlar gösterebilir ve reklam kimliğiniz (IDFA) reklam ölçümü için kullanılır. İzin vermezseniz IDFA'ya erişilmez; yalnızca kişiselleştirilmemiş ve veri işlemesi kısıtlanmış reklam istenir. Oyunun hiçbir bölümü bu izne bağlı değildir; kararınızı iPhone Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden istediğiniz an değiştirebilirsiniz. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de iOS'ta yalnızca kişiselleştirilmemiş reklam istenir.",
               "Android'de, bulunduğunuz yerin mevzuatı gerektiriyorsa (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre) oyun açılışta Google'ın onay ekranını gösterir ve onay alınmadan kişiselleştirilmiş reklam isteği yapılmaz. Kararınızı sonradan Ayarlar → Hesap → \"Reklam gizliliği seçenekleri\" ile değiştirebilirsiniz. Reklam kimliğinizi cihaz ayarlarından da sıfırlayabilir ya da kapatabilirsiniz.",
               "Google'ın bu verileri nasıl işlediği: policies.google.com/technologies/partner-sites"
@@ -140,7 +140,7 @@
           {
             "heading": "Reklamlar",
             "body": [
-              "Oyun reklam içerir. Reklam içeriği Google AdMob ve uyumlulaştırma ortakları (Unity Ads, AppLovin, Liftoff Monetize, Mintegral) tarafından belirlenir; gösterilen reklamların içeriğinden yayıncı sorumlu değildir. Ödüllü bir reklam yüklenemez ya da yarıda kapatılırsa ödül verilmeyebilir."
+              "Oyun reklam içerir. Reklam içeriği Google AdMob ve uyumlulaştırma ortakları (Unity Ads, Liftoff Monetize, Mintegral) tarafından belirlenir; gösterilen reklamların içeriğinden yayıncı sorumlu değildir. Ödüllü bir reklam yüklenemez ya da yarıda kapatılırsa ödül verilmeyebilir."
             ]
           },
           {
@@ -239,7 +239,7 @@
             "body": [
               "Kurultay is free and supported by Google AdMob ads. Most ads are rewarded: they only play when you choose to watch one for a reward. An interstitial ad may occasionally be shown when you arrive at a new camp during migration.",
               "To show ads, AdMob may access your IP address, country/city-level location, device and operating system information and ad interactions; on Android it also uses your Advertising ID. Your account, email and game progress are not sent to AdMob.",
-              "To find more ads, AdMob may also pass the ad request to its mediation partners: Unity Ads (Unity Technologies), AppLovin, Liftoff Monetize (Vungle) and Mintegral. In that case these partners process the same kinds of data to show and measure ads (IP address, device information, advertising ID and ad interactions); your consent and tracking choice are passed on to them as well. How they use this data: unity.com/legal/game-player-and-app-user-privacy-policy, applovin.com/privacy, liftoff.io/privacy-policy, mintegral.com/en/privacy",
+              "To find more ads, AdMob may also pass the ad request to its mediation partners: Unity Ads (Unity Technologies), Liftoff Monetize (Vungle) and Mintegral. In that case these partners process the same kinds of data to show and measure ads (IP address, device information, advertising ID and ad interactions); your consent and tracking choice are passed on to them as well. How they use this data: unity.com/legal/game-player-and-app-user-privacy-policy, liftoff.io/privacy-policy, mintegral.com/en/privacy",
               "On iOS, Apple's tracking permission prompt appears once, after you survive your first night. If you allow it, AdMob can show you more relevant ads and your advertising identifier (IDFA) is used for ad measurement. If you don't, the IDFA is not accessed and only non-personalised ads with restricted data processing are requested. No part of the game depends on this permission; you can change your choice at any time in iPhone Settings → Privacy & Security → Tracking. In the European Economic Area, the United Kingdom and Switzerland only non-personalised ads are requested on iOS.",
               "On Android, where the law requires it (European Economic Area, United Kingdom, Switzerland), the game shows Google's consent screen at launch and no personalised ad request is made without consent. You can change your choice later in Settings → Account → \"Ad privacy options\". You can also reset or turn off your advertising ID in your device settings.",
               "How Google uses this data: policies.google.com/technologies/partner-sites"
@@ -330,7 +330,7 @@
           {
             "heading": "Ads",
             "body": [
-              "The game contains ads. Ad content is chosen by Google AdMob and its mediation partners (Unity Ads, AppLovin, Liftoff Monetize, Mintegral); the publisher is not responsible for the content of the ads shown. If a rewarded ad fails to load or is closed early, the reward may not be granted."
+              "The game contains ads. Ad content is chosen by Google AdMob and its mediation partners (Unity Ads, Liftoff Monetize, Mintegral); the publisher is not responsible for the content of the ads shown. If a rewarded ad fails to load or is closed early, the reward may not be granted."
             ]
           },
           {
