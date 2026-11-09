@@ -1,7 +1,7 @@
 {
   "android": {
-    "versionCode": 27,
-    "version": "0.2.16",
+    "versionCode": 29,
+    "version": "0.2.18",
     "minVersionCode": 23
   },
   "ios": {
@@ -36,5 +36,132 @@
       "es": "Al Camino de Incursión",
       "ru": "На Путь набега"
     }
-  }
+  },
+  "news": [
+    {
+      "id": "anket-ne-durduruyor-2026-11",
+      "start": "2026-11-24T00:00:00Z",
+      "end": "2026-12-08T00:00:00Z",
+      "audience": "played",
+      "minVersion": "0.2.18",
+      "popup": false,
+      "title": {
+        "tr": "Kısa anket: mağazada seni ne durduruyor?",
+        "en": "Quick poll: what holds you back in the store?",
+        "es": "Encuesta: ¿qué te frena en la tienda?",
+        "ru": "Опрос: что останавливает тебя в лавке?"
+      },
+      "body": {
+        "tr": "Dürüst cevabın fiyatları ve teklifleri düzeltmemize yardım eder. Tek seçim, bir kez.",
+        "en": "Your honest answer helps us fix prices and offers. One pick, once.",
+        "es": "Tu respuesta sincera nos ayuda a ajustar precios y ofertas. Una elección, una vez.",
+        "ru": "Честный ответ поможет нам исправить цены и предложения. Один выбор, один раз."
+      },
+      "poll": [
+        {
+          "tr": "Fiyatlar yüksek",
+          "en": "Prices are high",
+          "es": "Precios altos",
+          "ru": "Цены высокие"
+        },
+        {
+          "tr": "Ne alacağım belli değil",
+          "en": "Unclear what I get",
+          "es": "No está claro qué obtengo",
+          "ru": "Непонятно, что получу"
+        },
+        {
+          "tr": "Henüz gerek duymadım",
+          "en": "Haven't needed it yet",
+          "es": "Aún no lo necesito",
+          "ru": "Пока не нужно"
+        },
+        {
+          "tr": "Oyunlara para vermem",
+          "en": "I don't pay in games",
+          "es": "No pago en juegos",
+          "ru": "Не плачу в играх"
+        }
+      ]
+    },
+    {
+      "id": "anket-ne-alirdin-2026-11",
+      "start": "2026-11-10T00:00:00Z",
+      "end": "2026-11-24T00:00:00Z",
+      "audience": "played",
+      "minVersion": "0.2.18",
+      "popup": false,
+      "title": {
+        "tr": "Kısa anket: hangisine para verirdin?",
+        "en": "Quick poll: which would you pay for?",
+        "es": "Encuesta: ¿por cuál pagarías?",
+        "ru": "Опрос: за что ты заплатил бы?"
+      },
+      "body": {
+        "tr": "Cevabın bir sonraki güncellemede neyi büyüteceğimizi belirler. Tek seçim, bir kez.",
+        "en": "Your answer decides what we grow in the next update. One pick, once.",
+        "es": "Tu respuesta decide qué ampliamos en la próxima actualización. Una elección, una vez.",
+        "ru": "Твой ответ решит, что мы развиваем в следующем обновлении. Один выбор, один раз."
+      },
+      "poll": [
+        {
+          "tr": "Reklamsız oyun",
+          "en": "No ads",
+          "es": "Sin anuncios",
+          "ru": "Без рекламы"
+        },
+        {
+          "tr": "Aylık Bey Fermanı",
+          "en": "Monthly Bey Decree",
+          "es": "Decreto mensual",
+          "ru": "Указ бея на месяц"
+        },
+        {
+          "tr": "Ordu ve balbal gücü",
+          "en": "Army and balbal power",
+          "es": "Poder: ejército y balbals",
+          "ru": "Сила войска и балбалов"
+        },
+        {
+          "tr": "Görünüş ve sancak",
+          "en": "Looks and banners",
+          "es": "Aspectos y estandartes",
+          "ru": "Облики и знамёна"
+        },
+        {
+          "tr": "Hiçbirine",
+          "en": "None",
+          "es": "Ninguno",
+          "ru": "Ни за что"
+        }
+      ]
+    },
+    {
+      "id": "haftanin-akini-sinirsiz",
+      "start": "2026-11-09T00:00:00Z",
+      "end": "2026-12-07T00:00:00Z",
+      "audience": "weekly",
+      "minVersion": "0.2.18",
+      "popup": true,
+      "action": "weekly",
+      "title": {
+        "tr": "Haftanın Akını artık sınırsız!",
+        "en": "Raid of the Week has no limit now!",
+        "es": "¡La Incursión de la Semana ya no tiene límite!",
+        "ru": "Набег недели теперь без предела!"
+      },
+      "body": {
+        "tr": "Gece 10 sınırı kalktı: akın otağın düşene dek sürer, her gece daha sert. Gece 12'den Taş Atar, 15'ten fil gelir. Eskiden bitirenlerin hepsi 495 Şan'da berabere kalıyordu; artık kim en uzağa dayanırsa sıralamanın başında o olur. Dayandığın her gece Şan ve malzeme getirir.",
+        "en": "The Night 10 limit is gone: the raid goes on until your Otağ falls, harder every night. Trebuchets come from Night 12, elephants from Night 15. Everyone who finished used to tie at 495 Glory; now whoever holds out longest leads the board. Every night you survive brings Glory and materials.",
+        "es": "Se acabó el límite de la Noche 10: la incursión sigue hasta que cae tu Otağ, cada noche más dura. Los fundíbulos llegan desde la Noche 12 y los elefantes desde la 15. Antes todos los que terminaban empataban con 495 de Gloria; ahora lidera quien aguante más. Cada noche que resistes da Gloria y materiales.",
+        "ru": "Предел в 10 ночей снят: набег идёт, пока не падёт твой Отаг, и каждая ночь тяжелее. С 12-й ночи приходят требушеты, с 15-й — слоны. Раньше все, кто доходил до конца, делили 495 Славы; теперь первым будет тот, кто продержится дольше всех. Каждая выстоянная ночь приносит Славу и материалы."
+      },
+      "button": {
+        "tr": "Haftanın Akını'na git",
+        "en": "Go to Raid of the Week",
+        "es": "Ir a la Incursión",
+        "ru": "К набегу недели"
+      }
+    }
+  ]
 }
