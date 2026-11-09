@@ -4,11 +4,12 @@
 <body><p>Kurultay mağaza görselleri App Store Connect sekmesine aktarılıyor…</p>
 <script>
 // Yalnız App Store Connect ve YouTube Studio pencerelerine, istenen dosyaları (bu sitedeki /kurultay/store/ altından) gönderir.
+// TikTok Studio: kancalı dikey videolar (video/kanca_*_dikey_*.mp4).
 // Instagram: sosyal medya Reels'i ve gönderi görselleri (social/…).
 // Google Ads: oynanabilir reklam (playable/kurultay_playable.zip).
 // YouTube Studio: Play fragmanı ve küçük resmi (video/play_fragman_<dil>.mp4, video/play_kucuk_resim_<dil>.jpg).
-const TARGETS = ['https://appstoreconnect.apple.com', 'https://studio.youtube.com', 'https://ads.google.com', 'https://www.instagram.com'];
-const TARGET = TARGETS[{ youtube: 1, ads: 2, instagram: 3 }[new URLSearchParams(location.search).get('o')] || 0];
+const TARGETS = ['https://appstoreconnect.apple.com', 'https://studio.youtube.com', 'https://ads.google.com', 'https://www.instagram.com', 'https://www.tiktok.com'];
+const TARGET = TARGETS[{ youtube: 1, ads: 2, instagram: 3, tiktok: 4 }[new URLSearchParams(location.search).get('o')] || 0];
 window.addEventListener('message', async (e) => {
   if (!TARGETS.includes(e.origin) || !e.data || e.data.kind !== 'kurultay-store-request') return;
   const out = [];
