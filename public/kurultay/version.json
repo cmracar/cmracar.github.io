@@ -39,6 +39,58 @@
   },
   "news": [
     {
+      "id": "anket-geri-getiren-2026-11",
+      "start": "2026-11-10T00:00:00Z",
+      "end": "2026-12-08T00:00:00Z",
+      "audience": "returning",
+      "minVersion": "0.2.20",
+      "popup": true,
+      "title": {
+        "tr": "Kısa anket: seni her gün ne geri getirir?",
+        "en": "Quick poll: what would bring you back every day?",
+        "es": "Encuesta: ¿qué te haría volver cada día?",
+        "ru": "Опрос: что вернёт тебя в игру каждый день?"
+      },
+      "body": {
+        "tr": "Birkaç gündür bozkırdasın. Cevabın, sonraki güncellemede neyi büyüteceğimizi belirler. Tek seçim, bir kez.",
+        "en": "You've been on the steppe for a few days. Your answer decides what we grow next. One pick, once.",
+        "es": "Llevas unos días en la estepa. Tu respuesta decide qué ampliamos después. Una elección, una vez.",
+        "ru": "Ты уже несколько дней в степи. Твой ответ решит, что мы развиваем дальше. Один выбор, один раз."
+      },
+      "poll": [
+        {
+          "tr": "Günlük görev ve armağanlar",
+          "en": "Daily quests and rewards",
+          "es": "Misiones y premios diarios",
+          "ru": "Ежедневные задания и награды"
+        },
+        {
+          "tr": "Sıralamada başkalarıyla yarış",
+          "en": "Racing others on the leaderboard",
+          "es": "Competir en la clasificación",
+          "ru": "Соревнование в рейтинге"
+        },
+        {
+          "tr": "Yeni bölge, bey ve hikâye",
+          "en": "New regions, lords and story",
+          "es": "Nuevas regiones, señores e historia",
+          "ru": "Новые земли, беи и сюжет"
+        },
+        {
+          "tr": "Daha kolay ilerleme (zorlanıyorum)",
+          "en": "Easier progress (it's too hard)",
+          "es": "Avanzar más fácil (me cuesta)",
+          "ru": "Полегче прогресс (слишком трудно)"
+        },
+        {
+          "tr": "Kısa ve hızlı kipler (Akın Yolu gibi)",
+          "en": "Short, quick modes (like Raid Road)",
+          "es": "Modos cortos y rápidos (como el Camino)",
+          "ru": "Короткие быстрые режимы (как Путь набега)"
+        }
+      ]
+    },
+    {
       "id": "anket-ne-durduruyor-2026-11",
       "start": "2026-11-24T00:00:00Z",
       "end": "2026-12-08T00:00:00Z",
