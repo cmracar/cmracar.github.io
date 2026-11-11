@@ -5,8 +5,8 @@
     "minVersionCode": 30
   },
   "ios": {
-    "versionCode": 30,
-    "version": "0.2.18"
+    "versionCode": 32,
+    "version": "0.2.20"
   },
   "roadEvent": {
     "id": "2026-11",
