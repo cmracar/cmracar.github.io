@@ -10,8 +10,8 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 5 Kasım 2026",
-        "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir, reklamlarımızın sonucu Meta ile ölçülür. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
+        "updated": "Son güncelleme: 18 Kasım 2026",
+        "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak ve bir boya (klana) katılmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir, reklamlarımızın sonucu Meta ile ölçülür. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
             "heading": "Cihazınızda kalan veriler",
@@ -25,7 +25,8 @@
             "heading": "Sunucumuzda saklanan veriler",
             "body": [
               "Apple veya Google ile giriş yaptığınızda şunlar saklanır:",
-              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: ilk girişte bir kez seçtiğiniz takma ad ve herkese açık kahraman profiliniz (rütbe, Şan, Güç, teçhizat ve at seviyeleri, görünüş, kazanılan Haftanın Sancakları)\n• Şikayet ve engelleme: bir oyuncuyu şikayet ederseniz kullanıcı kimliğiniz, şikayet edilen oyuncu ve neden saklanır; engellediğiniz oyuncular cihazınızda ve bulut kaydınızda tutulur\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu\n• Bulut kaydı: yukarıdaki oyun ilerlemesinin bir kopyası (sürmekte olan sefer, Kut, Şan, malzemeler, Kam Ağacı, teçhizat, yetenekler, dostluklar, günlük hediye, buyruklar, Haftanın Akını hakları ve oyun tercihleri); yeni cihazda ya da yeniden kurulumda ilerlemenizi geri getirmek için",
+              "• Hesap bilgileri: giriş sağlayıcınızın bize ilettiği e-posta adresi (Apple ile girişte gizli aktarım adresi olabilir), Google ile girişte adınız ve profil fotoğrafı bağlantınız, hesabınıza ait bir kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: ilk girişte bir kez seçtiğiniz takma ad ve herkese açık kahraman profiliniz (rütbe, Şan, Güç, teçhizat ve at seviyeleri, görünüş, kazanılan Haftanın Sancakları)\n• Şikayet ve engelleme: bir oyuncuyu şikayet ederseniz kullanıcı kimliğiniz, şikayet edilen oyuncu ve neden saklanır; engellediğiniz oyuncular cihazınızda ve bulut kaydınızda tutulur\n• Haftanın Akını skorları: hafta, en iyi denemenizin Şanı, dayandığınız gece sayısı, zaferle bitip bitmediği ve haftanın harita tohumu\n• Bulut kaydı: yukarıdaki oyun ilerlemesinin bir kopyası (sürmekte olan sefer, Kut, Şan, malzemeler, Kam Ağacı, teçhizat, yetenekler, dostluklar, günlük hediye, buyruklar, Haftanın Akını hakları ve oyun tercihleri); yeni cihazda ya da yeniden kurulumda ilerlemenizi geri getirmek için\n• Boy (klan): katıldığınız boyun adı, üyeliğiniz ve rütbeniz, boy savaşı koşularınızın puanları ve günlük katkılarınız; boy sohbetinde yazdığınız mesajlar (en çok 200 karakter; boy başına son 500 mesaj tutulur) ve hazır mesajlar\n• Davet: kişisel davet kodunuz, kodu giren hesap ve davetin geçerli sayılıp sayılmadığı; davet koduyla geldiyseniz hangi koddan geldiğiniz",
+              "Boy sohbetini yalnızca aynı boyun üyeleri görür. Mesajlar kaba sözlere karşı süzülür; her mesajı şikayet edebilir, yazan oyuncuyu engelleyebilirsiniz; üç ayrı boydaş şikayet ederse mesaj gizlenir; boyun Han'ı ve Beyleri mesajları silebilir. Şikayetler incelenir ve kurallara aykırı hesaplara işlem yapılır; sorularınız için cemreacar94@gmail.com adresine yazabilirsiniz.",
               "Diğer oyuncular yalnızca takma adınızı, skorlarınızı ve kahraman profilinizi görür. Takma adlar kaba sözlere karşı süzülür; birkaç oyuncunun şikayet ettiği ad gizlenir; her oyuncuyu profilinden şikayet edebilir ya da engelleyebilirsiniz. E-posta adresiniz, adınız ve profil fotoğrafınız kimseye gösterilmez.",
               "Bu veriler Supabase altyapısında, Avrupa Birliği'ndeki (Frankfurt) sunucularda tutulur. Hesabınız durduğu sürece saklanır ve hesabınızı sildiğinizde silinir."
             ]
@@ -33,7 +34,7 @@
           {
             "heading": "Hesabınızı silme",
             "body": [
-              "Ayarlar → \"Hesabımı sil\" ile hesabınızı istediğiniz an silebilirsiniz. Hesabınız, takma adınız, bulut kaydınız ve bütün sıralama skorlarınız kalıcı olarak silinir.",
+              "Hesabınız, takma adınız, bulut kaydınız, bütün sıralama skorlarınız, boy üyeliğiniz ve davet kayıtlarınız kalıcı olarak silinir. Boy sohbetinde yazdığınız mesajlar adınızdan ayrılır; boyun sohbet geçmişinde adsız kalabilir ve boy başına son 500 mesajdan eskisi zaten silinir.",
               "Cihazınızdaki oyun ilerlemesinin kopyası silinmez; uygulamayı silerek kaldırabilirsiniz.",
               "Uygulamaya artık erişiminiz yoksa, giriş yaptığınız e-posta adresini belirterek bize yazın; hesabınızı 30 gün içinde sileriz."
             ]
@@ -165,7 +166,7 @@
       },
       "deletion": {
         "title": "Kurultay — Hesap Silme",
-        "updated": "Son güncelleme: 5 Ekim 2026",
+        "updated": "Son güncelleme: 18 Kasım 2026",
         "intro": "Bu sayfa, Cemre Acar tarafından geliştirilen Kurultay oyunundaki hesabınızı ve ona bağlı verileri nasıl sileceğinizi anlatır.",
         "sections": [
           {
@@ -184,14 +185,15 @@
           {
             "heading": "Silinen veriler",
             "body": [
-              "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı, kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: takma ad\n• Haftanın Akını skorlarının tümü\n• Bulut kaydı: hesaptaki oyun ilerlemesi kopyası",
-              "Sunucumuzda silme sonrasında saklanan ek bir veri yoktur."
+              "• Hesap bilgileri: e-posta adresi, ad, profil fotoğrafı bağlantısı, kullanıcı kimliği ve giriş tarihleri\n• Sıralama profili: takma ad\n• Haftanın Akını skorlarının tümü\n• Bulut kaydı: hesaptaki oyun ilerlemesi kopyası\n• Boy üyeliği, boy savaşı koşuları ve katkılarınız ile davet kayıtlarınız",
+              "Sunucumuzda, adınızdan ayrılmış boy sohbeti mesajları dışında silme sonrasında saklanan ek bir veri yoktur."
             ]
           },
           {
             "heading": "Silinmeyen veriler",
             "body": [
-              "Cihazınızdaki oyun ilerlemesi sunucuda değil telefonunuzda durur; uygulamayı silerek kaldırabilirsiniz."
+              "Cihazınızdaki oyun ilerlemesi sunucuda değil telefonunuzda durur; uygulamayı silerek kaldırabilirsiniz.",
+              "Boy sohbetindeki mesajlarınız silinmez ama adınızdan ayrılır (adsız görünür); yeni mesajlar geldikçe boyun son 500 mesajı dışında kalanlar kendiliğinden silinir."
             ]
           }
         ]
@@ -200,8 +202,8 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 5 November 2026",
-        "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard; you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob and the results of our own ads are measured with Meta. You can delete your account at any time from inside the game.",
+        "updated": "Last updated: 18 November 2026",
+        "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard and to join a clan (Boy); you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob and the results of our own ads are measured with Meta. You can delete your account at any time from inside the game.",
         "sections": [
           {
             "heading": "Data that stays on your device",
@@ -215,7 +217,8 @@
             "heading": "Data stored on our server",
             "body": [
               "When you sign in with Apple or Google we store:",
-              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname you choose once when you first sign in, and your public hero profile (rank, Glory, Power, gear and horse levels, look, Weekly Banners won)\n• Reports and blocks: if you report a player we store your user ID, the reported player and the reason; players you block are kept on your device and in your cloud save\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed\n• Cloud save: a copy of the game progress above (current campaign, Kut, Glory, materials, Kam Tree, gear, skills, friendships, daily gift, orders, Raid of the Week attempts and game preferences), used to bring your progress back on a new device or after reinstalling",
+              "• Account details: the email address your sign-in provider shares with us (with Apple this may be a private relay address), your name and profile picture link when you use Google, a user ID for your account and sign-in dates\n• Leaderboard profile: the nickname you choose once when you first sign in, and your public hero profile (rank, Glory, Power, gear and horse levels, look, Weekly Banners won)\n• Reports and blocks: if you report a player we store your user ID, the reported player and the reason; players you block are kept on your device and in your cloud save\n• Raid of the Week scores: the week, the Glory of your best attempt, the number of nights you survived, whether it ended in victory and the week's map seed\n• Cloud save: a copy of the game progress above (current campaign, Kut, Glory, materials, Kam Tree, gear, skills, friendships, daily gift, orders, Raid of the Week attempts and game preferences), used to bring your progress back on a new device or after reinstalling\n• Clan (Boy): the name of the clan you join, your membership and rank, the scores of your clan-war runs and your daily contributions; the messages you write in clan chat (up to 200 characters; the last 500 messages per clan are kept) and quick messages\n• Invites: your personal invite code, the account that entered it and whether the invite counted; if you arrived with an invite code, which code it was",
+              "Only members of the same clan can see clan chat. Messages are filtered for rude words; you can report any message and block the player who wrote it; a message is hidden once three different clan members report it; a clan's Han and Beys can delete messages. Reports are reviewed and accounts that break the rules are dealt with; you can write to cemreacar94@gmail.com with questions.",
               "Other players only see your nickname, your scores and your hero profile. Nicknames are filtered for offensive words; a nickname reported by several players is hidden, and you can report or block any player from their profile. Your email address, name and profile picture are never shown to anyone.",
               "This data is kept on Supabase infrastructure, on servers in the European Union (Frankfurt). It is kept for as long as your account exists and is deleted when you delete your account."
             ]
@@ -223,7 +226,7 @@
           {
             "heading": "Deleting your account",
             "body": [
-              "You can delete your account at any time in Settings → \"Delete my account\". Your account, nickname, cloud save and all your leaderboard scores are permanently deleted.",
+              "Your account, nickname, cloud save, all your leaderboard scores, your clan membership and your invite records are permanently deleted. Messages you wrote in clan chat are detached from your name; they may remain in the clan's chat history without a name, and anything older than the last 500 messages per clan is deleted anyway.",
               "The copy of your game progress on this device is not deleted; you can remove it by uninstalling the app.",
               "If you no longer have access to the app, write to us from the email address you signed in with; we will delete your account within 30 days."
             ]
@@ -355,7 +358,7 @@
       },
       "deletion": {
         "title": "Kurultay — Account Deletion",
-        "updated": "Last updated: October 5, 2026",
+        "updated": "Last updated: 18 November 2026",
         "intro": "This page explains how to delete your account in Kurultay, a game developed by Cemre Acar, and the data linked to it.",
         "sections": [
           {
@@ -374,14 +377,15 @@
           {
             "heading": "Data that is deleted",
             "body": [
-              "• Account details: email address, name, profile picture link, user ID and sign-in dates\n• Leaderboard profile: nickname\n• All Raid of the Week scores\n• Cloud save: the copy of your game progress in your account",
-              "No additional data is kept on our server after deletion."
+              "• Account details: email address, name, profile picture link, user ID and sign-in dates\n• Leaderboard profile: nickname\n• All Raid of the Week scores\n• Cloud save: the copy of your game progress in your account\n• Clan membership, clan-war runs and contributions, and invite records",
+              "Apart from clan chat messages detached from your name, no additional data is kept on our server after deletion."
             ]
           },
           {
             "heading": "Data that is not deleted",
             "body": [
-              "Game progress on your device lives on your phone, not on the server; you can remove it by uninstalling the app."
+              "Game progress on your device lives on your phone, not on the server; you can remove it by uninstalling the app.",
+              "Your clan chat messages are not deleted but are detached from your name (they show without a name); as new messages arrive, anything beyond the clan's last 500 messages is removed automatically."
             ]
           }
         ]

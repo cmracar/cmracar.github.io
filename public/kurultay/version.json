@@ -39,6 +39,32 @@
   },
   "news": [
     {
+      "id": "yenilikler-0221",
+      "start": "2026-11-18T00:00:00Z",
+      "end": "2027-02-01T00:00:00Z",
+      "minVersion": "0.2.21",
+      "popup": false,
+      "action": "whatsnew",
+      "title": {
+        "tr": "Büyük güncelleme: Boy Savaşı!",
+        "en": "Big update: Clan War!",
+        "es": "¡Gran actualización: Guerra de clanes!",
+        "ru": "Большое обновление: война родов!"
+      },
+      "body": {
+        "tr": "Büyük güncelleme: Boy Savaşı geldi!\n\n• Boy Savaşı: Pazartesi-Cuma boyunla birlikte düşman kalesini kuşat (önce Sur, sonra Burçlar, en sonda Kale), Cumartesi-Pazar surunu savun. Puanların boyun ortak kalesine yazılır; kale düşerse ya da savunma tutarsa Yada Taşı ve malzeme kazanırsın.\n• Savaş Bileti: günde 3 akın ücretsiz; reklam izleyerek ya da 2 Yada Taşı ile en çok 2 bilet daha alırsın.\n• Boy sohbeti, ortak ödül salonu ve bağışlar: boydaşlarınla yaz, sandıkları topla, Boy Buyruklarını bitir. Arkadaşını davet edince ödül kazanırsın.\n• Kut hamlesi: dövüştükçe dolan yeni düğme; dolunca Atıl'a basılı tut.\n• Kurtlar artık farklı: Boz Kurt %5, Ak Kurt %7,5, Ayaz Kurdu %10 saldırı verir.\n• Yeni Ödüller sayfası, daha akıcı açılış, daha hareketli savunma günü ve birçok düzeltme.",
+        "en": "Big update: Clan War is here!\n\n• Clan War: Monday-Friday besiege the enemy fortress with your clan (Wall first, then Towers, finally the Keep); Saturday-Sunday defend your wall. Your points go to the clan's shared fortress; if it falls or the defense holds you earn Yada Stones and materials.\n• War Ticket: 3 raids a day are free; watch an ad or spend 2 Yada Stones for up to 2 more tickets.\n• Clan chat, a shared reward hall and donations: chat with your clanmates, collect chests, finish Clan Orders. Invite a friend to earn rewards.\n• Kut move: a new button that fills as you fight; hold Atıl when it is full.\n• Wolves now differ: Boz Wolf gives 5%, Ak Wolf 7.5%, Ayaz Wolf 10% attack.\n• New Rewards page, smoother start, a livelier defense day and many fixes.",
+        "es": "Gran actualización: ¡llega la Guerra de clanes!\n\n• Guerra de clanes: de lunes a viernes asedia con tu clan la fortaleza enemiga (primero la Muralla, luego las Torres y al final el Castillo); sábado y domingo defiende tu muralla. Tus puntos van a la fortaleza común del clan; si cae o la defensa resiste, ganas Piedras Yada y materiales.\n• Boleto de guerra: 3 incursiones al día son gratis; mira un anuncio o gasta 2 Piedras Yada por hasta 2 boletos más.\n• Chat del clan, sala de premios común y donaciones: charla con tu clan, recoge cofres, completa las Órdenes del clan. Invita a un amigo y gana premios.\n• Golpe Kut: un botón nuevo que se llena al luchar; cuando está lleno, mantén pulsado Atıl.\n• Los lobos ahora son distintos: el lobo Boz da 5 %, Ak 7,5 %, Ayaz 10 % de ataque.\n• Nueva página de Premios, inicio más fluido, un día de defensa más intenso y muchas correcciones.",
+        "ru": "Большое обновление: война родов!\n\n• Война родов: с понедельника по пятницу штурмуй вместе с родом вражескую крепость (сначала стена, затем башни, в конце замок), в субботу и воскресенье держи свою стену. Твои очки идут в общую крепость рода; если она падёт или оборона устоит, ты получишь Камни Яды и материалы.\n• Боевой билет: 3 набега в день бесплатно; за рекламу или за 2 Камня Яды можно взять ещё до 2 билетов.\n• Чат рода, общий зал наград и взносы: пиши сородичам, забирай сундуки, выполняй приказы рода. Позови друга и получи награду.\n• Ход Кута: новая кнопка, что заряжается в бою; когда она полна, зажми Атыл.\n• Волки теперь разные: Боз даёт 5%, Ак 7,5%, Аяз 10% атаки.\n• Новая страница наград, плавнее запуск, насыщеннее день обороны и много исправлений."
+      },
+      "button": {
+        "tr": "Yenilikleri Gör",
+        "en": "See What's New",
+        "es": "Ver novedades",
+        "ru": "Что нового"
+      }
+    },
+    {
       "id": "anket-geri-getiren-2026-11",
       "start": "2026-11-10T00:00:00Z",
       "end": "2026-12-08T00:00:00Z",
