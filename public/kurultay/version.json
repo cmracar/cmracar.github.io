@@ -1,8 +1,8 @@
 {
   "android": {
-    "versionCode": 31,
-    "version": "0.2.20",
-    "minVersionCode": 30
+    "versionCode": 35,
+    "version": "0.2.21",
+    "minVersionCode": 35
   },
   "ios": {
     "versionCode": 32,
