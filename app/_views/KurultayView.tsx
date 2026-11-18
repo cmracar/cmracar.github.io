@@ -49,6 +49,16 @@ const COPY = {
       { title: 'Çile kademeleri', desc: 'Zorluğu kendin seç; Bozkır Haritası’nda bölgeleri fethet.' },
       { title: 'Haftanın Akını', desc: 'Her hafta herkese aynı harita, aynı akınlar, eşit güç. Hesapla gir, haftalık sıralamada yerini al.' },
     ],
+    newsLabel: 'Son güncelleme · 0.2.21',
+    newsTitle: 'Büyük güncelleme: Boy Savaşı',
+    news: [
+      { title: 'Boy Savaşı', desc: 'Hafta içi boyunla düşman kalesine akın et, hafta sonu surunu savun. Her koşu kısa bir aksiyon; sonuç boyunun puanına yazılır.' },
+      { title: 'Boy sohbeti ve ödül salonu', desc: 'Boyuna özel sohbet, hızlı mesajlar, bağışlar ve haftalık ödüller. Sohbette şikâyet ve engelleme var; yalnız boy üyeleri görür.' },
+      { title: 'Savaş Bileti ve davet kodu', desc: 'Günde 3 koşu; 2 ek bilet reklamla ya da 2 Yada Taşı ile alınır. Davet kodunla arkadaşını boya çağır, ikiniz de hediye alırsınız.' },
+      { title: 'Kut hamlesi', desc: 'Dövüştükçe dolan yeni düğme: doldu mu savaşın ortasında tek dokunuşla kullan.' },
+      { title: 'Kurtlar farklılaştı', desc: 'Boz Kurt %5, Ak Kurt %7,5, Ayaz Kurdu %10 saldırı katkısı verir.' },
+      { title: 'Daha akıcı ve hareketli', desc: 'Yeni Ödüller sayfası, daha hızlı açılış, daha kalabalık ve hareketli savunma günü ve birçok düzeltme.' },
+    ],
     stackLabel: 'Teknolojiler',
     legalLabel: 'Yasal ve destek',
   },
@@ -82,6 +92,16 @@ const COPY = {
       { title: 'Raid Road', desc: 'The further you ride the endless road north, the higher your score. Pick a blessing at the Kam Stone, reach the month’s top 10 and become a Road Lord.' },
       { title: 'Ordeal tiers', desc: 'Choose your own challenge, and conquer regions on the Steppe Map.' },
       { title: 'Raid of the Week', desc: 'Every week: the same map, the same raids and equal power for everyone. Sign in and climb the weekly leaderboard.' },
+    ],
+    newsLabel: 'Latest update · 0.2.21',
+    newsTitle: 'Big update: Clan War',
+    news: [
+      { title: 'Clan War', desc: 'On weekdays raid an enemy fortress with your clan, at the weekend defend your own wall. Every run is a short action level and counts towards your clan’s score.' },
+      { title: 'Clan chat and reward hall', desc: 'A private chat for your clan, quick messages, donations and weekly rewards. Chat has report and block tools and is visible to clan members only.' },
+      { title: 'War Tickets and invite code', desc: '3 runs a day; 2 extra tickets by watching an ad or spending 2 Yada Stones. Share your invite code and you both get a gift.' },
+      { title: 'Kut move', desc: 'A new button that fills as you fight: use it with one tap in the middle of battle.' },
+      { title: 'Wolves now differ', desc: 'The Grey Wolf adds 5%, the White Wolf 7.5% and the Frost Wolf 10% attack.' },
+      { title: 'Smoother and livelier', desc: 'A new Rewards page, faster start-up, a busier defense day and many fixes.' },
     ],
     stackLabel: 'Stack',
     legalLabel: 'Legal and support',
@@ -189,6 +209,20 @@ export default function KurultayView({ lang }: { lang: Lang }) {
               </figure>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SON GÜNCELLEME */}
+      <section className="mx-auto max-w-6xl px-5 pt-20 md:px-8">
+        <SectionHeading label={c.newsLabel} />
+        <h2 className="mb-8 text-2xl font-medium text-ink">{c.newsTitle}</h2>
+        <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+          {c.news.map(n => (
+            <div key={n.title} className="flex flex-col gap-3 bg-paper p-6">
+              <h3 className="font-medium text-ink">{n.title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{n.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
