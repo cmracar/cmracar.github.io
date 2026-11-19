@@ -42,7 +42,7 @@
       "id": "reklam-azaldi-2026-11",
       "start": "2026-11-19T00:00:00Z",
       "end": "2027-01-15T00:00:00Z",
-      "popup": false,
+      "popup": true,
       "title": {
         "tr": "Reklamları azalttık, anlayışın için teşekkürler",
         "en": "We cut the ads, thank you for your patience",
