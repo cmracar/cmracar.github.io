@@ -39,6 +39,24 @@
   },
   "news": [
     {
+      "id": "reklam-azaldi-2026-11",
+      "start": "2026-11-19T00:00:00Z",
+      "end": "2027-01-15T00:00:00Z",
+      "popup": false,
+      "title": {
+        "tr": "Reklamları azalttık, anlayışın için teşekkürler",
+        "en": "We cut the ads, thank you for your patience",
+        "es": "Hemos reducido los anuncios, gracias por tu paciencia",
+        "ru": "Мы сократили рекламу, спасибо за терпение"
+      },
+      "body": {
+        "tr": "Reklamlarla ilgili yazdıklarınızı okuduk ve haklıydınız. Bu yüzden bir değişiklik yaptık.\n\n• Geçiş reklamları belirgin biçimde azaldı: artık gece aralarında iki gecede bir çıkıyor.\n• Yine de bir miktar reklam göreceksin. Bunun için anlayışını rica ediyoruz: reklamlar, Kurultay'ı geliştirmeye devam etmemizi sağlıyor. Yeni özellikler, düzeltmeler ve sunucular onlarla ayakta duruyor.\n• Ödüllü reklamlar tamamen isteğe bağlı; izlemek zorunda değilsin.\n• Reklamları hiç görmek istemezsen Reklamsız Oba var: göç varışı ve gece aralarındaki zorunlu reklamlar kalkar. Hem sen rahat oynarsın hem de oyunun gelişmesine doğrudan destek olursun. Fiyatını da reklam şikâyetleriniz üzerine düşürdük.\n\nReklamsız Oba almak zorunda değilsin; oynaman bile bizim için çok değerli. Geri bildirimlerinizi okumaya devam ediyoruz, yazmaya devam edin.",
+        "en": "We read what you wrote about ads, and you were right. So we made a change.\n\n• Interstitial ads are noticeably less frequent: they now appear between nights only every other night.\n• You will still see some ads, and we ask for your understanding: ads are what let us keep building Kurultay. New features, fixes and servers depend on them.\n• Rewarded ads are completely optional; you never have to watch one.\n• If you would rather never see them, there is the Ad-free Camp: the forced ads at migration arrival and between nights go away. You play in peace and you directly support the game's development. We also lowered its price after your ad feedback.\n\nYou do not have to buy it; just playing means a lot to us. We keep reading your feedback, so keep writing.",
+        "es": "Hemos leído lo que escribisteis sobre los anuncios y teníais razón. Por eso hemos hecho un cambio.\n\n• Los anuncios intersticiales se han reducido de forma notable: ahora salen entre noches solo una de cada dos.\n• Aun así verás algunos anuncios y pedimos tu comprensión: los anuncios nos permiten seguir desarrollando Kurultay. Las novedades, las correcciones y los servidores dependen de ellos.\n• Los anuncios con recompensa son totalmente opcionales; nunca tienes que verlos.\n• Si prefieres no verlos, existe el Campamento sin anuncios: desaparecen los anuncios obligatorios al llegar tras la migración y entre noches. Juegas tranquilo y apoyas directamente el desarrollo del juego. También hemos bajado su precio tras vuestras quejas sobre los anuncios.\n\nNo tienes que comprarlo; que juegues ya significa mucho para nosotros. Seguimos leyendo vuestros comentarios, seguid escribiendo.",
+        "ru": "Мы прочитали ваши отзывы о рекламе, и вы были правы. Поэтому мы кое-что изменили.\n\n• Межуровневая реклама стала заметно реже: теперь она появляется между ночами только через ночь.\n• Какая-то реклама всё же останется, и мы просим вас отнестись с пониманием: именно реклама позволяет нам продолжать развивать Kurultay. Новые функции, исправления и серверы держатся на ней.\n• Реклама за награду полностью добровольная: смотреть её не обязательно.\n• Если хочешь вовсе не видеть рекламу, есть «Стойбище без рекламы»: обязательная реклама при прибытии на новое место и между ночами исчезает. Ты играешь спокойно и напрямую поддерживаешь развитие игры. Цену мы тоже снизили после ваших жалоб на рекламу.\n\nПокупать не обязательно: то, что ты играешь, для нас уже очень ценно. Мы продолжаем читать ваши отзывы, пишите ещё."
+      }
+    },
+    {
       "id": "yenilikler-0221",
       "start": "2026-11-18T00:00:00Z",
       "end": "2027-02-01T00:00:00Z",
