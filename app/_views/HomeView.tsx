@@ -233,57 +233,12 @@ export default function HomeView({ lang }: { lang: Lang }) {
             </a>
           </p>
 
-          {/* Yelken */}
-          <article className="mt-16 grid gap-10 md:grid-cols-12 md:gap-14">
-            <Link
-              href={href(lang, '/yelken')}
-              aria-label={c.yelken.page}
-              className="group block self-start overflow-hidden rounded-lg border border-line bg-[#1A1231] md:col-span-7"
-            >
-              <div className="flex aspect-[16/10] items-start justify-center gap-[2.5%] overflow-hidden px-[2.5%] pt-[14%]">
-                {[2, 1, 3].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
-                  // Dik telefon: koyu gövde, metal kenar, üstte kamera adası (Kurultay'daki çerçeveyle aynı)
-                  <div
-                    key={src}
-                    className={`w-[31%] shrink-0 rounded-[14px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[4px] shadow-2xl shadow-black/60 ring-1 ring-white/20 transition-transform duration-500 group-hover:-translate-y-1.5 sm:rounded-[22px] sm:p-[6px] ${i === 1 ? '' : 'translate-y-[10%]'}`}
-                  >
-                    <div className="relative overflow-hidden rounded-[10px] bg-black sm:rounded-[16px]">
-                      <Image
-                        src={src}
-                        alt={i === 0 ? c.yelken.shots : ''}
-                        width={1080}
-                        height={1920}
-                        sizes="(min-width: 768px) 20vw, 30vw"
-                        className="block h-auto w-full"
-                      />
-                      <span className="absolute left-1/2 top-[5px] h-[5px] w-[18px] sm:top-[7px] sm:h-[7px] sm:w-[26px] -translate-x-1/2 rounded-full bg-black" aria-hidden="true" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Link>
-            <div className="md:col-span-5">
-              <Status label={yelken.label} live={yelken.live} />
-              <h3 className="mt-4 font-serif text-4xl text-ink">Yelken</h3>
-              <p className="mt-2 text-lg text-ink">{c.yelken.tagline}</p>
-              <p className="mt-4 leading-relaxed text-muted">{c.yelken.body}</p>
-              <Did items={c.yelken.did} />
-              <AppFacts facts={c.yelken.facts} />
-              <div className="mt-8 flex flex-wrap items-center gap-5">
-                <StoreBadges size="sm" lang={lang} />
-                <Link href={href(lang, '/yelken')} className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-accent">
-                  {c.apps.details} <ArrowRight size={15} />
-                </Link>
-              </div>
-            </div>
-          </article>
-
           {/* Kurultay */}
-          <article className="mt-24 grid gap-10 md:grid-cols-12 md:gap-14">
+          <article className="mt-16 grid gap-10 md:grid-cols-12 md:gap-14">
             <Link
               href={href(lang, '/kurultay')}
               aria-label={c.kurultay.page}
-              className="group block self-start overflow-hidden rounded-lg border border-line bg-[#0d0b09] bg-[radial-gradient(ellipse_at_50%_35%,rgba(224,169,72,0.16),transparent_65%)] md:order-2 md:col-span-7"
+              className="group block self-start overflow-hidden rounded-lg border border-line bg-[#0d0b09] bg-[radial-gradient(ellipse_at_50%_35%,rgba(224,169,72,0.16),transparent_65%)] md:col-span-7"
             >
               {/* Oyun ekranları (public/kurultay/home/{tr,en}/N.jpg, mağaza ham görüntüleri)
                   sağa sola kayarak alt alta; üzerine gelince araları açılır */}
@@ -312,7 +267,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
                 ))}
               </div>
             </Link>
-            <div className="md:order-1 md:col-span-5">
+            <div className="md:col-span-5">
               <Status label={kurultay.label} live={kurultay.live} />
               <h3 className="mt-4 font-serif text-4xl text-ink">Kurultay</h3>
               <p className="mt-2 text-lg text-ink">{c.kurultay.tagline}</p>
@@ -327,6 +282,51 @@ export default function HomeView({ lang }: { lang: Lang }) {
               </div>
             </div>
           </article>
+          {/* Yelken */}
+          <article className="mt-24 grid gap-10 md:grid-cols-12 md:gap-14">
+            <Link
+              href={href(lang, '/yelken')}
+              aria-label={c.yelken.page}
+              className="group block self-start overflow-hidden rounded-lg border border-line bg-[#1A1231] md:order-2 md:col-span-7"
+            >
+              <div className="flex aspect-[16/10] items-start justify-center gap-[2.5%] overflow-hidden px-[2.5%] pt-[14%]">
+                {[2, 1, 3].map(n => `/yelken/screens/${lang}/${n}.jpg`).map((src, i) => (
+                  // Dik telefon: koyu gövde, metal kenar, üstte kamera adası (Kurultay'daki çerçeveyle aynı)
+                  <div
+                    key={src}
+                    className={`w-[31%] shrink-0 rounded-[14px] bg-gradient-to-b from-[#2a2724] to-[#121110] p-[4px] shadow-2xl shadow-black/60 ring-1 ring-white/20 transition-transform duration-500 group-hover:-translate-y-1.5 sm:rounded-[22px] sm:p-[6px] ${i === 1 ? '' : 'translate-y-[10%]'}`}
+                  >
+                    <div className="relative overflow-hidden rounded-[10px] bg-black sm:rounded-[16px]">
+                      <Image
+                        src={src}
+                        alt={i === 0 ? c.yelken.shots : ''}
+                        width={1080}
+                        height={1920}
+                        sizes="(min-width: 768px) 20vw, 30vw"
+                        className="block h-auto w-full"
+                      />
+                      <span className="absolute left-1/2 top-[5px] h-[5px] w-[18px] sm:top-[7px] sm:h-[7px] sm:w-[26px] -translate-x-1/2 rounded-full bg-black" aria-hidden="true" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Link>
+            <div className="md:order-1 md:col-span-5">
+              <Status label={yelken.label} live={yelken.live} />
+              <h3 className="mt-4 font-serif text-4xl text-ink">Yelken</h3>
+              <p className="mt-2 text-lg text-ink">{c.yelken.tagline}</p>
+              <p className="mt-4 leading-relaxed text-muted">{c.yelken.body}</p>
+              <Did items={c.yelken.did} />
+              <AppFacts facts={c.yelken.facts} />
+              <div className="mt-8 flex flex-wrap items-center gap-5">
+                <StoreBadges size="sm" lang={lang} />
+                <Link href={href(lang, '/yelken')} className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-accent">
+                  {c.apps.details} <ArrowRight size={15} />
+                </Link>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
 

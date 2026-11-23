@@ -15,7 +15,7 @@ const FEATURE_ICONS = [<Swords key="0" size={22} />, <Route key="1" size={22} />
  * Metinler mağaza açıklamasından (kurultay/Docs/store/magaza_metinleri.md);
  * ekranlar Play görselleri (Docs/store/screens/play/{tr,en}_0* → 1600×900,
  * public/kurultay/screens/{tr,en}/0N.jpg; sıra: gece, oba, bey, Gökbörü,
- * Akın Yolu, kervan, Kurultay, harita; 0.2.8 görselleri).
+ * Akın Yolu, kervan, Kurultay, harita; 21 Kasım 2026 görselleri).
  */
 const COPY = {
   tr: {
@@ -49,15 +49,15 @@ const COPY = {
       { title: 'Çile kademeleri', desc: 'Zorluğu kendin seç; Bozkır Haritası’nda bölgeleri fethet.' },
       { title: 'Haftanın Akını', desc: 'Her hafta herkese aynı harita, aynı akınlar, eşit güç. Hesapla gir, haftalık sıralamada yerini al.' },
     ],
-    newsLabel: 'Son güncelleme · 0.2.21',
-    newsTitle: 'Büyük güncelleme: Boy Savaşı',
+    newsLabel: 'Son güncelleme · 0.2.23',
+    newsTitle: 'Yeni oyuncular için baştan yazılan ilk sefer',
     news: [
-      { title: 'Boy Savaşı', desc: 'Hafta içi boyunla düşman kalesine akın et, hafta sonu surunu savun. Her koşu kısa bir aksiyon; sonuç boyunun puanına yazılır.' },
-      { title: 'Boy sohbeti ve ödül salonu', desc: 'Boyuna özel sohbet, hızlı mesajlar, bağışlar ve haftalık ödüller. Sohbette şikâyet ve engelleme var; yalnız boy üyeleri görür.' },
-      { title: 'Savaş Bileti ve davet kodu', desc: 'Günde 3 koşu; 2 ek bilet reklamla ya da 2 Yada Taşı ile alınır. Davet kodunla arkadaşını boya çağır, ikiniz de hediye alırsınız.' },
-      { title: 'Kut hamlesi', desc: 'Dövüştükçe dolan yeni düğme: doldu mu savaşın ortasında tek dokunuşla kullan.' },
-      { title: 'Kurtlar farklılaştı', desc: 'Boz Kurt %5, Ak Kurt %7,5, Ayaz Kurdu %10 saldırı katkısı verir.' },
-      { title: 'Daha akıcı ve hareketli', desc: 'Yeni Ödüller sayfası, daha hızlı açılış, daha kalabalık ve hareketli savunma günü ve birçok düzeltme.' },
+      { title: 'Kam’ın Yolu rehberi', desc: 'İlk sefer baştan yazıldı: Kam seni adım adım yürütür, takılırsan parmak hedefi gösterir, Gezin ile ilk keşfe çıkarsın.' },
+      { title: 'Kahramana göre büyüyen binalar', desc: 'Ev, er çadırı, otağ, çit ve kapı artık Gökbörü’nün yanında doğru boyda; oba daha dolu görünür.' },
+      { title: 'Daha korunaklı ilk geceler', desc: 'Gece 1-5’te Otağ daha iyi korunur; Yağmacı Başı düşünce Kam ne yapacağını söyler.' },
+      { title: 'Uyarı ve övgü', desc: 'Hazırlıksız akın çağırırsan uyarı alırsın; kulen ilk okunu atınca Kam överek yolunu gösterir.' },
+      { title: 'Boy Savaşı ve Boy mağazası', desc: 'Hafta içi boyunla düşman kalesini kuşat, hafta sonu surunu savun. Boy mağazasında Akçe Kesesi, Akçe Sandığı, Boy Davulu ve Boy Sancağı var.' },
+      { title: 'Daha az reklam', desc: 'Geçiş reklamı iki gecede bir çıkar; Reklamsız Oba’nın fiyatı düştü.' },
     ],
     stackLabel: 'Teknolojiler',
     legalLabel: 'Yasal ve destek',
@@ -93,15 +93,15 @@ const COPY = {
       { title: 'Ordeal tiers', desc: 'Choose your own challenge, and conquer regions on the Steppe Map.' },
       { title: 'Raid of the Week', desc: 'Every week: the same map, the same raids and equal power for everyone. Sign in and climb the weekly leaderboard.' },
     ],
-    newsLabel: 'Latest update · 0.2.21',
-    newsTitle: 'Big update: Clan War',
+    newsLabel: 'Latest update · 0.2.23',
+    newsTitle: 'A rebuilt first campaign for new players',
     news: [
-      { title: 'Clan War', desc: 'On weekdays raid an enemy fortress with your clan, at the weekend defend your own wall. Every run is a short action level and counts towards your clan’s score.' },
-      { title: 'Clan chat and reward hall', desc: 'A private chat for your clan, quick messages, donations and weekly rewards. Chat has report and block tools and is visible to clan members only.' },
-      { title: 'War Tickets and invite code', desc: '3 runs a day; 2 extra tickets by watching an ad or spending 2 Yada Stones. Share your invite code and you both get a gift.' },
-      { title: 'Kut move', desc: 'A new button that fills as you fight: use it with one tap in the middle of battle.' },
-      { title: 'Wolves now differ', desc: 'The Grey Wolf adds 5%, the White Wolf 7.5% and the Frost Wolf 10% attack.' },
-      { title: 'Smoother and livelier', desc: 'A new Rewards page, faster start-up, a busier defense day and many fixes.' },
+      { title: 'The Kam’s Path guide', desc: 'The first campaign was rewritten: the Kam walks you through step by step, a finger points to the goal if you get stuck, and Roam takes you on a first discovery.' },
+      { title: 'Buildings that scale with the hero', desc: 'Houses, soldier tents, the Great Tent, fences and gates now stand at the right size next to Gökbörü; the camp feels fuller.' },
+      { title: 'Better-protected first nights', desc: 'The Great Tent is better protected on nights 1-5; after the Raider Chief falls, the Kam tells you what to do.' },
+      { title: 'Warnings and praise', desc: 'You get a warning if you call a raid unprepared, and praise when your tower fires its first arrow.' },
+      { title: 'Clan War and the Clan store', desc: 'Besiege an enemy fortress with your clan on weekdays, defend your wall at the weekend. The Clan store has the Coin Purse, Coin Chest, Clan Drum and Clan Banner.' },
+      { title: 'Fewer ads', desc: 'Interstitial ads now appear every other night, and the Ad-free Camp costs less.' },
     ],
     stackLabel: 'Stack',
     legalLabel: 'Legal and support',
