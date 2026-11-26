@@ -10,7 +10,7 @@
     "tr": {
       "privacy": {
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 18 Kasım 2026",
+        "updated": "Son güncelleme: 26 Kasım 2026",
         "intro": "Kurultay'ı hesapsız, misafir olarak oynayabilirsiniz. Hesap yalnızca Haftanın Akını'nda herkesle aynı sıralamada yarışmak ve bir boya (klana) katılmak için gerekir; giriş iOS'ta Apple veya Google, Android'de Google ile yapılır. Misafir oynarken oyun ilerlemeniz yalnızca cihazınızda kalır; giriş yaparsanız ilerlemeniz hesabınızda da saklanır (bulut kaydı) ve sıralama skorlarınız sunucumuza gider; reklamlar Google AdMob ile gösterilir, reklamlarımızın sonucu Meta ile ölçülür. Hesabınızı istediğiniz an oyunun içinden silebilirsiniz.",
         "sections": [
           {
@@ -42,7 +42,9 @@
           {
             "heading": "Bildirimler",
             "body": [
-              "Hatırlatmalar (günlük hediye, Haftanın Akını, obanızın sizi beklemesi) cihazınızda planlanır; sunucumuz bildirim göndermez ve bildirim içeriği cihazınızdan çıkmaz. İzin vermezseniz özellik kapalı kalır, oyunun geri kalanı normal çalışır."
+              "Hatırlatmalar (günlük hediye, Haftanın Akını, obanızın sizi beklemesi) cihazınızda planlanır ve içeriği cihazınızdan çıkmaz.",
+              "Düello bildirimleri (biri size düello açtığında, düello sonuçlandığında ya da süresi dolmak üzereyken) sunucumuzdan gelir. Bunun için, izin verirseniz, cihazınızın bildirim belirteci (Firebase Cloud Messaging), uygulama dilinizle ve hesap kimliğinizle birlikte sunucumuza kaydedilir; yalnızca bildirimi size iletmek için kullanılır, üçüncü taraflarla paylaşılmaz. Hesabınızı sildiğinizde ya da Ayarlar'dan düello bildirimlerini kapattığınızda belirteç silinir.",
+              "İzin vermezseniz bildirimler kapalı kalır, oyunun geri kalanı normal çalışır."
             ]
           },
           {
@@ -202,7 +204,7 @@
     "en": {
       "privacy": {
         "title": "Privacy Policy",
-        "updated": "Last updated: 18 November 2026",
+        "updated": "Last updated: 26 November 2026",
         "intro": "You can play Kurultay without an account, as a guest. An account is only needed to compete on the shared Raid of the Week leaderboard and to join a clan (Boy); you sign in with Apple or Google on iOS and with Google on Android. As a guest your game progress stays only on your device; if you sign in, your progress is also kept in your account (cloud save) and your leaderboard scores reach our server; ads are served by Google AdMob and the results of our own ads are measured with Meta. You can delete your account at any time from inside the game.",
         "sections": [
           {
@@ -234,7 +236,9 @@
           {
             "heading": "Notifications",
             "body": [
-              "Reminders (daily gift, Raid of the Week, your camp waiting for you) are scheduled on your device; our server sends no notifications and their content never leaves your device. If you don't grant permission the feature stays off and the rest of the game works normally."
+              "Reminders (daily gift, Raid of the Week, your camp waiting for you) are scheduled on your device and their content never leaves it.",
+              "Duel notifications (when someone challenges you, when a duel is decided or about to expire) come from our server. If you allow notifications, your device's notification token (Firebase Cloud Messaging) is stored on our server together with your app language and account ID; it is used only to deliver the notification to you and is not shared with third parties. The token is deleted when you delete your account or turn off duel notifications in Settings.",
+              "If you don't grant permission, notifications stay off and the rest of the game works normally."
             ]
           },
           {

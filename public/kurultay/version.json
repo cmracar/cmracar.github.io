@@ -1,7 +1,7 @@
 {
   "android": {
-    "versionCode": 38,
-    "version": "0.2.23",
+    "versionCode": 40,
+    "version": "0.2.24",
     "minVersionCode": 35
   },
   "ios": {
@@ -256,6 +256,32 @@
         "en": "Go to Raid of the Week",
         "es": "Ir a la Incursión",
         "ru": "К набегу недели"
+      }
+    },
+    {
+      "id": "duello-arkadaslar-2026-11",
+      "start": "2026-11-26T00:00:00Z",
+      "end": "2027-01-15T00:00:00Z",
+      "audience": "played",
+      "popup": true,
+      "action": "road",
+      "title": {
+        "tr": "Düello ve Arkadaşlar geldi!",
+        "en": "Duels and Friends have arrived!",
+        "es": "¡Llegan los Duelos y los Amigos!",
+        "ru": "Дуэли и друзья уже здесь!"
+      },
+      "body": {
+        "tr": "Bozkırın yeni meydanı açıldı. Düello'da bir rakip seçer, aynı yolda koşarsın; skoru yüksek olan kazanır. Her galibiyet Nam ve ödül getirir, Nam'ınla Bakır Ligi'nden Gök Lig'e yükselirsin. Rövanş al, günün ilk düellosunda ek ödülü kap; rakibin koşunca haber gelir.\n\nArkadaşlarını adıyla bulur, istek gönderir, dostça düello açarsın.\n\nNereden? Ana ekranda Akın Yolu kartı > Düello. Arkadaşlar için ana ekrandaki Arkadaşlar madalyonu.\n\nDüello ve Arkadaşlar 0.2.24 sürümüyle geldi. Eski sürümdeysen mağazadan güncelle.",
+        "en": "A new arena has opened on the steppe. In a Duel you pick a rival and ride the same road; the higher score wins. Every win earns Nam and rewards, and your Nam lifts you from the Copper League to the Sky League. Take a rematch, claim the bonus for your first duel of the day, and get notified when your rival has run.\n\nFind friends by name, send requests and start friendly duels.\n\nWhere? On the home screen, the Raid Road card > Duel. For Friends, use the Friends medallion on the home screen.\n\nDuels and Friends arrived with version 0.2.24. If you're on an older version, update from the store.",
+        "es": "Se ha abierto una nueva arena en la estepa. En un Duelo eliges un rival y cabalgas el mismo camino; gana la puntuación más alta. Cada victoria da Nam y recompensas, y con tu Nam subes de la Liga de Cobre a la Liga del Cielo. Pide la revancha, reclama el bono del primer duelo del día y recibe un aviso cuando tu rival corra.\n\nEncuentra amigos por su nombre, envía solicitudes y abre duelos amistosos.\n\n¿Dónde? En la pantalla principal, la tarjeta del Camino de Incursión > Duelo. Para los Amigos, el medallón de Amigos de la pantalla principal.\n\nLos Duelos y los Amigos llegaron con la versión 0.2.24. Si tienes una versión anterior, actualiza desde la tienda.",
+        "ru": "В степи открылась новая арена. В Дуэли ты выбираешь соперника и скачешь по той же дороге; побеждает тот, у кого результат выше. Каждая победа приносит Нам и награды, а Нам поднимает тебя от Медной лиги до Небесной. Бери реванш, получай бонус за первую дуэль дня и уведомление, когда соперник пробежит.\n\nНаходи друзей по имени, отправляй запросы и вызывай на дружеские дуэли.\n\nГде? На главном экране карточка Пути набега > Дуэль. Друзья: медальон «Друзья» на главном экране.\n\nДуэли и друзья появились в версии 0.2.24. Если у тебя старая версия, обнови игру в магазине."
+      },
+      "button": {
+        "tr": "Düelloya git",
+        "en": "Go to Duels",
+        "es": "Ir a Duelos",
+        "ru": "К дуэлям"
       }
     }
   ]
