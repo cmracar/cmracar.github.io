@@ -30,10 +30,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-6 gap-y-10 px-5 py-14 md:grid-cols-12 md:gap-10 md:px-8">
         <div className="col-span-2 md:col-span-5">
           <p className="font-serif text-2xl text-ink">{c.cta}</p>
-          <a href={`mailto:${CONTACT.email}`} className="link-underline mt-3 inline-block text-muted hover:text-ink">
-            {CONTACT.email}
-          </a>
-          <Link href={href(lang, '/iletisim')} className="link-underline mt-2 inline-block text-sm text-ink">
+          <Link href={href(lang, '/iletisim')} className="link-underline mt-3 inline-block text-muted hover:text-ink">
             {c.form}
           </Link>
           <ul className="mt-4 flex flex-wrap gap-x-5 text-sm">
