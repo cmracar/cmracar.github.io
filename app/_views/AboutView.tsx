@@ -23,7 +23,8 @@ const COPY = {
     ],
     rows: { experience: 'Deneyim', approach: 'Yaklaşım', skills: 'Yetkinlikler', education: 'Eğitim', interests: 'İlgi alanları', contact: 'İletişim' },
     interests: 'Para piyasaları, fitness ve müzik.',
-    email: 'E-posta',
+    email: 'İletişim formu',
+    emailValue: 'Mesaj gönder',
     download: 'Özgeçmişi indir',
     experiences: [
       {
@@ -91,7 +92,8 @@ const COPY = {
     ],
     rows: { experience: 'Experience', approach: 'Approach', skills: 'Skills', education: 'Education', interests: 'Interests', contact: 'Contact' },
     interests: 'Financial markets, fitness and music.',
-    email: 'Email',
+    email: 'Contact form',
+    emailValue: 'Send a message',
     download: 'Download resume',
     experiences: [
       {
@@ -170,7 +172,7 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
 export default function AboutView({ lang }: { lang: Lang }) {
   const c = COPY[lang]
   const contactLinks = [
-    { label: c.email, value: CONTACT.email, href: `mailto:${CONTACT.email}` },
+    { label: c.email, value: c.emailValue, href: href(lang, '/iletisim') },
     ...CONTACT.links.map(l => ({ label: l.label, value: l.href.replace(/^https:\/\/(www\.)?/, ''), href: l.href })),
     { label: 'X (Twitter)', value: 'twitter.com/cmracar', href: 'https://twitter.com/cmracar' },
   ]
@@ -285,7 +287,7 @@ export default function AboutView({ lang }: { lang: Lang }) {
             <li key={link.label}>
               <a
                 href={link.href}
-                target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                target={link.href.startsWith('/') ? undefined : '_blank'}
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between gap-4 py-4"
               >
