@@ -6,8 +6,8 @@ import { CONTACT } from '../contact'
 import { href, langOfPath, type Lang } from '../i18n'
 
 const COPY = {
-  tr: { cta: 'Birlikte çalışalım.', app: 'Uygulama', legal: ['Gizlilik', 'Koşullar', 'Hesap silme'] },
-  en: { cta: 'Let’s work together.', app: 'App', legal: ['Privacy', 'Terms', 'Account deletion'] },
+  tr: { form: 'İletişim formu →', cta: 'Birlikte çalışalım.', app: 'Uygulama', legal: ['Gizlilik', 'Koşullar', 'Hesap silme'] },
+  en: { form: 'Contact form →', cta: 'Let’s work together.', app: 'App', legal: ['Privacy', 'Terms', 'Account deletion'] },
 }
 
 /**
@@ -33,6 +33,9 @@ export default function Footer() {
           <a href={`mailto:${CONTACT.email}`} className="link-underline mt-3 inline-block text-muted hover:text-ink">
             {CONTACT.email}
           </a>
+          <Link href={href(lang, '/iletisim')} className="link-underline mt-2 inline-block text-sm text-ink">
+            {c.form}
+          </Link>
           <ul className="mt-4 flex flex-wrap gap-x-5 text-sm">
             {CONTACT.links.map(link => (
               <li key={link.href}>

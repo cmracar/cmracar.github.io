@@ -17,6 +17,7 @@ const PAIRS: [string, string][] = [
   ['/yazilar', '/en/writing'],
   ['/yelken', '/en/yelken'],
   ['/kurultay', '/en/kurultay'],
+  ['/iletisim', '/en/contact'],
   ['/yelken/gizlilik', '/yelken/privacy'],
   ['/yelken/kosullar', '/yelken/terms'],
   ['/yelken/hesap-silme', '/yelken/delete-account'],
